@@ -9,8 +9,15 @@ git lfs pull
 if errorlevel 1 goto failed
 if exist "tools\venv\Scripts\python.exe" goto install
 where py >nul 2>nul
-if errorlevel 1 goto no_python
+if errorlevel 1 goto try_python
 py -3.14 -m venv tools\venv
+if not errorlevel 1 goto install
+:try_python
+where python >nul 2>nul
+if errorlevel 1 goto no_python
+python -c "import sys; raise SystemExit(0 if sys.version_info[:2] == (3, 14) else 1)"
+if errorlevel 1 goto no_python
+python -m venv tools\venv
 if errorlevel 1 goto no_python
 :install
 cd /d "%~dp0project"
@@ -30,7 +37,7 @@ exit /b 0
 echo Install Git for Windows with Git LFS, then clone this repository and retry.
 goto failed
 :no_python
-echo Install Python 3.14 with the Python launcher, then retry.
+echo Install Python 3.14 and enable the python command or Python launcher, then retry.
 :failed
 echo Setup did not finish. Read the message above. Saved calculations were not deleted.
 pause

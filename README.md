@@ -7,7 +7,7 @@
 ## Запуск на другом компьютере
 
 1. Владелец предоставляет коллеге доступ: **Settings → Collaborators → Add people**. Коллега принимает приглашение под своим аккаунтом GitHub.
-2. Установите **Git for Windows с Git LFS** и **Python 3.14 с Python launcher**: https://git-scm.com/download/win и https://www.python.org/downloads/windows/ . Для совместной работы также подходит GitHub Desktop.
+2. Установите **Git for Windows с Git LFS** и **Python 3.14 (команда python или Python launcher)**: https://git-scm.com/download/win и https://www.python.org/downloads/windows/ . Для совместной работы также подходит GitHub Desktop.
 3. Клонируйте репозиторий в свою локальную папку. Используйте **clone**, а не «Download ZIP»: большие файлы хранятся через Git LFS.
 4. Дважды нажмите **SETUP_HEXW.cmd**. Нужен интернет для файлов и библиотек. Дождитесь `Setup complete`.
 5. Дважды нажмите **START_HEXW.cmd**, оставьте служебное окно открытым и перейдите в браузере на http://127.0.0.1:8765/ .

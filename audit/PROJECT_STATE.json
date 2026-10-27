@@ -1,7 +1,7 @@
 {
   "date": "2026-10-27",
-  "phase": "review_ready_browser_verified",
-  "root": "C:\\MIPT\\working_stuff\\Hexx",
+  "phase": "independent_installation_browser_verified",
+  "root": "C:\\MIPT\\working_stuff\\Hexaferrite",
   "incoming_source": "D:\\Новая папка\\Hexx",
   "transfer": {
     "files": 33801,
@@ -40,7 +40,9 @@
     "failure_cause": "hexw not installed for child Python -I; to repeat after editable install"
   },
   "next_steps": [
-    "User/colleague review of the delivered research model. No independent <=10% FMR accuracy claim; unfinished scientific blocks remain listed in MODEL_STATUS_V02_RU.md."
+    "Use the independent Hexaferrite checkout for further shared work.",
+    "No cleanup authorized yet. Candidate duplicate directories are documented in the independent installation report.",
+    "Review the sample-card workflow with colleagues before new scientific development."
   ],
   "pending_user_answer": null,
   "full_tests_initial": {
@@ -248,12 +250,12 @@
   ],
   "interface_runtime": {
     "status": "listening",
-    "launcher_pid": 22452,
-    "stderr": "C:\\MIPT\\working_stuff\\Hexx\\audit\\ui-20261027T001335Z.stderr.log",
-    "url": "http://127.0.0.1:8765",
-    "stdout": "C:\\MIPT\\working_stuff\\Hexx\\audit\\ui-20261027T001335Z.stdout.log",
-    "pid": 9124,
-    "browser_visual_test": "passed: Co-Zn calculation, results, plots, CSV link, history toggle, help and freeze"
+    "url": "http://127.0.0.1:8765/",
+    "root": "C:\\MIPT\\working_stuff\\Hexaferrite",
+    "launcher_pid": 11508,
+    "venv_launcher_pid": 15552,
+    "listener_pid": 7328,
+    "browser_visual_test": "passed: new Co-Zn forecast, results, freeze and actual folder in help"
   },
   "latest_ui_review": "audit/BROWSER_UI_VERIFIED_2026-10-27.json",
   "user_guide": "GUIDE/USER_GUIDE_HEXW_RU.md",
@@ -271,5 +273,12 @@
     "visible_results_verified": true
   },
   "user_guide_pdf": "GUIDE/Инструкция_HexW.pdf",
-  "pdf_guide_check": "audit/PDF_GUIDE_2026-10-27.json"
+  "pdf_guide_check": "audit/PDF_GUIDE_2026-10-27.json",
+  "latest_independent_installation": "audit/INDEPENDENT_INSTALLATION_2026-10-27.json",
+  "github_collaboration": {
+    "repository": "https://github.com/6Nightmare9/Hexaferrite",
+    "checkout": "C:\\MIPT\\working_stuff\\Hexaferrite",
+    "branch": "codex/independent-local-install",
+    "previous_checkout_preserved": "C:\\MIPT\\working_stuff\\Hexx\\github_export"
+  }
 }

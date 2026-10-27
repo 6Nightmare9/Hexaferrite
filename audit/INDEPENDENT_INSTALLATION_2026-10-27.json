@@ -1,0 +1,83 @@
+{
+  "schema": "hexw.independent_installation.v1",
+  "date": "2026-10-27",
+  "root": "C:\\MIPT\\working_stuff\\Hexaferrite",
+  "source_root_preserved": "C:\\MIPT\\working_stuff\\Hexx",
+  "git_independent": true,
+  "python": "C:\\MIPT\\working_stuff\\Hexaferrite\\tools\\venv\\Scripts\\python.exe",
+  "base_python": "C:\\Users\\Redmi\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+  "package_imports_within_new_root": true,
+  "old_root_in_sys_path": false,
+  "pip_check": "passed",
+  "setup_cmd_exit_code": 0,
+  "ui_tests_passed": 23,
+  "offline_form_tests": "passed",
+  "new_run_id": "048917780ebfec888860",
+  "active_model_version": "mv-391398d36363c9d47cd9",
+  "reference_run": "9611bd73ee0db975b57f",
+  "core_fingerprint_identical": true,
+  "arrays_bitwise_equal": {
+    "parameters.npz": true,
+    "T000_H0000.npz": true,
+    "T000_H0001.npz": true,
+    "T000_H0002.npz": true
+  },
+  "field_sweep": [
+    {
+      "T_K": 300.0,
+      "mu0H_T": 0.0,
+      "status": "computed_unvalidated",
+      "n_valid": 48,
+      "n_total": 48,
+      "f_low_median_GHz": 7.375023471306978,
+      "f_low_lo95_GHz": 0.7316166532822956,
+      "f_low_hi95_GHz": 40.895914066344304
+    },
+    {
+      "T_K": 300.0,
+      "mu0H_T": 0.4,
+      "status": "computed_unvalidated",
+      "n_valid": 48,
+      "n_total": 48,
+      "f_low_median_GHz": 13.285184141762286,
+      "f_low_lo95_GHz": 0.24475475718650738,
+      "f_low_hi95_GHz": 52.89881645328511
+    },
+    {
+      "T_K": 300.0,
+      "mu0H_T": 0.8,
+      "status": "computed_unvalidated",
+      "n_valid": 48,
+      "n_total": 48,
+      "f_low_median_GHz": 21.323924827767257,
+      "f_low_lo95_GHz": 4.1990628625715605,
+      "f_low_hi95_GHz": 62.26918858830849
+    }
+  ],
+  "browser_workflow": "preset -> label -> predict -> result -> freeze",
+  "browser_console_warnings_errors": [],
+  "no_files_deleted": true,
+  "cleanup_candidates": [
+    {
+      "path": "C:\\MIPT\\working_stuff\\Hexx\\github_export",
+      "bytes": 1508127482,
+      "reason": "Superseded clean publication checkout; independent current clone has all Git history and LFS objects"
+    },
+    {
+      "path": "C:\\MIPT\\working_stuff\\Hexx\\tools\\venv",
+      "bytes": 599122672,
+      "reason": "Superseded runtime; no imports or server dependencies on it"
+    },
+    {
+      "path": "C:\\MIPT\\working_stuff\\Hexx\\.venv",
+      "bytes": 583442285,
+      "reason": "Obsolete colleague environment, not used by either current runtime"
+    }
+  ],
+  "retain_until_backup": [
+    {
+      "path": "C:\\MIPT\\working_stuff\\Hexx\\tools\\qe_ucrt64",
+      "reason": "DFT executable installation is not included in the new repository clone"
+    }
+  ]
+}
