@@ -6,7 +6,7 @@ os.environ['HEXW_ROOT']=str(root)
 manifest=json.loads((root/'audit/GITHUB_EXPORT_MANIFEST.json').read_text(encoding='utf-8'))
 missing=[];pointers=[]
 for entry in manifest['source_files']:
- p=root/entry['path']
+ p=root/entry.get('export_path',entry['path'])
  if not p.is_file():missing.append(entry['path']);continue
  with p.open('rb') as f:
   if f.read(100).startswith(b'version https://git-lfs.github.com/spec/v1'):pointers.append(entry['path'])

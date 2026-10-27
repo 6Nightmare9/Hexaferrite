@@ -13,7 +13,8 @@
     {
       "path": "START_HEXW.cmd",
       "bytes": 324,
-      "sha256": "bd7b354fa73b27d051c6ad36b12f5acf00160240791c5b20cd4eca59f137b5a1"
+      "sha256": "bd7b354fa73b27d051c6ad36b12f5acf00160240791c5b20cd4eca59f137b5a1",
+      "export_path": "audit/START_HEXW_original.cmd"
     },
     {
       "path": "agent-os/standards/index.yml",
@@ -6608,7 +6609,8 @@
     {
       "path": "registry/FROZEN_MODEL.json",
       "bytes": 12424,
-      "sha256": "1f2e74dc5e7585967b7088e8573798853f63fd761ed85bfaba50be77f272803d"
+      "sha256": "1f2e74dc5e7585967b7088e8573798853f63fd761ed85bfaba50be77f272803d",
+      "export_path": "audit/initial_FROZEN_MODEL.json"
     },
     {
       "path": "registry/nested_archive_members.json",
@@ -6668,7 +6670,8 @@
     {
       "path": "runs/ui_jobs.json",
       "bytes": 822,
-      "sha256": "70415cd36c7a2203eb008641bc180c9c729844245b0514d3e81b340733a2b8a9"
+      "sha256": "70415cd36c7a2203eb008641bc180c9c729844245b0514d3e81b340733a2b8a9",
+      "export_path": "audit/ui_jobs_at_export.json"
     },
     {
       "path": "runs/analysis/0d38283fb35f9a9784aa/analysis.json",
@@ -11846,5 +11849,6 @@
     }
   },
   "scientific_parameters_modified": false,
-  "note": "Source bytes preserved. Added README, CONTRIBUTING, installer and root Git settings. Three original Git histories saved in verified bundles. Original source unchanged."
+  "note": "Source bytes preserved. Added README, CONTRIBUTING, installer and root Git settings. Three original Git histories saved in verified bundles. Original source unchanged.",
+  "runtime_state_policy": "Per-user ui_jobs and active FROZEN_MODEL are untracked. Exact exported originals are archived using each source record export_path. START_HEXW.cmd seeds only a missing active pointer from audit/initial_FROZEN_MODEL.json."
 }

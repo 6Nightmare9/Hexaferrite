@@ -19,6 +19,7 @@ if errorlevel 1 goto failed
 "%~dp0tools\venv\Scripts\python.exe" -m pip check
 if errorlevel 1 goto failed
 cd /d "%~dp0"
+if not exist "%~dp0registry\FROZEN_MODEL.json" copy /y "%~dp0audit\initial_FROZEN_MODEL.json" "%~dp0registry\FROZEN_MODEL.json" >nul
 "%~dp0tools\venv\Scripts\python.exe" -B tools\check_installation.py
 if errorlevel 1 goto failed
 echo.
