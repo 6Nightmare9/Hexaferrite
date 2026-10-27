@@ -1,0 +1,155 @@
+{
+ "composition_dir": "D:\\Work\\Hexx\\dft_runs\\campaign_v1\\hematite_alpha-Fe2O3",
+ "convention": "H = -sum_{i<j} J_ij S_i.S_j; each pair once; |S| = spin quantum number (Fe3+ 5/2, Fe2+ 2, Mn2+ 5/2, Co2+ 3/2); J>0 ferromagnetic; J in meV; energies per simulation cell",
+ "class_labels": [
+  "shell0_2.90A+shell2_3.36A",
+  "shell1_2.97A"
+ ],
+ "excluded_configurations": {},
+ "config_sha256": "52a4609ee2c9ecf3c6b78e3358c18885dd06361fe0120f65e33020e181c71959",
+ "status": "ok",
+ "notes": [],
+ "E0_meV_relative_to_mean_fit_energy": -1.3969838619232178e-09,
+ "E_ref_meV": -16256739.227649495,
+ "J_meV": [
+  -25.82024222005159,
+  -1.0543341855580608
+ ],
+ "sigma_J_meV": [
+  31.405977897606796,
+  10.468659299202265
+ ],
+ "sigma_basis": "residual",
+ "sigma_used_meV": 785.1494474401699,
+ "dof": 1,
+ "rms_residual_meV": 392.57472372008493,
+ "s_resid_meV": 785.1494474401699,
+ "residuals_meV": {
+  "c00_ground": -392.5747237200848,
+  "c01_flip_Fe3_Fe4": 392.57472372008493,
+  "c02_flip_Fe2_Fe3": 392.5747237200848,
+  "c03_flip_Fe2_Fe4": -392.57472372008493
+ },
+ "loo_error_meV": {
+  "c00_ground": -1570.2988948803395,
+  "c01_flip_Fe3_Fe4": 1570.2988948803404,
+  "c02_flip_Fe2_Fe3": 1570.2988948803395,
+  "c03_flip_Fe2_Fe4": -1570.2988948803381
+ },
+ "holdout": {
+  "error_meV": [
+   -7.269861978013068
+  ],
+  "predicted_meV": [
+   -1.3969838619232178e-09
+  ],
+  "sigma_pred_meV": [
+   877.8237684863091
+  ],
+  "z": [
+   -0.008281687326089363
+  ],
+  "rms_meV": 7.269861978013068,
+  "max_abs_meV": 7.269861978013068,
+  "config_ids": [
+   "c04_flip_Fe4"
+  ]
+ },
+ "max_condition_number": 1000.0,
+ "conditioning": {
+  "cond_scaled": 1.0000000000000002,
+  "cond_raw": 37.5,
+  "singular_values_scaled": [
+   1.0,
+   1.0,
+   0.9999999999999999
+  ],
+  "singular_values_raw": [
+   75.0,
+   24.999999999999996,
+   2.0
+  ],
+  "rank": 3,
+  "n_columns": 3,
+  "n_rows": 4
+ },
+ "fit_configurations": [
+  "c00_ground",
+  "c01_flip_Fe3_Fe4",
+  "c02_flip_Fe2_Fe3",
+  "c03_flip_Fe2_Fe4"
+ ],
+ "holdout_configurations": [
+  "c04_flip_Fe4"
+ ],
+ "energy_range_meV": 1430.6555029414594,
+ "J_in_kelvin": [
+  -299.63146875044913,
+  -12.23504016268439
+ ],
+ "class_info": [
+  {
+   "label": "shell0_2.90A+shell2_3.36A",
+   "n_bonds": 2,
+   "d_min": 2.900383199999996,
+   "d_max": 2.9003831999999976,
+   "shells": [
+    [
+     2.9003831999999967,
+     2
+    ]
+   ],
+   "n_distinct_shells": 1,
+   "paths": {
+    "face (3 O)": 2
+   },
+   "mean_Fe_O_Fe_angle_corner_deg": null,
+   "spin_products": [
+    6.25
+   ],
+   "combination": "J[shell0_2.90A] + 3*J[shell2_3.36A]",
+   "merged_with": [
+    "shell2_3.36A"
+   ]
+  },
+  {
+   "label": "shell1_2.97A",
+   "n_bonds": 6,
+   "d_min": 2.970953832439454,
+   "d_max": 2.9709538324394553,
+   "shells": [
+    [
+     2.9709538324394544,
+     6
+    ]
+   ],
+   "n_distinct_shells": 1,
+   "paths": {
+    "edge (2 O)": 6
+   },
+   "mean_Fe_O_Fe_angle_corner_deg": null,
+   "spin_products": [
+    6.25
+   ]
+  }
+ ],
+ "inputs_sha256": {
+  "c00_ground": "ada1f5726ebdeb0087a152dd7a0a13a0f5087279101ba89478d3690385847fb4",
+  "c01_flip_Fe3_Fe4": "db328597909c3002b09f2e2f90dfc90a5f2d8893654dcd0dc1c09e6a597cee59",
+  "c02_flip_Fe2_Fe3": "f2636d631ac5c9a9e4552d5dbb37b33e729389b8bf0a15cd0e4a8e1b6bcd1c45",
+  "c03_flip_Fe2_Fe4": "78fb98fd02d217f2d9dd93aadab63a63ad9bc73d298e718ad3c6d595b1f030fc",
+  "c04_flip_Fe4": "da99b236205c908b6d7fc9ba65d4ea4160d0f5f1c255d5446f106b2763ab08fd"
+ },
+ "outputs_sha256": {
+  "c00_ground": "b2f5b77feed814675189fdaeeef2d92ca55ded5449d0fb4c8e456f172f879cc0",
+  "c01_flip_Fe3_Fe4": "50bb315464f0ff25e074d41705e2ce3134eb4c57361f8ddb56e468b211d07784",
+  "c02_flip_Fe2_Fe3": "e4cc8489db8772cddc1fd7466380203aaff3abd512827b7f147a720f5c296399",
+  "c03_flip_Fe2_Fe4": "2ff7ba0bae85e80c26be2a11d68c4aa1942e2760533fa89d52ba4bac015f6fdd",
+  "c04_flip_Fe4": "6af27b86eb143a870b5378b0d1863d88209a895ba97a0d6ffa4d9cb55f1db95b"
+ },
+ "provenance_sha256": "c2429a6061b858a1b6ffb00ae7b405e2ded7831a718e9d141fa539eacd872159",
+ "qe_versions": [
+  "7.6"
+ ],
+ "n_estimates": 2
+}

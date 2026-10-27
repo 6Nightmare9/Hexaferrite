@@ -1,0 +1,16 @@
+{
+ "config_id": "c04_flip_Fe4",
+ "role": "holdout",
+ "flipped_groups": [
+  "Fe4"
+ ],
+ "pattern": [
+  1,
+  1,
+  1,
+  -1
+ ],
+ "system": "alpha-Fe2O3",
+ "input_sha256": "a0f35f70d24110c26b8f62ff461e60329934615e8d5acf3e2bb16a68fdd24c7e",
+ "config_sha256": "e3890a568388ffd62fceaabb391ee38a683c5a0116aa7c7cfe6a0f9b5f5bc2d7"
+}

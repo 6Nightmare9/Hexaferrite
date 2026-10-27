@@ -1,0 +1,10 @@
+{"composition": "SrFe18O27_uniform_cfg0_g", "config_sha256": "447ed387e94207b558f683385ce1e2b0900bd04cdbc3966c52f7d24d2efa940e", "event": "generate", "kept": [], "t": "2026-10-26T08:22:40+00:00", "written": ["c00_ground", "c01_flip_W3_W4_W5_W6_W7", "c02_flip_W2_W5_W6", "c03_flip_W3_W5_W7", "c04_flip_W2_W4_W5_W7", "c05_flip_W4_W5", "c06_flip_W2_W3_W6", "c07_flip_W4_W6", "c08_flip_W2_W4", "c09_flip_W2_W3_W4_W6_W7", "c10_flip_W5_W6", "c11_flip_W2_W3_W5", "c12_flip_W2_W6_W7", "c13_flip_W3_W6_W7", "c14_flip_W3_W7", "c15_flip_W4_W7", "c16_flip_W3_W4"]}
+{"composition": "SrFe18O27_uniform_cfg0_g", "config_sha256": "447ed387e94207b558f683385ce1e2b0900bd04cdbc3966c52f7d24d2efa940e", "event": "generate", "kept": ["c00_ground", "c01_flip_W3_W4_W5_W6_W7", "c02_flip_W2_W5_W6", "c03_flip_W3_W5_W7", "c04_flip_W2_W4_W5_W7", "c05_flip_W4_W5", "c06_flip_W2_W3_W6", "c07_flip_W4_W6", "c08_flip_W2_W4", "c09_flip_W2_W3_W4_W6_W7", "c10_flip_W5_W6", "c11_flip_W2_W3_W5", "c12_flip_W2_W6_W7", "c13_flip_W3_W6_W7", "c14_flip_W3_W7", "c15_flip_W4_W7", "c16_flip_W3_W4"], "t": "2026-10-26T08:37:55+00:00", "written": []}
+{"event": "queue", "n_parallel": 1, "runner_pid": 159152, "skipped": {}, "t": "2026-10-26T08:39:09+00:00", "to_run": ["c00_ground"]}
+{"active": true, "error": null, "event": "keep_awake", "supported": true, "t": "2026-10-26T08:39:09+00:00"}
+{"attempt": 1, "event": "start", "job": "c00_ground", "t": "2026-10-26T08:39:09+00:00"}
+{"event": "finish", "job": "c00_ground", "message": "", "state": "done", "t": "2026-10-26T08:51:49+00:00", "wall_s": 759.9}
+{"event": "queue", "n_parallel": 1, "runner_pid": 163764, "skipped": {}, "t": "2026-10-26T08:51:55+00:00", "to_run": ["c01_flip_W3_W4_W5_W6_W7"]}
+{"active": true, "error": null, "event": "keep_awake", "supported": true, "t": "2026-10-26T08:51:55+00:00"}
+{"attempt": 1, "event": "start", "job": "c01_flip_W3_W4_W5_W6_W7", "t": "2026-10-26T08:51:55+00:00"}
+{"event": "finish", "job": "c01_flip_W3_W4_W5_W6_W7", "message": "", "state": "done", "t": "2026-10-26T09:03:55+00:00", "wall_s": 720.5}

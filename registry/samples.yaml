@@ -1,0 +1,1313 @@
+# PRELIMINARY sample registry (stage 1). Built ONLY from file names and header text.
+# Every name-derived value has status preliminary_from_filename. null = unknown.
+# Equal formula != same sample; distinct dates/regimes = distinct samples until proven.
+samples:
+- sample_id: SMP-001
+  batch_id: BAT-001
+  label: SrMn_Mn_x=1.1_1400_0h_6h
+  nominal_formula:
+    template: SrFe(18-x)Mn(x)O27
+    A:
+      value: Mn
+      unit: null
+      status: preliminary_from_filename
+    x:
+      value: 1.1
+      unit: '1'
+      status: preliminary_from_filename
+    note: formula template assumed from series naming; x definition vs precursor stoichiometry unconfirmed
+  measured_composition: null
+  precursors:
+    A_source:
+      value: null
+      unit: null
+      status: unknown
+      name_token: Mn
+      note: Mn species / precursor not reported (user message 2026-10-25); 'Mn' in the file name is only the element
+    purity: null
+    Sr_source: null
+    Fe_source: null
+  synthesis:
+    raw_tokens: 1400_0h_6h
+    stages:
+    - stage: 1
+      T_C:
+        value: 1200
+        unit: C
+        status: user_reported
+        reported_by: user
+        reported_date: '2026-10-25'
+      duration:
+        value: 0
+        unit: h
+        status: user_reported
+        reported_by: user
+        reported_date: '2026-10-25'
+        note: no hold at 1200 C
+    - stage: 2
+      T_C:
+        value: 1400
+        unit: C
+        status: user_reported
+        reported_by: user
+        reported_date: '2026-10-25'
+      duration:
+        value: 6
+        unit: h
+        status: user_reported
+        reported_by: user
+        reported_date: '2026-10-25'
+    stage_order: assumed (1200 C stage before 1400 C by analogy with the other series); the user stated the two stages but not the order
+    note: regime token '1400_0h_6h' = 1400 C for 6 h with a 1200 C stage of 0 h (no dwell at 1200 C), per user message 2026-10-25
+  post_treatment: null
+  geometry: null
+  mass: null
+  metadata_status:
+    all_name_derived_fields: preliminary_from_filename
+    synthesis_regime: user_reported
+    precursor_Mn: unknown
+    composition_measured: unknown
+    atmosphere: unknown
+    cooling: unknown
+    density_porosity: unknown
+    observation_header: from_instrument_file_header
+  files:
+  - archive_path: 01_XRD/SrMn_Mn_x=1.1_1400_0h_6h#1##20260912-143637_100.mdi
+    zone: vault/lab_validation
+    sha256: 1b7debf5622a86ad86594c84008a9269770cd87b7595f1b5bf0b2a1ac002b031
+    representation: instrument_native_mdi
+  - archive_path: 01_XRD/SrMn_Mn_x=1.1_1400_0h_6h#1##20260912-143637_100.txt
+    zone: vault/lab_validation
+    sha256: 05436e2b66183ea210b5cf5c03c89d5247bd470ea56058a5801c9c46313cbce5
+    representation: text_export_of_same_measurement
+  observations:
+  - OBS-XRD-001
+  ambiguity_flags:
+  - precursor_Mn_species_unspecified
+  - srmn_stage_order_assumed
+  - x_definition_vs_precursor_unconfirmed
+  - same_formula_does_not_imply_same_sample
+  notes: null
+  umnik_copies:
+  - zone: vault/lab_validation_umnik
+    umnik_path: Mn/SrMn_Mn_x=1.1_1400_0h_6h#1##20260912-143637_100.jip
+    sha256: 042f4f8e76d84a9114f6326363b74925de4df9d69951b1a42f052a42cb279ec1
+    role: instrument_preview_image
+  - zone: vault/lab_validation_umnik
+    umnik_path: Mn/SrMn_Mn_x=1.1_1400_0h_6h#1##20260912-143637_100.mdi
+    sha256: 1b7debf5622a86ad86594c84008a9269770cd87b7595f1b5bf0b2a1ac002b031
+    role: experimental_raw_or_export
+  - zone: vault/lab_validation_umnik
+    umnik_path: Mn/SrMn_Mn_x=1.1_1400_0h_6h#1##20260912-143637_100.txt
+    sha256: 05436e2b66183ea210b5cf5c03c89d5247bd470ea56058a5801c9c46313cbce5
+    role: experimental_raw_or_export
+  prior_analysis_artifacts:
+  - PRI-001
+  - PRI-002
+  - PRI-004
+  - PRI-006
+  - PRI-007
+  - PRI-009
+  - PRI-010
+- sample_id: SMP-002
+  batch_id: BAT-002
+  label: SrMn_Mn_x=1.2_1400_0h_6h
+  nominal_formula:
+    template: SrFe(18-x)Mn(x)O27
+    A:
+      value: Mn
+      unit: null
+      status: preliminary_from_filename
+    x:
+      value: 1.2
+      unit: '1'
+      status: preliminary_from_filename
+    note: formula template assumed from series naming; x definition vs precursor stoichiometry unconfirmed
+  measured_composition: null
+  precursors:
+    A_source:
+      value: null
+      unit: null
+      status: unknown
+      name_token: Mn
+      note: Mn species / precursor not reported (user message 2026-10-25); 'Mn' in the file name is only the element
+    purity: null
+    Sr_source: null
+    Fe_source: null
+  synthesis:
+    raw_tokens: 1400_0h_6h
+    stages:
+    - stage: 1
+      T_C:
+        value: 1200
+        unit: C
+        status: user_reported
+        reported_by: user
+        reported_date: '2026-10-25'
+      duration:
+        value: 0
+        unit: h
+        status: user_reported
+        reported_by: user
+        reported_date: '2026-10-25'
+        note: no hold at 1200 C
+    - stage: 2
+      T_C:
+        value: 1400
+        unit: C
+        status: user_reported
+        reported_by: user
+        reported_date: '2026-10-25'
+      duration:
+        value: 6
+        unit: h
+        status: user_reported
+        reported_by: user
+        reported_date: '2026-10-25'
+    stage_order: assumed (1200 C stage before 1400 C by analogy with the other series); the user stated the two stages but not the order
+    note: regime token '1400_0h_6h' = 1400 C for 6 h with a 1200 C stage of 0 h (no dwell at 1200 C), per user message 2026-10-25
+  post_treatment: null
+  geometry: null
+  mass: null
+  metadata_status:
+    all_name_derived_fields: preliminary_from_filename
+    synthesis_regime: user_reported
+    precursor_Mn: unknown
+    composition_measured: unknown
+    atmosphere: unknown
+    cooling: unknown
+    density_porosity: unknown
+    observation_header: from_instrument_file_header
+  files:
+  - archive_path: 01_XRD/SrMn_Mn_x=1.2_1400_0h_6h#1##20260912-112931_100.mdi
+    zone: vault/lab_validation
+    sha256: da233c5955d01a1303991e99232d8191b5aaff206287572874bdd4f55902bf42
+    representation: instrument_native_mdi
+  - archive_path: 01_XRD/SrMn_Mn_x=1.2_1400_0h_6h#1##20260912-112931_100.txt
+    zone: vault/lab_validation
+    sha256: 4bf22abf08521ab22d70367c924d308f019518ffb979ef1c76fcdb0e98267ae0
+    representation: text_export_of_same_measurement
+  observations:
+  - OBS-XRD-002
+  ambiguity_flags:
+  - precursor_Mn_species_unspecified
+  - srmn_stage_order_assumed
+  - x_definition_vs_precursor_unconfirmed
+  - same_formula_does_not_imply_same_sample
+  notes: null
+  umnik_copies:
+  - zone: vault/lab_validation_umnik
+    umnik_path: Mn/SrMn_Mn_x=1.2_1400_0h_6h#1##20260912-112931_100.jip
+    sha256: 75fd20183f27fa2e6144e3f338d9349600430813ebc81e78c7e1073ca5fa6c0d
+    role: instrument_preview_image
+  - zone: vault/lab_validation_umnik
+    umnik_path: Mn/SrMn_Mn_x=1.2_1400_0h_6h#1##20260912-112931_100.mdi
+    sha256: da233c5955d01a1303991e99232d8191b5aaff206287572874bdd4f55902bf42
+    role: experimental_raw_or_export
+  - zone: vault/lab_validation_umnik
+    umnik_path: Mn/SrMn_Mn_x=1.2_1400_0h_6h#1##20260912-112931_100.txt
+    sha256: 4bf22abf08521ab22d70367c924d308f019518ffb979ef1c76fcdb0e98267ae0
+    role: experimental_raw_or_export
+  prior_analysis_artifacts:
+  - PRI-001
+  - PRI-002
+  - PRI-004
+  - PRI-006
+  - PRI-007
+  - PRI-009
+  - PRI-010
+- sample_id: SMP-003
+  batch_id: BAT-003
+  label: SrMn_Mn_x=1.3_1400_0h_6h
+  nominal_formula:
+    template: SrFe(18-x)Mn(x)O27
+    A:
+      value: Mn
+      unit: null
+      status: preliminary_from_filename
+    x:
+      value: 1.3
+      unit: '1'
+      status: preliminary_from_filename
+    note: formula template assumed from series naming; x definition vs precursor stoichiometry unconfirmed
+  measured_composition: null
+  precursors:
+    A_source:
+      value: null
+      unit: null
+      status: unknown
+      name_token: Mn
+      note: Mn species / precursor not reported (user message 2026-10-25); 'Mn' in the file name is only the element
+    purity: null
+    Sr_source: null
+    Fe_source: null
+  synthesis:
+    raw_tokens: 1400_0h_6h
+    stages:
+    - stage: 1
+      T_C:
+        value: 1200
+        unit: C
+        status: user_reported
+        reported_by: user
+        reported_date: '2026-10-25'
+      duration:
+        value: 0
+        unit: h
+        status: user_reported
+        reported_by: user
+        reported_date: '2026-10-25'
+        note: no hold at 1200 C
+    - stage: 2
+      T_C:
+        value: 1400
+        unit: C
+        status: user_reported
+        reported_by: user
+        reported_date: '2026-10-25'
+      duration:
+        value: 6
+        unit: h
+        status: user_reported
+        reported_by: user
+        reported_date: '2026-10-25'
+    stage_order: assumed (1200 C stage before 1400 C by analogy with the other series); the user stated the two stages but not the order
+    note: regime token '1400_0h_6h' = 1400 C for 6 h with a 1200 C stage of 0 h (no dwell at 1200 C), per user message 2026-10-25
+  post_treatment: null
+  geometry: null
+  mass: null
+  metadata_status:
+    all_name_derived_fields: preliminary_from_filename
+    synthesis_regime: user_reported
+    precursor_Mn: unknown
+    composition_measured: unknown
+    atmosphere: unknown
+    cooling: unknown
+    density_porosity: unknown
+    observation_header: from_instrument_file_header
+  files:
+  - archive_path: 01_XRD/SrMn_Mn_x=1.3_1400_0h_6h#1##20260912-130619_100.mdi
+    zone: vault/lab_validation
+    sha256: 5858b48741bb2e7702e46e298ed5988a1f6706725190a5fe72e99b78f38879a3
+    representation: instrument_native_mdi
+  - archive_path: 01_XRD/SrMn_Mn_x=1.3_1400_0h_6h#1##20260912-130619_100.txt
+    zone: vault/lab_validation
+    sha256: 0430e82209ab5ce0ff4319be172bd3b08a32f9c0b759db7aa838921b6ab58b01
+    representation: text_export_of_same_measurement
+  observations:
+  - OBS-XRD-003
+  ambiguity_flags:
+  - precursor_Mn_species_unspecified
+  - srmn_stage_order_assumed
+  - x_definition_vs_precursor_unconfirmed
+  - same_formula_does_not_imply_same_sample
+  notes: null
+  umnik_copies:
+  - zone: vault/lab_validation_umnik
+    umnik_path: Mn/SrMn_Mn_x=1.3_1400_0h_6h#1##20260912-130619_100.jip
+    sha256: c68146bdb70f6221c37720f9a377737dda08a3ef46ab716950530e7621b494a9
+    role: instrument_preview_image
+  - zone: vault/lab_validation_umnik
+    umnik_path: Mn/SrMn_Mn_x=1.3_1400_0h_6h#1##20260912-130619_100.mdi
+    sha256: 5858b48741bb2e7702e46e298ed5988a1f6706725190a5fe72e99b78f38879a3
+    role: experimental_raw_or_export
+  - zone: vault/lab_validation_umnik
+    umnik_path: Mn/SrMn_Mn_x=1.3_1400_0h_6h#1##20260912-130619_100.txt
+    sha256: 0430e82209ab5ce0ff4319be172bd3b08a32f9c0b759db7aa838921b6ab58b01
+    role: experimental_raw_or_export
+  prior_analysis_artifacts:
+  - PRI-001
+  - PRI-002
+  - PRI-004
+  - PRI-006
+  - PRI-007
+  - PRI-009
+  - PRI-010
+- sample_id: SMP-004
+  batch_id: BAT-004
+  label: SrMn_Mn_x=1.4_1400_0h_6h
+  nominal_formula:
+    template: SrFe(18-x)Mn(x)O27
+    A:
+      value: Mn
+      unit: null
+      status: preliminary_from_filename
+    x:
+      value: 1.4
+      unit: '1'
+      status: preliminary_from_filename
+    note: formula template assumed from series naming; x definition vs precursor stoichiometry unconfirmed
+  measured_composition: null
+  precursors:
+    A_source:
+      value: null
+      unit: null
+      status: unknown
+      name_token: Mn
+      note: Mn species / precursor not reported (user message 2026-10-25); 'Mn' in the file name is only the element
+    purity: null
+    Sr_source: null
+    Fe_source: null
+  synthesis:
+    raw_tokens: 1400_0h_6h
+    stages:
+    - stage: 1
+      T_C:
+        value: 1200
+        unit: C
+        status: user_reported
+        reported_by: user
+        reported_date: '2026-10-25'
+      duration:
+        value: 0
+        unit: h
+        status: user_reported
+        reported_by: user
+        reported_date: '2026-10-25'
+        note: no hold at 1200 C
+    - stage: 2
+      T_C:
+        value: 1400
+        unit: C
+        status: user_reported
+        reported_by: user
+        reported_date: '2026-10-25'
+      duration:
+        value: 6
+        unit: h
+        status: user_reported
+        reported_by: user
+        reported_date: '2026-10-25'
+    stage_order: assumed (1200 C stage before 1400 C by analogy with the other series); the user stated the two stages but not the order
+    note: regime token '1400_0h_6h' = 1400 C for 6 h with a 1200 C stage of 0 h (no dwell at 1200 C), per user message 2026-10-25
+  post_treatment: null
+  geometry: null
+  mass: null
+  metadata_status:
+    all_name_derived_fields: preliminary_from_filename
+    synthesis_regime: user_reported
+    precursor_Mn: unknown
+    composition_measured: unknown
+    atmosphere: unknown
+    cooling: unknown
+    density_porosity: unknown
+    observation_header: from_instrument_file_header
+  files:
+  - archive_path: 01_XRD/SrMn_Mn_x=1.4_1400_0h_6h#1##20260912-161105_100.txt
+    zone: vault/lab_validation
+    sha256: b8f13dfc624244f3eec6fe45b2c48c96a44b70679212a0e4885cfba04215fa77
+    representation: text_export_of_same_measurement
+  - archive_path: 01_XRD/SrMn_Mn_x=1.4_1400_0h_6h.mdi
+    zone: vault/lab_validation
+    sha256: a715fce1b99b30a9821347bb4b5a302ed8f9338f45eba57aaf8d8433f152627c
+    representation: instrument_native_mdi
+  observations:
+  - OBS-XRD-004
+  ambiguity_flags:
+  - precursor_Mn_species_unspecified
+  - srmn_stage_order_assumed
+  - x_definition_vs_precursor_unconfirmed
+  - same_formula_does_not_imply_same_sample
+  notes: null
+  umnik_copies:
+  - zone: vault/lab_validation_umnik
+    umnik_path: Mn/SrMn_Mn_x=1.4_1400_0h_6h#1##20260912-161105_100.jip
+    sha256: b26f0628ddfa2ebaf29ff1f97b71b40a5cf550c7a23040ea67c6568352587d82
+    role: instrument_preview_image
+  - zone: vault/lab_validation_umnik
+    umnik_path: Mn/SrMn_Mn_x=1.4_1400_0h_6h#1##20260912-161105_100.txt
+    sha256: b8f13dfc624244f3eec6fe45b2c48c96a44b70679212a0e4885cfba04215fa77
+    role: experimental_raw_or_export
+  - zone: vault/lab_validation_umnik
+    umnik_path: Mn/SrMn_Mn_x=1.4_1400_0h_6h.mdi
+    sha256: a715fce1b99b30a9821347bb4b5a302ed8f9338f45eba57aaf8d8433f152627c
+    role: experimental_raw_or_export
+  prior_analysis_artifacts:
+  - PRI-001
+  - PRI-002
+  - PRI-004
+  - PRI-006
+  - PRI-007
+  - PRI-009
+  - PRI-010
+- sample_id: SMP-005
+  batch_id: BAT-005
+  label: SrW_Co3O4_x=1.5_T=1200_6h_T=1400_4h_210926
+  nominal_formula:
+    template: SrFe(18-x)Co(x)O27
+    A:
+      value: Co
+      unit: null
+      status: preliminary_from_filename
+    x:
+      value: 1.5
+      unit: '1'
+      status: preliminary_from_filename
+    note: formula template assumed from series naming; x definition vs precursor stoichiometry unconfirmed
+  measured_composition: null
+  precursors:
+    A_source:
+      value: Co3O4
+      unit: null
+      status: preliminary_from_filename
+    purity: null
+    Sr_source: null
+    Fe_source: null
+  synthesis:
+    raw_tokens: T=1200_6h_T=1400_4h
+    stages:
+    - T_C:
+        value: 1200
+        unit: C
+        status: preliminary_from_filename
+      duration:
+        value: 6
+        unit: h
+        status: preliminary_from_filename
+    - T_C:
+        value: 1400
+        unit: C
+        status: preliminary_from_filename
+      duration:
+        value: 4
+        unit: h
+        status: preliminary_from_filename
+    atmosphere: null
+    cooling: null
+    name_date_token_ddmmyy:
+      value: '210926'
+      unit: null
+      status: preliminary_from_filename
+      note: meaning of this date (synthesis/project) unknown
+  post_treatment: null
+  geometry: null
+  mass: null
+  metadata_status:
+    all_name_derived_fields: preliminary_from_filename
+    composition_measured: unknown
+    atmosphere: unknown
+    cooling: unknown
+    density_porosity: unknown
+    observation_header: from_instrument_file_header
+  files:
+  - archive_path: 01_XRD/SrW_Co3O4_x=1.5_T=1200_6h_T=1400_4h_210926.mdi
+    zone: vault/lab_validation
+    sha256: ab1da4035941d768ebcc5c1d5507632bf42a39b4d8e2d84f2b9d1e9acff9bd7d
+    representation: instrument_native_mdi
+  - archive_path: 01_XRD/SrW_Co3O4_x=1_5_T=1200_6h_T=1400_4h_210926#1##20260922_142035_100.txt
+    zone: vault/lab_validation
+    sha256: cdd9c1074ba004448ea34dda12ebc8931c84235db5fbe9878137b97ab882c630
+    representation: text_export_of_same_measurement
+  observations:
+  - OBS-XRD-005
+  ambiguity_flags:
+  - pair_names_differ_requires_confirmation
+  - x_definition_vs_precursor_unconfirmed
+  - same_formula_does_not_imply_same_sample
+  notes: 'mdi is named x=1.5 without timestamp, txt is named x=1_5 with #1## timestamp (2026-09-22 14:20:35); same measurement
+    is likely (header date 22/09/26, same stem) but UNCONFIRMED; x=1.5 vs 1_5 may also be a typo for another sample'
+  umnik_copies:
+  - zone: vault/lab_validation_umnik
+    umnik_path: Co/SrW_Co3O4_x=1.5_T=1200_6h_T=1400_4h_210926#1##20260922-142035_100.txt
+    sha256: cdd9c1074ba004448ea34dda12ebc8931c84235db5fbe9878137b97ab882c630
+    role: experimental_raw_or_export
+  - zone: vault/lab_validation_umnik
+    umnik_path: Co/SrW_Co3O4_x=1.5_T=1200_6h_T=1400_4h_210926.jip
+    sha256: d60e7c7d152e33fac3756bc1ca431a7dfd24271e8c43e8aa4efb8e144acfb344
+    role: instrument_preview_image
+  - zone: vault/lab_validation_umnik
+    umnik_path: Co/SrW_Co3O4_x=1.5_T=1200_6h_T=1400_4h_210926.mdi
+    sha256: ab1da4035941d768ebcc5c1d5507632bf42a39b4d8e2d84f2b9d1e9acff9bd7d
+    role: experimental_raw_or_export
+  prior_analysis_artifacts:
+  - PRI-001
+  - PRI-002
+  - PRI-003
+  - PRI-006
+  - PRI-007
+  - PRI-008
+  - PRI-009
+  - PRI-010
+- sample_id: SMP-006
+  batch_id: BAT-006
+  label: SrW_Co3O4_x=2.0_T=1200_6h_T=1400_4h_210926
+  nominal_formula:
+    template: SrFe(18-x)Co(x)O27
+    A:
+      value: Co
+      unit: null
+      status: preliminary_from_filename
+    x:
+      value: 2.0
+      unit: '1'
+      status: preliminary_from_filename
+    note: formula template assumed from series naming; x definition vs precursor stoichiometry unconfirmed
+  measured_composition: null
+  precursors:
+    A_source:
+      value: Co3O4
+      unit: null
+      status: preliminary_from_filename
+    purity: null
+    Sr_source: null
+    Fe_source: null
+  synthesis:
+    raw_tokens: T=1200_6h_T=1400_4h
+    stages:
+    - T_C:
+        value: 1200
+        unit: C
+        status: preliminary_from_filename
+      duration:
+        value: 6
+        unit: h
+        status: preliminary_from_filename
+    - T_C:
+        value: 1400
+        unit: C
+        status: preliminary_from_filename
+      duration:
+        value: 4
+        unit: h
+        status: preliminary_from_filename
+    atmosphere: null
+    cooling: null
+    name_date_token_ddmmyy:
+      value: '210926'
+      unit: null
+      status: preliminary_from_filename
+      note: meaning of this date (synthesis/project) unknown
+  post_treatment: null
+  geometry: null
+  mass: null
+  metadata_status:
+    all_name_derived_fields: preliminary_from_filename
+    composition_measured: unknown
+    atmosphere: unknown
+    cooling: unknown
+    density_porosity: unknown
+    observation_header: from_instrument_file_header
+  files:
+  - archive_path: 01_XRD/SrW_Co3O4_x=2_0_T=1200_6h_T=1400_4h_210926#1##20260922_160950_100.mdi
+    zone: vault/lab_validation
+    sha256: e4b9295d1f593a56e92a57dc1b9f414361faf7c57c7cfc4ba9ee700f36743a97
+    representation: instrument_native_mdi
+  - archive_path: 01_XRD/SrW_Co3O4_x=2_0_T=1200_6h_T=1400_4h_210926#1##20260922_160950_100.txt
+    zone: vault/lab_validation
+    sha256: 43748dc5e5df165ad89deca660c2b0e00a2caf1431183f1a0494b3034ceae629
+    representation: text_export_of_same_measurement
+  observations:
+  - OBS-XRD-006
+  ambiguity_flags:
+  - x_definition_vs_precursor_unconfirmed
+  - same_formula_does_not_imply_same_sample
+  notes: null
+  umnik_copies:
+  - zone: vault/lab_validation_umnik
+    umnik_path: Co/SrW_Co3O4_x=2.0_T=1200_6h_T=1400_4h_210926#1##20260922-160950_100.mdi
+    sha256: e4b9295d1f593a56e92a57dc1b9f414361faf7c57c7cfc4ba9ee700f36743a97
+    role: experimental_raw_or_export
+  - zone: vault/lab_validation_umnik
+    umnik_path: Co/SrW_Co3O4_x=2.0_T=1200_6h_T=1400_4h_210926#1##20260922-160950_100.txt
+    sha256: 43748dc5e5df165ad89deca660c2b0e00a2caf1431183f1a0494b3034ceae629
+    role: experimental_raw_or_export
+  prior_analysis_artifacts:
+  - PRI-001
+  - PRI-002
+  - PRI-003
+  - PRI-006
+  - PRI-007
+  - PRI-008
+  - PRI-009
+  - PRI-010
+- sample_id: SMP-007
+  batch_id: BAT-007
+  label: SrW_ZnO_x=1.5_T=1200_6h_T=1400_4h_160926
+  nominal_formula:
+    template: SrFe(18-x)Zn(x)O27
+    A:
+      value: Zn
+      unit: null
+      status: preliminary_from_filename
+    x:
+      value: 1.5
+      unit: '1'
+      status: preliminary_from_filename
+    note: formula template assumed from series naming; x definition vs precursor stoichiometry unconfirmed
+  measured_composition: null
+  precursors:
+    A_source:
+      value: ZnO
+      unit: null
+      status: preliminary_from_filename
+    purity: null
+    Sr_source: null
+    Fe_source: null
+  synthesis:
+    raw_tokens: T=1200_6h_T=1400_4h
+    stages:
+    - T_C:
+        value: 1200
+        unit: C
+        status: preliminary_from_filename
+      duration:
+        value: 6
+        unit: h
+        status: preliminary_from_filename
+    - T_C:
+        value: 1400
+        unit: C
+        status: preliminary_from_filename
+      duration:
+        value: 4
+        unit: h
+        status: preliminary_from_filename
+    atmosphere: null
+    cooling: null
+    name_date_token_ddmmyy:
+      value: '160926'
+      unit: null
+      status: preliminary_from_filename
+      note: meaning of this date (synthesis/project) unknown
+  post_treatment: null
+  geometry: null
+  mass: null
+  metadata_status:
+    all_name_derived_fields: preliminary_from_filename
+    composition_measured: unknown
+    atmosphere: unknown
+    cooling: unknown
+    density_porosity: unknown
+    observation_header: from_instrument_file_header
+  files:
+  - archive_path: 01_XRD/SrW_ZnO_X=1.5_T=1200_6h_T=1400_4h_160926.mdi
+    zone: vault/lab_validation
+    sha256: 55f80d7ed92791710e79bac35267a14bc1d8c6eee7513574cc0bde2b4df6e13f
+    representation: instrument_native_mdi
+  - archive_path: 01_XRD/SrW_ZnO_X=1.5_T=1200_6h_T=1400_4h_160926.txt
+    zone: vault/lab_validation
+    sha256: b0579aab00f863b51375fc326cb26cb6826a0150dfcc1b5826b1530af7d86f1b
+    representation: text_export_of_same_measurement
+  - archive_path: 03_previous_XRD_projects/SrW_ZnO_X=1.5_T=1200_6h_T=1400_4h_160926-2.mtd
+    zone: vault/lab_validation
+    sha256: 065208c5545d8b96b4a92df357056f0518e9b0ed005511b5908301b92587ee8e
+    representation: previous_analysis_project_not_ground_truth
+    link_status: preliminary_from_filename
+    role: prior_lab_analysis
+    independent: false
+    prior_observation_id: PRI-012
+  - archive_path: 03_previous_XRD_projects/SrW_ZnO_X=1.5_T=1200_6h_T=1400_4h_160926-3.mtd
+    zone: vault/lab_validation
+    sha256: 81a0a53c4e9129f0a38c0c34dfa9e2dfa318362b6bee514acb34d1facc77d668
+    representation: previous_analysis_project_not_ground_truth
+    link_status: preliminary_from_filename
+    role: prior_lab_analysis
+    independent: false
+    prior_observation_id: PRI-013
+  - archive_path: 03_previous_XRD_projects/SrW_ZnO_X=1.5_T=1200_6h_T=1400_4h_160926.mtd
+    zone: vault/lab_validation
+    sha256: 1381219807a0a8ffd41897b4d185c173ede688f74ea84d10616453d752af6049
+    representation: previous_analysis_project_not_ground_truth
+    link_status: preliminary_from_filename
+    role: prior_lab_analysis
+    independent: false
+    prior_observation_id: PRI-014
+  observations:
+  - OBS-XRD-007
+  ambiguity_flags:
+  - previous_xrd_projects_exist_not_ground_truth
+  - x_definition_vs_precursor_unconfirmed
+  - same_formula_does_not_imply_same_sample
+  notes: null
+  umnik_copies:
+  - zone: vault/lab_validation_umnik
+    umnik_path: Zn/SrW_ZnO_X=1.5_T=1200_6h_T=1400_4h_160926-2.mtd
+    sha256: 065208c5545d8b96b4a92df357056f0518e9b0ed005511b5908301b92587ee8e
+    role: prior_lab_analysis
+    prior_observation_id: PRI-012
+  - zone: vault/lab_validation_umnik
+    umnik_path: Zn/SrW_ZnO_X=1.5_T=1200_6h_T=1400_4h_160926-3.mtd
+    sha256: 81a0a53c4e9129f0a38c0c34dfa9e2dfa318362b6bee514acb34d1facc77d668
+    role: prior_lab_analysis
+    prior_observation_id: PRI-013
+  - zone: vault/lab_validation_umnik
+    umnik_path: Zn/SrW_ZnO_X=1.5_T=1200_6h_T=1400_4h_160926.jip
+    sha256: d426843d0a93cfee8a418a455a451e2b117fc64667525c36c80266a5b0f526e7
+    role: instrument_preview_image
+  - zone: vault/lab_validation_umnik
+    umnik_path: Zn/SrW_ZnO_X=1.5_T=1200_6h_T=1400_4h_160926.mdi
+    sha256: 55f80d7ed92791710e79bac35267a14bc1d8c6eee7513574cc0bde2b4df6e13f
+    role: experimental_raw_or_export
+  - zone: vault/lab_validation_umnik
+    umnik_path: Zn/SrW_ZnO_X=1.5_T=1200_6h_T=1400_4h_160926.mtd
+    sha256: 1381219807a0a8ffd41897b4d185c173ede688f74ea84d10616453d752af6049
+    role: prior_lab_analysis
+    prior_observation_id: PRI-014
+  - zone: vault/lab_validation_umnik
+    umnik_path: Zn/SrW_ZnO_X=1.5_T=1200_6h_T=1400_4h_160926.txt
+    sha256: b0579aab00f863b51375fc326cb26cb6826a0150dfcc1b5826b1530af7d86f1b
+    role: experimental_raw_or_export
+  prior_analysis_artifacts:
+  - PRI-001
+  - PRI-002
+  - PRI-005
+  - PRI-006
+  - PRI-007
+  - PRI-009
+  - PRI-010
+  - PRI-011
+- sample_id: SMP-008
+  batch_id: BAT-008
+  label: SrW_ZnO_x=2_T=1200_6h_T=1400_4h_160926
+  nominal_formula:
+    template: SrFe(18-x)Zn(x)O27
+    A:
+      value: Zn
+      unit: null
+      status: preliminary_from_filename
+    x:
+      value: 2.0
+      unit: '1'
+      status: preliminary_from_filename
+    note: formula template assumed from series naming; x definition vs precursor stoichiometry unconfirmed
+  measured_composition: null
+  precursors:
+    A_source:
+      value: ZnO
+      unit: null
+      status: preliminary_from_filename
+    purity: null
+    Sr_source: null
+    Fe_source: null
+  synthesis:
+    raw_tokens: T=1200_6h_T=1400_4h
+    stages:
+    - T_C:
+        value: 1200
+        unit: C
+        status: preliminary_from_filename
+      duration:
+        value: 6
+        unit: h
+        status: preliminary_from_filename
+    - T_C:
+        value: 1400
+        unit: C
+        status: preliminary_from_filename
+      duration:
+        value: 4
+        unit: h
+        status: preliminary_from_filename
+    atmosphere: null
+    cooling: null
+    name_date_token_ddmmyy:
+      value: '160926'
+      unit: null
+      status: preliminary_from_filename
+      note: meaning of this date (synthesis/project) unknown
+  post_treatment: null
+  geometry: null
+  mass: null
+  metadata_status:
+    all_name_derived_fields: preliminary_from_filename
+    composition_measured: unknown
+    atmosphere: unknown
+    cooling: unknown
+    density_porosity: unknown
+    observation_header: from_instrument_file_header
+  files:
+  - archive_path: 01_XRD/SrW_ZnO_X=2_T=1200_6h_T=1400_4h_160926#1##20260916_150235_100.mdi
+    zone: vault/lab_validation
+    sha256: 7b4ce941aa84e82f092887e04849a4788e432fd81816d8a45c3480c0d9d42bc4
+    representation: instrument_native_mdi
+  - archive_path: 01_XRD/SrW_ZnO_X=2_T=1200_6h_T=1400_4h_160926#1##20260916_150235_100.txt
+    zone: vault/lab_validation
+    sha256: fb4e1c7ca0bd5a95e3a022653bb2c64919a6b132b2358de98543831ccd5a5ab3
+    representation: text_export_of_same_measurement
+  observations:
+  - OBS-XRD-008
+  ambiguity_flags:
+  - x_definition_vs_precursor_unconfirmed
+  - same_formula_does_not_imply_same_sample
+  notes: null
+  umnik_copies:
+  - zone: vault/lab_validation_umnik
+    umnik_path: Zn/SrW_ZnO_X=2_T=1200_6h_T=1400_4h_160926#1##20260916-150235_100.mdi
+    sha256: 7b4ce941aa84e82f092887e04849a4788e432fd81816d8a45c3480c0d9d42bc4
+    role: experimental_raw_or_export
+  - zone: vault/lab_validation_umnik
+    umnik_path: Zn/SrW_ZnO_X=2_T=1200_6h_T=1400_4h_160926#1##20260916-150235_100.txt
+    sha256: fb4e1c7ca0bd5a95e3a022653bb2c64919a6b132b2358de98543831ccd5a5ab3
+    role: experimental_raw_or_export
+  prior_analysis_artifacts:
+  - PRI-001
+  - PRI-002
+  - PRI-005
+  - PRI-006
+  - PRI-007
+  - PRI-009
+  - PRI-010
+  - PRI-011
+- sample_id: SMP-009
+  batch_id: BAT-009
+  label: 04.26_SrW_Mn2O3_x=1.5_1350°C_27.04.26_173mg
+  nominal_formula:
+    template: SrFe(18-x)Mn(x)O27
+    A:
+      value: Mn
+      unit: null
+      status: preliminary_from_filename
+    x:
+      value: 1.5
+      unit: '1'
+      status: preliminary_from_filename
+    note: x from file name; Mn-series XRD (x=1.1-1.4) is a different set
+  measured_composition: null
+  precursors:
+    A_source:
+      value: Mn2O3
+      unit: null
+      status: preliminary_from_filename
+    purity: null
+  synthesis:
+    raw_tokens: 04.26_SrW_Mn2O3_x=1.5_1350°C_27.04.26_173mg.spc
+    stages:
+    - T_C:
+        value: 1350
+        unit: C
+        status: preliminary_from_filename
+      duration: null
+    name_series_token_mm_yy:
+      value: '04.26'
+      unit: null
+      status: preliminary_from_filename
+    name_date_ddmmyy:
+      value: '2026-04-27'
+      unit: null
+      status: preliminary_from_filename
+      note: meaning of date (synthesis/mounting/start) unknown
+    atmosphere: null
+    cooling: null
+  post_treatment: null
+  geometry:
+    absorber_area:
+      value: null
+      unit: null
+      status: unknown
+    absorber_diameter:
+      value: null
+      unit: null
+      status: unknown
+    note: absorber area / diameter not known (user, 2026-10-25)
+  mass:
+    value: 173
+    unit: mg
+    status: user_reported
+    reported_by: user
+    reported_date: '2026-10-25'
+    meaning: absorber (sample) mass
+    basis: value from file name; meaning confirmed by the user
+    note: user confirmed that the mass in the file name is the sample (absorber) mass, not something else
+  metadata_status:
+    all_name_derived_fields: preliminary_from_filename
+    composition_measured: unknown
+    observation_header: from_instrument_file_header
+    mass: user_reported
+    absorber_area_diameter: unknown
+    mossbauer_source: user_reported
+    mossbauer_temperature: user_reported
+  files:
+  - archive_path: 02_Mossbauer/04.26_SrW_Mn2O3_x=1.5_1350°C_27.04.26_173mg.spc
+    zone: vault/lab_validation
+    sha256: 580b075dffd8316c386044207f261df9ed00a1b5ae842b3175741f6dca7c6ed2
+    representation: instrument_native_spc
+  - archive_path: 05_original_duplicate_archive/Archive.zip::04.26_SrW_Mn2O3_x=1.5_1350°C_27.04.26_173mg.spc
+    zone: vault/lab_validation
+    sha256: 580b075dffd8316c386044207f261df9ed00a1b5ae842b3175741f6dca7c6ed2
+    representation: byte_duplicate_inside_Archive.zip_not_extracted
+    independent: false
+  observations:
+  - OBS-MOS-001
+  ambiguity_flags:
+  - x_definition_vs_precursor_unconfirmed
+  - same_formula_does_not_imply_same_sample
+  - not_linked_to_xrd_samples_without_proof
+  - A_site_valence_Mn3+_possible_for_Mn2O3_precursor_outside_Fe2+_Fe3+_model
+  - filename_date_differs_from_header_date
+  notes: null
+  umnik_copies:
+  - zone: vault/lab_validation_umnik
+    umnik_path: Moss/04.26_SrW_Mn2O3_x=1.5_1350°C_27.04.26_173mg.spc
+    sha256: 580b075dffd8316c386044207f261df9ed00a1b5ae842b3175741f6dca7c6ed2
+    role: experimental_raw_or_export
+- sample_id: SMP-010
+  batch_id: BAT-010
+  label: 04.26_SrW_Mn2O3_x=2_1400°C_6h_14.04.26_147mg
+  nominal_formula:
+    template: SrFe(18-x)Mn(x)O27
+    A:
+      value: Mn
+      unit: null
+      status: preliminary_from_filename
+    x:
+      value: 2.0
+      unit: '1'
+      status: preliminary_from_filename
+    note: x from file name; Mn-series XRD (x=1.1-1.4) is a different set
+  measured_composition: null
+  precursors:
+    A_source:
+      value: Mn2O3
+      unit: null
+      status: preliminary_from_filename
+    purity: null
+  synthesis:
+    raw_tokens: 04.26_SrW_Mn2O3_x=2_1400°C_6h_14.04.26_147mg.spc
+    stages:
+    - T_C:
+        value: 1400
+        unit: C
+        status: preliminary_from_filename
+      duration:
+        value: 6
+        unit: h
+        status: preliminary_from_filename
+    name_series_token_mm_yy:
+      value: '04.26'
+      unit: null
+      status: preliminary_from_filename
+    name_date_ddmmyy:
+      value: '2026-04-14'
+      unit: null
+      status: preliminary_from_filename
+      note: meaning of date (synthesis/mounting/start) unknown
+    atmosphere: null
+    cooling: null
+  post_treatment: null
+  geometry:
+    absorber_area:
+      value: null
+      unit: null
+      status: unknown
+    absorber_diameter:
+      value: null
+      unit: null
+      status: unknown
+    note: absorber area / diameter not known (user, 2026-10-25)
+  mass:
+    value: 147
+    unit: mg
+    status: user_reported
+    reported_by: user
+    reported_date: '2026-10-25'
+    meaning: absorber (sample) mass
+    basis: value from file name; meaning confirmed by the user
+    note: user confirmed that the mass in the file name is the sample (absorber) mass, not something else
+  metadata_status:
+    all_name_derived_fields: preliminary_from_filename
+    composition_measured: unknown
+    observation_header: from_instrument_file_header
+    mass: user_reported
+    absorber_area_diameter: unknown
+    mossbauer_source: user_reported
+    mossbauer_temperature: user_reported
+  files:
+  - archive_path: 02_Mossbauer/04.26_SrW_Mn2O3_x=2_1400°C_6h_14.04.26_147mg.spc
+    zone: vault/lab_validation
+    sha256: 845b08feb95aa5a48ad976c0c68e3acfd487d13bb873bb0bdea5e2eb0f9cb789
+    representation: instrument_native_spc
+  - archive_path: 05_original_duplicate_archive/Archive.zip::04.26_SrW_Mn2O3_x=2_1400°C_6h_14.04.26_147mg.spc
+    zone: vault/lab_validation
+    sha256: 845b08feb95aa5a48ad976c0c68e3acfd487d13bb873bb0bdea5e2eb0f9cb789
+    representation: byte_duplicate_inside_Archive.zip_not_extracted
+    independent: false
+  observations:
+  - OBS-MOS-002
+  ambiguity_flags:
+  - x_definition_vs_precursor_unconfirmed
+  - same_formula_does_not_imply_same_sample
+  - not_linked_to_xrd_samples_without_proof
+  - A_site_valence_Mn3+_possible_for_Mn2O3_precursor_outside_Fe2+_Fe3+_model
+  - filename_date_differs_from_header_date
+  notes: null
+  umnik_copies:
+  - zone: vault/lab_validation_umnik
+    umnik_path: Moss/04.26_SrW_Mn2O3_x=2_1400°C_6h_14.04.26_147mg.spc
+    sha256: 845b08feb95aa5a48ad976c0c68e3acfd487d13bb873bb0bdea5e2eb0f9cb789
+    role: experimental_raw_or_export
+- sample_id: SMP-011
+  batch_id: BAT-011
+  label: 04.26_SrW_MnO_x=2_1350°C_20.04.26_178mg
+  nominal_formula:
+    template: SrFe(18-x)Mn(x)O27
+    A:
+      value: Mn
+      unit: null
+      status: preliminary_from_filename
+    x:
+      value: 2.0
+      unit: '1'
+      status: preliminary_from_filename
+    note: x from file name; Mn-series XRD (x=1.1-1.4) is a different set
+  measured_composition: null
+  precursors:
+    A_source:
+      value: MnO
+      unit: null
+      status: preliminary_from_filename
+    purity: null
+  synthesis:
+    raw_tokens: 04.26_SrW_MnO_x=2_1350°C_20.04.26_178mg.spc
+    stages:
+    - T_C:
+        value: 1350
+        unit: C
+        status: preliminary_from_filename
+      duration: null
+    name_series_token_mm_yy:
+      value: '04.26'
+      unit: null
+      status: preliminary_from_filename
+    name_date_ddmmyy:
+      value: '2026-04-20'
+      unit: null
+      status: preliminary_from_filename
+      note: meaning of date (synthesis/mounting/start) unknown
+    atmosphere: null
+    cooling: null
+  post_treatment: null
+  geometry:
+    absorber_area:
+      value: null
+      unit: null
+      status: unknown
+    absorber_diameter:
+      value: null
+      unit: null
+      status: unknown
+    note: absorber area / diameter not known (user, 2026-10-25)
+  mass:
+    value: 178
+    unit: mg
+    status: user_reported
+    reported_by: user
+    reported_date: '2026-10-25'
+    meaning: absorber (sample) mass
+    basis: value from file name; meaning confirmed by the user
+    note: user confirmed that the mass in the file name is the sample (absorber) mass, not something else
+  metadata_status:
+    all_name_derived_fields: preliminary_from_filename
+    composition_measured: unknown
+    observation_header: from_instrument_file_header
+    mass: user_reported
+    absorber_area_diameter: unknown
+    mossbauer_source: user_reported
+    mossbauer_temperature: user_reported
+  files:
+  - archive_path: 02_Mossbauer/04.26_SrW_MnO_x=2_1350°C_20.04.26_178mg.spc
+    zone: vault/lab_validation
+    sha256: 5e7a16cdafdfbc1314d9379a63ebcb81c8f3d84ed4921e47a7631b11074b5f28
+    representation: instrument_native_spc
+  - archive_path: 05_original_duplicate_archive/Archive.zip::04.26_SrW_MnO_x=2_1350°C_20.04.26_178mg.spc
+    zone: vault/lab_validation
+    sha256: 5e7a16cdafdfbc1314d9379a63ebcb81c8f3d84ed4921e47a7631b11074b5f28
+    representation: byte_duplicate_inside_Archive.zip_not_extracted
+    independent: false
+  observations:
+  - OBS-MOS-003
+  ambiguity_flags:
+  - x_definition_vs_precursor_unconfirmed
+  - same_formula_does_not_imply_same_sample
+  - not_linked_to_xrd_samples_without_proof
+  - A_site_valence_Mn3+_possible_for_Mn2O3_precursor_outside_Fe2+_Fe3+_model
+  - filename_date_differs_from_header_date
+  notes: null
+  umnik_copies:
+  - zone: vault/lab_validation_umnik
+    umnik_path: Moss/04.26_SrW_MnO_x=2_1350°C_20.04.26_178mg.spc
+    sha256: 5e7a16cdafdfbc1314d9379a63ebcb81c8f3d84ed4921e47a7631b11074b5f28
+    role: experimental_raw_or_export
+- sample_id: SMP-012
+  batch_id: BAT-012
+  label: 05.26_SrW_Mn2O3_x=1.5_1400°C_04.05.26_174mg
+  nominal_formula:
+    template: SrFe(18-x)Mn(x)O27
+    A:
+      value: Mn
+      unit: null
+      status: preliminary_from_filename
+    x:
+      value: 1.5
+      unit: '1'
+      status: preliminary_from_filename
+    note: x from file name; Mn-series XRD (x=1.1-1.4) is a different set
+  measured_composition: null
+  precursors:
+    A_source:
+      value: Mn2O3
+      unit: null
+      status: preliminary_from_filename
+    purity: null
+  synthesis:
+    raw_tokens: 05.26_SrW_Mn2O3_x=1.5_1400°C_04.05.26_174mg.spc
+    stages:
+    - T_C:
+        value: 1400
+        unit: C
+        status: preliminary_from_filename
+      duration: null
+    name_series_token_mm_yy:
+      value: '05.26'
+      unit: null
+      status: preliminary_from_filename
+    name_date_ddmmyy:
+      value: '2026-05-04'
+      unit: null
+      status: preliminary_from_filename
+      note: meaning of date (synthesis/mounting/start) unknown
+    atmosphere: null
+    cooling: null
+  post_treatment: null
+  geometry:
+    absorber_area:
+      value: null
+      unit: null
+      status: unknown
+    absorber_diameter:
+      value: null
+      unit: null
+      status: unknown
+    note: absorber area / diameter not known (user, 2026-10-25)
+  mass:
+    value: 174
+    unit: mg
+    status: user_reported
+    reported_by: user
+    reported_date: '2026-10-25'
+    meaning: absorber (sample) mass
+    basis: value from file name; meaning confirmed by the user
+    note: user confirmed that the mass in the file name is the sample (absorber) mass, not something else
+  metadata_status:
+    all_name_derived_fields: preliminary_from_filename
+    composition_measured: unknown
+    observation_header: from_instrument_file_header
+    mass: user_reported
+    absorber_area_diameter: unknown
+    mossbauer_source: user_reported
+    mossbauer_temperature: user_reported
+  files:
+  - archive_path: 02_Mossbauer/05.26_SrW_Mn2O3_x=1.5_1400°C_04.05.26_174mg.spc
+    zone: vault/lab_validation
+    sha256: ee65ea1d7d796b7f61b9e0a9b2934896fe1eccf96b56b2f41c2b1cb19ebfca5c
+    representation: instrument_native_spc
+  - archive_path: 05_original_duplicate_archive/Archive.zip::05.26_SrW_Mn2O3_x=1.5_1400°C_04.05.26_174mg.spc
+    zone: vault/lab_validation
+    sha256: ee65ea1d7d796b7f61b9e0a9b2934896fe1eccf96b56b2f41c2b1cb19ebfca5c
+    representation: byte_duplicate_inside_Archive.zip_not_extracted
+    independent: false
+  observations:
+  - OBS-MOS-004
+  ambiguity_flags:
+  - x_definition_vs_precursor_unconfirmed
+  - same_formula_does_not_imply_same_sample
+  - not_linked_to_xrd_samples_without_proof
+  - A_site_valence_Mn3+_possible_for_Mn2O3_precursor_outside_Fe2+_Fe3+_model
+  - filename_date_differs_from_header_date
+  notes: null
+  umnik_copies:
+  - zone: vault/lab_validation_umnik
+    umnik_path: Moss/05.26_SrW_Mn2O3_x=1.5_1400°C_04.05.26_174mg.spc
+    sha256: ee65ea1d7d796b7f61b9e0a9b2934896fe1eccf96b56b2f41c2b1cb19ebfca5c
+    role: experimental_raw_or_export
+- sample_id: SMP-013
+  batch_id: BAT-013
+  label: 09.26_SrW_Mn2O3_x=2,0_1400°C_07.09.26_167mg
+  nominal_formula:
+    template: SrFe(18-x)Mn(x)O27
+    A:
+      value: Mn
+      unit: null
+      status: preliminary_from_filename
+    x:
+      value: 2.0
+      unit: '1'
+      status: preliminary_from_filename
+    note: x from file name; Mn-series XRD (x=1.1-1.4) is a different set
+  measured_composition: null
+  precursors:
+    A_source:
+      value: Mn2O3
+      unit: null
+      status: preliminary_from_filename
+    purity: null
+  synthesis:
+    raw_tokens: 09.26_SrW_Mn2O3_x=2,0_1400°C_07.09.26_167mg.spc
+    stages:
+    - T_C:
+        value: 1400
+        unit: C
+        status: preliminary_from_filename
+      duration: null
+    name_series_token_mm_yy:
+      value: '09.26'
+      unit: null
+      status: preliminary_from_filename
+    name_date_ddmmyy:
+      value: '2026-09-07'
+      unit: null
+      status: preliminary_from_filename
+      note: meaning of date (synthesis/mounting/start) unknown
+    atmosphere: null
+    cooling: null
+  post_treatment: null
+  geometry:
+    absorber_area:
+      value: null
+      unit: null
+      status: unknown
+    absorber_diameter:
+      value: null
+      unit: null
+      status: unknown
+    note: absorber area / diameter not known (user, 2026-10-25)
+  mass:
+    value: 167
+    unit: mg
+    status: user_reported
+    reported_by: user
+    reported_date: '2026-10-25'
+    meaning: absorber (sample) mass
+    basis: value from file name; meaning confirmed by the user
+    note: user confirmed that the mass in the file name is the sample (absorber) mass, not something else
+  metadata_status:
+    all_name_derived_fields: preliminary_from_filename
+    composition_measured: unknown
+    observation_header: from_instrument_file_header
+    mass: user_reported
+    absorber_area_diameter: unknown
+    mossbauer_source: user_reported
+    mossbauer_temperature: user_reported
+  files:
+  - archive_path: 02_Mossbauer/09.26_SrW_Mn2O3_x=2,0_1400°C_07.09.26_167mg.spc
+    zone: vault/lab_validation
+    sha256: 7d07d8bc849bc6e29b4114bb11e8df5441bc989a0504cc9e37e62e386d573cbf
+    representation: instrument_native_spc
+  - archive_path: 05_original_duplicate_archive/Archive.zip::09.26_SrW_Mn2O3_x=2,0_1400°C_07.09.26_167mg.spc
+    zone: vault/lab_validation
+    sha256: 7d07d8bc849bc6e29b4114bb11e8df5441bc989a0504cc9e37e62e386d573cbf
+    representation: byte_duplicate_inside_Archive.zip_not_extracted
+    independent: false
+  observations:
+  - OBS-MOS-005
+  ambiguity_flags:
+  - x_definition_vs_precursor_unconfirmed
+  - same_formula_does_not_imply_same_sample
+  - not_linked_to_xrd_samples_without_proof
+  - A_site_valence_Mn3+_possible_for_Mn2O3_precursor_outside_Fe2+_Fe3+_model
+  - filename_date_differs_from_header_date
+  notes: null
+  umnik_copies:
+  - zone: vault/lab_validation_umnik
+    umnik_path: Moss/09.26_SrW_Mn2O3_x=2,0_1400°C_07.09.26_167mg.spc
+    sha256: 7d07d8bc849bc6e29b4114bb11e8df5441bc989a0504cc9e37e62e386d573cbf
+    role: experimental_raw_or_export

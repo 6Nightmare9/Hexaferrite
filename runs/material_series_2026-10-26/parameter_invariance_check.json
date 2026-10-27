@@ -1,0 +1,37 @@
+{
+  "compared_to_pre_laboratory_access_versions": {
+    "cozn_co2": "6e45b26bb89af0f50f2f",
+    "cozn_mix": "c6d2ad46950d87028144",
+    "cozn_zn2": "ac55cfa0bb087c74d3e7",
+    "mn1": "714bfd591451b6640210",
+    "mn2": "a3e8a5dc1fb26c70f236",
+    "mg1": "1cb0af081e0b71e5325c",
+    "mg2": "df83b1bb8e9c70f5079a",
+    "ni1": "0cd3065ea51da260b052",
+    "ni2": "88749ed293806e41e892"
+  },
+  "original_freeze_times_utc": {
+    "cozn_co2": "2026-10-26T18:40:31+00:00",
+    "cozn_mix": "2026-10-26T18:41:13+00:00",
+    "cozn_zn2": "2026-10-26T18:41:54+00:00",
+    "mn1": "2026-10-26T18:42:31+00:00",
+    "mn2": "2026-10-26T18:43:09+00:00",
+    "mg1": "2026-10-26T18:43:45+00:00",
+    "mg2": "2026-10-26T18:44:22+00:00",
+    "ni1": "2026-10-26T18:44:53+00:00",
+    "ni2": "2026-10-26T18:45:23+00:00"
+  },
+  "all_parameter_arrays_exactly_equal": {
+    "cozn_co2": true,
+    "cozn_mix": true,
+    "cozn_zn2": true,
+    "mn1": true,
+    "mn2": true,
+    "mg1": true,
+    "mg2": true,
+    "ni1": true,
+    "ni2": true
+  },
+  "all_equal": true,
+  "note": "Physical parameter draws equal the first frozen Sr-source series, completed before laboratory-data processing. No tuning on measured answers."
+}

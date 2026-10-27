@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="6" skipped="0" tests="21" time="394.716" timestamp="2026-10-26T22:41:58.834169+03:00" hostname="DESKTOP-VFNB43B"><testcase classname="tests.test_isolation" name="test_experiment_access_requires_freeze_then_works[hexw.experiment]" time="0.317"><failure message="hexw.io.paths.FreezeRequiredError: vault access for hexw.experiment.reader requires a frozen model: C:\Users\Redmi\AppData\Local\Temp\hexx-review-tests-w7l1ds8f\pytest\test_experiment_access_require0\registry\FROZEN_MODEL.json not found">vroot = WindowsPath('C:/Users/Redmi/AppData/Local/Temp/hexx-review-tests-w7l1ds8f/pytest/test_experiment_access_require0')
+tmp_path = WindowsPath('C:/Users/Redmi/AppData/Local/Temp/hexx-review-tests-w7l1ds8f/pytest/test_experiment_access_require0')
+pkg = 'hexw.experiment'
+
+    @pytest.mark.parametrize("pkg", ["hexw.experiment", "hexw.validate"])
+    def test_experiment_access_requires_freeze_then_works(vroot, tmp_path, pkg):
+        with temp_module(tmp_path, pkg, "reader", EXPERIMENT_SRC) as m:
+            for fn in (m.read_open_data, m.read_builtin, m.read_in_pool):
+                with pytest.raises(paths.FreezeRequiredError):
+                    fn(vfile(vroot))
+            (vroot / "registry" / "FROZEN_MODEL.json").write_text('{"model_version": "mv-test"}')
+            assert m.read_open_data(vfile(vroot)) == b"1 2"
+            assert m.read_builtin(vfile(vroot)) == b"1 2"
+&gt;           assert m.read_in_pool(vfile(vroot)) == b"1 2"
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_isolation.py:339: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+C:\Users\Redmi\AppData\Local\Temp\hexx-review-tests-w7l1ds8f\pytest\test_experiment_access_require0\mods_hexw_experiment\reader.py:8: in read_in_pool
+    return ex.submit(read_builtin, p).result()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Users\Redmi\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\_base.py:454: in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+C:\Users\Redmi\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\_base.py:396: in __get_result
+    raise self._exception
+C:\Users\Redmi\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\thread.py:86: in run
+    result = ctx.run(self.task)
+             ^^^^^^^^^^^^^^^^^^
+C:\Users\Redmi\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\thread.py:73: in run
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+C:\Users\Redmi\AppData\Local\Temp\hexx-review-tests-w7l1ds8f\pytest\test_experiment_access_require0\mods_hexw_experiment\reader.py:5: in read_builtin
+    def read_builtin(p): return open(p, "rb").read(3)
+                                ^^^^^^^^^^^^^
+hexw\io\paths.py:1094: in _hook
+    _hook_impl(event, args, state)
+hexw\io\paths.py:1078: in _hook_impl
+    _vault_decision(s, from_hook=True)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+path = 'C:\\Users\\Redmi\\AppData\\Local\\Temp\\hexx-review-tests-w7l1ds8f\\pytest\\test_experiment_access_require0\\vault\\lab_validation\\01_XRD\\s.txt'
+purpose = None, from_hook = True
+
+    def _vault_decision(path, purpose=None, *, from_hook=False):
+        denied, allowed = _scan_stack()
+        if denied:
+            raise TheoryAccessError(
+                f"theory-side code (or a deputy called by it) must not access the vault ({path}); "
+                f"offending frames: {denied}")
+        if not allowed:
+            raise AccessError(
+                "no frame of hexw.experiment/validate/audit/ingest/io (or an explicit test context) in the call stack: "
+                f"vault access denied ({path}); thread={threading.current_thread().name!r}")
+        sub, label = allowed[0]
+        if sub in ("experiment", "validate"):
+            if not is_frozen():
+&gt;               raise FreezeRequiredError(
+E               hexw.io.paths.FreezeRequiredError: vault access for hexw.experiment.reader requires a frozen model: C:\Users\Redmi\AppData\Local\Temp\hexx-review-tests-w7l1ds8f\pytest\test_experiment_access_require0\registry\FROZEN_MODEL.json not found
+
+hexw\io\paths.py:547: FreezeRequiredError</failure></testcase><testcase classname="tests.test_isolation" name="test_experiment_access_requires_freeze_then_works[hexw.validate]" time="0.227"><failure message="hexw.io.paths.FreezeRequiredError: vault access for hexw.validate.reader requires a frozen model: C:\Users\Redmi\AppData\Local\Temp\hexx-review-tests-w7l1ds8f\pytest\test_experiment_access_require1\registry\FROZEN_MODEL.json not found">vroot = WindowsPath('C:/Users/Redmi/AppData/Local/Temp/hexx-review-tests-w7l1ds8f/pytest/test_experiment_access_require1')
+tmp_path = WindowsPath('C:/Users/Redmi/AppData/Local/Temp/hexx-review-tests-w7l1ds8f/pytest/test_experiment_access_require1')
+pkg = 'hexw.validate'
+
+    @pytest.mark.parametrize("pkg", ["hexw.experiment", "hexw.validate"])
+    def test_experiment_access_requires_freeze_then_works(vroot, tmp_path, pkg):
+        with temp_module(tmp_path, pkg, "reader", EXPERIMENT_SRC) as m:
+            for fn in (m.read_open_data, m.read_builtin, m.read_in_pool):
+                with pytest.raises(paths.FreezeRequiredError):
+                    fn(vfile(vroot))
+            (vroot / "registry" / "FROZEN_MODEL.json").write_text('{"model_version": "mv-test"}')
+            assert m.read_open_data(vfile(vroot)) == b"1 2"
+            assert m.read_builtin(vfile(vroot)) == b"1 2"
+&gt;           assert m.read_in_pool(vfile(vroot)) == b"1 2"
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_isolation.py:339: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+C:\Users\Redmi\AppData\Local\Temp\hexx-review-tests-w7l1ds8f\pytest\test_experiment_access_require1\mods_hexw_validate\reader.py:8: in read_in_pool
+    return ex.submit(read_builtin, p).result()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Users\Redmi\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\_base.py:454: in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+C:\Users\Redmi\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\_base.py:396: in __get_result
+    raise self._exception
+C:\Users\Redmi\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\thread.py:86: in run
+    result = ctx.run(self.task)
+             ^^^^^^^^^^^^^^^^^^
+C:\Users\Redmi\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\thread.py:73: in run
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+C:\Users\Redmi\AppData\Local\Temp\hexx-review-tests-w7l1ds8f\pytest\test_experiment_access_require1\mods_hexw_validate\reader.py:5: in read_builtin
+    def read_builtin(p): return open(p, "rb").read(3)
+                                ^^^^^^^^^^^^^
+hexw\io\paths.py:1094: in _hook
+    _hook_impl(event, args, state)
+hexw\io\paths.py:1078: in _hook_impl
+    _vault_decision(s, from_hook=True)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+path = 'C:\\Users\\Redmi\\AppData\\Local\\Temp\\hexx-review-tests-w7l1ds8f\\pytest\\test_experiment_access_require1\\vault\\lab_validation\\01_XRD\\s.txt'
+purpose = None, from_hook = True
+
+    def _vault_decision(path, purpose=None, *, from_hook=False):
+        denied, allowed = _scan_stack()
+        if denied:
+            raise TheoryAccessError(
+                f"theory-side code (or a deputy called by it) must not access the vault ({path}); "
+                f"offending frames: {denied}")
+        if not allowed:
+            raise AccessError(
+                "no frame of hexw.experiment/validate/audit/ingest/io (or an explicit test context) in the call stack: "
+                f"vault access denied ({path}); thread={threading.current_thread().name!r}")
+        sub, label = allowed[0]
+        if sub in ("experiment", "validate"):
+            if not is_frozen():
+&gt;               raise FreezeRequiredError(
+E               hexw.io.paths.FreezeRequiredError: vault access for hexw.validate.reader requires a frozen model: C:\Users\Redmi\AppData\Local\Temp\hexx-review-tests-w7l1ds8f\pytest\test_experiment_access_require1\registry\FROZEN_MODEL.json not found
+
+hexw\io\paths.py:547: FreezeRequiredError</failure></testcase><testcase classname="tests.test_literature_split_round1" name="test_real_project_has_no_undeclared_holdout_references" time="30.182"><failure message="AssertionError: assert (['runs/parame...al.json', ...] == []&#10;  &#10;  Left contains 33 more items, first extra item: 'runs/parameter_cache/043d3d4eeb3a46d10c144b4614f21a9fdc4505d1dd8c32b503f896754225f525/material.json'&#10;  Use -v to get more diff)">def test_real_project_has_no_undeclared_holdout_references():
+        _need_real()
+        from hexw import audit
+        cfg = paths.get_config()
+        with paths.test_access():
+            off, n, nt = audit.find_undeclared_holdout_references(cfg)
+&gt;       assert off == [] and n &gt; 100 and nt &gt;= 10
+E       AssertionError: assert (['runs/parame...al.json', ...] == []
+E         
+E         Left contains 33 more items, first extra item: 'runs/parameter_cache/043d3d4eeb3a46d10c144b4614f21a9fdc4505d1dd8c32b503f896754225f525/material.json'
+E         Use -v to get more diff)
+
+tests\test_literature_split_round1.py:316: AssertionError</failure></testcase><testcase classname="tests.test_registry_round1" name="test_audit_default_writes_nothing_and_flag_writes_manifest" time="191.858"><failure message="AssertionError: [OK] original zip copy present and sha256 == recorded&#10;  [OK] all 121 files present on disk&#10;  [OK] no extra files in raw/theory_side, vault/*&#10;  [OK] sha256 == zip member content&#10;  [OK] sha256 == ALL_FILES_MANIFEST.csv (120 rows)&#10;  [OK] sha256 == DATA_MANIFEST.csv (33 rows)&#10;  [OK] every file except ALL_FILES_MANIFEST.csv itself is listed in it&#10;  [OK] byte duplicate on disk: SrW_series_vs_x.png == SrW_series_vs_x_1.png&#10;  [OK] Archive.zip not extracted (members only hashed in memory)&#10;  [OK] Archive.zip: 5 members, each byte-identical to a distinct 02_Mossbauer/*.spc&#10;  [OK] all files in raw/ and vault/ are read-only&#10;  [OK] registry files readable&#10;  [OK] SampleID unique, BatchID present&#10;  [OK] every sample has files and metadata_status&#10;  [OK] sample file hashes agree with files_manifest.csv&#10;  [OK] every lab file linked to a sample (except the Archive.zip container)&#10;  [OK] name-derived values carry status preliminary_from_filename&#10;  [OK] .mdi and .txt of one diffractogram form ONE observation&#10;  [OK] Mossbauer: 5 observations, not linked to XRD samples&#10;  [OK] equal formula does not merge samples (13 samples, 13 batches)&#10;  [OK] umnik: all 45 files present, sha256 == files_manifest_umnik.csv&#10;  [OK] umnik: no unregistered files in vault/lab_validation_umnik or vault/legacy/prior_analyses_umnik&#10;  [OK] umnik: prior analyses (prior_lab_analysis) exist only in vault/legacy/prior_analyses_umnik (except the declared in-place .mtd projects)&#10;  [OK] umnik: files byte-identical to registered archive files map to the same Observation (not new)&#10;  [OK] every lab file sha256 belongs to exactly one lab Observation (no duplicate observations)&#10;  [OK] umnik: status different_version &lt;=&gt; different_version_of, reference resolves to another file with different bytes&#10;  [OK] umnik: byte duplicates between its own files are declared (byte_dup_group_umnik)&#10;  [OK] .jip previews: each linked to exactly one Observation; not registered as measurement files&#10;  [OK] prior analyses (incl. in-place .mtd) registered as role prior_lab_analysis, not independent&#10;  [OK] prior_use: every lab Observation has a record (no extras)&#10;  [OK] prior_use: statuses/modes consistent (independent_candidate needs no_prior_use_found + user confirmation)&#10;  [OK] prior_use: XRD with prior analyses -&gt; used_prior/retrospective; Mossbauer -&gt; unknown_prior_use until user confirms&#10;  [OK] prior_use: summary independent_lab_validation_available is present and consistent with the entries&#10;  [OK] registry is a git repository with a commit&#10;  [OK] registry git tree is clean (nothing modified or untracked)&#10;  [OK] registry SHA256SUMS matches the files exactly&#10;  [OK] registry key files (samples, observations, prior_use) are read-only&#10;  [OK] project git repository has a commit (HEAD recorded)&#10;  [OK] hexw.theory._probe: open_data on vault raises TheoryAccessError&#10;  [OK] hexw.params._probe: open_data on vault raises TheoryAccessError&#10;  [OK] hexw.theory: builtin open() on vault blocked by audit hook&#10;  [OK] hexw.theory: original zip (contains lab bytes) is blocked too&#10;  [OK] hexw.experiment: vault access without freeze file raises FreezeRequiredError&#10;  [OK] hexw.dft: builtin open() on vault blocked&#10;  [OK] thread-pool worker without an allowed frame is refused&#10;  [OK] extended-prefix spelling of a vault path is RESTRICTED&#10;  [OK] write into vault is refused&#10;  [OK] inputs/targets overlap raises LeakageError&#10;  [OK] changing a ParameterEstimate changes the model version&#10;  [FAIL] check_guards crashed  -&gt; LeakageError('a validation record requires its frozen prediction')&#10;  [OK] HOLDOUT: literature_holdout/ exists and is classified as zone HOLDOUT&#10;  [OK] HOLDOUT: holdout sources are declared in project/config/holdout_sources.json&#10;  [OK] HOLDOUT: every declared holdout source exists&#10;  [OK] HOLDOUT: every declared holdout source is classified HOLDOUT&#10;  [OK] HOLDOUT: hexw.theory open() on literature_holdout and on a holdout source is blocked&#10;  [OK] HOLDOUT: hexw.params open_data on literature_holdout is blocked&#10;  [OK] HOLDOUT: write into the zone is refused&#10;  [OK] HOLDOUT: files of literature_holdout are read-only&#10;  [OK] HOLDOUT: SHA256SUMS of literature_holdout verified (purpose integrity)&#10;  [OK] literature/fit: every fit record is valid by schema (LiteratureClaim)&#10;  [OK] literature/fit: no record with split != fit&#10;  [OK] literature/fit: no holdout / original-mixed files inside&#10;  [OK] literature/excluded: only excluded_* / methodology_only roles, no parameter estimates&#10;  [OK] SPLIT_DECISION.md exists and the record hashes match the files&#10;  [OK] literature/ SHA256SUMS verified&#10;  [OK] agent-os is ignored (no code, config, checksum list or zone refers to it)&#10;  [FAIL] HOLDOUT: no file outside vault/ and literature_holdout/ names a holdout source (path or file name) unless it is declared holdout or allow-listed (1477 text files, 166 terms)  -&gt; offenders=['runs/parameter_cache/043d3d4eeb3a46d10c144b4614f21a9fdc4505d1dd8c32b503f896754225f525/material.json', 'runs/parameter_cache/17eb6f45c3757b38592f8fc704198c32dc5fea2183af7cc80ae49fd3a351e0e4/material.json', 'runs/parameter_cache/4353bf3575b940d0db89dbbac93ab95f8cf7726c229ccdf48ae49b3d9bde9351/material.json', 'runs/parameter_cache/4d085c523a187ea665fed5c92c026e14633ff839c6850bf91bf5c4e3dc0faaea/material.json', 'runs/parameter_cache/6177fe3802ff65312af3f02045c5ae4419e187d5e304fbc330957aba725ae2ce/material.json', 'runs/parameter_cache/666dd1ead71c2e94cda4f20aa7415845064f790d9cf63315588d1790d8f589e9/material.json', 'runs/parameter_cache/6b28e2efdd700f3ab8119af042e8aacb2b3ed6106785a896200bc032923a56c9/material.json', 'runs/parameter_cache/6f1d54d25ae16e30bcb130d1b1aee383bea81b1e26aa0783e81323ea723e942d/material.json', 'runs/parameter_cache/803ff77a98b44d6327d22e3dd6d4fef899c03b2b63e9e300226cf181670e9531/material.json', 'runs/parameter_cache/9c83b96200ea1890a4d059ce6fd7eccec2f6d69b47307aafa0f50311c6a554b3/material.json', 'runs/parameter_cache/cb08fa5ee0a2df27fb66ba7266452a6e6472b99ea96d80d45badecb32ee54de4/material.json', 'runs/parameter_cache/dfec0c18e85550c5d56d94c403702ebbee587641f90ab9b57d0c7378f64bd681/material.json', 'runs/predictions/0cd3065ea51da260b052/material.json', 'runs/predictions/189d40090f9bc00afbe3/material.json', 'runs/predictions/1cb0af081e0b71e5325c/material.json', 'runs/predictions/3a89891680481d0b627d/material.json', 'runs/predictions/3ddd32ad4ee349f978dc/material.json', 'runs/predictions/4e523375026fcbfe7f18/material.json', 'runs/predictions/6e45b26bb89af0f50f2f/material.json', 'runs/predictions/714bfd591451b6640210/material.json', 'runs/predictions/7615badca38aa8a71a8c/material.json', 'runs/predictions/7977f7ad70808a314e46/material.json', 'runs/predictions/7dc29e68ace5c625b36d/material.json', 'runs/predictions/88749ed293806e41e892/material.json', 'runs/predictions/a3e8a5dc1fb26c70f236/material.json', 'runs/predictions/ac55cfa0bb087c74d3e7/material.json', 'runs/predictions/b19fda394ee219e65240/material.json', 'runs/predictions/c6d2ad46950d87028144/material.json', 'runs/predictions/d72db1d50b01cf0a55e9/material.json', 'runs/predictions/dcf6952a93ca0fed102a/material.json', 'runs/predictions/df83b1bb8e9c70f5079a/material.json', 'runs/predictions/e206791fdd6bfb76f933/material.json', 'runs/predictions/f58ee25117a9d616d4ce/material.json']&#10;  [OK] HOLDOUT: every pinned reference-allowlist file (15) exists and matches its sha256&#10;  [OK] HOLDOUT: DFT pilot derivatives of the L01 Zn HRPT CIF (pilots/c_W92, make_bw.py) are declared holdout&#10;  [OK] literature/fit, excluded: no path / file name of a holdout source, no holdout sample next to its publication (13 files)&#10;  [OK] subprocess policy: no subprocess / os.system / Popen / direct multiprocessing in hexw.theory/params/structures/dft/spin (start Python children only through hexw.util.pool.WorkerPool and other programs only through hexw.util.external.run_external (white list))&#10;  [OK] subprocess policy: the static check recognises aliased / from-imports and ignores WorkerPool&#10;  [OK] subprocess policy: run_external refuses python / sys.executable / shells (white list: ['pw.exe', 'pw.x', 'pw.x.exe', 'pw_big.exe'])&#10;  &#10;  audit: 71/73 checks passed; 121 files; frozen_model=False&#10;  &#10;assert 1 == 0&#10; +  where 1 = &lt;function run_audit at 0x0000015844088CA0&gt;(None, out=&lt;_io.StringIO object at 0x000001584839F6D0&gt;)&#10; +    where &lt;function run_audit at 0x0000015844088CA0&gt; = audit.run_audit">def test_audit_default_writes_nothing_and_flag_writes_manifest():
+        reg = real_registry()
+        runs = reg / "runs"
+        before = set(runs.iterdir()) if runs.exists() else set()
+        buf = io.StringIO()
+&gt;       assert audit.run_audit(None, out=buf) == 0, buf.getvalue()
+E       AssertionError: [OK] original zip copy present and sha256 == recorded
+E         [OK] all 121 files present on disk
+E         [OK] no extra files in raw/theory_side, vault/*
+E         [OK] sha256 == zip member content
+E         [OK] sha256 == ALL_FILES_MANIFEST.csv (120 rows)
+E         [OK] sha256 == DATA_MANIFEST.csv (33 rows)
+E         [OK] every file except ALL_FILES_MANIFEST.csv itself is listed in it
+E         [OK] byte duplicate on disk: SrW_series_vs_x.png == SrW_series_vs_x_1.png
+E         [OK] Archive.zip not extracted (members only hashed in memory)
+E         [OK] Archive.zip: 5 members, each byte-identical to a distinct 02_Mossbauer/*.spc
+E         [OK] all files in raw/ and vault/ are read-only
+E         [OK] registry files readable
+E         [OK] SampleID unique, BatchID present
+E         [OK] every sample has files and metadata_status
+E         [OK] sample file hashes agree with files_manifest.csv
+E         [OK] every lab file linked to a sample (except the Archive.zip container)
+E         [OK] name-derived values carry status preliminary_from_filename
+E         [OK] .mdi and .txt of one diffractogram form ONE observation
+E         [OK] Mossbauer: 5 observations, not linked to XRD samples
+E         [OK] equal formula does not merge samples (13 samples, 13 batches)
+E         [OK] umnik: all 45 files present, sha256 == files_manifest_umnik.csv
+E         [OK] umnik: no unregistered files in vault/lab_validation_umnik or vault/legacy/prior_analyses_umnik
+E         [OK] umnik: prior analyses (prior_lab_analysis) exist only in vault/legacy/prior_analyses_umnik (except the declared in-place .mtd projects)
+E         [OK] umnik: files byte-identical to registered archive files map to the same Observation (not new)
+E         [OK] every lab file sha256 belongs to exactly one lab Observation (no duplicate observations)
+E         [OK] umnik: status different_version &lt;=&gt; different_version_of, reference resolves to another file with different bytes
+E         [OK] umnik: byte duplicates between its own files are declared (byte_dup_group_umnik)
+E         [OK] .jip previews: each linked to exactly one Observation; not registered as measurement files
+E         [OK] prior analyses (incl. in-place .mtd) registered as role prior_lab_analysis, not independent
+E         [OK] prior_use: every lab Observation has a record (no extras)
+E         [OK] prior_use: statuses/modes consistent (independent_candidate needs no_prior_use_found + user confirmation)
+E         [OK] prior_use: XRD with prior analyses -&gt; used_prior/retrospective; Mossbauer -&gt; unknown_prior_use until user confirms
+E         [OK] prior_use: summary independent_lab_validation_available is present and consistent with the entries
+E         [OK] registry is a git repository with a commit
+E         [OK] registry git tree is clean (nothing modified or untracked)
+E         [OK] registry SHA256SUMS matches the files exactly
+E         [OK] registry key files (samples, observations, prior_use) are read-only
+E         [OK] project git repository has a commit (HEAD recorded)
+E         [OK] hexw.theory._probe: open_data on vault raises TheoryAccessError
+E         [OK] hexw.params._probe: open_data on vault raises TheoryAccessError
+E         [OK] hexw.theory: builtin open() on vault blocked by audit hook
+E         [OK] hexw.theory: original zip (contains lab bytes) is blocked too
+E         [OK] hexw.experiment: vault access without freeze file raises FreezeRequiredError
+E         [OK] hexw.dft: builtin open() on vault blocked
+E         [OK] thread-pool worker without an allowed frame is refused
+E         [OK] extended-prefix spelling of a vault path is RESTRICTED
+E         [OK] write into vault is refused
+E         [OK] inputs/targets overlap raises LeakageError
+E         [OK] changing a ParameterEstimate changes the model version
+E         [FAIL] check_guards crashed  -&gt; LeakageError('a validation record requires its frozen prediction')
+E         [OK] HOLDOUT: literature_holdout/ exists and is classified as zone HOLDOUT
+E         [OK] HOLDOUT: holdout sources are declared in project/config/holdout_sources.json
+E         [OK] HOLDOUT: every declared holdout source exists
+E         [OK] HOLDOUT: every declared holdout source is classified HOLDOUT
+E         [OK] HOLDOUT: hexw.theory open() on literature_holdout and on a holdout source is blocked
+E         [OK] HOLDOUT: hexw.params open_data on literature_holdout is blocked
+E         [OK] HOLDOUT: write into the zone is refused
+E         [OK] HOLDOUT: files of literature_holdout are read-only
+E         [OK] HOLDOUT: SHA256SUMS of literature_holdout verified (purpose integrity)
+E         [OK] literature/fit: every fit record is valid by schema (LiteratureClaim)
+E         [OK] literature/fit: no record with split != fit
+E         [OK] literature/fit: no holdout / original-mixed files inside
+E         [OK] literature/excluded: only excluded_* / methodology_only roles, no parameter estimates
+E         [OK] SPLIT_DECISION.md exists and the record hashes match the files
+E         [OK] literature/ SHA256SUMS verified
+E         [OK] agent-os is ignored (no code, config, checksum list or zone refers to it)
+E         [FAIL] HOLDOUT: no file outside vault/ and literature_holdout/ names a holdout source (path or file name) unless it is declared holdout or allow-listed (1477 text files, 166 terms)  -&gt; offenders=['runs/parameter_cache/043d3d4eeb3a46d10c144b4614f21a9fdc4505d1dd8c32b503f896754225f525/material.json', 'runs/parameter_cache/17eb6f45c3757b38592f8fc704198c32dc5fea2183af7cc80ae49fd3a351e0e4/material.json', 'runs/parameter_cache/4353bf3575b940d0db89dbbac93ab95f8cf7726c229ccdf48ae49b3d9bde9351/material.json', 'runs/parameter_cache/4d085c523a187ea665fed5c92c026e14633ff839c6850bf91bf5c4e3dc0faaea/material.json', 'runs/parameter_cache/6177fe3802ff65312af3f02045c5ae4419e187d5e304fbc330957aba725ae2ce/material.json', 'runs/parameter_cache/666dd1ead71c2e94cda4f20aa7415845064f790d9cf63315588d1790d8f589e9/material.json', 'runs/parameter_cache/6b28e2efdd700f3ab8119af042e8aacb2b3ed6106785a896200bc032923a56c9/material.json', 'runs/parameter_cache/6f1d54d25ae16e30bcb130d1b1aee383bea81b1e26aa0783e81323ea723e942d/material.json', 'runs/parameter_cache/803ff77a98b44d6327d22e3dd6d4fef899c03b2b63e9e300226cf181670e9531/material.json', 'runs/parameter_cache/9c83b96200ea1890a4d059ce6fd7eccec2f6d69b47307aafa0f50311c6a554b3/material.json', 'runs/parameter_cache/cb08fa5ee0a2df27fb66ba7266452a6e6472b99ea96d80d45badecb32ee54de4/material.json', 'runs/parameter_cache/dfec0c18e85550c5d56d94c403702ebbee587641f90ab9b57d0c7378f64bd681/material.json', 'runs/predictions/0cd3065ea51da260b052/material.json', 'runs/predictions/189d40090f9bc00afbe3/material.json', 'runs/predictions/1cb0af081e0b71e5325c/material.json', 'runs/predictions/3a89891680481d0b627d/material.json', 'runs/predictions/3ddd32ad4ee349f978dc/material.json', 'runs/predictions/4e523375026fcbfe7f18/material.json', 'runs/predictions/6e45b26bb89af0f50f2f/material.json', 'runs/predictions/714bfd591451b6640210/material.json', 'runs/predictions/7615badca38aa8a71a8c/material.json', 'runs/predictions/7977f7ad70808a314e46/material.json', 'runs/predictions/7dc29e68ace5c625b36d/material.json', 'runs/predictions/88749ed293806e41e892/material.json', 'runs/predictions/a3e8a5dc1fb26c70f236/material.json', 'runs/predictions/ac55cfa0bb087c74d3e7/material.json', 'runs/predictions/b19fda394ee219e65240/material.json', 'runs/predictions/c6d2ad46950d87028144/material.json', 'runs/predictions/d72db1d50b01cf0a55e9/material.json', 'runs/predictions/dcf6952a93ca0fed102a/material.json', 'runs/predictions/df83b1bb8e9c70f5079a/material.json', 'runs/predictions/e206791fdd6bfb76f933/material.json', 'runs/predictions/f58ee25117a9d616d4ce/material.json']
+E         [OK] HOLDOUT: every pinned reference-allowlist file (15) exists and matches its sha256
+E         [OK] HOLDOUT: DFT pilot derivatives of the L01 Zn HRPT CIF (pilots/c_W92, make_bw.py) are declared holdout
+E         [OK] literature/fit, excluded: no path / file name of a holdout source, no holdout sample next to its publication (13 files)
+E         [OK] subprocess policy: no subprocess / os.system / Popen / direct multiprocessing in hexw.theory/params/structures/dft/spin (start Python children only through hexw.util.pool.WorkerPool and other programs only through hexw.util.external.run_external (white list))
+E         [OK] subprocess policy: the static check recognises aliased / from-imports and ignores WorkerPool
+E         [OK] subprocess policy: run_external refuses python / sys.executable / shells (white list: ['pw.exe', 'pw.x', 'pw.x.exe', 'pw_big.exe'])
+E         
+E         audit: 71/73 checks passed; 121 files; frozen_model=False
+E         
+E       assert 1 == 0
+E        +  where 1 = &lt;function run_audit at 0x0000015844088CA0&gt;(None, out=&lt;_io.StringIO object at 0x000001584839F6D0&gt;)
+E        +    where &lt;function run_audit at 0x0000015844088CA0&gt; = audit.run_audit
+
+tests\test_registry_round1.py:118: AssertionError</failure></testcase><testcase classname="tests.test_registry_round1" name="test_real_registry_is_git_clean_with_sums_and_readonly_keys" time="1.250" /><testcase classname="tests.test_umnik_prior_use" name="test_validation_mode_survives_json_round_trip_and_store" time="0.015"><failure message="hexw.registry.versioning.LeakageError: a validation record requires its frozen prediction">tmp_path = WindowsPath('C:/Users/Redmi/AppData/Local/Temp/hexx-review-tests-w7l1ds8f/pytest/test_validation_mode_survives_0')
+
+    def test_validation_mode_survives_json_round_trip_and_store(tmp_path):
+        r = _vr(validation_mode="retrospective", prior_use_status="used_prior")
+        d = json.loads(S.dump_json(r))
+        assert d["validation_mode"] == "retrospective" and d["prior_use_status"] == "used_prior"
+        assert S.from_dict(S.ValidationResult, d) == r
+        st = ValidationStore(tmp_path / "v.jsonl")
+&gt;       st.append(r,S.Prediction("p1","mv",[S.DataRef("fit-input",source_role="literature_fit")]))
+        ^^^^^^^^^^^^
+
+tests\test_umnik_prior_use.py:46: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;hexw.registry.versioning.ValidationStore object at 0x00000158481D3ED0&gt;
+result = ValidationResult(result_id='r1', model_version='mv', prediction_id='p1', targets=[DataRef(id='f', sha256=None, group='...d_utc=None, notes=None, validation_mode=&lt;ValidationMode.RETROSPECTIVE: 'retrospective'&gt;, prior_use_status='used_prior')
+prediction = None
+
+    def append(self, result: ValidationResult, prediction: Prediction | None = None) -&gt; str:
+        if prediction is None:
+&gt;           raise LeakageError("a validation record requires its frozen prediction")
+E           hexw.registry.versioning.LeakageError: a validation record requires its frozen prediction
+
+hexw\registry\versioning.py:129: LeakageError</failure></testcase><testcase classname="tests.test_spin_and_em" name="test_one_sublattice_reduces_to_kittel" time="0.006" /><testcase classname="tests.test_spin_and_em" name="test_antiferromagnet_optical_gap" time="0.003" /><testcase classname="tests.test_spin_and_em" name="test_response_refuses_a_nonstationary_state_even_with_positive_curvature" time="0.001" /><testcase classname="tests.test_spin_and_em" name="test_exchange_energy_mapping_and_rank_refusal" time="0.003" /><testcase classname="tests.test_spin_and_em" name="test_debye_limits_passivity_and_porosity_endpoints" time="0.002" /><testcase classname="tests.test_no_holdout_hints" name="test_no_phrase_points_at_holdout_content" time="0.711" /><testcase classname="tests.test_no_holdout_hints" name="test_the_forbidden_patterns_do_catch_the_old_wording" time="0.001" /><testcase classname="tests.test_no_holdout_hints" name="test_the_neutral_wording_is_in_place" time="0.003" /><testcase classname="tests.test_no_holdout_hints" name="test_the_theory_side_does_not_use_the_full_search_catalogue" time="0.367" /><testcase classname="tests.test_no_holdout_hints" name="test_the_config_declares_the_search_results_as_holdout" time="0.008" /><testcase classname="tests.test_cli" name="test_stub_exits_nonzero_with_message[literature]" time="0.010" /><testcase classname="tests.test_cli" name="test_stub_exits_nonzero_with_message[structures]" time="0.009" /><testcase classname="tests.test_cli" name="test_explicit_calibrate_requires_flag" time="0.019" /><testcase classname="tests.test_cli" name="test_all_tz_commands_present" time="0.001" /><testcase classname="tests.test_cli" name="test_audit_passes_on_real_data" time="153.351"><failure message="AssertionError: [OK] original zip copy present and sha256 == recorded&#10;  [OK] all 121 files present on disk&#10;  [OK] no extra files in raw/theory_side, vault/*&#10;  [OK] sha256 == zip member content&#10;  [OK] sha256 == ALL_FILES_MANIFEST.csv (120 rows)&#10;  [OK] sha256 == DATA_MANIFEST.csv (33 rows)&#10;  [OK] every file except ALL_FILES_MANIFEST.csv itself is listed in it&#10;  [OK] byte duplicate on disk: SrW_series_vs_x.png == SrW_series_vs_x_1.png&#10;  [OK] Archive.zip not extracted (members only hashed in memory)&#10;  [OK] Archive.zip: 5 members, each byte-identical to a distinct 02_Mossbauer/*.spc&#10;  [OK] all files in raw/ and vault/ are read-only&#10;  [OK] registry files readable&#10;  [OK] SampleID unique, BatchID present&#10;  [OK] every sample has files and metadata_status&#10;  [OK] sample file hashes agree with files_manifest.csv&#10;  [OK] every lab file linked to a sample (except the Archive.zip container)&#10;  [OK] name-derived values carry status preliminary_from_filename&#10;  [OK] .mdi and .txt of one diffractogram form ONE observation&#10;  [OK] Mossbauer: 5 observations, not linked to XRD samples&#10;  [OK] equal formula does not merge samples (13 samples, 13 batches)&#10;  [OK] umnik: all 45 files present, sha256 == files_manifest_umnik.csv&#10;  [OK] umnik: no unregistered files in vault/lab_validation_umnik or vault/legacy/prior_analyses_umnik&#10;  [OK] umnik: prior analyses (prior_lab_analysis) exist only in vault/legacy/prior_analyses_umnik (except the declared in-place .mtd projects)&#10;  [OK] umnik: files byte-identical to registered archive files map to the same Observation (not new)&#10;  [OK] every lab file sha256 belongs to exactly one lab Observation (no duplicate observations)&#10;  [OK] umnik: status different_version &lt;=&gt; different_version_of, reference resolves to another file with different bytes&#10;  [OK] umnik: byte duplicates between its own files are declared (byte_dup_group_umnik)&#10;  [OK] .jip previews: each linked to exactly one Observation; not registered as measurement files&#10;  [OK] prior analyses (incl. in-place .mtd) registered as role prior_lab_analysis, not independent&#10;  [OK] prior_use: every lab Observation has a record (no extras)&#10;  [OK] prior_use: statuses/modes consistent (independent_candidate needs no_prior_use_found + user confirmation)&#10;  [OK] prior_use: XRD with prior analyses -&gt; used_prior/retrospective; Mossbauer -&gt; unknown_prior_use until user confirms&#10;  [OK] prior_use: summary independent_lab_validation_available is present and consistent with the entries&#10;  [OK] registry is a git repository with a commit&#10;  [OK] registry git tree is clean (nothing modified or untracked)&#10;  [OK] registry SHA256SUMS matches the files exactly&#10;  [OK] registry key files (samples, observations, prior_use) are read-only&#10;  [OK] project git repository has a commit (HEAD recorded)&#10;  [OK] hexw.theory._probe: open_data on vault raises TheoryAccessError&#10;  [OK] hexw.params._probe: open_data on vault raises TheoryAccessError&#10;  [OK] hexw.theory: builtin open() on vault blocked by audit hook&#10;  [OK] hexw.theory: original zip (contains lab bytes) is blocked too&#10;  [OK] hexw.experiment: vault access without freeze file raises FreezeRequiredError&#10;  [OK] hexw.dft: builtin open() on vault blocked&#10;  [OK] thread-pool worker without an allowed frame is refused&#10;  [OK] extended-prefix spelling of a vault path is RESTRICTED&#10;  [OK] write into vault is refused&#10;  [OK] inputs/targets overlap raises LeakageError&#10;  [OK] changing a ParameterEstimate changes the model version&#10;  [FAIL] check_guards crashed  -&gt; LeakageError('a validation record requires its frozen prediction')&#10;  [OK] HOLDOUT: literature_holdout/ exists and is classified as zone HOLDOUT&#10;  [OK] HOLDOUT: holdout sources are declared in project/config/holdout_sources.json&#10;  [OK] HOLDOUT: every declared holdout source exists&#10;  [OK] HOLDOUT: every declared holdout source is classified HOLDOUT&#10;  [OK] HOLDOUT: hexw.theory open() on literature_holdout and on a holdout source is blocked&#10;  [OK] HOLDOUT: hexw.params open_data on literature_holdout is blocked&#10;  [OK] HOLDOUT: write into the zone is refused&#10;  [OK] HOLDOUT: files of literature_holdout are read-only&#10;  [OK] HOLDOUT: SHA256SUMS of literature_holdout verified (purpose integrity)&#10;  [OK] literature/fit: every fit record is valid by schema (LiteratureClaim)&#10;  [OK] literature/fit: no record with split != fit&#10;  [OK] literature/fit: no holdout / original-mixed files inside&#10;  [OK] literature/excluded: only excluded_* / methodology_only roles, no parameter estimates&#10;  [OK] SPLIT_DECISION.md exists and the record hashes match the files&#10;  [OK] literature/ SHA256SUMS verified&#10;  [OK] agent-os is ignored (no code, config, checksum list or zone refers to it)&#10;  [FAIL] HOLDOUT: no file outside vault/ and literature_holdout/ names a holdout source (path or file name) unless it is declared holdout or allow-listed (1478 text files, 166 terms)  -&gt; offenders=['runs/parameter_cache/043d3d4eeb3a46d10c144b4614f21a9fdc4505d1dd8c32b503f896754225f525/material.json', 'runs/parameter_cache/17eb6f45c3757b38592f8fc704198c32dc5fea2183af7cc80ae49fd3a351e0e4/material.json', 'runs/parameter_cache/4353bf3575b940d0db89dbbac93ab95f8cf7726c229ccdf48ae49b3d9bde9351/material.json', 'runs/parameter_cache/4d085c523a187ea665fed5c92c026e14633ff839c6850bf91bf5c4e3dc0faaea/material.json', 'runs/parameter_cache/6177fe3802ff65312af3f02045c5ae4419e187d5e304fbc330957aba725ae2ce/material.json', 'runs/parameter_cache/666dd1ead71c2e94cda4f20aa7415845064f790d9cf63315588d1790d8f589e9/material.json', 'runs/parameter_cache/6b28e2efdd700f3ab8119af042e8aacb2b3ed6106785a896200bc032923a56c9/material.json', 'runs/parameter_cache/6f1d54d25ae16e30bcb130d1b1aee383bea81b1e26aa0783e81323ea723e942d/material.json', 'runs/parameter_cache/803ff77a98b44d6327d22e3dd6d4fef899c03b2b63e9e300226cf181670e9531/material.json', 'runs/parameter_cache/9c83b96200ea1890a4d059ce6fd7eccec2f6d69b47307aafa0f50311c6a554b3/material.json', 'runs/parameter_cache/cb08fa5ee0a2df27fb66ba7266452a6e6472b99ea96d80d45badecb32ee54de4/material.json', 'runs/parameter_cache/dfec0c18e85550c5d56d94c403702ebbee587641f90ab9b57d0c7378f64bd681/material.json', 'runs/predictions/0cd3065ea51da260b052/material.json', 'runs/predictions/189d40090f9bc00afbe3/material.json', 'runs/predictions/1cb0af081e0b71e5325c/material.json', 'runs/predictions/3a89891680481d0b627d/material.json', 'runs/predictions/3ddd32ad4ee349f978dc/material.json', 'runs/predictions/4e523375026fcbfe7f18/material.json', 'runs/predictions/6e45b26bb89af0f50f2f/material.json', 'runs/predictions/714bfd591451b6640210/material.json', 'runs/predictions/7615badca38aa8a71a8c/material.json', 'runs/predictions/7977f7ad70808a314e46/material.json', 'runs/predictions/7dc29e68ace5c625b36d/material.json', 'runs/predictions/88749ed293806e41e892/material.json', 'runs/predictions/a3e8a5dc1fb26c70f236/material.json', 'runs/predictions/ac55cfa0bb087c74d3e7/material.json', 'runs/predictions/b19fda394ee219e65240/material.json', 'runs/predictions/c6d2ad46950d87028144/material.json', 'runs/predictions/d72db1d50b01cf0a55e9/material.json', 'runs/predictions/dcf6952a93ca0fed102a/material.json', 'runs/predictions/df83b1bb8e9c70f5079a/material.json', 'runs/predictions/e206791fdd6bfb76f933/material.json', 'runs/predictions/f58ee25117a9d616d4ce/material.json']&#10;  [OK] HOLDOUT: every pinned reference-allowlist file (15) exists and matches its sha256&#10;  [OK] HOLDOUT: DFT pilot derivatives of the L01 Zn HRPT CIF (pilots/c_W92, make_bw.py) are declared holdout&#10;  [OK] literature/fit, excluded: no path / file name of a holdout source, no holdout sample next to its publication (13 files)&#10;  [OK] subprocess policy: no subprocess / os.system / Popen / direct multiprocessing in hexw.theory/params/structures/dft/spin (start Python children only through hexw.util.pool.WorkerPool and other programs only through hexw.util.external.run_external (white list))&#10;  [OK] subprocess policy: the static check recognises aliased / from-imports and ignores WorkerPool&#10;  [OK] subprocess policy: run_external refuses python / sys.executable / shells (white list: ['pw.exe', 'pw.x', 'pw.x.exe', 'pw_big.exe'])&#10;  &#10;  audit: 71/73 checks passed; 121 files; frozen_model=False&#10;  &#10;assert 1 == 0&#10; +  where 1 = &lt;function run_audit at 0x0000015844088CA0&gt;(WindowsPath('C:/MIPT/working_stuff/Hexx'), write_manifest=False, out=&lt;_io.StringIO object at 0x00000158483EDBD0&gt;)">def test_audit_passes_on_real_data():
+        """Integration: real audit on the populated project root (read-only, no writes)."""
+        root = paths._default_root()
+        if not (root / "registry" / "zip_entries.json").exists():
+            pytest.skip("real project root not populated")
+        old = paths.get_config().root
+        try:
+            from hexw.audit import run_audit
+            buf = io.StringIO()
+&gt;           assert run_audit(root, write_manifest=False, out=buf) == 0, buf.getvalue()
+E           AssertionError: [OK] original zip copy present and sha256 == recorded
+E             [OK] all 121 files present on disk
+E             [OK] no extra files in raw/theory_side, vault/*
+E             [OK] sha256 == zip member content
+E             [OK] sha256 == ALL_FILES_MANIFEST.csv (120 rows)
+E             [OK] sha256 == DATA_MANIFEST.csv (33 rows)
+E             [OK] every file except ALL_FILES_MANIFEST.csv itself is listed in it
+E             [OK] byte duplicate on disk: SrW_series_vs_x.png == SrW_series_vs_x_1.png
+E             [OK] Archive.zip not extracted (members only hashed in memory)
+E             [OK] Archive.zip: 5 members, each byte-identical to a distinct 02_Mossbauer/*.spc
+E             [OK] all files in raw/ and vault/ are read-only
+E             [OK] registry files readable
+E             [OK] SampleID unique, BatchID present
+E             [OK] every sample has files and metadata_status
+E             [OK] sample file hashes agree with files_manifest.csv
+E             [OK] every lab file linked to a sample (except the Archive.zip container)
+E             [OK] name-derived values carry status preliminary_from_filename
+E             [OK] .mdi and .txt of one diffractogram form ONE observation
+E             [OK] Mossbauer: 5 observations, not linked to XRD samples
+E             [OK] equal formula does not merge samples (13 samples, 13 batches)
+E             [OK] umnik: all 45 files present, sha256 == files_manifest_umnik.csv
+E             [OK] umnik: no unregistered files in vault/lab_validation_umnik or vault/legacy/prior_analyses_umnik
+E             [OK] umnik: prior analyses (prior_lab_analysis) exist only in vault/legacy/prior_analyses_umnik (except the declared in-place .mtd projects)
+E             [OK] umnik: files byte-identical to registered archive files map to the same Observation (not new)
+E             [OK] every lab file sha256 belongs to exactly one lab Observation (no duplicate observations)
+E             [OK] umnik: status different_version &lt;=&gt; different_version_of, reference resolves to another file with different bytes
+E             [OK] umnik: byte duplicates between its own files are declared (byte_dup_group_umnik)
+E             [OK] .jip previews: each linked to exactly one Observation; not registered as measurement files
+E             [OK] prior analyses (incl. in-place .mtd) registered as role prior_lab_analysis, not independent
+E             [OK] prior_use: every lab Observation has a record (no extras)
+E             [OK] prior_use: statuses/modes consistent (independent_candidate needs no_prior_use_found + user confirmation)
+E             [OK] prior_use: XRD with prior analyses -&gt; used_prior/retrospective; Mossbauer -&gt; unknown_prior_use until user confirms
+E             [OK] prior_use: summary independent_lab_validation_available is present and consistent with the entries
+E             [OK] registry is a git repository with a commit
+E             [OK] registry git tree is clean (nothing modified or untracked)
+E             [OK] registry SHA256SUMS matches the files exactly
+E             [OK] registry key files (samples, observations, prior_use) are read-only
+E             [OK] project git repository has a commit (HEAD recorded)
+E             [OK] hexw.theory._probe: open_data on vault raises TheoryAccessError
+E             [OK] hexw.params._probe: open_data on vault raises TheoryAccessError
+E             [OK] hexw.theory: builtin open() on vault blocked by audit hook
+E             [OK] hexw.theory: original zip (contains lab bytes) is blocked too
+E             [OK] hexw.experiment: vault access without freeze file raises FreezeRequiredError
+E             [OK] hexw.dft: builtin open() on vault blocked
+E             [OK] thread-pool worker without an allowed frame is refused
+E             [OK] extended-prefix spelling of a vault path is RESTRICTED
+E             [OK] write into vault is refused
+E             [OK] inputs/targets overlap raises LeakageError
+E             [OK] changing a ParameterEstimate changes the model version
+E             [FAIL] check_guards crashed  -&gt; LeakageError('a validation record requires its frozen prediction')
+E             [OK] HOLDOUT: literature_holdout/ exists and is classified as zone HOLDOUT
+E             [OK] HOLDOUT: holdout sources are declared in project/config/holdout_sources.json
+E             [OK] HOLDOUT: every declared holdout source exists
+E             [OK] HOLDOUT: every declared holdout source is classified HOLDOUT
+E             [OK] HOLDOUT: hexw.theory open() on literature_holdout and on a holdout source is blocked
+E             [OK] HOLDOUT: hexw.params open_data on literature_holdout is blocked
+E             [OK] HOLDOUT: write into the zone is refused
+E             [OK] HOLDOUT: files of literature_holdout are read-only
+E             [OK] HOLDOUT: SHA256SUMS of literature_holdout verified (purpose integrity)
+E             [OK] literature/fit: every fit record is valid by schema (LiteratureClaim)
+E             [OK] literature/fit: no record with split != fit
+E             [OK] literature/fit: no holdout / original-mixed files inside
+E             [OK] literature/excluded: only excluded_* / methodology_only roles, no parameter estimates
+E             [OK] SPLIT_DECISION.md exists and the record hashes match the files
+E             [OK] literature/ SHA256SUMS verified
+E             [OK] agent-os is ignored (no code, config, checksum list or zone refers to it)
+E             [FAIL] HOLDOUT: no file outside vault/ and literature_holdout/ names a holdout source (path or file name) unless it is declared holdout or allow-listed (1478 text files, 166 terms)  -&gt; offenders=['runs/parameter_cache/043d3d4eeb3a46d10c144b4614f21a9fdc4505d1dd8c32b503f896754225f525/material.json', 'runs/parameter_cache/17eb6f45c3757b38592f8fc704198c32dc5fea2183af7cc80ae49fd3a351e0e4/material.json', 'runs/parameter_cache/4353bf3575b940d0db89dbbac93ab95f8cf7726c229ccdf48ae49b3d9bde9351/material.json', 'runs/parameter_cache/4d085c523a187ea665fed5c92c026e14633ff839c6850bf91bf5c4e3dc0faaea/material.json', 'runs/parameter_cache/6177fe3802ff65312af3f02045c5ae4419e187d5e304fbc330957aba725ae2ce/material.json', 'runs/parameter_cache/666dd1ead71c2e94cda4f20aa7415845064f790d9cf63315588d1790d8f589e9/material.json', 'runs/parameter_cache/6b28e2efdd700f3ab8119af042e8aacb2b3ed6106785a896200bc032923a56c9/material.json', 'runs/parameter_cache/6f1d54d25ae16e30bcb130d1b1aee383bea81b1e26aa0783e81323ea723e942d/material.json', 'runs/parameter_cache/803ff77a98b44d6327d22e3dd6d4fef899c03b2b63e9e300226cf181670e9531/material.json', 'runs/parameter_cache/9c83b96200ea1890a4d059ce6fd7eccec2f6d69b47307aafa0f50311c6a554b3/material.json', 'runs/parameter_cache/cb08fa5ee0a2df27fb66ba7266452a6e6472b99ea96d80d45badecb32ee54de4/material.json', 'runs/parameter_cache/dfec0c18e85550c5d56d94c403702ebbee587641f90ab9b57d0c7378f64bd681/material.json', 'runs/predictions/0cd3065ea51da260b052/material.json', 'runs/predictions/189d40090f9bc00afbe3/material.json', 'runs/predictions/1cb0af081e0b71e5325c/material.json', 'runs/predictions/3a89891680481d0b627d/material.json', 'runs/predictions/3ddd32ad4ee349f978dc/material.json', 'runs/predictions/4e523375026fcbfe7f18/material.json', 'runs/predictions/6e45b26bb89af0f50f2f/material.json', 'runs/predictions/714bfd591451b6640210/material.json', 'runs/predictions/7615badca38aa8a71a8c/material.json', 'runs/predictions/7977f7ad70808a314e46/material.json', 'runs/predictions/7dc29e68ace5c625b36d/material.json', 'runs/predictions/88749ed293806e41e892/material.json', 'runs/predictions/a3e8a5dc1fb26c70f236/material.json', 'runs/predictions/ac55cfa0bb087c74d3e7/material.json', 'runs/predictions/b19fda394ee219e65240/material.json', 'runs/predictions/c6d2ad46950d87028144/material.json', 'runs/predictions/d72db1d50b01cf0a55e9/material.json', 'runs/predictions/dcf6952a93ca0fed102a/material.json', 'runs/predictions/df83b1bb8e9c70f5079a/material.json', 'runs/predictions/e206791fdd6bfb76f933/material.json', 'runs/predictions/f58ee25117a9d616d4ce/material.json']
+E             [OK] HOLDOUT: every pinned reference-allowlist file (15) exists and matches its sha256
+E             [OK] HOLDOUT: DFT pilot derivatives of the L01 Zn HRPT CIF (pilots/c_W92, make_bw.py) are declared holdout
+E             [OK] literature/fit, excluded: no path / file name of a holdout source, no holdout sample next to its publication (13 files)
+E             [OK] subprocess policy: no subprocess / os.system / Popen / direct multiprocessing in hexw.theory/params/structures/dft/spin (start Python children only through hexw.util.pool.WorkerPool and other programs only through hexw.util.external.run_external (white list))
+E             [OK] subprocess policy: the static check recognises aliased / from-imports and ignores WorkerPool
+E             [OK] subprocess policy: run_external refuses python / sys.executable / shells (white list: ['pw.exe', 'pw.x', 'pw.x.exe', 'pw_big.exe'])
+E             
+E             audit: 71/73 checks passed; 121 files; frozen_model=False
+E             
+E           assert 1 == 0
+E            +  where 1 = &lt;function run_audit at 0x0000015844088CA0&gt;(WindowsPath('C:/MIPT/working_stuff/Hexx'), write_manifest=False, out=&lt;_io.StringIO object at 0x00000158483EDBD0&gt;)
+
+tests\test_cli.py:39: AssertionError</failure></testcase></testsuite></testsuites>

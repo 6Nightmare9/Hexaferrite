@@ -1,0 +1,7 @@
+{
+  "returncode": 1,
+  "wall_s": 1270.74,
+  "python": "C:\\MIPT\\working_stuff\\Hexx\\.venv_local\\Scripts\\python.exe",
+  "selection": "not slow and not dft",
+  "log": "C:\\MIPT\\working_stuff\\Hexx\\audit\\pytest.log"
+}

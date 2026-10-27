@@ -1,0 +1,263 @@
+# Prior-use disclosure for laboratory Observations (stage 1b).
+# prior_use_status: used_prior | unknown_prior_use | no_prior_use_found.
+# validation_mode: retrospective | independent_candidate. independent_candidate is allowed ONLY with
+# no_prior_use_found AND a user_confirmation record; everything else is retrospective.
+# 2026-10-25 (user message): the Moessbauer measurements SMP-009..013 / OBS-MOS-001..005 were used in developing the
+# previous model -> used_prior / retrospective. Together with the XRD observations (prior analyses) EVERY laboratory
+# Observation is now retrospective; see independent_lab_validation_available.
+# This status is copied into every ValidationResult (hexw.registry.prior_use.apply_prior_use).
+# Evidence: file names and identifier columns. CSV files of prior analyses were read IN FULL into memory
+# when the identifier column was extracted; only that column of identifiers was output or used (no numbers
+# from them were recorded, shown or used). Other prior-analysis files (images, docx, .mtd) were not opened.
+schema_version: 1
+independent_lab_validation_available: false
+independent_lab_validation_note: 'No laboratory Observation is an independent (blind) test: XRD observations were
+  analysed before (prior Umnik analyses) and the Moessbauer measurements were used in developing the previous model
+  (user message 2026-10-25). All laboratory validation is retrospective until new, untouched measurements appear.'
+entries:
+- observation_id: OBS-XRD-001
+  sample_id: SMP-001
+  method: XRD
+  prior_use_status: used_prior
+  validation_mode: retrospective
+  evidence:
+    prior_analyses_umnik:
+    - PRI-001
+    - PRI-002
+    - PRI-004
+    - PRI-006
+    - PRI-007
+    - PRI-009
+    - PRI-010
+    mtd_projects: []
+    legacy_model_04: 'not_determined: legacy model 04 file names carry no sample references and its content was not opened'
+  basis: prior Umnik analyses (PRI-001, PRI-002, PRI-004, PRI-006, PRI-007, PRI-009, PRI-010) name/identify this sample; default
+    for XRD samples with prior analyses is retrospective
+  user_confirmation: null
+- observation_id: OBS-XRD-002
+  sample_id: SMP-002
+  method: XRD
+  prior_use_status: used_prior
+  validation_mode: retrospective
+  evidence:
+    prior_analyses_umnik:
+    - PRI-001
+    - PRI-002
+    - PRI-004
+    - PRI-006
+    - PRI-007
+    - PRI-009
+    - PRI-010
+    mtd_projects: []
+    legacy_model_04: 'not_determined: legacy model 04 file names carry no sample references and its content was not opened'
+  basis: prior Umnik analyses (PRI-001, PRI-002, PRI-004, PRI-006, PRI-007, PRI-009, PRI-010) name/identify this sample; default
+    for XRD samples with prior analyses is retrospective
+  user_confirmation: null
+- observation_id: OBS-XRD-003
+  sample_id: SMP-003
+  method: XRD
+  prior_use_status: used_prior
+  validation_mode: retrospective
+  evidence:
+    prior_analyses_umnik:
+    - PRI-001
+    - PRI-002
+    - PRI-004
+    - PRI-006
+    - PRI-007
+    - PRI-009
+    - PRI-010
+    mtd_projects: []
+    legacy_model_04: 'not_determined: legacy model 04 file names carry no sample references and its content was not opened'
+  basis: prior Umnik analyses (PRI-001, PRI-002, PRI-004, PRI-006, PRI-007, PRI-009, PRI-010) name/identify this sample; default
+    for XRD samples with prior analyses is retrospective
+  user_confirmation: null
+- observation_id: OBS-XRD-004
+  sample_id: SMP-004
+  method: XRD
+  prior_use_status: used_prior
+  validation_mode: retrospective
+  evidence:
+    prior_analyses_umnik:
+    - PRI-001
+    - PRI-002
+    - PRI-004
+    - PRI-006
+    - PRI-007
+    - PRI-009
+    - PRI-010
+    mtd_projects: []
+    legacy_model_04: 'not_determined: legacy model 04 file names carry no sample references and its content was not opened'
+  basis: prior Umnik analyses (PRI-001, PRI-002, PRI-004, PRI-006, PRI-007, PRI-009, PRI-010) name/identify this sample; default
+    for XRD samples with prior analyses is retrospective
+  user_confirmation: null
+- observation_id: OBS-XRD-005
+  sample_id: SMP-005
+  method: XRD
+  prior_use_status: used_prior
+  validation_mode: retrospective
+  evidence:
+    prior_analyses_umnik:
+    - PRI-001
+    - PRI-002
+    - PRI-003
+    - PRI-006
+    - PRI-007
+    - PRI-008
+    - PRI-009
+    - PRI-010
+    mtd_projects: []
+    legacy_model_04: 'not_determined: legacy model 04 file names carry no sample references and its content was not opened'
+  basis: prior Umnik analyses (PRI-001, PRI-002, PRI-003, PRI-006, PRI-007, PRI-008, PRI-009, PRI-010) name/identify this
+    sample; default for XRD samples with prior analyses is retrospective
+  user_confirmation: null
+- observation_id: OBS-XRD-006
+  sample_id: SMP-006
+  method: XRD
+  prior_use_status: used_prior
+  validation_mode: retrospective
+  evidence:
+    prior_analyses_umnik:
+    - PRI-001
+    - PRI-002
+    - PRI-003
+    - PRI-006
+    - PRI-007
+    - PRI-008
+    - PRI-009
+    - PRI-010
+    mtd_projects: []
+    legacy_model_04: 'not_determined: legacy model 04 file names carry no sample references and its content was not opened'
+  basis: prior Umnik analyses (PRI-001, PRI-002, PRI-003, PRI-006, PRI-007, PRI-008, PRI-009, PRI-010) name/identify this
+    sample; default for XRD samples with prior analyses is retrospective
+  user_confirmation: null
+- observation_id: OBS-XRD-007
+  sample_id: SMP-007
+  method: XRD
+  prior_use_status: used_prior
+  validation_mode: retrospective
+  evidence:
+    prior_analyses_umnik:
+    - PRI-001
+    - PRI-002
+    - PRI-005
+    - PRI-006
+    - PRI-007
+    - PRI-009
+    - PRI-010
+    - PRI-011
+    mtd_projects:
+    - path: 03_previous_XRD_projects/SrW_ZnO_X=1.5_T=1200_6h_T=1400_4h_160926-2.mtd
+      observation_id: PRI-012
+      role: prior_lab_analysis
+      independent: false
+      sha256: 065208c5545d8b96b4a92df357056f0518e9b0ed005511b5908301b92587ee8e
+    - path: 03_previous_XRD_projects/SrW_ZnO_X=1.5_T=1200_6h_T=1400_4h_160926-3.mtd
+      observation_id: PRI-013
+      role: prior_lab_analysis
+      independent: false
+      sha256: 81a0a53c4e9129f0a38c0c34dfa9e2dfa318362b6bee514acb34d1facc77d668
+    - path: 03_previous_XRD_projects/SrW_ZnO_X=1.5_T=1200_6h_T=1400_4h_160926.mtd
+      observation_id: PRI-014
+      role: prior_lab_analysis
+      independent: false
+      sha256: 1381219807a0a8ffd41897b4d185c173ede688f74ea84d10616453d752af6049
+    legacy_model_04: 'not_determined: legacy model 04 file names carry no sample references and its content was not opened'
+  basis: prior Umnik analyses (PRI-001, PRI-002, PRI-005, PRI-006, PRI-007, PRI-009, PRI-010, PRI-011) name/identify this
+    sample; .mtd projects exist; default for XRD samples with prior analyses is retrospective
+  user_confirmation: null
+- observation_id: OBS-XRD-008
+  sample_id: SMP-008
+  method: XRD
+  prior_use_status: used_prior
+  validation_mode: retrospective
+  evidence:
+    prior_analyses_umnik:
+    - PRI-001
+    - PRI-002
+    - PRI-005
+    - PRI-006
+    - PRI-007
+    - PRI-009
+    - PRI-010
+    - PRI-011
+    mtd_projects: []
+    legacy_model_04: 'not_determined: legacy model 04 file names carry no sample references and its content was not opened'
+  basis: prior Umnik analyses (PRI-001, PRI-002, PRI-005, PRI-006, PRI-007, PRI-009, PRI-010, PRI-011) name/identify this
+    sample; default for XRD samples with prior analyses is retrospective
+  user_confirmation: null
+- observation_id: OBS-MOS-001
+  sample_id: SMP-009
+  method: Mossbauer
+  prior_use_status: used_prior
+  validation_mode: retrospective
+  evidence:
+    prior_analyses_umnik: []
+    mtd_projects: []
+    legacy_model_04: 'user_confirmed: the measurement was used in developing the previous model (user message 2026-10-25)'
+  basis: user confirmed on 2026-10-25 that this Moessbauer measurement was used in developing the previous model
+  user_confirmation:
+    source: user_confirmation
+    date: '2026-10-25'
+    by: user
+    statement: this Moessbauer measurement was used in developing the previous model
+- observation_id: OBS-MOS-002
+  sample_id: SMP-010
+  method: Mossbauer
+  prior_use_status: used_prior
+  validation_mode: retrospective
+  evidence:
+    prior_analyses_umnik: []
+    mtd_projects: []
+    legacy_model_04: 'user_confirmed: the measurement was used in developing the previous model (user message 2026-10-25)'
+  basis: user confirmed on 2026-10-25 that this Moessbauer measurement was used in developing the previous model
+  user_confirmation:
+    source: user_confirmation
+    date: '2026-10-25'
+    by: user
+    statement: this Moessbauer measurement was used in developing the previous model
+- observation_id: OBS-MOS-003
+  sample_id: SMP-011
+  method: Mossbauer
+  prior_use_status: used_prior
+  validation_mode: retrospective
+  evidence:
+    prior_analyses_umnik: []
+    mtd_projects: []
+    legacy_model_04: 'user_confirmed: the measurement was used in developing the previous model (user message 2026-10-25)'
+  basis: user confirmed on 2026-10-25 that this Moessbauer measurement was used in developing the previous model
+  user_confirmation:
+    source: user_confirmation
+    date: '2026-10-25'
+    by: user
+    statement: this Moessbauer measurement was used in developing the previous model
+- observation_id: OBS-MOS-004
+  sample_id: SMP-012
+  method: Mossbauer
+  prior_use_status: used_prior
+  validation_mode: retrospective
+  evidence:
+    prior_analyses_umnik: []
+    mtd_projects: []
+    legacy_model_04: 'user_confirmed: the measurement was used in developing the previous model (user message 2026-10-25)'
+  basis: user confirmed on 2026-10-25 that this Moessbauer measurement was used in developing the previous model
+  user_confirmation:
+    source: user_confirmation
+    date: '2026-10-25'
+    by: user
+    statement: this Moessbauer measurement was used in developing the previous model
+- observation_id: OBS-MOS-005
+  sample_id: SMP-013
+  method: Mossbauer
+  prior_use_status: used_prior
+  validation_mode: retrospective
+  evidence:
+    prior_analyses_umnik: []
+    mtd_projects: []
+    legacy_model_04: 'user_confirmed: the measurement was used in developing the previous model (user message 2026-10-25)'
+  basis: user confirmed on 2026-10-25 that this Moessbauer measurement was used in developing the previous model
+  user_confirmation:
+    source: user_confirmation
+    date: '2026-10-25'
+    by: user
+    statement: this Moessbauer measurement was used in developing the previous model

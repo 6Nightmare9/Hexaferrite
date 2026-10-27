@@ -1,0 +1,188 @@
+{
+  "model_version": "mv-d8a9dee02ed0d9501e41",
+  "formula": "SrZn2Fe16O27",
+  "comparisons": [
+    {
+      "record": "L01-079",
+      "observable": "Ms_A_m2_kg",
+      "prediction": {
+        "median": 87.41917866945367,
+        "lo95": 58.58304789962467,
+        "hi95": 104.63866166211993,
+        "n_valid": 48,
+        "n_total": 48
+      },
+      "observed": 57.0,
+      "unit": "A*m^2/kg",
+      "source_doi": "10.1107/S2052252519003130",
+      "source_locator": {
+        "text": "Fig. 4 (table) row Ms,NPD",
+        "page": null,
+        "table": null,
+        "figure": "4",
+        "supplementary": null
+      },
+      "source_group_kind": "same_group_reproducibility",
+      "observed_uncertainty": {
+        "kind": "std",
+        "std": 5.0,
+        "lower": null,
+        "upper": null,
+        "distribution": null,
+        "params": {},
+        "declared_wide": false,
+        "convention": "parenthetical_se"
+      },
+      "interval_covers_observation": false,
+      "result": {
+        "result_id": "lit-732cdd62dcec8d3685c1",
+        "model_version": "mv-d8a9dee02ed0d9501e41",
+        "prediction_id": "7977f7ad70808a314e46",
+        "targets": [
+          {
+            "id": "L01-079",
+            "sha256": "dadc22a31fed8a235f63889447782dc01cb3c2dabd6f7bb2e44f4d469bf79458",
+            "group": "L01_NPD_XRD_SrZn2Fe16O27",
+            "source_role": "literature_holdout"
+          }
+        ],
+        "metric": {
+          "name": "absolute_relative_error",
+          "value": 0.5336698012184855,
+          "unit": "1",
+          "tolerance": 0.1,
+          "tolerance_kind": "relative"
+        },
+        "conclusion": "fail",
+        "created_utc": "2026-10-26T18:58:35+00:00",
+        "notes": "Reserved publication comparison; prior developer exposure already disclosed. Retrospective, not a fully blind proof. No fitting performed.",
+        "validation_mode": "retrospective",
+        "prior_use_status": "unknown_prior_use"
+      }
+    },
+    {
+      "record": "L01-080",
+      "observable": "Ms_A_m2_kg",
+      "prediction": {
+        "median": 87.41917866945367,
+        "lo95": 58.58304789962467,
+        "hi95": 104.63866166211993,
+        "n_valid": 48,
+        "n_total": 48
+      },
+      "observed": 76.2,
+      "unit": "A*m^2/kg",
+      "source_doi": "10.1107/S2052252519003130",
+      "source_locator": {
+        "text": "Fig. 4 (table) row Ms,VSM; also Table S9/S10 (Supporting information)",
+        "page": null,
+        "table": "S9",
+        "figure": "4",
+        "supplementary": "Fig. 4 (table) row Ms,VSM; also Table S9/S10 (Supporting information)"
+      },
+      "source_group_kind": "same_group_reproducibility",
+      "observed_uncertainty": {
+        "kind": "std",
+        "std": 0.1,
+        "lower": null,
+        "upper": null,
+        "distribution": null,
+        "params": {},
+        "declared_wide": false,
+        "convention": "parenthetical_se"
+      },
+      "interval_covers_observation": true,
+      "result": {
+        "result_id": "lit-629d6354c9916d03ae06",
+        "model_version": "mv-d8a9dee02ed0d9501e41",
+        "prediction_id": "7977f7ad70808a314e46",
+        "targets": [
+          {
+            "id": "L01-080",
+            "sha256": "dadc22a31fed8a235f63889447782dc01cb3c2dabd6f7bb2e44f4d469bf79458",
+            "group": "L01_NPD_XRD_SrZn2Fe16O27",
+            "source_role": "literature_holdout"
+          }
+        ],
+        "metric": {
+          "name": "absolute_relative_error",
+          "value": 0.1472333158720954,
+          "unit": "1",
+          "tolerance": 0.1,
+          "tolerance_kind": "relative"
+        },
+        "conclusion": "fail",
+        "created_utc": "2026-10-26T18:58:35+00:00",
+        "notes": "Reserved publication comparison; prior developer exposure already disclosed. Retrospective, not a fully blind proof. No fitting performed.",
+        "validation_mode": "retrospective",
+        "prior_use_status": "unknown_prior_use"
+      }
+    },
+    {
+      "record": "L01-081",
+      "observable": "Ms_A_m2_kg",
+      "prediction": {
+        "median": 87.41917866945367,
+        "lo95": 58.58304789962467,
+        "hi95": 104.63866166211993,
+        "n_valid": 48,
+        "n_total": 48
+      },
+      "observed": 80.4,
+      "unit": "A*m^2/kg",
+      "source_doi": "10.1107/S2052252519003130",
+      "source_locator": {
+        "text": "Fig. 4 (table) row 'Wt% Corrected Ms'; Supporting information S8, Table S10",
+        "page": null,
+        "table": "S10",
+        "figure": "4",
+        "supplementary": "Fig. 4 (table) row 'Wt% Corrected Ms'; Supporting information S8, Table S10"
+      },
+      "source_group_kind": "same_group_reproducibility",
+      "observed_uncertainty": {
+        "kind": "std",
+        "std": 0.30000000000000004,
+        "lower": null,
+        "upper": null,
+        "distribution": null,
+        "params": {},
+        "declared_wide": false,
+        "convention": "parenthetical_se"
+      },
+      "interval_covers_observation": true,
+      "result": {
+        "result_id": "lit-dc5d51557087d9d79956",
+        "model_version": "mv-d8a9dee02ed0d9501e41",
+        "prediction_id": "7977f7ad70808a314e46",
+        "targets": [
+          {
+            "id": "L01-081",
+            "sha256": "dadc22a31fed8a235f63889447782dc01cb3c2dabd6f7bb2e44f4d469bf79458",
+            "group": "L01_NPD_XRD_SrZn2Fe16O27",
+            "source_role": "literature_holdout"
+          }
+        ],
+        "metric": {
+          "name": "absolute_relative_error",
+          "value": 0.087303217281762,
+          "unit": "1",
+          "tolerance": 0.1,
+          "tolerance_kind": "relative"
+        },
+        "conclusion": "pass",
+        "created_utc": "2026-10-26T18:58:35+00:00",
+        "notes": "Reserved publication comparison; prior developer exposure already disclosed. Retrospective, not a fully blind proof. No fitting performed.",
+        "validation_mode": "retrospective",
+        "prior_use_status": "unknown_prior_use"
+      }
+    }
+  ],
+  "n_compared": 3,
+  "not_tested": [
+    "FMR accuracy without matched reserved FMR measurements",
+    "all unsupported/mismatched definitions"
+  ],
+  "theory_updated": false,
+  "corpus_sha256": "dadc22a31fed8a235f63889447782dc01cb3c2dabd6f7bb2e44f4d469bf79458",
+  "validation_mode": "retrospective: earlier developer exposure disclosed"
+}

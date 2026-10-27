@@ -1,0 +1,185 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""Expected FMR frequencies of SrA_xFe_(18-x)O27 (A = Co, Zn, Mn; x = 0.5..2)
+at 300 K: table (CSV) + figures.  Uses wtype_fmr.py (and, for SrMn2Fe16O27,
+the measured Mössbauer spectrum via mossbauer_fit.py)."""
+import csv
+import warnings
+
+import numpy as np
+import matplotlib
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
+
+import wtype_fmr as w
+from mossbauer_fit import fit_w_spectrum, read_spc
+
+ELEMENTS = ["Co", "Zn", "Mn"]
+XS = [0.5, 1.0, 1.5, 2.0]
+FIELDS_TABLE = [0.0, 0.25, 0.5, 1.0]
+FIELDS_CURVE = np.round(np.arange(0.0, 1.501, 0.02), 3)
+GHZ = 1e-9
+
+# measured Mössbauer spectrum of SrMn2Fe16O27 -> used for that composition
+fit = fit_w_spectrum(read_spc("srw_mn2.spc"), "constrained", n_me=2.0, n_fe=16.0)
+w.MOSSBAUER["SrMn2Fe16O27"] = fit.as_mossbauer()
+
+def band(sp):
+    """(f_low, f_centre, f_high) of the half-maximum band, GHz."""
+    f, P = sp["f"], sp["P"]
+    i = int(np.argmax(P))
+    half = P[i] / 2
+    left = np.where(P[:i] < half)[0]
+    right = np.where(P[i:] < half)[0]
+    fl = f[left[-1]] if left.size else f[0]
+    fr = f[i + right[0]] if right.size else f[-1]
+    return fl * GHZ, 0.5 * (fl + fr) * GHZ, fr * GHZ
+
+
+def edges(el, x, B_ext, kind="pellet"):
+    """Resonance of grains with c ∥ H and c ⊥ H (edges of the powder band), GHz."""
+    sv = calc.solvers[(el, x, kind)]
+    B_eff, _ = sv.internal_field(B_ext)
+    th = np.array([1e-4, np.pi / 2])
+    t = w.plane_equilibrium(B_eff, th, sv.Ms, sv.K1, sv.K2)
+    Fuu, Fvv = w.plane_stiffness(t, B_eff, th, sv.Ms, sv.K1, sv.K2)
+    Fvv = Fvv + 36 * sv.K3 * np.sin(t) ** 4
+    f = sv.gamma / (2 * np.pi * sv.Ms) * np.sqrt(np.clip(Fuu * Fvv, 0, None))
+    return f * GHZ                      # [f(c∥H), f(c⊥H)]
+
+
+calc = w.SeriesCalculator(ELEMENTS, XS, a_site="Sr", alpha=0.01, K3=200.0)
+
+rows = []
+for el in ELEMENTS:
+    for x in XS:
+        m = calc.materials[(el, x)]
+        K1, K2 = m.anisotropy()
+        Ms = m.Ms()
+        r = {"A": el, "x": x, "formula": m.formula,
+             "Mössbauer": "измерен" if m.formula in w.MOSSBAUER else "модель",
+             "Fe2+": m.n_fe2, "Tc_K": m.Tc, "Ms_kA_m": Ms / 1e3,
+             "4piMs_kG": w.MU0 * Ms * 10, "K1_J_m3": K1, "K2_J_m3": K2,
+             "mu0HA_T": 2 * K1 / Ms, "easy": m.anisotropy_type()}
+        for kind in ("pellet", "powder"):
+            for B in FIELDS_TABLE:
+                s = calc.spectrum(el, x, kind, B)
+                lo, mid, hi = band(s)
+                r[f"fpeak_{kind}_{B:g}T_GHz"] = s["f_peak"] * GHZ
+                r[f"f_{kind}_{B:g}T_GHz"] = mid          # centre of band
+                r[f"FWHM_{kind}_{B:g}T_GHz"] = hi - lo
+                if kind == "pellet":
+                    fpar, fperp = edges(el, x, B)
+                    r[f"f_par_{B:g}T_GHz"], r[f"f_perp_{B:g}T_GHz"] = fpar, fperp
+        rows.append(r)
+
+with open("SrW_series_FMR.csv", "w", newline="", encoding="utf-8-sig") as fh:
+    wr = csv.DictWriter(fh, fieldnames=list(rows[0]), delimiter=";")
+    wr.writeheader()
+    for r in rows:
+        wr.writerow({k: (f"{v:.4g}" if isinstance(v, float) else v) for k, v in r.items()})
+
+print(f"{'формула':<18}{'Ms':>6}{'K1, 1e5':>9}{'μ0HA':>7}  {'ось':<9}"
+      + "".join(f"{'f '+format(B,'g')+'Т':>8}" for B in FIELDS_TABLE) + f"{'Δf0':>6}{'f0 пор':>8}")
+for r in rows:
+    print(f"{r['formula']:<18}{r['Ms_kA_m']:6.0f}{r['K1_J_m3']/1e5:9.2f}{r['mu0HA_T']:7.2f}  "
+          f"{r['easy']:<9}" + "".join(f"{r[f'f_pellet_{B:g}T_GHz']:8.1f}" for B in FIELDS_TABLE)
+          + f"{r['FWHM_pellet_0T_GHz']:6.1f}{r['f_powder_0T_GHz']:8.1f}"
+          + "  ∥/⊥: " + " ".join(f"{r[f'f_par_{B:g}T_GHz']:.1f}/{r[f'f_perp_{B:g}T_GHz']:.1f}"
+                                 for B in FIELDS_TABLE))
+
+# ---------------------------------------------------------------------------
+INK, MUTED, GRID = "#1f2328", "#59636e", "#e6e8eb"
+COL_EL = {"Co": "#2a78d6", "Zn": "#eb6834", "Mn": "#1baf7a"}
+COL_X = ["#2a78d6", "#eb6834", "#1baf7a", "#eda100"]
+w._style()
+
+
+def finish(ax, xlabel, ylabel):
+    ax.set_xlabel(xlabel)
+    ax.set_ylabel(ylabel)
+    ax.grid(color=GRID, lw=0.8)
+    ax.legend(frameon=False, fontsize=9, labelcolor=INK)
+
+
+# Fig. 1 — material parameters and zero-field frequency vs x
+fig, axs = plt.subplots(1, 3, figsize=(15, 4.6), constrained_layout=True)
+for el in ELEMENTS:
+    rr = [r for r in rows if r["A"] == el]
+    kw = dict(color=COL_EL[el], lw=2, ms=7, mfc="white", mew=2, marker="o", label=el)
+    axs[0].plot(XS, [r["f_pellet_0T_GHz"] for r in rr], **kw)
+    axs[1].plot(XS, [r["mu0HA_T"] for r in rr], **kw)
+    axs[2].plot(XS, [r["Ms_kA_m"] for r in rr], **kw)
+axs[1].axhline(0, color=MUTED, lw=0.8)
+axs[1].text(0.47, 0.03, "ниже нуля — лёгкая плоскость", color=MUTED, fontsize=8.5)
+axs[0].set_title("(a) Естественный резонанс (H = 0), таблетка")
+axs[1].set_title("(b) Поле анизотропии μ₀H$_A$ = 2K₁/M$_s$")
+axs[2].set_title("(c) Намагниченность M$_s$ (300 K)")
+for ax, yl in zip(axs, ("f$_{ФМР}$, ГГц", "μ₀H$_A$, Тл", "M$_s$, кА/м")):
+    ax.set_xticks(XS)
+    finish(ax, "x в SrAₓFe₁₈₋ₓO₂₇", yl)
+axs[0].set_ylim(bottom=0)
+for ax, key in zip(axs, ("f_pellet_0T_GHz", "mu0HA_T", "Ms_kA_m")):
+    r = rows[-1]                      # SrMn2: measured Mössbauer
+    ax.plot(2.0, r[key], "o", ms=13, mfc="none", mec=COL_EL["Mn"], mew=1.2)
+axs[2].annotate("Mn, x = 2: по измеренному\nмёссбауэровскому спектру",
+                xy=(2.0, rows[-1]["Ms_kA_m"]), xytext=(1.25, 455),
+                fontsize=8.5, color=MUTED, arrowprops=dict(arrowstyle="-", color=MUTED, lw=0.7))
+fig.suptitle("SrAₓFe₁₈₋ₓO₂₇ (W), 300 K: параметры и частота естественного ФМР",
+             fontsize=12, fontweight="bold", x=0.01, ha="left", color=INK)
+fig.savefig("SrW_series_vs_x.png", dpi=160)
+plt.close(fig)
+
+# Fig. 2 — edges of the polycrystal band: grains with c ∥ H and c ⊥ H
+fig, axs = plt.subplots(1, 3, figsize=(15, 4.8), constrained_layout=True)
+ymax = 0
+for ax, el in zip(axs, ELEMENTS):
+    for x, col in zip(XS, COL_X):
+        Bc = FIELDS_CURVE[FIELDS_CURVE >= 0.1]
+        e = np.array([edges(el, x, B) for B in Bc])
+        ax.plot(Bc, e[:, 0], color=col, lw=2, label=f"x = {x:g}")
+        ax.plot(Bc, e[:, 1], color=col, lw=1.4, ls="--")
+        f0 = edges(el, x, 0.0)[0]
+        ax.plot(0, f0, "o", ms=7, mfc="white", mec=col, mew=2, clip_on=False, zorder=5)
+        ymax = max(ymax, e.max())
+    ax.axvspan(0, 0.1, color="#eef0f2", lw=0, zorder=0)
+    ax.text(0.05, 0.985, "доменное\nсостояние", ha="center", va="top",
+            fontsize=7.5, color=MUTED, transform=ax.get_xaxis_transform(),
+            rotation=90)
+    ax.set_title(f"Sr{el}ₓFe₁₈₋ₓO₂₇, таблетка")
+    finish(ax, "μ₀H, Тл", "f$_{ФМР}$, ГГц")
+    ax.legend(frameon=False, fontsize=9, labelcolor=INK, loc="upper left",
+              bbox_to_anchor=(0.08, 1.0))
+for ax in axs:
+    ax.set_ylim(0, ymax * 1.03)
+    ax.set_xlim(0, FIELDS_CURVE[-1])
+axs[2].plot([], [], color=MUTED, lw=2, label="зёрна c ∥ H (верхний край)")
+axs[2].plot([], [], color=MUTED, lw=1.4, ls="--", label="зёрна c ⊥ H")
+axs[2].plot([], [], "o", ms=7, mfc="white", mec=MUTED, mew=2, label="H = 0: естеств. резонанс")
+axs[2].legend(frameon=False, fontsize=9, labelcolor=INK, loc="upper left",
+              bbox_to_anchor=(0.08, 1.0))
+fig.suptitle("Частоты ФМР от внешнего поля (300 K): поглощение поликристалла "
+             "лежит между линиями «c ∥ H» и «c ⊥ H»",
+             fontsize=12, fontweight="bold", x=0.01, ha="left", color=INK)
+fig.savefig("SrW_series_f_vs_H.png", dpi=160)
+plt.close(fig)
+
+# Fig. 3 — loss curves at H = 0 (pellet)
+fig, axs = plt.subplots(1, 3, figsize=(15, 4.6), constrained_layout=True)
+for ax, el in zip(axs, ELEMENTS):
+    fmax = 0
+    for x, col in zip(XS, COL_X):
+        s = calc.spectrum(el, x, "pellet", 0.0)
+        ax.plot(s["f"] * GHZ, s["P_norm"], color=col, lw=2,
+                label=f"x = {x:g}: {s['f_peak']*GHZ:.1f} ГГц")
+        above = s["f"][s["P_norm"] > 0.05]
+        fmax = max(fmax, above.max() * GHZ)
+    ax.set_xlim(0, fmax * 1.1)
+    ax.set_ylim(0, 1.08)
+    ax.set_title(f"Sr{el}ₓFe₁₈₋ₓO₂₇, H = 0, таблетка")
+    finish(ax, "f, ГГц", "μ'' (норм.)")
+fig.suptitle("Резонансные кривые μ''(f) без внешнего поля",
+             fontsize=12, fontweight="bold", x=0.01, ha="left", color=INK)
+fig.savefig("SrW_series_spectra_H0.png", dpi=160)
+plt.close(fig)
+print("saved")

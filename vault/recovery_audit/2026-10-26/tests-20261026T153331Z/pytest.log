@@ -1,0 +1,8 @@
+.....                                                                    [100%]
+============================= slowest 5 durations =============================
+176.43s call     tests/test_registry_round1.py::test_audit_default_writes_nothing_and_flag_writes_manifest
+92.68s call     tests/test_cli.py::test_audit_passes_on_real_data
+9.84s call     tests/test_literature_split_round1.py::test_real_project_has_no_undeclared_holdout_references
+7.35s call     tests/theory/test_magnet_poly_uncertainty.py::test_import_has_no_filesystem_writes_or_pools
+1.13s call     tests/test_registry_round1.py::test_real_registry_is_git_clean_with_sums_and_readonly_keys
+5 passed in 293.68s (0:04:53)

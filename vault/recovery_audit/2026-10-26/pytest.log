@@ -1,0 +1,304 @@
+........................................................................ [  7%]
+........................................................................ [ 15%]
+........................................................................ [ 22%]
+..................................................................F..... [ 30%]
+........................................................................ [ 37%]
+........................................................................ [ 45%]
+........................sssss........................................... [ 52%]
+..ss.................................................................... [ 60%]
+........................................................................ [ 67%]
+...........F............................................................ [ 75%]
+.F..F................................................................... [ 82%]
+........................................................................ [ 90%]
+....................................F................................... [ 97%]
+.....................                                                    [100%]
+================================== FAILURES ===================================
+_______________________ test_audit_passes_on_real_data ________________________
+
+    def test_audit_passes_on_real_data():
+        """Integration: real audit on the populated project root (read-only, no writes)."""
+        root = paths._default_root()
+        if not (root / "registry" / "zip_entries.json").exists():
+            pytest.skip("real project root not populated")
+        old = paths.get_config().root
+        try:
+            from hexw.audit import run_audit
+            buf = io.StringIO()
+>           assert run_audit(root, write_manifest=False, out=buf) == 0, buf.getvalue()
+E           AssertionError: [OK] original zip copy present and sha256 == recorded
+E             [OK] all 121 files present on disk
+E             [OK] no extra files in raw/theory_side, vault/*
+E             [OK] sha256 == zip member content
+E             [OK] sha256 == ALL_FILES_MANIFEST.csv (120 rows)
+E             [OK] sha256 == DATA_MANIFEST.csv (33 rows)
+E             [OK] every file except ALL_FILES_MANIFEST.csv itself is listed in it
+E             [OK] byte duplicate on disk: SrW_series_vs_x.png == SrW_series_vs_x_1.png
+E             [OK] Archive.zip not extracted (members only hashed in memory)
+E             [OK] Archive.zip: 5 members, each byte-identical to a distinct 02_Mossbauer/*.spc
+E             [OK] all files in raw/ and vault/ are read-only
+E             [OK] registry files readable
+E             [OK] SampleID unique, BatchID present
+E             [OK] every sample has files and metadata_status
+E             [OK] sample file hashes agree with files_manifest.csv
+E             [OK] every lab file linked to a sample (except the Archive.zip container)
+E             [OK] name-derived values carry status preliminary_from_filename
+E             [OK] .mdi and .txt of one diffractogram form ONE observation
+E             [OK] Mossbauer: 5 observations, not linked to XRD samples
+E             [OK] equal formula does not merge samples (13 samples, 13 batches)
+E             [OK] umnik: all 45 files present, sha256 == files_manifest_umnik.csv
+E             [OK] umnik: no unregistered files in vault/lab_validation_umnik or vault/legacy/prior_analyses_umnik
+E             [OK] umnik: prior analyses (prior_lab_analysis) exist only in vault/legacy/prior_analyses_umnik (except the declared in-place .mtd projects)
+E             [OK] umnik: files byte-identical to registered archive files map to the same Observation (not new)
+E             [OK] every lab file sha256 belongs to exactly one lab Observation (no duplicate observations)
+E             [OK] umnik: status different_version <=> different_version_of, reference resolves to another file with different bytes
+E             [OK] umnik: byte duplicates between its own files are declared (byte_dup_group_umnik)
+E             [OK] .jip previews: each linked to exactly one Observation; not registered as measurement files
+E             [OK] prior analyses (incl. in-place .mtd) registered as role prior_lab_analysis, not independent
+E             [OK] prior_use: every lab Observation has a record (no extras)
+E             [OK] prior_use: statuses/modes consistent (independent_candidate needs no_prior_use_found + user confirmation)
+E             [OK] prior_use: XRD with prior analyses -> used_prior/retrospective; Mossbauer -> unknown_prior_use until user confirms
+E             [OK] prior_use: summary independent_lab_validation_available is present and consistent with the entries
+E             [OK] registry is a git repository with a commit
+E             [FAIL] registry git tree is clean (nothing modified or untracked)  -> dirty=['M environment.json', ' M nested_archive_members.json', ' M zip_entries.json']
+E             [OK] registry SHA256SUMS matches the files exactly
+E             [OK] registry key files (samples, observations, prior_use) are read-only
+E             [OK] project git repository has a commit (HEAD recorded)
+E             [OK] hexw.theory._probe: open_data on vault raises TheoryAccessError
+E             [OK] hexw.params._probe: open_data on vault raises TheoryAccessError
+E             [OK] hexw.theory: builtin open() on vault blocked by audit hook
+E             [OK] hexw.theory: original zip (contains lab bytes) is blocked too
+E             [OK] hexw.experiment: vault access without freeze file raises FreezeRequiredError
+E             [OK] hexw.dft: builtin open() on vault blocked
+E             [OK] thread-pool worker without an allowed frame is refused
+E             [OK] extended-prefix spelling of a vault path is RESTRICTED
+E             [OK] write into vault is refused
+E             [OK] inputs/targets overlap raises LeakageError
+E             [OK] changing a ParameterEstimate changes the model version
+E             [OK] validation store is append-only; old results untouched
+E             [OK] site overflow detected
+E             [OK] charge violation detected
+E             [OK] Fe2+/Fe3+ model neutral for x=1 (n_Fe2=1, n_Fe3=16)
+E             [OK] x > 2 rejected as not applicable
+E             [OK] HOLDOUT: literature_holdout/ exists and is classified as zone HOLDOUT
+E             [OK] HOLDOUT: holdout sources are declared in project/config/holdout_sources.json
+E             [OK] HOLDOUT: every declared holdout source exists
+E             [OK] HOLDOUT: every declared holdout source is classified HOLDOUT
+E             [OK] HOLDOUT: hexw.theory open() on literature_holdout and on a holdout source is blocked
+E             [OK] HOLDOUT: hexw.params open_data on literature_holdout is blocked
+E             [OK] HOLDOUT: write into the zone is refused
+E             [OK] HOLDOUT: files of literature_holdout are read-only
+E             [OK] HOLDOUT: SHA256SUMS of literature_holdout verified (purpose integrity)
+E             [OK] literature/fit: every fit record is valid by schema (LiteratureClaim)
+E             [OK] literature/fit: no record with split != fit
+E             [OK] literature/fit: no holdout / original-mixed files inside
+E             [OK] literature/excluded: only excluded_* / methodology_only roles, no parameter estimates
+E             [OK] SPLIT_DECISION.md exists and the record hashes match the files
+E             [OK] literature/ SHA256SUMS verified
+E             [OK] agent-os is ignored (no code, config, checksum list or zone refers to it)
+E             [FAIL] HOLDOUT: no file outside vault/ and literature_holdout/ names a holdout source (path or file name) unless it is declared holdout or allow-listed (12532 text files, 166 terms)  -> offenders=['audit/TRANSFER_MANIFEST.json']
+E             [OK] HOLDOUT: every pinned reference-allowlist file (15) exists and matches its sha256
+E             [OK] HOLDOUT: DFT pilot derivatives of the L01 Zn HRPT CIF (pilots/c_W92, make_bw.py) are declared holdout
+E             [OK] literature/fit, excluded: no path / file name of a holdout source, no holdout sample next to its publication (12 files)
+E             [OK] subprocess policy: no subprocess / os.system / Popen / direct multiprocessing in hexw.theory/params/structures/dft/spin (start Python children only through hexw.util.pool.WorkerPool and other programs only through hexw.util.external.run_external (white list))
+E             [OK] subprocess policy: the static check recognises aliased / from-imports and ignores WorkerPool
+E             [OK] subprocess policy: run_external refuses python / sys.executable / shells (white list: ['pw.exe', 'pw.x', 'pw.x.exe', 'pw_big.exe'])
+E             
+E             audit: 75/77 checks passed; 121 files; frozen_model=False
+E             
+E           assert 1 == 0
+E            +  where 1 = <function run_audit at 0x000001505EDF8A90>(WindowsPath('C:/MIPT/working_stuff/Hexx'), write_manifest=False, out=<_io.StringIO object at 0x00000150644EDC60>)
+
+tests\test_cli.py:39: AssertionError
+___________ test_real_project_has_no_undeclared_holdout_references ____________
+
+    def test_real_project_has_no_undeclared_holdout_references():
+        _need_real()
+        from hexw import audit
+        cfg = paths.get_config()
+        with paths.test_access():
+            off, n, nt = audit.find_undeclared_holdout_references(cfg)
+>       assert off == [] and n > 100 and nt >= 10
+E       AssertionError: assert (['audit/TRANS...es.json', ...] == []
+E         
+E         Left contains 110 more items, first extra item: 'audit/TRANSFER_MANIFEST.json'
+E         Use -v to get more diff)
+
+tests\test_literature_split_round1.py:316: AssertionError
+_________ test_audit_default_writes_nothing_and_flag_writes_manifest __________
+
+    def test_audit_default_writes_nothing_and_flag_writes_manifest():
+        reg = real_registry()
+        runs = reg / "runs"
+        before = set(runs.iterdir()) if runs.exists() else set()
+        buf = io.StringIO()
+>       assert audit.run_audit(None, out=buf) == 0, buf.getvalue()
+E       AssertionError: [OK] original zip copy present and sha256 == recorded
+E         [OK] all 121 files present on disk
+E         [OK] no extra files in raw/theory_side, vault/*
+E         [OK] sha256 == zip member content
+E         [OK] sha256 == ALL_FILES_MANIFEST.csv (120 rows)
+E         [OK] sha256 == DATA_MANIFEST.csv (33 rows)
+E         [OK] every file except ALL_FILES_MANIFEST.csv itself is listed in it
+E         [OK] byte duplicate on disk: SrW_series_vs_x.png == SrW_series_vs_x_1.png
+E         [OK] Archive.zip not extracted (members only hashed in memory)
+E         [OK] Archive.zip: 5 members, each byte-identical to a distinct 02_Mossbauer/*.spc
+E         [OK] all files in raw/ and vault/ are read-only
+E         [OK] registry files readable
+E         [OK] SampleID unique, BatchID present
+E         [OK] every sample has files and metadata_status
+E         [OK] sample file hashes agree with files_manifest.csv
+E         [OK] every lab file linked to a sample (except the Archive.zip container)
+E         [OK] name-derived values carry status preliminary_from_filename
+E         [OK] .mdi and .txt of one diffractogram form ONE observation
+E         [OK] Mossbauer: 5 observations, not linked to XRD samples
+E         [OK] equal formula does not merge samples (13 samples, 13 batches)
+E         [OK] umnik: all 45 files present, sha256 == files_manifest_umnik.csv
+E         [OK] umnik: no unregistered files in vault/lab_validation_umnik or vault/legacy/prior_analyses_umnik
+E         [OK] umnik: prior analyses (prior_lab_analysis) exist only in vault/legacy/prior_analyses_umnik (except the declared in-place .mtd projects)
+E         [OK] umnik: files byte-identical to registered archive files map to the same Observation (not new)
+E         [OK] every lab file sha256 belongs to exactly one lab Observation (no duplicate observations)
+E         [OK] umnik: status different_version <=> different_version_of, reference resolves to another file with different bytes
+E         [OK] umnik: byte duplicates between its own files are declared (byte_dup_group_umnik)
+E         [OK] .jip previews: each linked to exactly one Observation; not registered as measurement files
+E         [OK] prior analyses (incl. in-place .mtd) registered as role prior_lab_analysis, not independent
+E         [OK] prior_use: every lab Observation has a record (no extras)
+E         [OK] prior_use: statuses/modes consistent (independent_candidate needs no_prior_use_found + user confirmation)
+E         [OK] prior_use: XRD with prior analyses -> used_prior/retrospective; Mossbauer -> unknown_prior_use until user confirms
+E         [OK] prior_use: summary independent_lab_validation_available is present and consistent with the entries
+E         [OK] registry is a git repository with a commit
+E         [FAIL] registry git tree is clean (nothing modified or untracked)  -> dirty=['M environment.json', ' M nested_archive_members.json', ' M zip_entries.json']
+E         [OK] registry SHA256SUMS matches the files exactly
+E         [OK] registry key files (samples, observations, prior_use) are read-only
+E         [OK] project git repository has a commit (HEAD recorded)
+E         [OK] hexw.theory._probe: open_data on vault raises TheoryAccessError
+E         [OK] hexw.params._probe: open_data on vault raises TheoryAccessError
+E         [OK] hexw.theory: builtin open() on vault blocked by audit hook
+E         [OK] hexw.theory: original zip (contains lab bytes) is blocked too
+E         [OK] hexw.experiment: vault access without freeze file raises FreezeRequiredError
+E         [OK] hexw.dft: builtin open() on vault blocked
+E         [OK] thread-pool worker without an allowed frame is refused
+E         [OK] extended-prefix spelling of a vault path is RESTRICTED
+E         [OK] write into vault is refused
+E         [OK] inputs/targets overlap raises LeakageError
+E         [OK] changing a ParameterEstimate changes the model version
+E         [OK] validation store is append-only; old results untouched
+E         [OK] site overflow detected
+E         [OK] charge violation detected
+E         [OK] Fe2+/Fe3+ model neutral for x=1 (n_Fe2=1, n_Fe3=16)
+E         [OK] x > 2 rejected as not applicable
+E         [OK] HOLDOUT: literature_holdout/ exists and is classified as zone HOLDOUT
+E         [OK] HOLDOUT: holdout sources are declared in project/config/holdout_sources.json
+E         [OK] HOLDOUT: every declared holdout source exists
+E         [OK] HOLDOUT: every declared holdout source is classified HOLDOUT
+E         [OK] HOLDOUT: hexw.theory open() on literature_holdout and on a holdout source is blocked
+E         [OK] HOLDOUT: hexw.params open_data on literature_holdout is blocked
+E         [OK] HOLDOUT: write into the zone is refused
+E         [OK] HOLDOUT: files of literature_holdout are read-only
+E         [OK] HOLDOUT: SHA256SUMS of literature_holdout verified (purpose integrity)
+E         [OK] literature/fit: every fit record is valid by schema (LiteratureClaim)
+E         [OK] literature/fit: no record with split != fit
+E         [OK] literature/fit: no holdout / original-mixed files inside
+E         [OK] literature/excluded: only excluded_* / methodology_only roles, no parameter estimates
+E         [OK] SPLIT_DECISION.md exists and the record hashes match the files
+E         [OK] literature/ SHA256SUMS verified
+E         [OK] agent-os is ignored (no code, config, checksum list or zone refers to it)
+E         [FAIL] HOLDOUT: no file outside vault/ and literature_holdout/ names a holdout source (path or file name) unless it is declared holdout or allow-listed (13210 text files, 166 terms)  -> offenders=['audit/TRANSFER_MANIFEST.json', 'audit/pytest_work/test_all_theory_side_packages_0/project/config/holdout_sources.json', 'audit/pytest_work/test_all_theory_side_packages_1/project/config/holdout_sources.json', 'audit/pytest_work/test_all_theory_side_packages_2/project/config/holdout_sources.json', 'audit/pytest_work/test_all_theory_side_packages_3/project/config/holdout_sources.json', 'audit/pytest_work/test_all_theory_side_packages_4/project/config/holdout_sources.json', 'audit/pytest_work/test_all_theory_side_packages_5/project/config/holdout_sources.json', 'audit/pytest_work/test_audit_finds_undeclared_de0/docs/notes.md', 'audit/pytest_work/test_audit_finds_undeclared_de0/pilots/derived_declared.in', 'audit/pytest_work/test_audit_finds_undeclared_de0/pilots/other.py', 'audit/pytest_work/test_audit_finds_undeclared_de0/project/config/holdout_sources.json', 'audit/pytest_work/test_audit_pinned_allowlist_ac0/docs/pipeline.py', 'audit/pytest_work/test_audit_pinned_allowlist_ac0/pilots/derived_declared.in', 'audit/pytest_work/test_audit_pinned_allowlist_ac0/project/config/holdout_sources.json', 'audit/pytest_work/test_child_process_arguments_i0/project/config/holdout_sources.json', 'audit/pytest_work/test_child_process_arguments_i1/project/config/holdout_sources.json', 'audit/pytest_work/test_child_process_arguments_i10/project/config/holdout_sources.json', 'audit/pytest_work/test_child_process_arguments_i11/project/config/holdout_sources.json', 'audit/pytest_work/test_child_process_arguments_i12/project/config/holdout_sources.json', 'audit/pytest_work/test_child_process_arguments_i13/project/config/holdout_sources.json', 'audit/pytest_work/test_child_process_arguments_i14/project/config/holdout_sources.json', 'audit/pytest_work/test_child_process_arguments_i15/project/config/holdout_sources.json', 'audit/pytest_work/test_child_process_arguments_i16/project/config/holdout_sources.json', 'audit/pytest_work/test_child_process_arguments_i17/project/config/holdout_sources.json', 'audit/pytest_work/test_child_process_arguments_i18/project/config/holdout_sources.json', 'audit/pytest_work/test_child_process_arguments_i19/project/config/holdout_sources.json', 'audit/pytest_work/test_child_process_arguments_i2/project/config/holdout_sources.json', 'audit/pytest_work/test_child_process_arguments_i20/project/config/holdout_sources.json', 'audit/pytest_work/test_child_process_arguments_i21/project/config/holdout_sources.json', 'audit/pytest_work/test_child_process_arguments_i22/project/config/holdout_sources.json', 'audit/pytest_work/test_child_process_arguments_i23/project/config/holdout_sources.json', 'audit/pytest_work/test_child_process_arguments_i24/project/config/holdout_sources.json', 'audit/pytest_work/test_child_process_arguments_i25/project/config/holdout_sources.json', 'audit/pytest_work/test_child_process_arguments_i26/project/config/holdout_sources.json', 'audit/pytest_work/test_child_process_arguments_i27/project/config/holdout_sources.json', 'audit/pytest_work/test_child_process_arguments_i28/project/config/holdout_sources.json', 'audit/pytest_work/test_child_process_arguments_i29/project/config/holdout_sources.json', 'audit/pytest_work/test_child_process_arguments_i3/project/config/holdout_sources.json', 'audit/pytest_work/test_child_process_arguments_i30/project/config/holdout_sources.json', 'audit/pytest_work/test_child_process_arguments_i31/project/config/holdout_sources.json', 'audit/pytest_work/test_child_process_arguments_i32/project/config/holdout_sources.json', 'audit/pytest_work/test_child_process_arguments_i33/project/config/holdout_sources.json', 'audit/pytest_work/test_child_process_arguments_i34/project/config/holdout_sources.json', 'audit/pytest_work/test_child_process_arguments_i35/project/config/holdout_sources.json', 'audit/pytest_work/test_child_process_arguments_i36/project/config/holdout_sources.json', 'audit/pytest_work/test_child_process_arguments_i37/project/config/holdout_sources.json', 'audit/pytest_work/test_child_process_arguments_i38/project/config/holdout_sources.json', 'audit/pytest_work/test_child_process_arguments_i39/project/config/holdout_sources.json', 'audit/pytest_work/test_child_process_arguments_i4/project/config/holdout_sources.json', 'audit/pytest_work/test_child_process_arguments_i40/project/config/holdout_sources.json', 'audit/pytest_work/test_child_process_arguments_i41/project/config/holdout_sources.json', 'audit/pytest_work/test_child_process_arguments_i42/project/config/holdout_sources.json', 'audit/pytest_work/test_child_process_arguments_i43/project/config/holdout_sources.json', 'audit/pytest_work/test_child_process_arguments_i44/project/config/holdout_sources.json', 'audit/pytest_work/test_child_process_arguments_i45/project/config/holdout_sources.json', 'audit/pytest_work/test_child_process_arguments_i46/project/config/holdout_sources.json', 'audit/pytest_work/test_child_process_arguments_i47/project/config/holdout_sources.json', 'audit/pytest_work/test_child_process_arguments_i48/project/config/holdout_sources.json', 'audit/pytest_work/test_child_process_arguments_i49/project/config/holdout_sources.json', 'audit/pytest_work/test_child_process_arguments_i5/project/config/holdout_sources.json', 'audit/pytest_work/test_child_process_arguments_i50/project/config/holdout_sources.json', 'audit/pytest_work/test_child_process_arguments_i51/project/config/holdout_sources.json', 'audit/pytest_work/test_child_process_arguments_i52/project/config/holdout_sources.json', 'audit/pytest_work/test_child_process_arguments_i53/project/config/holdout_sources.json', 'audit/pytest_work/test_child_process_arguments_i6/project/config/holdout_sources.json', 'audit/pytest_work/test_child_process_arguments_i7/project/config/holdout_sources.json', 'audit/pytest_work/test_child_process_arguments_i8/project/config/holdout_sources.json', 'audit/pytest_work/test_child_process_arguments_i9/project/config/holdout_sources.json', 'audit/pytest_work/test_experiment_and_ingest_alo0/project/config/holdout_sources.json', 'audit/pytest_work/test_fit_files_and_fit_papers_0/project/config/holdout_sources.json', 'audit/pytest_work/test_harmless_children_still_r0/project/config/holdout_sources.json', 'audit/pytest_work/test_holdout_build_only_for_in0/project/config/holdout_sources.json', 'audit/pytest_work/test_holdout_is_read_only_and_0/project/config/holdout_sources.json', 'audit/pytest_work/test_junction_blocked_holdout_0/project/config/holdout_sources.json', 'audit/pytest_work/test_junction_blocked_holdout_1/project/config/holdout_sources.json', 'audit/pytest_work/test_junction_blocked_pilot_de0/project/config/holdout_sources.json', 'audit/pytest_work/test_junction_blocked_vault_fi0/project/config/holdout_sources.json', 'audit/pytest_work/test_os_system_blocked_holdout0/project/config/holdout_sources.json', 'audit/pytest_work/test_os_system_blocked_pilot_d0/project/config/holdout_sources.json', 'audit/pytest_work/test_os_system_blocked_vault_f0/project/config/holdout_sources.json', 'audit/pytest_work/test_relative_paths_cwd_and_ch0/project/config/holdout_sources.json', 'audit/pytest_work/test_relative_paths_cwd_and_ch1/project/config/holdout_sources.json', 'audit/pytest_work/test_relative_paths_cwd_and_ch2/project/config/holdout_sources.json', 'audit/pytest_work/test_relative_paths_cwd_and_ch3/project/config/holdout_sources.json', 'audit/pytest_work/test_relative_paths_cwd_and_ch4/project/config/holdout_sources.json', 'audit/pytest_work/test_theory_cannot_list_or_use0/project/config/holdout_sources.json', 'audit/pytest_work/test_theory_cannot_read_holdou0/project/config/holdout_sources.json', 'audit/pytest_work/test_theory_cannot_read_holdou1/project/config/holdout_sources.json', 'audit/pytest_work/test_theory_cannot_read_holdou10/project/config/holdout_sources.json', 'audit/pytest_work/test_theory_cannot_read_holdou11/project/config/holdout_sources.json', 'audit/pytest_work/test_theory_cannot_read_holdou12/project/config/holdout_sources.json', 'audit/pytest_work/test_theory_cannot_read_holdou13/project/config/holdout_sources.json', 'audit/pytest_work/test_theory_cannot_read_holdou14/project/config/holdout_sources.json', 'audit/pytest_work/test_theory_cannot_read_holdou15/project/config/holdout_sources.json', 'audit/pytest_work/test_theory_cannot_read_holdou16/project/config/holdout_sources.json', 'audit/pytest_work/test_theory_cannot_read_holdou17/project/config/holdout_sources.json', 'audit/pytest_work/test_theory_cannot_read_holdou18/project/config/holdout_sources.json', 'audit/pytest_work/test_theory_cannot_read_holdou19/project/config/holdout_sources.json', 'audit/pytest_work/test_theory_cannot_read_holdou2/project/config/holdout_sources.json', 'audit/pytest_work/test_theory_cannot_read_holdou20/project/config/holdout_sources.json', 'audit/pytest_work/test_theory_cannot_read_holdou21/project/config/holdout_sources.json', 'audit/pytest_work/test_theory_cannot_read_holdou22/project/config/holdout_sources.json', 'audit/pytest_work/test_theory_cannot_read_holdou23/project/config/holdout_sources.json', 'audit/pytest_work/test_theory_cannot_read_holdou3/project/config/holdout_sources.json', 'audit/pytest_work/test_theory_cannot_read_holdou4/project/config/holdout_sources.json', 'audit/pytest_work/test_theory_cannot_read_holdou5/project/config/holdout_sources.json', 'audit/pytest_work/test_theory_cannot_read_holdou6/project/config/holdout_sources.json', 'audit/pytest_work/test_theory_cannot_read_holdou7/project/config/holdout_sources.json', 'audit/pytest_work/test_theory_cannot_read_holdou8/project/config/holdout_sources.json', 'audit/pytest_work/test_theory_cannot_read_holdou9/project/config/holdout_sources.json', 'audit/pytest_work/test_too_many_fragments_fail_c0/project/config/holdout_sources.json', 'audit/pytest_work/test_whitelisted_callers_and_t0/project/config/holdout_sources.json', 'audit/pytest_work/test_zone_classification0/project/config/holdout_sources.json']
+E         [OK] HOLDOUT: every pinned reference-allowlist file (15) exists and matches its sha256
+E         [OK] HOLDOUT: DFT pilot derivatives of the L01 Zn HRPT CIF (pilots/c_W92, make_bw.py) are declared holdout
+E         [OK] literature/fit, excluded: no path / file name of a holdout source, no holdout sample next to its publication (12 files)
+E         [OK] subprocess policy: no subprocess / os.system / Popen / direct multiprocessing in hexw.theory/params/structures/dft/spin (start Python children only through hexw.util.pool.WorkerPool and other programs only through hexw.util.external.run_external (white list))
+E         [OK] subprocess policy: the static check recognises aliased / from-imports and ignores WorkerPool
+E         [OK] subprocess policy: run_external refuses python / sys.executable / shells (white list: ['pw.exe', 'pw.x', 'pw.x.exe', 'pw_big.exe'])
+E         
+E         audit: 75/77 checks passed; 121 files; frozen_model=False
+E         
+E       assert 1 == 0
+E        +  where 1 = <function run_audit at 0x000001505EDF8A90>(None, out=<_io.StringIO object at 0x0000015064437EB0>)
+E        +    where <function run_audit at 0x000001505EDF8A90> = audit.run_audit
+
+tests\test_registry_round1.py:118: AssertionError
+_________ test_real_registry_is_git_clean_with_sums_and_readonly_keys _________
+
+    def test_real_registry_is_git_clean_with_sums_and_readonly_keys():
+        reg = real_registry()
+>       assert I.git_head(reg) and I.git_dirty(reg) == [] and I.verify_sums(reg) == []
+E       AssertionError: assert ('197090d4aa2651bb42eaf266508e85cd16aa06dc' and ['M environme...entries.json'] == []
+E        +  where '197090d4aa2651bb42eaf266508e85cd16aa06dc' = <function git_head at 0x000001505EDFAF00>(WindowsPath('C:/MIPT/working_stuff/Hexx/registry'))
+E        +    where <function git_head at 0x000001505EDFAF00> = I.git_head
+E         
+E         Left contains 3 more items, first extra item: 'M environment.json'
+E         Use -v to get more diff)
+
+tests\test_registry_round1.py:159: AssertionError
+________________ test_import_has_no_filesystem_writes_or_pools ________________
+
+    def test_import_has_no_filesystem_writes_or_pools():
+        code = (
+            "import sys\n"
+            "ev=[]\n"
+            "def hook(e,a):\n"
+            "    if e=='open':\n"
+            "        p,mode=str(a[0]),a[1] or 'r'\n"
+            "        if any(c in str(mode) for c in 'wax+') and not p.endswith(('.pyc','.pyo')): ev.append(p)\n"
+            "    if e in ('os.mkdir','os.remove','shutil.rmtree','subprocess.Popen','multiprocessing.pool'): ev.append(e)\n"
+            "sys.addaudithook(hook)\n"
+            "import hexw.theory.magnet\n"
+            "assert 'multiprocessing.pool' not in sys.modules, 'multiprocessing.pool imported'\n"
+            "assert 'concurrent.futures.process' not in sys.modules, 'process pool imported'\n"
+            "assert not ev, ev\n"
+        )
+        r = subprocess.run([sys.executable, "-I", "-c", code], capture_output=True, text=True, timeout=120)
+>       assert r.returncode == 0, r.stderr
+E       AssertionError: Traceback (most recent call last):
+E           File "<string>", line 12, in <module>
+E             assert not ev, ev
+E                    ^^^^^^
+E         AssertionError: ['3', '3', '3', 'os.mkdir', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3']
+E         
+E       assert 1 == 0
+E        +  where 1 = CompletedProcess(args=['C:\\MIPT\\working_stuff\\Hexx\\.venv_local\\Scripts\\python.exe', '-I', '-c', "import sys\nev=...\', \'3\', \'3\', \'3\', \'3\', \'3\', \'3\', \'3\', \'3\', \'3\', \'3\', \'3\', \'3\', \'3\', \'3\', \'3\', \'3\']\n').returncode
+
+tests\theory\test_magnet_poly_uncertainty.py:154: AssertionError
+============================== warnings summary ===============================
+tests/dft/test_dft_campaign.py::test_full_chain_recovers_j_and_checks_holdout
+tests/dft/test_dft_magnet.py::test_w_system_is_gorter
+  C:\MIPT\working_stuff\Hexx\.venv_local\Lib\site-packages\spglib\spg.py:437: DeprecationWarning: Set OLD_ERROR_HANDLING to false and catch the errors directly.
+    _set_no_error(_throw)
+
+tests/dft/test_dft_campaign.py: 2 warnings
+tests/dft/test_dft_cli_soc.py: 9 warnings
+tests/dft/test_dft_magnet.py: 1 warning
+tests/dft/test_dft_qe_input.py: 1 warning
+tests/dft/test_dft_review1.py: 2 warnings
+  C:\MIPT\working_stuff\Hexx\.venv_local\Lib\site-packages\spglib\cell.py:106: DeprecationWarning: Set OLD_ERROR_HANDLING to false and catch the errors directly.
+    _set_no_error()
+
+tests/dft/test_dft_magnet.py: 1 warning
+tests/dft/test_dft_qe_input.py: 2 warnings
+tests/structures/test_configs.py: 14 warnings
+  C:\MIPT\working_stuff\Hexx\.venv_local\Lib\site-packages\spglib\spg.py:353: DeprecationWarning: Set OLD_ERROR_HANDLING to false and catch the errors directly.
+    _set_no_error()
+
+tests/params/test_anisotropy.py::test_chi2_profile_runs_for_both_forms
+  C:\MIPT\working_stuff\Hexx\project\hexw\params\anisotropy.py:271: RuntimeWarning: invalid value encountered in divide
+    w = np.where(g1 != g0, -g0 / (g1 - g0), 0.0)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+============================ slowest 10 durations =============================
+164.36s call     tests/test_registry_round1.py::test_audit_default_writes_nothing_and_flag_writes_manifest
+151.83s call     tests/test_cli.py::test_audit_passes_on_real_data
+134.39s setup    tests/dft/test_dft_magnet.py::test_w_system_is_gorter
+121.72s call     tests/test_literature_split_round1.py::test_real_project_has_no_undeclared_holdout_references
+102.43s call     tests/params/test_anisotropy.py::test_both_co_forms_are_returned_and_not_averaged
+21.96s setup    tests/params/test_anisotropy.py::test_defaults_are_ion_mf_dft_none
+21.46s call     tests/params/test_stage4_round1.py::test_ms_of_t_is_eta_ms0_m
+20.78s call     tests/params/test_moments.py::test_physical_trends
+12.31s call     tests/dft/test_dft_cli_soc.py::test_kpoints_tag_and_start_overrides
+11.22s call     tests/theory/test_magnet_review_r1.py::test_H_res_flags_possibly_incomplete_on_a_coarse_field_grid
+=========================== short test summary info ===========================
+FAILED tests/test_cli.py::test_audit_passes_on_real_data - AssertionError: [O...
+FAILED tests/test_literature_split_round1.py::test_real_project_has_no_undeclared_holdout_references
+FAILED tests/test_registry_round1.py::test_audit_default_writes_nothing_and_flag_writes_manifest
+FAILED tests/test_registry_round1.py::test_real_registry_is_git_clean_with_sums_and_readonly_keys
+FAILED tests/theory/test_magnet_poly_uncertainty.py::test_import_has_no_filesystem_writes_or_pools
+5 failed, 945 passed, 7 skipped, 4 deselected, 35 warnings in 1268.71s (0:21:08)

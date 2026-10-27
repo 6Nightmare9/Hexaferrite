@@ -1,0 +1,9 @@
+{
+  "status": "listening",
+  "launcher_pid": 22452,
+  "stderr": "C:\\MIPT\\working_stuff\\Hexx\\audit\\ui-20261027T001335Z.stderr.log",
+  "url": "http://127.0.0.1:8765",
+  "stdout": "C:\\MIPT\\working_stuff\\Hexx\\audit\\ui-20261027T001335Z.stdout.log",
+  "pid": 9124,
+  "browser_visual_test": "passed: Co-Zn calculation, results, plots, CSV link, history toggle, help and freeze"
+}

@@ -1,0 +1,74 @@
+The data provided in this entry/package is given under the Creative Commons Attribution 4.0 International (CC-BY-4.0) license
+(see https://creativecommons.org/licenses/by/4.0/legalcode), except for some of the pseudopotentials for which license
+details are given below.
+
+Each pseudopotential family is given under a specific license. Each family contains a number of
+pseudopotentials, each uniquely identified with the MD5 checksum of its corresponding file.
+
+========================================================================================================================
+GBRV pseudopotentials:
+
+LICENSE:	GNU General Public License (version 3).
+	 	https://www.gnu.org/licenses/gpl-3.0.en.html
+
+REFERENCE: 	K. F. Garrity, J. W. Bennett, K. M. Rabe, and D. Vanderbilt, Comput. Mater. Sci. 81, 446 (2014).
+DOI:		10.1016/j.commatsci.2013.08.053
+WEB:		http://www.physics.rutgers.edu/gbrv
+
+========================================================================================================================
+SG15 pseudopotentials:
+
+LICENSE:	Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0).
+	 	https://creativecommons.org/licenses/by-sa/4.0/legalcode
+
+REFERENCE:	M. Schlipf and F. Gygi, Comp. Phys. Comm. 196, 36 (2015).
+DOI:		10.1016/j.cpc.2015.05.011
+WEB:		http://www.quantum-simulation.org/potentials/sg15_oncv
+
+========================================================================================================================
+PseudoDojo pseudopotentials:
+
+LICENSE:	Creative Commons Attribution-ShareAlike 4.0 International License (CC BY 4.0).
+	 	https://creativecommons.org/licenses/by/4.0/legalcode
+
+REFERENCE:	M. J. van Setten, M. Giantomassi, E. Bousquet, M. J. Verstraete, D. R. Hamann, X. Gonze, G.-M. Rignanese arxiv:1710.10138 (2017)
+WEB:		http://www.pseudo-dojo.org/
+========================================================================================================================
+Goedecker pseudopotentials:
+
+LICENSE:        Creative Commons Attribution 3.0 Unported License (CC BY 3.0).
+	 	https://creativecommons.org/licenses/by/3.0/legalcode
+
+REFERENCE:      A. Willand, Y. O. Kvashnin, L. Genovese, A. Vázquez-Mayagoitia, A. K. Deb, A. Sadeghi, T. Deutsch, and S. Goedecker, J. Chem. Phys. 138, 104109 (2013).
+DOI:            10.1063/1.4793260
+WEB:            http://bigdft.org/Wiki/index.php?title=New_Soft-Accurate_NLCC_pseudopotentials
+
+========================================================================================================================
+Pslibrary 0.3.1 pseudopotentials:
+
+LICENSE: 	GNU General Public License (version 2 or later).
+	 	https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
+
+REFERENCE:	E. Küçükbenli et al., arXiv:1404.3015.
+WEB: 		http://theossrv1.epfl.ch/Main/Pseudopotentials
+
+========================================================================================================================
+Pslibrary 1.0.0 pseudopotentials:
+
+LICENSE: 	GNU General Public License (version 2 or later).
+		https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
+
+REFERENCE:	A. Dal Corso, Comput. Mater. Sci. 95, 337 (2014).
+DOI:		10.1016/j.commatsci.2014.07.043
+WEB:		http://www.quantum-espresso.org/pseudopotentials
+
+========================================================================================================================
+Rare-earths Wentzcovitch pseudopotentials:
+
+LICENSE:	GNU General Public License (version 3).
+	 	https://www.gnu.org/licenses/gpl-3.0.en.html
+
+REFERENCE:	M. Topsakal and R. M. Wentzcovitch, Comput. Mater. Sci. 95, 263 (2014).
+DOI:		10.1016/j.commatsci.2014.07.030
+WEB:		http://www.vlab.msi.umn.edu/resources/repaw/index.shtml
+

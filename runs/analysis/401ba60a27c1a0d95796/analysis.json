@@ -1,0 +1,329 @@
+{
+  "method": "xrd",
+  "peaks": [
+    {
+      "two_theta_deg": 16.08,
+      "d_angstrom": 5.511909929115505,
+      "intensity_counts": 102.0,
+      "observed_fwhm_deg": 0.13180451127819737,
+      "scherrer_D_nm": null
+    },
+    {
+      "two_theta_deg": 18.08,
+      "d_angstrom": 4.906444461446533,
+      "intensity_counts": 91.0,
+      "observed_fwhm_deg": 0.15428571428571303,
+      "scherrer_D_nm": null
+    },
+    {
+      "two_theta_deg": 19.1,
+      "d_angstrom": 4.646664942633029,
+      "intensity_counts": 129.0,
+      "observed_fwhm_deg": 0.18748717948718152,
+      "scherrer_D_nm": null
+    },
+    {
+      "two_theta_deg": 21.54,
+      "d_angstrom": 4.125501808056357,
+      "intensity_counts": 182.0,
+      "observed_fwhm_deg": 0.12631578947368283,
+      "scherrer_D_nm": null
+    },
+    {
+      "two_theta_deg": 23.02,
+      "d_angstrom": 3.8635061446100867,
+      "intensity_counts": 74.0,
+      "observed_fwhm_deg": 0.10442307692307651,
+      "scherrer_D_nm": null
+    },
+    {
+      "two_theta_deg": 27.04,
+      "d_angstrom": 3.297562957134756,
+      "intensity_counts": 252.0,
+      "observed_fwhm_deg": 0.14345238095238244,
+      "scherrer_D_nm": null
+    },
+    {
+      "two_theta_deg": 30.0,
+      "d_angstrom": 2.9786061520110745,
+      "intensity_counts": 444.0,
+      "observed_fwhm_deg": 0.06769230769230816,
+      "scherrer_D_nm": null
+    },
+    {
+      "two_theta_deg": 30.2,
+      "d_angstrom": 2.9593345774200137,
+      "intensity_counts": 819.0,
+      "observed_fwhm_deg": 0.1950628233555065,
+      "scherrer_D_nm": null
+    },
+    {
+      "two_theta_deg": 30.92,
+      "d_angstrom": 2.892046410496932,
+      "intensity_counts": 125.0,
+      "observed_fwhm_deg": 0.11642857142857466,
+      "scherrer_D_nm": null
+    },
+    {
+      "two_theta_deg": 32.3,
+      "d_angstrom": 2.7715683093694117,
+      "intensity_counts": 1031.0,
+      "observed_fwhm_deg": 0.1837404729333585,
+      "scherrer_D_nm": null
+    },
+    {
+      "two_theta_deg": 32.620000000000005,
+      "d_angstrom": 2.745107037766243,
+      "intensity_counts": 455.0,
+      "observed_fwhm_deg": 0.1029925742574207,
+      "scherrer_D_nm": null
+    },
+    {
+      "two_theta_deg": 34.44,
+      "d_angstrom": 2.604094472080714,
+      "intensity_counts": 1532.0,
+      "observed_fwhm_deg": 0.1795288516785689,
+      "scherrer_D_nm": null
+    },
+    {
+      "two_theta_deg": 34.7,
+      "d_angstrom": 2.58517590992951,
+      "intensity_counts": 664.0,
+      "observed_fwhm_deg": 0.07565104706614534,
+      "scherrer_D_nm": null
+    },
+    {
+      "two_theta_deg": 35.22,
+      "d_angstrom": 2.548190511994283,
+      "intensity_counts": 699.0,
+      "observed_fwhm_deg": 0.199603174603169,
+      "scherrer_D_nm": null
+    },
+    {
+      "two_theta_deg": 36.0,
+      "d_angstrom": 2.494749525214138,
+      "intensity_counts": 170.0,
+      "observed_fwhm_deg": 0.1267307692307682,
+      "scherrer_D_nm": null
+    },
+    {
+      "two_theta_deg": 36.74,
+      "d_angstrom": 2.4461834300089227,
+      "intensity_counts": 324.0,
+      "observed_fwhm_deg": 0.19427626137303378,
+      "scherrer_D_nm": null
+    },
+    {
+      "two_theta_deg": 37.44,
+      "d_angstrom": 2.402041905315052,
+      "intensity_counts": 203.0,
+      "observed_fwhm_deg": 0.17864705882352894,
+      "scherrer_D_nm": null
+    },
+    {
+      "two_theta_deg": 37.68,
+      "d_angstrom": 2.3872924458977485,
+      "intensity_counts": 160.0,
+      "observed_fwhm_deg": 0.07813852813853117,
+      "scherrer_D_nm": null
+    },
+    {
+      "two_theta_deg": 38.8,
+      "d_angstrom": 2.3209217635671946,
+      "intensity_counts": 156.0,
+      "observed_fwhm_deg": 0.1590909090909065,
+      "scherrer_D_nm": null
+    },
+    {
+      "two_theta_deg": 41.54,
+      "d_angstrom": 2.1739483529701604,
+      "intensity_counts": 406.0,
+      "observed_fwhm_deg": 0.1922962962962913,
+      "scherrer_D_nm": null
+    },
+    {
+      "two_theta_deg": 43.12,
+      "d_angstrom": 2.0978821740796025,
+      "intensity_counts": 232.0,
+      "observed_fwhm_deg": 0.19692391304347723,
+      "scherrer_D_nm": null
+    },
+    {
+      "two_theta_deg": 47.660000000000004,
+      "d_angstrom": 1.9081029918834527,
+      "intensity_counts": 63.0,
+      "observed_fwhm_deg": 0.12614285714285955,
+      "scherrer_D_nm": null
+    },
+    {
+      "two_theta_deg": 50.4,
+      "d_angstrom": 1.810609429045421,
+      "intensity_counts": 78.0,
+      "observed_fwhm_deg": 0.24103174603174438,
+      "scherrer_D_nm": null
+    },
+    {
+      "two_theta_deg": 53.74,
+      "d_angstrom": 1.7056970985051725,
+      "intensity_counts": 157.0,
+      "observed_fwhm_deg": 0.33294117647059096,
+      "scherrer_D_nm": null
+    },
+    {
+      "two_theta_deg": 55.1,
+      "d_angstrom": 1.666772966745875,
+      "intensity_counts": 524.0,
+      "observed_fwhm_deg": 0.25209803393482844,
+      "scherrer_D_nm": null
+    },
+    {
+      "two_theta_deg": 55.92,
+      "d_angstrom": 1.6442608970894783,
+      "intensity_counts": 377.0,
+      "observed_fwhm_deg": 0.09845614035086925,
+      "scherrer_D_nm": null
+    },
+    {
+      "two_theta_deg": 56.06,
+      "d_angstrom": 1.6404863530683533,
+      "intensity_counts": 222.0,
+      "observed_fwhm_deg": 0.06074754901960944,
+      "scherrer_D_nm": null
+    },
+    {
+      "two_theta_deg": 56.660000000000004,
+      "d_angstrom": 1.6245313731722815,
+      "intensity_counts": 584.0,
+      "observed_fwhm_deg": 0.31447811447811347,
+      "scherrer_D_nm": null
+    },
+    {
+      "two_theta_deg": 57.5,
+      "d_angstrom": 1.6027817067994867,
+      "intensity_counts": 405.0,
+      "observed_fwhm_deg": 0.135064935064932,
+      "scherrer_D_nm": null
+    },
+    {
+      "two_theta_deg": 59.96,
+      "d_angstrom": 1.5427728541128032,
+      "intensity_counts": 222.0,
+      "observed_fwhm_deg": 0.1402232142857187,
+      "scherrer_D_nm": null
+    },
+    {
+      "two_theta_deg": 62.42,
+      "d_angstrom": 1.4877562208519204,
+      "intensity_counts": 182.0,
+      "observed_fwhm_deg": 0.17867007672634827,
+      "scherrer_D_nm": null
+    },
+    {
+      "two_theta_deg": 62.92,
+      "d_angstrom": 1.4771322079184186,
+      "intensity_counts": 669.0,
+      "observed_fwhm_deg": 0.14584051724138192,
+      "scherrer_D_nm": null
+    },
+    {
+      "two_theta_deg": 63.1,
+      "d_angstrom": 1.4733514505954626,
+      "intensity_counts": 432.0,
+      "observed_fwhm_deg": 0.06979084228377985,
+      "scherrer_D_nm": null
+    },
+    {
+      "two_theta_deg": 65.08,
+      "d_angstrom": 1.4332344371035994,
+      "intensity_counts": 184.0,
+      "observed_fwhm_deg": 0.1305502392344522,
+      "scherrer_D_nm": null
+    },
+    {
+      "two_theta_deg": 68.66,
+      "d_angstrom": 1.3669799790274086,
+      "intensity_counts": 56.0,
+      "observed_fwhm_deg": 0.1666666666666714,
+      "scherrer_D_nm": null
+    },
+    {
+      "two_theta_deg": 70.56,
+      "d_angstrom": 1.3347583696945853,
+      "intensity_counts": 71.0,
+      "observed_fwhm_deg": 0.22673076923078384,
+      "scherrer_D_nm": null
+    },
+    {
+      "two_theta_deg": 72.58,
+      "d_angstrom": 1.3025102341920127,
+      "intensity_counts": 127.0,
+      "observed_fwhm_deg": 0.08712550607289415,
+      "scherrer_D_nm": null
+    },
+    {
+      "two_theta_deg": 72.75999999999999,
+      "d_angstrom": 1.2997315019378413,
+      "intensity_counts": 128.0,
+      "observed_fwhm_deg": 0.3576153846153858,
+      "scherrer_D_nm": null
+    },
+    {
+      "two_theta_deg": 74.5,
+      "d_angstrom": 1.2736290384985098,
+      "intensity_counts": 98.0,
+      "observed_fwhm_deg": 0.2199190283400867,
+      "scherrer_D_nm": null
+    }
+  ],
+  "n_peaks": 39,
+  "scherrer_note": "K=0.9 assumption; Gaussian instrumental-width subtraction; size/strain/overlap unresolved. Crystallites, not SEM grains.",
+  "phase_fractions": null,
+  "rietveld_status": "not_performed",
+  "required_for_quantitative_refinement": [
+    "instrument profile/standard",
+    "candidate structures of all phases",
+    "background/texture model"
+  ],
+  "instrument_header": {
+    "wavelength_angstrom": 1.54184,
+    "header": [
+      "       16/09/26 DIF  XRD SSC 40KV/30mA Slit:1deg&1deg&0.2mm Monochromator: ON Ts-Td 100 ",
+      "010.000  0.0200  1 cu 1.54184 080.000     3501"
+    ],
+    "trailer": [
+      -1.0,
+      0.0,
+      0.0
+    ]
+  },
+  "schema": "hexw.analysis.v1",
+  "created_utc": "2026-10-26T19:09:42+00:00",
+  "config": {
+    "method": "xrd",
+    "file": "C:\\MIPT\\working_stuff\\Hexx\\vault\\lab_validation\\01_XRD\\SrW_ZnO_X=1.5_T=1200_6h_T=1400_4h_160926.mdi",
+    "observation_id": "OBS-XRD-007",
+    "expected_sha256": "55f80d7ed92791710e79bac35267a14bc1d8c6eee7513574cc0bde2b4df6e13f",
+    "options": {
+      "wavelength_angstrom": 1.54184
+    }
+  },
+  "source_sha256": "55f80d7ed92791710e79bac35267a14bc1d8c6eee7513574cc0bde2b4df6e13f",
+  "model_version_before_access": "mv-a464edd5ea4f24b189f6",
+  "analysis_code_sha256": {
+    "eds.py": "7cbc0f76820594fc379332ac008b22d43eb61cb15f451f4813ec0a0cd1497874",
+    "mossbauer.py": "dd69b22a96c3b4495d5bdc01b878ea6125dc065af4c9a382d6e0363eea34dc98",
+    "readers.py": "012277bb1a53e6c5e8f386cde251bc6ffba6e641960359046144de5f7cb108a3",
+    "sem.py": "558303ba76f572a7722da2775888e9830e9dc613d0b7e2b16c1b5348a0ae827d",
+    "service.py": "c7e83f9d1091db74ca3aa9383fab707309ee981980047a3a66e07916fda61574",
+    "xrd.py": "d811d1b9a88f9c46d3e9f8d6f352b1f2dfe1c3fd7142ca7b8d53437659ed20e8",
+    "__init__.py": "1aab65de875425f37affa1b9884475b36d19043da258d683842536af47414451"
+  },
+  "auxiliary_sha256": {},
+  "theory_parameters_updated": false,
+  "validation_mode": "retrospective",
+  "prior_use_status": "used_prior",
+  "artifacts": {
+    "analysis.png": "9ead9aea79ab17eefbbff369332d913400efb0b839d7c3a6552d7439706514f5",
+    "data_and_fit.csv": "2d6b4771309b8d7c5e70a88ba2eb50de0ca435f3f6d026c35bfaf4313076be55"
+  }
+}

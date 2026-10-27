@@ -1,0 +1,114 @@
+{
+  "verified_utc": "2026-10-27T00:23:56+00:00",
+  "date_local": "2026-10-27",
+  "project_commit": "f16123e5e3560924e71aadad1caf2cfa9c06a7ed",
+  "browser_origin": "http://127.0.0.1:8765",
+  "browser_permission_restored_by_user": true,
+  "agent_modified_permission_file": false,
+  "browser_workflow_passed": [
+    "fill Co-Zn preset",
+    "submit forecast",
+    "observe progress and complete",
+    "open frequency table",
+    "view field plot and spectra",
+    "expose CSV link",
+    "toggle prior analyses 30 to 13",
+    "read simplified help",
+    "freeze selected forecast"
+  ],
+  "browser_console_warnings_errors": [],
+  "fractional_temperature_native_validation": true,
+  "python_ui_tests": {
+    "tests": 23,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "offline_client_tests": "passed, including latest/history filtering",
+  "first_ui_run": "runs/predictions/0dd573f78ffc168d2bf0",
+  "final_ui_run": "runs/predictions/9611bd73ee0db975b57f",
+  "active_model_version": "mv-e7b797c56002909b7ea8",
+  "parameter_arrays_identical_to_prior_CLI_example": {
+    "Ms_A_m": true,
+    "Ms_A_m2_kg": true,
+    "m_reduced": true,
+    "content_ratio": true,
+    "Mn_valence": true,
+    "Ms0_A_m": true,
+    "eta": true,
+    "K1_J_m3": true,
+    "K2_J_m3": true,
+    "K3_J_m3": true,
+    "K4_J_m3": true,
+    "Tc_K": true
+  },
+  "field_sweep": [
+    {
+      "T_K": 300.0,
+      "mu0H_T": 0.0,
+      "status": "computed_unvalidated",
+      "n_valid": 48,
+      "n_total": 48,
+      "f_low_median_GHz": 7.375023471306978,
+      "f_low_lo95_GHz": 0.7316166532822956,
+      "f_low_hi95_GHz": 40.895914066344304
+    },
+    {
+      "T_K": 300.0,
+      "mu0H_T": 0.4,
+      "status": "computed_unvalidated",
+      "n_valid": 48,
+      "n_total": 48,
+      "f_low_median_GHz": 13.285184141762286,
+      "f_low_lo95_GHz": 0.24475475718650738,
+      "f_low_hi95_GHz": 52.89881645328511
+    },
+    {
+      "T_K": 300.0,
+      "mu0H_T": 0.8,
+      "status": "computed_unvalidated",
+      "n_valid": 48,
+      "n_total": 48,
+      "f_low_median_GHz": 21.323924827767257,
+      "f_low_lo95_GHz": 4.1990628625715605,
+      "f_low_hi95_GHz": 62.26918858830849
+    }
+  ],
+  "core_scientific_fingerprint_unchanged": true,
+  "jobs": {
+    "67735db53e0c3254": {
+      "id": "67735db53e0c3254",
+      "kind": "predict",
+      "status": "complete",
+      "progress": "Готово",
+      "created_utc": "2026-10-27T00:00:41+00:00",
+      "result": "predictions/0dd573f78ffc168d2bf0"
+    },
+    "6f720744d36aa301": {
+      "id": "6f720744d36aa301",
+      "kind": "predict",
+      "status": "complete",
+      "progress": "Готово",
+      "created_utc": "2026-10-27T00:14:39+00:00",
+      "result": "predictions/9611bd73ee0db975b57f"
+    },
+    "40328cef74e22c91": {
+      "id": "40328cef74e22c91",
+      "kind": "freeze",
+      "status": "complete",
+      "progress": "Готово",
+      "created_utc": "2026-10-27T00:19:17+00:00",
+      "result": "predictions/9611bd73ee0db975b57f"
+    }
+  },
+  "screenshots": [
+    "C:\\MIPT\\working_stuff\\Hexx\\audit\\CoZn_UI_form_2026-10-27.jpg",
+    "C:\\MIPT\\working_stuff\\Hexx\\audit\\CoZn_UI_result_final_2026-10-27.jpg",
+    "C:\\MIPT\\working_stuff\\Hexx\\audit\\CoZn_UI_spectra_2026-10-27.jpg"
+  ],
+  "guide": "GUIDE/USER_GUIDE_HEXW_RU.md",
+  "technical_guide_archive": "GUIDE/ARCHIVE/USER_GUIDE_HEXW_RU_technical_2026-10-27.md",
+  "full_spec_AB_complete": false,
+  "FMR_accuracy_10_percent_established": false,
+  "next": "User and colleagues review scientific model outputs before choosing further development."
+}

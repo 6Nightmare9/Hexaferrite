@@ -1,0 +1,20 @@
+# Machine-local tools, settings and caches
+.venv/
+tools/venv/
+tools/qe_ucrt64/
+tools/_dl/
+.claude/
+.env
+.env.*
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+github_export/
+# New outputs are published intentionally. Initial outputs are already tracked.
+runs/**
+vault/**
+!runs/
+!vault/

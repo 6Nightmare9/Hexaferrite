@@ -1,0 +1,29 @@
+{
+  "jobs": {
+    "67735db53e0c3254": {
+      "id": "67735db53e0c3254",
+      "kind": "predict",
+      "status": "complete",
+      "progress": "Готово",
+      "created_utc": "2026-10-27T00:00:41+00:00",
+      "result": "predictions/0dd573f78ffc168d2bf0"
+    },
+    "6f720744d36aa301": {
+      "id": "6f720744d36aa301",
+      "kind": "predict",
+      "status": "complete",
+      "progress": "Готово",
+      "created_utc": "2026-10-27T00:14:39+00:00",
+      "result": "predictions/9611bd73ee0db975b57f"
+    },
+    "40328cef74e22c91": {
+      "id": "40328cef74e22c91",
+      "kind": "freeze",
+      "status": "complete",
+      "progress": "Готово",
+      "created_utc": "2026-10-27T00:19:17+00:00",
+      "result": "predictions/9611bd73ee0db975b57f"
+    }
+  },
+  "updated_utc": "2026-10-27T00:19:19+00:00"
+}

@@ -1,0 +1,17 @@
+{
+ "config_id": "c01_flip_Fe3_Fe4",
+ "role": "fit",
+ "flipped_groups": [
+  "Fe3",
+  "Fe4"
+ ],
+ "pattern": [
+  1,
+  1,
+  -1,
+  -1
+ ],
+ "system": "alpha-Fe2O3",
+ "input_sha256": "db328597909c3002b09f2e2f90dfc90a5f2d8893654dcd0dc1c09e6a597cee59",
+ "config_sha256": "52a4609ee2c9ecf3c6b78e3358c18885dd06361fe0120f65e33020e181c71959"
+}

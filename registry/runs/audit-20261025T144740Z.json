@@ -1,0 +1,28 @@
+{
+ "checksums": {},
+ "command": "audit",
+ "finished_utc": "2026-10-25T14:47:41.450686+00:00",
+ "model_version": null,
+ "notes": "[{\"name\": \"original zip copy present and sha256 == recorded\", \"ok\": true, \"detail\": \"sha256=b26d69cc1c5a5ef1dfe1f2f93c1e119cc786f7663c36ba9ad2c8f315ff49cef7\"}, {\"name\": \"all 121 files present on disk\", \"ok\": true, \"detail\": \"missing=[]\"}, {\"name\": \"no extra files in raw/theory_side, vault/*\", \"ok\": true, \"detail\": \"extra=[]\"}, {\"name\": \"sha256 == zip member content\", \"ok\": true, \"detail\": \"mismatches=[]\"}, {\"name\": \"sha256 == ALL_FILES_MANIFEST.csv (120 rows)\", \"ok\": true, \"detail\": \"mismatches=[]\"}, {\"name\": \"sha256 == DATA_MANIFEST.csv (33 rows)\", \"ok\": true, \"detail\": \"mismatches=[]\"}, {\"name\": \"every file except ALL_FILES_MANIFEST.csv itself is listed in it\", \"ok\": true, \"detail\": \"unlisted=['ALL_FILES_MANIFEST.csv']\"}, {\"name\": \"byte duplicate on disk: SrW_series_vs_x.png == SrW_series_vs_x_1.png\", \"ok\": true, \"detail\": \"groups=[['04_legacy_model/SrW_series_vs_x.png', '04_legacy_model/SrW_series_vs_x_1.png']]\"}, {\"name\": \"Archive.zip not extracted (members only hashed in memory)\", \"ok\": true, \"detail\": \"\"}, {\"name\": \"Archive.zip: 5 members, each byte-identical to a distinct 02_Mossbauer/*.spc\", \"ok\": true, \"detail\": \"members=5\"}, {\"name\": \"all files in raw/ and vault/ are read-only\", \"ok\": true, \"detail\": \"writable=[] (total 0)\"}, {\"name\": \"registry files readable\", \"ok\": true, \"detail\": \"13 samples, 13 observations\"}, {\"name\": \"SampleID unique, BatchID present\", \"ok\": true, \"detail\": \"\"}, {\"name\": \"every sample has files and metadata_status\", \"ok\": true, \"detail\": \"\"}, {\"name\": \"sample file hashes agree with files_manifest.csv\", \"ok\": true, \"detail\": \"\"}, {\"name\": \"every lab file linked to a sample (except the Archive.zip container)\", \"ok\": true, \"detail\": \"unlinked=['05_original_duplicate_archive/Archive.zip']\"}, {\"name\": \"name-derived values carry status preliminary_from_filename\", \"ok\": true, \"detail\": \"\"}, {\"name\": \".mdi and .txt of one diffractogram form ONE observation\", \"ok\": true, \"detail\": \"8 XRD observations\"}, {\"name\": \"Mossbauer: 5 observations, not linked to XRD samples\", \"ok\": true, \"detail\": \"\"}, {\"name\": \"equal formula does not merge samples (13 samples, 13 batches)\", \"ok\": true, \"detail\": \"\"}, {\"name\": \"hexw.theory._probe: open_data on vault raises TheoryAccessError\", \"ok\": true, \"detail\": \"\"}, {\"name\": \"hexw.params._probe: open_data on vault raises TheoryAccessError\", \"ok\": true, \"detail\": \"\"}, {\"name\": \"hexw.theory: builtin open() on vault blocked by audit hook\", \"ok\": true, \"detail\": \"\"}, {\"name\": \"hexw.theory: original zip (contains lab bytes) is blocked too\", \"ok\": true, \"detail\": \"\"}, {\"name\": \"hexw.experiment: vault access without freeze file raises FreezeRequiredError\", \"ok\": true, \"detail\": \"\"}, {\"name\": \"write into vault is refused\", \"ok\": true, \"detail\": \"\"}, {\"name\": \"inputs/targets overlap raises LeakageError\", \"ok\": true, \"detail\": \"\"}, {\"name\": \"changing a ParameterEstimate changes the model version\", \"ok\": true, \"detail\": \"\"}, {\"name\": \"validation store is append-only; old results untouched\", \"ok\": true, \"detail\": \"\"}, {\"name\": \"site overflow detected\", \"ok\": true, \"detail\": \"\"}, {\"name\": \"charge violation detected\", \"ok\": true, \"detail\": \"\"}, {\"name\": \"Fe2+/Fe3+ model neutral for x=1 (n_Fe2=1, n_Fe3=16)\", \"ok\": true, \"detail\": \"\"}, {\"name\": \"x > 2 rejected as not applicable\", \"ok\": true, \"detail\": \"\"}]",
+ "package_versions": {
+  "ase": "3.29.0",
+  "matplotlib": "3.11.2",
+  "numpy": "2.5.4",
+  "openpyxl": "3.1.5",
+  "pandas": "3.1.0",
+  "pymatgen": "2026.10.24",
+  "pytest": "9.1.1",
+  "python": "3.13.15",
+  "pyyaml": "6.0.3",
+  "scipy": "1.18.1"
+ },
+ "resources": {
+  "cpu_threads": 16
+ },
+ "run_id": "audit-20261025T144740Z",
+ "settings": {
+  "root": "D:\\Work\\Hexx"
+ },
+ "started_utc": "2026-10-25T14:47:40.986180+00:00",
+ "state": "completed"
+}

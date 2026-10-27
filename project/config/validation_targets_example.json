@@ -1,0 +1,25 @@
+{
+  "template_only": true,
+  "source_role": "laboratory_validation",
+  "instruction": "Replace placeholders with an actual calibrated measurement, confirm conditions, set template_only=false. Never copy a model prediction into value.",
+  "targets": [
+    {
+      "id": "REPLACE_WITH_REAL_MEASUREMENT_ID",
+      "observation_id": "REPLACE_WITH_REAL_OBSERVATION_ID",
+      "composition": {"Co": 1.0, "Zn": 1.0},
+      "T_K": 300.0,
+      "mu0H_T": 0.3,
+      "theta_deg": 0.0,
+      "phi_deg": 0.0,
+      "shape": "sphere",
+      "g": 2.0,
+      "alpha": 0.02,
+      "observable": "peak_Hz",
+      "quantity_definition": "external_chi_xx_absorption_peak",
+      "unit": "Hz",
+      "value": null,
+      "uncertainty": {"std": null},
+      "conditions_note": "All entries above are placeholders, including g/alpha/shape. Compare only if this observable and these conditions are justified for the real measurement."
+    }
+  ]
+}

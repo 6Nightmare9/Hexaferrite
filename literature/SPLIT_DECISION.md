@@ -1,0 +1,172 @@
+# SPLIT_DECISION - разбиение литературной базы на fit / holdout
+
+- Дата: 2026-10-25
+- Автор: руководитель разработки
+- Решение: **вариант A с правкой** (вариант A из `split_proposal.md` + перенос L11 в fit)
+- Файл формируется скриптом `hexw/ingest/literature_split.py` (воспроизводимо, хэши входа/выхода ниже и в `split_manifest.json`).
+
+## 1. Решение
+
+**fit (`literature_fit`)**
+
+| Источник | Что | Примечание |
+|---|---|---|
+| L02 | SrCo(2-x)Zn(x)W | tier 1 |
+| L01 | **только образцы Mg и Ni** | tier 2 |
+| L05 | DFT как prior (`calculated`) | tier 2 |
+| L03, C004 | стехиометрия, пределы синтеза | tier 1-2 |
+| **L11** | He 2024, BaMe2W (Me = Fe, Co, Ni, Zn, **Mn**), целиком | **правка**: единственный источник по Mn в W; tier 3, `transfer: Ba_to_Sr` |
+
+**holdout (`literature_holdout`)**
+
+| Источник | `holdout_kind` | Примечание |
+|---|---|---|
+| L01 образцы Co и Zn | `same_group_reproducibility` | та же группа авторов, что L02: оценка по ним **оптимистична** |
+| C023, C015 | `independent_group` | независимая Sr-группа (C015 - композит W/Z, малый вес) |
+| L12, C057, C060, C044, C056, C036, C052, C066 | `transfer_Ba_to_Sr` | Ba-системы и композиты; C056 - независимая проверка Mn-ветки |
+
+**excluded**: 8 вторичных цитат (`excluded_secondary`) и C053 (`excluded_low_quality`).
+**methodology_only**: C112, C115 (конвенции DFT/J; числа не переносятся).
+Роли `excluded_*` и `methodology_only` не могут использоваться в параметризации (`ParameterEstimate` с такой ролью не создаётся).
+
+Число записей по источникам:
+
+| Источник | роль | записей |
+|---|---|---|
+| C004 | excluded_secondary | 3 |
+| C004 | literature_fit | 10 |
+| C015 | excluded_secondary | 1 |
+| C015 | literature_holdout | 3 |
+| C023 | excluded_secondary | 1 |
+| C023 | literature_holdout | 2 |
+| C036 | literature_holdout | 4 |
+| C044 | excluded_secondary | 1 |
+| C044 | literature_holdout | 17 |
+| C052 | literature_holdout | 1 |
+| C053 | excluded_low_quality | 1 |
+| C056 | literature_holdout | 8 |
+| C057 | literature_holdout | 6 |
+| C060 | literature_holdout | 5 |
+| C066 | literature_holdout | 1 |
+| C112 | methodology_only | 1 |
+| C115 | methodology_only | 2 |
+| L01 (Co, Zn) | literature_holdout | 48 |
+| L01 (Mg, Ni) | literature_fit | 45 |
+| L02 | literature_fit | 137 |
+| L03 | literature_fit | 25 |
+| L05 | excluded_secondary | 2 |
+| L05 | literature_fit | 119 |
+| L11 | literature_fit | 17 |
+| L12 | literature_holdout | 4 |
+
+Итого: excluded_low_quality 1, excluded_secondary 8, literature_fit 353, literature_holdout 99, methodology_only 3; всего 464.
+
+## 2. Обоснование
+
+1. Единица разбиения - публикация/химическая серия, не точка (ТЗ §4, §13). Таблица, рисунок и CIF одного измерения (`measurement_group`) лежат в одной выборке.
+2. Mn в Sr-W в корпусе отсутствует. L11 - единственный источник по Mn в W-фазе; без него параметризация Mn шла бы только по DFT. Поэтому L11 идёт в fit как источник **переноса Ba -> Sr** (tier 3, расширенная неопределённость), а не как проверка. Независимая проверка Mn-ветки - C056 (holdout).
+3. L01 Mg/Ni - серия Sr-W с другими A (тренды заселённости/моментов, Ms) нужна для fit; L01 Co/Zn - воспроизведение составов L02, уходят в holdout с честной пометкой, что это не независимая группа.
+4. Независимых Sr Co/Zn данных в корпусе почти нет (C023 - одна температура, C015 - композит), поэтому holdout слабый; это ограничение зафиксировано, а не скрыто.
+5. Ba-данные (кроме L11) и композиты проверяют допущение переноса Ba -> Sr, а не модель структуры; успех не доказывает перенос для Mn.
+
+## 3. Проверка на общность авторов/серий (C056 vs L11)
+
+L11 (He S., Liu R., Liu X., Ye X., Wang L., Shen B.; Chin. Phys. B 33 (2024) 066801; BaMe2W, solid-state synthesis) и C056 (Qin X., Cheng Y., Zhou K., Huang S., Hui X.; J. Mater. Sci. Chem. Eng. 1 (2013) 8; sol-gel composites Ba(MnZn)xCo2(1-x)W with paraffin, Central South University) - **разные группы авторов** (по спискам авторов и аффилиациям на первых страницах статей нет пересечений), разные годы, методы синтеза и серии образцов. Основание для объединения в одну выборку отсутствует, поэтому **L11 в fit, C056 в holdout** (как решено). Оговорка: C056 содержит Mn только в смешанной подрешётке A (Mn:Zn = 1:1 вместе с Co) и измеряет микроволновое поглощение композитов, поэтому проверяет Mn-ветку косвенно, не как чистый BaMn2W.
+
+## 4. Что блокируется для кода теории (зона HOLDOUT)
+
+Блокируются **публикации целиком**, а не отдельные образцы: PDF статьи L01 содержит и fit-данные (Mg, Ni), и holdout-данные (Co, Zn), поэтому весь L01 (PDF, XML, HTML, SI, CIF всех четырёх образцов) закрыт для `hexw.theory/params/dft/structures/spin/util`. **Fit-данные L01 Mg/Ni доступны теории только через `literature/fit`** (записи уже извлечены; из их `verbatim_source` удалены значения Co/Zn колонок таблиц).
+
+Объявлено в `project/config/holdout_sources.json` (пути от корня проекта):
+
+- `raw/theory_side/06_literature/L01_Morch2019`
+- `raw/theory_side/06_literature/L12_Zhuravlev2005`
+- `lit_search/downloads/C015`
+- `lit_search/downloads/C023`
+- `lit_search/downloads/C036`
+- `lit_search/downloads/C044`
+- `lit_search/downloads/C052`
+- `lit_search/downloads/C056`
+- `lit_search/downloads/C057`
+- `lit_search/downloads/C060`
+- `lit_search/downloads/C066`
+- `dft_feasibility/pilots/cif`
+- `dft_feasibility/pilots/c_W92`
+- `dft_feasibility/pilots/make_bw.py`
+- `lit_search/results/rows_final.json`
+- `lit_search/results/rows_stage2.json`
+- `lit_search/results/merged.json`
+- `lit_search/results/raw_hits.json`
+- `lit_search/results/raw_hits2.json`
+- `lit_search/results/raw_hits3.json`
+- `lit_search/results/raw_hits4.json`
+- `lit_search/results/coverage_from_abstracts.csv`
+- `lit_search/results/coverage_matrix.csv`
+- `lit_search/results/review_list.txt`
+- `lit_search/results/merged_list.txt`
+- `lit_search/results/build_out.txt`
+- `lit_search/results/candidates.csv`
+
+Каталог `literature_holdout/` входит в зону целиком. Доступ: только `hexw.validate` после freeze и `hexw.audit`; `hexw.ingest` - только внутри `paths.holdout_build()` (скрипт разбиения). Записи в зону запрещены (read-only + `SHA256SUMS`).
+
+## 5. Физическое размещение
+
+- `literature/fit/` - записи fit (`records_fit.yaml`), структурные сводки fit (L02, L01 Mg/Ni), `site_notation.md`, `CONFLICTS.md` (без holdout-чисел), `coverage_map.csv` (fit и пробелы).
+- `literature/excluded/` - исключённые вторичные цитаты и методология из fit-публикаций, C053 (вне fit; `load_fit_records()` их не читает).
+- `literature_holdout/` - записи holdout, их структурные сводки, исключённые цитаты из holdout-публикаций, `_original_mixed/` (исходные `records.yaml`, `records.jsonl`, `coverage_map.csv`, `CONFLICTS.md`, `READING_LOG.md`, `split_proposal.md`, `structures/`, `scripts/` со смешанными числами, read-only).
+- Исходники holdout-статей остаются на месте (`raw/theory_side/...`, `lit_search/downloads/C###`), не перемещаются; блокируются хуком.
+
+## 5a. Правило для DFT-кампании
+
+Геометрию W-фазы для DFT брать из **fit-источника - CIF L02** (`L02_Morch2023/supporting/CIFs/pdCIF_SrCo2Fe16O27.cif`, `pdCIF_SrCoZnFe16O27.cif`, `pdCIF_SrZn2Fe16O27.cif`), а не из CIF L01 Co/Zn (holdout). Всё, что построено из CIF L01 Co/Zn, - производное holdout и обязано быть объявлено в `holdout_sources.json` (п. 9); `hexw audit` проверяет это по всему проекту.
+
+## 6. Контроль
+
+- audit: зона HOLDOUT защищена; в `literature/fit` нет записей с split != fit; каждая fit-запись валидна по схеме; хэши ниже совпадают с файлами; `agent-os` игнорируется.
+- Утечки: скрипт сравнивает числовые маркеры holdout-записей с текстом всех fit-файлов и прерывается при совпадении; финальная проверка ссылок (`find_fit_references`) ищет в fit пути и имена файлов-источников holdout и holdout-образцы смешанной публикации L01; `hexw audit` ищет такие ссылки по всему проекту.
+
+## 7. Хэши (проверяются audit)
+
+<!-- HASHES:BEGIN -->
+records_original_mixed_sha256: ae8b5b259b654240a30cb1f56a5958e6d12df810af193bbfb086b8c8620b7590
+records_fit_sha256: 8e601085a80cd9ed14091ea77a2c1b28c6ed9057571f7df2db5db1fcd6a96fc6
+records_holdout_sha256: dadc22a31fed8a235f63889447782dc01cb3c2dabd6f7bb2e44f4d469bf79458
+records_excluded_sha256: 90fd24b9a1229bde38b13d065f58bedf647c4901cb0aad597b02a1297008b0d1
+<!-- HASHES:END -->
+
+## 8. Воспроизведение
+
+`python -m hexw.ingest.literature_split` (без `--force` отказывается пересоздавать готовые выходы; при повторном запуске читает исходники из `literature_holdout/_original_mixed/`).
+
+## 9. Инцидент 2026-10-26 (независимая проверка этапа 3)
+
+Независимый тестировщик нашёл утечки holdout в fit и дыры в изоляции. Найдено и **удалено**:
+
+1. **Утечка №1.** `fit/coverage_map.csv` (строка Sr-Zn, SrZn2Fe16O27) цитировала число из записи L01 для образца Zn; ещё три ячейки (Sr-Co, Sr-Zn, "all W compositions") называли holdout-публикации (одна - с числом из Ba-публикации holdout). Coverage map теперь строится только по fit-записям; holdout упоминается нейтрально ("данные есть в holdout", без номеров и чисел; L01 Co/Zn в fit-покрытии не упоминается вообще). Ячейки переписаны авторским текстом (`COVERAGE_REWRITE`); новая ячейка с упоминанием holdout без авторской замены прерывает сборку (`LeakError`).
+2. **Утечка №2.** `fit/structures/_raw_asym_units.csv`: 20 строк из CIF L01 SrCo2Fe16O27 / SrZn2Fe16O27 (спинельные блоки CoFe2O4 / ZnFe2O4) попали в fit, потому что маршрутизация шла по фазовому блоку, а в holdout их не было. Теперь маршрутизация структурных строк - по **образцу / файлу-источнику (путь CIF)**; все строки из CIF holdout-образцов L01 уходят в holdout.
+3. Из fit-записей L01-088/089 убран качественный намёк на holdout-образцы ("a further sample is withheld"); из текста синтеза L01 убраны температуры отжига других образцов (Zn, Co).
+4. **Неполный `holdout_sources.json`.** Не были объявлены производные от L01 Zn HRPT CIF в DFT-пилотах: `dft_feasibility/pilots/c_W92/` целиком (модели `SrZn2Fe16O27_model.cif`, `SrFe18O27_model.cif`, входы и выходы QE `W_*.in/.out`) и `pilots/make_bw.py` (в коде записаны ячейка и координаты L01 Zn). Объявлены как holdout-производные; файлы не удалены и не перемещены (результаты пилотов ресурсной оценки).
+5. **Дыра в изоляции (блокер).** Дочерний процесс (`cmd /c type P`, `python -c open(P)`, PowerShell) читал защищённый файл (holdout и vault), если путь записан через `..`, UNC admin share (`localhost` и `D$`), `UNC` с extended-префиксом, junction или относительно cwd: на Windows `subprocess` передаёт хуку уже склеенную командную строку, а проверка была лексической. Теперь каждая строка разбирается на фрагменты-пути, они приводятся к абсолютным и классифицируются по идентичности (`docs/ISOLATION.md`).
+
+Влияние на модель: **до этого момента никакой параметризации по fit не проводилось** (магнитное ядро работает только на синтетических параметрах), поэтому влияния на модель нет.
+
+Что изменено:
+
+- `literature_split.py`: маршрутизация структурных строк по файлу-источнику; coverage только по fit с авторскими заменами; финальная проверка `find_fit_references` (ни одна строка или запись fit не содержит путь или имя файла-источника holdout, не ставит holdout-образец смешанной публикации рядом с ней и не является записью holdout-образца; найдено - `LeakError`); тесты на синтетике;
+- `holdout_sources.json`: производные `c_W92`, `make_bw.py`; список `reference_allowlist`;
+- `hexw audit`: текстовый файл вне `vault/` и `literature_holdout/`, называющий путь или имя файла holdout-источника, должен быть объявлен holdout или стоять в `reference_allowlist` (ловит будущие производные);
+- `hexw/io/paths.py`: проверка аргументов дочерних процессов по идентичности путей (holdout и vault);
+- fit пересобран (`--force`), `literature_holdout/` пересобран и запечатан заново (read-only, `SHA256SUMS`), хэши ниже обновлены.
+
+
+## 10. Инцидент 2026-10-26 №2 - раскрытие информации руководителем (этап 4, круг 1)
+
+Руководитель разработки (оркестратор) до разбиения корпуса видел сводку извлечения литературы, в которой были некоторые значения, позже отнесённые к holdout: например, характеристики образцов L01 Co/Zn, отдельные Ba-значения. Руководитель передал исполнителю этапа 4A факт существования расхождения по заселённости Co на 6g между L01 и L02 (без чисел); это попало в код и было удалено после ревью. Числовые holdout-значения в параметры модели не передавались. Тем не менее проверка на holdout является «слабо-слепой»: модельные решения принимались лицом, знакомым с частью holdout. Это раскрывается в отчёте проверки; сильнее слепыми считаются только величины, сводка по которым руководителю не показывалась.
+
+Перечень того, что руководитель видел из holdout (для раскрытия в отчётах проверки), ведётся отдельным файлом `literature_holdout/ORCHESTRATOR_EXPOSURE.md` (заполняет руководитель; в этом решении чисел нет).
+
+Что изменено в связи с инцидентом и ревью этапа 4:
+
+- из кода, документов и тестов теории удалены все формулировки о расхождении L01 и L02 по Co на 6g и о L01 Co/Zn; нейтральная формулировка: «Co на W3 (6g): единственный источник - L02; перекрёстной проверки в fit нет» (тест `tests/test_no_holdout_hints.py` ищет такие формулировки);
+- результаты литературного поиска, содержащие аннотации или тексты holdout-публикаций (`lit_search/results/`: `rows_final.json`, `rows_stage2.json`, `merged.json`, `raw_hits*.json`, `coverage_from_abstracts.csv`, `coverage_matrix.csv`, `review_list.txt`, `merged_list.txt`, `build_out.txt`, `candidates.csv`), объявлены holdout-производными; очищенная копия каталога `candidates_meta.csv` (только библиографические поля, без `reason` и `topic_tags`) разрешена; код теории `candidates.csv` не использует;
+- скрипты `lit_search/scripts/*.py`, документы `GUIDE/*.md` и `SEARCH_LOG.md`, называющие объявленные файлы, остаются в списке разрешённых ссылок, но с закреплением sha256 (`reference_allowlist_sha256` в `holdout_sources.json`); `hexw audit` проверяет совпадение побайтно.

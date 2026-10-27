@@ -1,0 +1,48 @@
+{
+  "status": "calibration_required",
+  "physical_parameters": null,
+  "reason": "alpha-Fe velocity calibration/zero and source convention are not confirmed",
+  "instrument_header": {
+    "Date": "29.04.2026 16:39:34",
+    "SpectrometerChannel": "1",
+    "Placement": "Left",
+    "Movement": "Source",
+    "Mode": "Triangle",
+    "Vstart": "-12",
+    "Vfinish": "12",
+    "Range": "19",
+    "Comment": "Voltage: 608 Gain: 10 LBound: 23 HBound: 57",
+    "Period": "194458",
+    "CurCycle": "1942159",
+    "LastChannel": "1024"
+  },
+  "schema": "hexw.analysis.v1",
+  "method": "mossbauer",
+  "created_utc": "2026-10-26T19:09:58+00:00",
+  "config": {
+    "method": "mossbauer",
+    "file": "C:\\MIPT\\working_stuff\\Hexx\\vault\\lab_validation\\02_Mossbauer\\04.26_SrW_Mn2O3_x=1.5_1350°C_27.04.26_173mg.spc",
+    "observation_id": "OBS-MOS-001",
+    "expected_sha256": "580b075dffd8316c386044207f261df9ed00a1b5ae842b3175741f6dca7c6ed2",
+    "options": {}
+  },
+  "source_sha256": "580b075dffd8316c386044207f261df9ed00a1b5ae842b3175741f6dca7c6ed2",
+  "model_version_before_access": "mv-a464edd5ea4f24b189f6",
+  "analysis_code_sha256": {
+    "eds.py": "7cbc0f76820594fc379332ac008b22d43eb61cb15f451f4813ec0a0cd1497874",
+    "mossbauer.py": "dd69b22a96c3b4495d5bdc01b878ea6125dc065af4c9a382d6e0363eea34dc98",
+    "readers.py": "012277bb1a53e6c5e8f386cde251bc6ffba6e641960359046144de5f7cb108a3",
+    "sem.py": "558303ba76f572a7722da2775888e9830e9dc613d0b7e2b16c1b5348a0ae827d",
+    "service.py": "c7e83f9d1091db74ca3aa9383fab707309ee981980047a3a66e07916fda61574",
+    "xrd.py": "d811d1b9a88f9c46d3e9f8d6f352b1f2dfe1c3fd7142ca7b8d53437659ed20e8",
+    "__init__.py": "1aab65de875425f37affa1b9884475b36d19043da258d683842536af47414451"
+  },
+  "auxiliary_sha256": {},
+  "theory_parameters_updated": false,
+  "validation_mode": "retrospective",
+  "prior_use_status": "used_prior",
+  "artifacts": {
+    "analysis.png": "d80e073101740e35fb992f20e2c03d6c0c11a282915803ae221b13990db22269",
+    "data_and_fit.csv": "219e6405a11b816d71c30a6d84f8922da936cec2b7c02c696efcb84f6a975669"
+  }
+}

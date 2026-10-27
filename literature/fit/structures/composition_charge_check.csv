@@ -1,0 +1,6 @@
+n_Co_per_fu,n_Fe2plus_from_charge_balance_2_minus_m,n_Fe_per_fu,n_Mg_per_fu,n_Ni_per_fu,n_TM_total,n_Zn_per_fu,n_nonFe_total,sample,source
+,0.311,16.309,1.689,,17.998,,1.689,SrMg2Fe16O27,L01
+,-0.113,15.887,,2.113,18.0,,2.113,SrNi2Fe16O27,L01
+1.697,0.303,16.303,,,18.0,,1.697,SrCo2Fe16O27,L02
+0.844,0.348,16.348,,,18.0,0.808,1.652,SrCoZnFe16O27,L02
+,0.189,16.189,,,18.0,1.811,1.811,SrZn2Fe16O27,L02

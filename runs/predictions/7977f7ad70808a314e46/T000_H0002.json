@@ -1,0 +1,220 @@
+{
+  "status": "computed_unvalidated",
+  "n_valid": 48,
+  "n_total": 48,
+  "valid_fraction": 1.0,
+  "lowest_ground_mode_Hz": {
+    "median": 34161433739.075363,
+    "lo95": 25067347281.567196,
+    "hi95": 67567923961.81511,
+    "n_valid": 48,
+    "n_total": 48
+  },
+  "mode_definition": "lowest undamped eigenfrequency among degenerate ground states per draw",
+  "all_ground_modes_Hz_by_draw": [
+    [
+      26913951396.669598
+    ],
+    [
+      30556654030.37119
+    ],
+    [
+      37935869673.31986
+    ],
+    [
+      54336704267.506424
+    ],
+    [
+      37805198771.07633
+    ],
+    [
+      25420928328.964123
+    ],
+    [
+      26340662584.682865
+    ],
+    [
+      28879853990.504284
+    ],
+    [
+      29369005249.03407
+    ],
+    [
+      30192077864.657433
+    ],
+    [
+      42041300895.581505
+    ],
+    [
+      34893479609.69112
+    ],
+    [
+      32365510172.373074
+    ],
+    [
+      68090161312.0188
+    ],
+    [
+      32722983449.67281
+    ],
+    [
+      29275978796.13716
+    ],
+    [
+      42689526911.379776
+    ],
+    [
+      28304432448.065063
+    ],
+    [
+      31250616301.836216
+    ],
+    [
+      42284063455.23433
+    ],
+    [
+      24751849519.764503
+    ],
+    [
+      46504519792.14209
+    ],
+    [
+      30247305626.810688
+    ],
+    [
+      25318457901.311672
+    ],
+    [
+      42303978955.95196
+    ],
+    [
+      35342454605.51212
+    ],
+    [
+      42510199425.73882
+    ],
+    [
+      36708279683.59439
+    ],
+    [
+      28896286130.14935
+    ],
+    [
+      28391069497.424786
+    ],
+    [
+      33959340867.379818
+    ],
+    [
+      36214831623.06744
+    ],
+    [
+      40596940475.50974
+    ],
+    [
+      45752554168.04956
+    ],
+    [
+      40642221424.3377
+    ],
+    [
+      26291901083.757645
+    ],
+    [
+      26812605928.449482
+    ],
+    [
+      57293433917.94943
+    ],
+    [
+      34129519056.047928
+    ],
+    [
+      25014081392.530487
+    ],
+    [
+      35958582214.76667
+    ],
+    [
+      34193348422.1028
+    ],
+    [
+      31295577677.662403
+    ],
+    [
+      68648649403.27317
+    ],
+    [
+      65105947882.28351
+    ],
+    [
+      38291303402.88847
+    ],
+    [
+      36336960978.03125
+    ],
+    [
+      32611636292.057343
+    ]
+  ],
+  "ground_state_counts": {
+    "axial": 48
+  },
+  "failures": {},
+  "external_passivity_min": -2.3373673404217703e-62,
+  "linewidth_of_mean_external_chi_xx": {
+    "status": "multipeak",
+    "peak_x": 25070792504.540874,
+    "peak_y": 2.3762932723345784,
+    "half_level": 1.1881466361672892,
+    "x_left": 24294328505.962425,
+    "x_right": 26965914392.426834,
+    "width": null,
+    "width_estimate": null,
+    "center_half_max": 25630121449.19463,
+    "mode_x": 34161433739.075363,
+    "n_points_in_fwhm": 0,
+    "censored_sides": [],
+    "peaks": [
+      25070792504.540874,
+      29013381006.64831,
+      34145776280.248657,
+      42258217901.2444,
+      68250848608.12213
+    ],
+    "n_expansions": 0,
+    "x_range": [
+      100000000.0,
+      100000000000.0
+    ],
+    "notes": [
+      "2 other significant maxima at/above half level"
+    ],
+    "noise_sigma": 0.002919598714948304,
+    "smoothed_window": 0,
+    "asymmetric_possible_doublet": false
+  },
+  "sampled_absorption_peak_Hz": {
+    "median": 34066000000.000004,
+    "lo95": 24858550000.000004,
+    "hi95": 67565799999.999985,
+    "n_valid": 48,
+    "n_total": 48
+  },
+  "sampled_fwhm_Hz": {
+    "median": null,
+    "lo95": null,
+    "hi95": null,
+    "n_valid": 0,
+    "n_total": 48
+  },
+  "fwhm_status_counts": {
+    "insufficient_resolution": 48
+  },
+  "linewidth_note": "ensemble spectrum with specified alpha; not an inferred intrinsic damping or total sample linewidth",
+  "statistics": "conditional on valid ferrimagnetic draws; invalid/above-Tc draws not filled with zero",
+  "domain_population": "equal weights of all degenerate ground states; equilibrium, no magnetic-history fit",
+  "T_K": 300.0,
+  "mu0H_T": 0.8,
+  "wall_s": 1.889
+}

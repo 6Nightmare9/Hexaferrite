@@ -1,0 +1,14 @@
+formula: SrCo1Zn1Fe16O27
+temperatures_K: [300]
+fields_T: {start: 0, stop: 0.8, count: 3}
+frequencies_GHz: {start: 0.1, stop: 100, count: 401}
+theta_deg: 0
+phi_deg: 0
+shape: sphere
+g: 2
+alpha: 0.02
+n_draws: 48
+n_prior: 60000
+seed: 20261026
+equilibrium_grid: 80
+label: Первый расчёт Co–Zn

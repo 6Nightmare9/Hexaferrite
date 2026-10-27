@@ -1,0 +1,10 @@
+2026-10-26T11:39:04  driver pid 160660 started; 5 jobs, at most 3 at a time
+2026-10-26T11:39:04  start k221_c00: D:\Work\Hexx\.venv\Scripts\python.exe -m hexw dft --config D:\Work\Hexx\project\config\dft\ktest_v1.yaml run --system w --kpoints 2,2,1 --tag k221 --only c00_ground --i-accept-runtime --parallel 1
+2026-10-26T11:39:04  start k221_c01: D:\Work\Hexx\.venv\Scripts\python.exe -m hexw dft --config D:\Work\Hexx\project\config\dft\ktest_v1.yaml run --system w --kpoints 2,2,1 --tag k221 --only c01_flip_W3_W4_W5_W6_W7 --i-accept-runtime --parallel 1
+2026-10-26T11:39:04  start g_c00: D:\Work\Hexx\.venv\Scripts\python.exe -m hexw dft --config D:\Work\Hexx\project\config\dft\ktest_v1.yaml run --system w --kpoints 1,1,1 --tag g --only c00_ground --i-accept-runtime --parallel 1
+2026-10-26T11:51:49  finish g_c00: rc=0
+2026-10-26T11:51:49  start g_c01: D:\Work\Hexx\.venv\Scripts\python.exe -m hexw dft --config D:\Work\Hexx\project\config\dft\ktest_v1.yaml run --system w --kpoints 1,1,1 --tag g --only c01_flip_W3_W4_W5_W6_W7 --i-accept-runtime --parallel 1
+2026-10-26T12:03:56  finish g_c01: rc=0
+2026-10-26T12:03:56  start g_alt_c00: D:\Work\Hexx\.venv\Scripts\python.exe -m hexw dft --config D:\Work\Hexx\project\config\dft\ktest_v1.yaml run --system w --kpoints 1,1,1 --tag g_alt --fe2-start none --only c00_ground --i-accept-runtime --parallel 1
+2026-10-26T12:16:08  finish g_alt_c00: rc=0
+2026-10-26T13:39:57  finish k221_c00: rc=0

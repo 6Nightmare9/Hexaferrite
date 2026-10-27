@@ -1,0 +1,302 @@
+{
+ "system": "alpha-Fe2O3",
+ "kind": "hematite",
+ "n_atoms": 10,
+ "formula": "Fe2O3",
+ "convention": "H = -sum_{i<j} J_ij S_i.S_j; each pair once; |S| = spin quantum number (Fe3+ 5/2, Fe2+ 2, Mn2+ 5/2, Co2+ 3/2); J>0 ferromagnetic; J in meV; energies per simulation cell",
+ "n_J": 3,
+ "n_parameters_incl_E0": 4,
+ "n_fit": 5,
+ "n_holdout": 2,
+ "n_configs": 7,
+ "dof": 1,
+ "J_classes": [
+  {
+   "label": "shell0_2.90A+shell2_3.36A",
+   "n_bonds": 2,
+   "d_min": 2.900383199999996,
+   "d_max": 2.9003831999999976,
+   "shells": [
+    [
+     2.9003831999999967,
+     2
+    ]
+   ],
+   "n_distinct_shells": 1,
+   "paths": {
+    "face (3 O)": 2
+   },
+   "mean_Fe_O_Fe_angle_corner_deg": null,
+   "spin_products": [
+    6.25
+   ],
+   "combination": "J[shell0_2.90A] + 3*J[shell2_3.36A]",
+   "merged_with": [
+    "shell2_3.36A"
+   ]
+  },
+  {
+   "label": "shell1_2.97A",
+   "n_bonds": 6,
+   "d_min": 2.970953832439454,
+   "d_max": 2.9709538324394553,
+   "shells": [
+    [
+     2.9709538324394544,
+     6
+    ]
+   ],
+   "n_distinct_shells": 1,
+   "paths": {
+    "edge (2 O)": 6
+   },
+   "mean_Fe_O_Fe_angle_corner_deg": null,
+   "spin_products": [
+    6.25
+   ]
+  },
+  {
+   "label": "shell3_3.71A",
+   "n_bonds": 12,
+   "d_min": 3.705271440049221,
+   "d_max": 3.7052714400492253,
+   "shells": [
+    [
+     3.705271440049223,
+     12
+    ]
+   ],
+   "n_distinct_shells": 1,
+   "paths": {
+    "corner (1 O)": 12
+   },
+   "mean_Fe_O_Fe_angle_corner_deg": 131.58206008511056,
+   "spin_products": [
+    6.25
+   ]
+  }
+ ],
+ "classes_not_in_the_fit": [
+  {
+   "label": "shell2_3.36A",
+   "n_bonds": 6,
+   "d_min": 3.364155099132622,
+   "d_max": 3.364155099132624,
+   "shells": [
+    [
+     3.364155099132623,
+     6
+    ]
+   ],
+   "n_distinct_shells": 1,
+   "paths": {
+    "corner (1 O)": 6
+   },
+   "mean_Fe_O_Fe_angle_corner_deg": 119.65684296640832,
+   "spin_products": [
+    6.25
+   ],
+   "reason": "proportional to class shell0_2.90A+shell2_3.36A (merged)"
+  }
+ ],
+ "model_notes": [
+  "proportional columns merged: the fit determines J[shell0_2.90A] + 3*J[shell2_3.36A]"
+ ],
+ "group_by": "shell",
+ "r_cut_A": 3.8,
+ "conditioning_fit_set": {
+  "cond_scaled": 1.0000000000000004,
+  "cond_raw": 67.08203932499367,
+  "singular_values_scaled": [
+   1.0000000000000002,
+   1.0,
+   1.0,
+   0.9999999999999998
+  ],
+  "singular_values_raw": [
+   149.99999999999997,
+   74.99999999999999,
+   24.999999999999996,
+   2.23606797749979
+  ],
+  "rank": 4,
+  "n_columns": 4,
+  "n_rows": 5
+ },
+ "conditioning_full_pool": {
+  "cond_scaled": 1.0,
+  "cond_raw": 53.03300858899106,
+  "singular_values_scaled": [
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "singular_values_raw": [
+   150.0,
+   75.00000000000001,
+   24.999999999999996,
+   2.8284271247461903
+  ],
+  "rank": 4,
+  "n_columns": 4,
+  "n_rows": 8
+ },
+ "pool_size": 8,
+ "holdout_leverage": [
+  0.2,
+  0.2
+ ],
+ "configs": [
+  {
+   "config_id": "c00_ground",
+   "role": "fit",
+   "flipped_groups": []
+  },
+  {
+   "config_id": "c01_flip_Fe3_Fe4",
+   "role": "fit",
+   "flipped_groups": [
+    "Fe3",
+    "Fe4"
+   ]
+  },
+  {
+   "config_id": "c02_flip_Fe2_Fe4",
+   "role": "fit",
+   "flipped_groups": [
+    "Fe2",
+    "Fe4"
+   ]
+  },
+  {
+   "config_id": "c03_flip_Fe2_Fe3",
+   "role": "fit",
+   "flipped_groups": [
+    "Fe2",
+    "Fe3"
+   ]
+  },
+  {
+   "config_id": "c04_flip_Fe4",
+   "role": "fit",
+   "flipped_groups": [
+    "Fe4"
+   ]
+  },
+  {
+   "config_id": "c05_flip_Fe3",
+   "role": "holdout",
+   "flipped_groups": [
+    "Fe3"
+   ]
+  },
+  {
+   "config_id": "c06_flip_Fe2",
+   "role": "holdout",
+   "flipped_groups": [
+    "Fe2"
+   ]
+  }
+ ],
+ "runtime": {
+  "system": "hematite",
+  "n_jobs": 7,
+  "n_parallel": 3,
+  "cpu_hours_per_job": 0.019444444444444445,
+  "cpu_hours_total": 0.13611111111111113,
+  "waves": 3,
+  "slowdown_factor": 1.2,
+  "wall_hours_estimate": 0.06999999999999999,
+  "ram_GB_peak_estimate": 0.75,
+  "memory_budget_GB": 10.0,
+  "memory_ok": true,
+  "basis": "seconds/iteration 5.0 s x 14 iterations (config systems.hematite; FEASIBILITY pilots); slowdown factor is an assumption",
+  "timeout_hours": 0.25
+ },
+ "settings": {
+  "config_sha256": "d417facfe7ac85324462194a1bd64a3a3262d5dc234e99576a459073f1fe1c20",
+  "campaign": "campaign_v1",
+  "functional": "PBE",
+  "hubbard": {
+   "projector": "ortho-atomic",
+   "U_eff_eV": {
+    "Fe": 3.0,
+    "Co": 3.0,
+    "Mn": 3.0,
+    "Zn": null
+   },
+   "status": {
+    "Fe": "literature",
+    "Co": "assumption",
+    "Mn": "assumption",
+    "Zn": "not_applied"
+   }
+  },
+  "pseudo_profile": "gbrv_pilot",
+  "ecutwfc_Ry": 40.0,
+  "ecutrho_Ry": 240.0,
+  "cutoff_status": "pilot",
+  "pseudo_files": {
+   "Fe": "fe_pbe_v1.5.uspp.F.UPF",
+   "O": "o_pbe_v1.2.uspp.F.UPF",
+   "Sr": "sr_pbe_v1.uspp.F.UPF",
+   "Zn": "Zn_pbe_v1.uspp.F.UPF",
+   "Co": "Co_pbe_v1.2.uspp.F.UPF",
+   "Mn": "mn_pbe_v1.5.uspp.F.UPF"
+  },
+  "occupations": {
+   "kind": "smearing",
+   "smearing": "gaussian",
+   "degauss_Ry": 0.005,
+   "tot_magnetization": null
+  },
+  "scf": {
+   "conv_thr_per_atom_Ry": 1e-08,
+   "mixing_beta": 0.3,
+   "mixing_mode": "local-TF",
+   "electron_maxstep": 200,
+   "diagonalization": "david"
+  },
+  "starting_magnetization": {
+   "Fe": 0.4,
+   "Co": 0.3,
+   "Mn": 0.4
+  },
+  "literature": {
+   "U_eff_Fe_eV": {
+    "rec_id": "L05-001",
+    "value": 3.0,
+    "unit": "eV",
+    "lit_id": "L05",
+    "method": "VASP, PAW, PBE GGA+U (Dudarev, U_eff = 3 eV on Fe 3d, from linear response), 92-atom hexagonal cell P63/mmc (SrW), gamma-centred 5x5x1 k-mesh (SCF), cutoff 600 eV, SCF 1e-6 eV, forces <0.01 eV/A; SOC noncollinear for MAE with 12x12x2 k-mesh and Bloechl tetrahedra; collinear Gorter ferrimagnet 4e,4f1,4f3 antiparallel to 6g,4f2,12k,2d; K/Ca/Ba/La replace half of the Sr atoms at 2b (symmetry P-6m2)"
+   },
+   "plane_wave_cutoff_paper": {
+    "rec_id": "L05-002",
+    "value": 600.0,
+    "unit": "eV",
+    "lit_id": "L05",
+    "method": "VASP, PAW, PBE GGA+U (Dudarev, U_eff = 3 eV on Fe 3d, from linear response), 92-atom hexagonal cell P63/mmc (SrW), gamma-centred 5x5x1 k-mesh (SCF), cutoff 600 eV, SCF 1e-6 eV, forces <0.01 eV/A; SOC noncollinear for MAE with 12x12x2 k-mesh and Bloechl tetrahedra; collinear Gorter ferrimagnet 4e,4f1,4f3 antiparallel to 6g,4f2,12k,2d; K/Ca/Ba/La replace half of the Sr atoms at 2b (symmetry P-6m2)"
+   },
+   "scf_threshold_paper": {
+    "rec_id": "L05-003",
+    "value": 1e-06,
+    "unit": "eV",
+    "lit_id": "L05",
+    "method": "VASP, PAW, PBE GGA+U (Dudarev, U_eff = 3 eV on Fe 3d, from linear response), 92-atom hexagonal cell P63/mmc (SrW), gamma-centred 5x5x1 k-mesh (SCF), cutoff 600 eV, SCF 1e-6 eV, forces <0.01 eV/A; SOC noncollinear for MAE with 12x12x2 k-mesh and Bloechl tetrahedra; collinear Gorter ferrimagnet 4e,4f1,4f3 antiparallel to 6g,4f2,12k,2d; K/Ca/Ba/La replace half of the Sr atoms at 2b (symmetry P-6m2)"
+   }
+  },
+  "literature_deviations": [
+   "Gamma-only k mesh instead of Gamma-centred 5x5x1 (laptop budget, FEASIBILITY section 4); needs a 2x2x1 check on 2-3 configurations",
+   "Quantum ESPRESSO ultrasoft/PAW pseudopotentials instead of VASP PAW; ortho-atomic Hubbard projectors instead of the VASP sphere projection",
+   "U on Co and Mn is NOT from L05 (Fe only)"
+  ]
+ },
+ "settings_if_sssp_cutoffs": {
+  "ecutwfc_Ry": 90.0,
+  "ecutrho_Ry": 1080.0,
+  "basis": "SSSP 1.3.0 PBE efficiency metadata: Fe 90/1080; O 50/400",
+  "status": "sssp_recommended_not_feasible_on_laptop",
+  "note": "cost grows roughly with the density grid (~(ecutrho ratio)^1.5, not measured): not feasible on the laptop"
+ }
+}

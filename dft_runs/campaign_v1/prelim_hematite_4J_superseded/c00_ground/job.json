@@ -1,0 +1,14 @@
+{
+ "config_id": "c00_ground",
+ "role": "fit",
+ "flipped_groups": [],
+ "pattern": [
+  1,
+  1,
+  1,
+  1
+ ],
+ "system": "alpha-Fe2O3",
+ "input_sha256": "4b37a3de310c15282518f8653617a4d85ad9221a4821a2e5a3fcd33d2d73ebdd",
+ "config_sha256": "d417facfe7ac85324462194a1bd64a3a3262d5dc234e99576a459073f1fe1c20"
+}

@@ -1,0 +1,2185 @@
+{
+ "zip_sha256": "b26d69cc1c5a5ef1dfe1f2f93c1e119cc786f7663c36ba9ad2c8f315ff49cef7",
+ "zip_bytes": 65597103,
+ "n_files": 121,
+ "entries": [
+  {
+   "archive_path": "01_XRD/SrMn_Mn_x=1.1_1400_0h_6h#1##20260912-143637_100.mdi",
+   "zone": "vault/lab_validation",
+   "raw_name_hex": "30315f5852442f53724d6e5f4d6e5f783d312e315f313430305f30685f36682331232332303236303931322d3134333633375f3130302e6d6469",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 37966,
+   "crc32": "d811a1b7",
+   "sha256": "1b7debf5622a86ad86594c84008a9269770cd87b7595f1b5bf0b2a1ac002b031",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "01_XRD/SrMn_Mn_x=1.1_1400_0h_6h#1##20260912-143637_100.txt",
+   "zone": "vault/lab_validation",
+   "raw_name_hex": "30315f5852442f53724d6e5f4d6e5f783d312e315f313430305f30685f36682331232332303236303931322d3134333633375f3130302e747874",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 63686,
+   "crc32": "f9301da3",
+   "sha256": "05436e2b66183ea210b5cf5c03c89d5247bd470ea56058a5801c9c46313cbce5",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "01_XRD/SrMn_Mn_x=1.2_1400_0h_6h#1##20260912-112931_100.mdi",
+   "zone": "vault/lab_validation",
+   "raw_name_hex": "30315f5852442f53724d6e5f4d6e5f783d312e325f313430305f30685f36682331232332303236303931322d3131323933315f3130302e6d6469",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 37978,
+   "crc32": "5bd24e70",
+   "sha256": "da233c5955d01a1303991e99232d8191b5aaff206287572874bdd4f55902bf42",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "01_XRD/SrMn_Mn_x=1.2_1400_0h_6h#1##20260912-112931_100.txt",
+   "zone": "vault/lab_validation",
+   "raw_name_hex": "30315f5852442f53724d6e5f4d6e5f783d312e325f313430305f30685f36682331232332303236303931322d3131323933315f3130302e747874",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 63698,
+   "crc32": "f927093b",
+   "sha256": "4bf22abf08521ab22d70367c924d308f019518ffb979ef1c76fcdb0e98267ae0",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "01_XRD/SrMn_Mn_x=1.3_1400_0h_6h#1##20260912-130619_100.mdi",
+   "zone": "vault/lab_validation",
+   "raw_name_hex": "30315f5852442f53724d6e5f4d6e5f783d312e335f313430305f30685f36682331232332303236303931322d3133303631395f3130302e6d6469",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 37999,
+   "crc32": "23ca0572",
+   "sha256": "5858b48741bb2e7702e46e298ed5988a1f6706725190a5fe72e99b78f38879a3",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "01_XRD/SrMn_Mn_x=1.3_1400_0h_6h#1##20260912-130619_100.txt",
+   "zone": "vault/lab_validation",
+   "raw_name_hex": "30315f5852442f53724d6e5f4d6e5f783d312e335f313430305f30685f36682331232332303236303931322d3133303631395f3130302e747874",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 63719,
+   "crc32": "053abf58",
+   "sha256": "0430e82209ab5ce0ff4319be172bd3b08a32f9c0b759db7aa838921b6ab58b01",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "01_XRD/SrMn_Mn_x=1.4_1400_0h_6h#1##20260912-161105_100.txt",
+   "zone": "vault/lab_validation",
+   "raw_name_hex": "30315f5852442f53724d6e5f4d6e5f783d312e345f313430305f30685f36682331232332303236303931322d3136313130355f3130302e747874",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 63690,
+   "crc32": "5bcad73c",
+   "sha256": "b8f13dfc624244f3eec6fe45b2c48c96a44b70679212a0e4885cfba04215fa77",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "01_XRD/SrMn_Mn_x=1.4_1400_0h_6h.mdi",
+   "zone": "vault/lab_validation",
+   "raw_name_hex": "30315f5852442f53724d6e5f4d6e5f783d312e345f313430305f30685f36682e6d6469",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 37970,
+   "crc32": "52a723bf",
+   "sha256": "a715fce1b99b30a9821347bb4b5a302ed8f9338f45eba57aaf8d8433f152627c",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "01_XRD/SrW_Co3O4_x=1.5_T=1200_6h_T=1400_4h_210926.mdi",
+   "zone": "vault/lab_validation",
+   "raw_name_hex": "30315f5852442f5372575f436f334f345f783d312e355f543d313230305f36685f543d313430305f34685f3231303932362e6d6469",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 33585,
+   "crc32": "0ea68f13",
+   "sha256": "ab1da4035941d768ebcc5c1d5507632bf42a39b4d8e2d84f2b9d1e9acff9bd7d",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "01_XRD/SrW_Co3O4_x=1_5_T=1200_6h_T=1400_4h_210926#1##20260922_142035_100.txt",
+   "zone": "vault/lab_validation",
+   "raw_name_hex": "30315f5852442f5372575f436f334f345f783d315f355f543d313230305f36685f543d313430305f34685f3231303932362331232332303236303932325f3134323033355f3130302e747874",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 56401,
+   "crc32": "5f67f74b",
+   "sha256": "cdd9c1074ba004448ea34dda12ebc8931c84235db5fbe9878137b97ab882c630",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "01_XRD/SrW_Co3O4_x=2_0_T=1200_6h_T=1400_4h_210926#1##20260922_160950_100.mdi",
+   "zone": "vault/lab_validation",
+   "raw_name_hex": "30315f5852442f5372575f436f334f345f783d325f305f543d313230305f36685f543d313430305f34685f3231303932362331232332303236303932325f3136303935305f3130302e6d6469",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 33631,
+   "crc32": "9e1278d8",
+   "sha256": "e4b9295d1f593a56e92a57dc1b9f414361faf7c57c7cfc4ba9ee700f36743a97",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "01_XRD/SrW_Co3O4_x=2_0_T=1200_6h_T=1400_4h_210926#1##20260922_160950_100.txt",
+   "zone": "vault/lab_validation",
+   "raw_name_hex": "30315f5852442f5372575f436f334f345f783d325f305f543d313230305f36685f543d313430305f34685f3231303932362331232332303236303932325f3136303935305f3130302e747874",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 56447,
+   "crc32": "458769d7",
+   "sha256": "43748dc5e5df165ad89deca660c2b0e00a2caf1431183f1a0494b3034ceae629",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "01_XRD/SrW_ZnO_X=1.5_T=1200_6h_T=1400_4h_160926.mdi",
+   "zone": "vault/lab_validation",
+   "raw_name_hex": "30315f5852442f5372575f5a6e4f5f583d312e355f543d313230305f36685f543d313430305f34685f3136303932362e6d6469",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 29504,
+   "crc32": "4bdd2a0e",
+   "sha256": "55f80d7ed92791710e79bac35267a14bc1d8c6eee7513574cc0bde2b4df6e13f",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "01_XRD/SrW_ZnO_X=1.5_T=1200_6h_T=1400_4h_160926.txt",
+   "zone": "vault/lab_validation",
+   "raw_name_hex": "30315f5852442f5372575f5a6e4f5f583d312e355f543d313230305f36685f543d313430305f34685f3136303932362e747874",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 49474,
+   "crc32": "6f20a71d",
+   "sha256": "b0579aab00f863b51375fc326cb26cb6826a0150dfcc1b5826b1530af7d86f1b",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "01_XRD/SrW_ZnO_X=2_T=1200_6h_T=1400_4h_160926#1##20260916_150235_100.mdi",
+   "zone": "vault/lab_validation",
+   "raw_name_hex": "30315f5852442f5372575f5a6e4f5f583d325f543d313230305f36685f543d313430305f34685f3136303932362331232332303236303931365f3135303233355f3130302e6d6469",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 33679,
+   "crc32": "66022514",
+   "sha256": "7b4ce941aa84e82f092887e04849a4788e432fd81816d8a45c3480c0d9d42bc4",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "01_XRD/SrW_ZnO_X=2_T=1200_6h_T=1400_4h_160926#1##20260916_150235_100.txt",
+   "zone": "vault/lab_validation",
+   "raw_name_hex": "30315f5852442f5372575f5a6e4f5f583d325f543d313230305f36685f543d313430305f34685f3136303932362331232332303236303931365f3135303233355f3130302e747874",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 56495,
+   "crc32": "e690e707",
+   "sha256": "fb4e1c7ca0bd5a95e3a022653bb2c64919a6b132b2358de98543831ccd5a5ab3",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "02_Mossbauer/04.26_SrW_Mn2O3_x=1.5_1350°C_27.04.26_173mg.spc",
+   "zone": "vault/lab_validation",
+   "raw_name_hex": "30325f4d6f737362617565722f30342e32365f5372575f4d6e324f335f783d312e355f31333530c2b0435f32372e30342e32365f3137336d672e737063",
+   "utf8_flag": true,
+   "name_is_ascii": false,
+   "size": 8448,
+   "crc32": "f818b380",
+   "sha256": "580b075dffd8316c386044207f261df9ed00a1b5ae842b3175741f6dca7c6ed2",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "02_Mossbauer/04.26_SrW_Mn2O3_x=2_1400°C_6h_14.04.26_147mg.spc",
+   "zone": "vault/lab_validation",
+   "raw_name_hex": "30325f4d6f737362617565722f30342e32365f5372575f4d6e324f335f783d325f31343030c2b0435f36685f31342e30342e32365f3134376d672e737063",
+   "utf8_flag": true,
+   "name_is_ascii": false,
+   "size": 8448,
+   "crc32": "e3947775",
+   "sha256": "845b08feb95aa5a48ad976c0c68e3acfd487d13bb873bb0bdea5e2eb0f9cb789",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "02_Mossbauer/04.26_SrW_MnO_x=2_1350°C_20.04.26_178mg.spc",
+   "zone": "vault/lab_validation",
+   "raw_name_hex": "30325f4d6f737362617565722f30342e32365f5372575f4d6e4f5f783d325f31333530c2b0435f32302e30342e32365f3137386d672e737063",
+   "utf8_flag": true,
+   "name_is_ascii": false,
+   "size": 8448,
+   "crc32": "4fa83b93",
+   "sha256": "5e7a16cdafdfbc1314d9379a63ebcb81c8f3d84ed4921e47a7631b11074b5f28",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "02_Mossbauer/05.26_SrW_Mn2O3_x=1.5_1400°C_04.05.26_174mg.spc",
+   "zone": "vault/lab_validation",
+   "raw_name_hex": "30325f4d6f737362617565722f30352e32365f5372575f4d6e324f335f783d312e355f31343030c2b0435f30342e30352e32365f3137346d672e737063",
+   "utf8_flag": true,
+   "name_is_ascii": false,
+   "size": 8448,
+   "crc32": "3147be64",
+   "sha256": "ee65ea1d7d796b7f61b9e0a9b2934896fe1eccf96b56b2f41c2b1cb19ebfca5c",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "02_Mossbauer/09.26_SrW_Mn2O3_x=2,0_1400°C_07.09.26_167mg.spc",
+   "zone": "vault/lab_validation",
+   "raw_name_hex": "30325f4d6f737362617565722f30392e32365f5372575f4d6e324f335f783d322c305f31343030c2b0435f30372e30392e32365f3136376d672e737063",
+   "utf8_flag": true,
+   "name_is_ascii": false,
+   "size": 8491,
+   "crc32": "a87411c7",
+   "sha256": "7d07d8bc849bc6e29b4114bb11e8df5441bc989a0504cc9e37e62e386d573cbf",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "03_previous_XRD_projects/SrW_ZnO_X=1.5_T=1200_6h_T=1400_4h_160926-2.mtd",
+   "zone": "vault/lab_validation",
+   "raw_name_hex": "30335f70726576696f75735f5852445f70726f6a656374732f5372575f5a6e4f5f583d312e355f543d313230305f36685f543d313430305f34685f3136303932362d322e6d7464",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 2452066,
+   "crc32": "6a52b627",
+   "sha256": "065208c5545d8b96b4a92df357056f0518e9b0ed005511b5908301b92587ee8e",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "03_previous_XRD_projects/SrW_ZnO_X=1.5_T=1200_6h_T=1400_4h_160926-3.mtd",
+   "zone": "vault/lab_validation",
+   "raw_name_hex": "30335f70726576696f75735f5852445f70726f6a656374732f5372575f5a6e4f5f583d312e355f543d313230305f36685f543d313430305f34685f3136303932362d332e6d7464",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 2216493,
+   "crc32": "26e1dab9",
+   "sha256": "81a0a53c4e9129f0a38c0c34dfa9e2dfa318362b6bee514acb34d1facc77d668",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "03_previous_XRD_projects/SrW_ZnO_X=1.5_T=1200_6h_T=1400_4h_160926.mtd",
+   "zone": "vault/lab_validation",
+   "raw_name_hex": "30335f70726576696f75735f5852445f70726f6a656374732f5372575f5a6e4f5f583d312e355f543d313230305f36685f543d313430305f34685f3136303932362e6d7464",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 1707629,
+   "crc32": "e4f1805f",
+   "sha256": "1381219807a0a8ffd41897b4d185c173ede688f74ea84d10616453d752af6049",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "04_legacy_model/FMR_predictions_main_series.xlsx",
+   "zone": "vault/legacy",
+   "raw_name_hex": "30345f6c65676163795f6d6f64656c2f464d525f70726564696374696f6e735f6d61696e5f7365726965732e786c7378",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 15636,
+   "crc32": "c0d0382e",
+   "sha256": "d8842dbcda3ce7409b5f1d2665356243d5240fcd9f5c4cddcac6c4b36a0c4bba",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "04_legacy_model/SrW_series_FMR.csv",
+   "zone": "vault/legacy",
+   "raw_name_hex": "30345f6c65676163795f6d6f64656c2f5372575f7365726965735f464d522e637376",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 3932,
+   "crc32": "c63f188e",
+   "sha256": "b19b044f4958f0810ea7b2957ff026677b739130b60f8d48bb954c2d3da5c06b",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "04_legacy_model/SrW_series_f_vs_H.png",
+   "zone": "vault/legacy",
+   "raw_name_hex": "30345f6c65676163795f6d6f64656c2f5372575f7365726965735f665f76735f482e706e67",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 307528,
+   "crc32": "398b9080",
+   "sha256": "a046674261ec50d3fa7c757139dbdd9767469462edfd79e6fcdb63d75be6678c",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "04_legacy_model/SrW_series_spectra_H0.png",
+   "zone": "vault/legacy",
+   "raw_name_hex": "30345f6c65676163795f6d6f64656c2f5372575f7365726965735f737065637472615f48302e706e67",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 213223,
+   "crc32": "2987800f",
+   "sha256": "2e88b83c46f3fcffbf826f4b83c38013375fcd2c4ff9d81a30c54d03990f6d1d",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "04_legacy_model/SrW_series_vs_x.png",
+   "zone": "vault/legacy",
+   "raw_name_hex": "30345f6c65676163795f6d6f64656c2f5372575f7365726965735f76735f782e706e67",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 189156,
+   "crc32": "83c4fe70",
+   "sha256": "6ba3fae696039046c3a75f65ce3e0e43e8ab9256cb54b3665f7598b395c71718",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "04_legacy_model/SrW_series_vs_x_1.png",
+   "zone": "vault/legacy",
+   "raw_name_hex": "30345f6c65676163795f6d6f64656c2f5372575f7365726965735f76735f785f312e706e67",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 189156,
+   "crc32": "83c4fe70",
+   "sha256": "6ba3fae696039046c3a75f65ce3e0e43e8ab9256cb54b3665f7598b395c71718",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "04_legacy_model/W (2).txt",
+   "zone": "vault/legacy",
+   "raw_name_hex": "30345f6c65676163795f6d6f64656c2f57202832292e747874",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 8974,
+   "crc32": "644bbfc3",
+   "sha256": "5be97ad2c869ac9cdc4ef0669cbfcf25c15027f104a53cb4b081ad6bdfa9e97f",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "04_legacy_model/Методичка_расчёт_ФМР_гексаферритов_W_типа_Sr,_Co_Zn_Mn_и_расшифровка.docx",
+   "zone": "vault/legacy",
+   "raw_name_hex": "30345f6c65676163795f6d6f64656c2fd09cd0b5d182d0bed0b4d0b8d187d0bad0b05fd180d0b0d181d187d191d1825fd0a4d09cd0a05fd0b3d0b5d0bad181d0b0d184d0b5d180d180d0b8d182d0bed0b25f575fd182d0b8d0bfd0b05f53722c5f436f5f5a6e5f4d6e5fd0b85fd180d0b0d181d188d0b8d184d180d0bed0b2d0bad0b02e646f6378",
+   "utf8_flag": true,
+   "name_is_ascii": false,
+   "size": 3809554,
+   "crc32": "5dd544e4",
+   "sha256": "342d5217f1e3a8268542b0da4fe78e7a48b7b9070f94181f406998107e305795",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "05_original_duplicate_archive/Archive.zip",
+   "zone": "vault/lab_validation",
+   "raw_name_hex": "30355f6f726967696e616c5f6475706c69636174655f617263686976652f417263686976652e7a6970",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 17019,
+   "crc32": "f3ac33ab",
+   "sha256": "a822fe1eae78740cd1926ea81cb05737bbc41a0878d41f57405f3e9737053d7f",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "06_literature/L01_Morch2019/Morch_2019_fulltext.xml",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30315f4d6f726368323031392f4d6f7263685f323031395f66756c6c746578742e786d6c",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 98522,
+   "crc32": "8f87f07a",
+   "sha256": "b1f232334101a51132e762488273a9c3948ae44cf54804b65bc85aba2d77d46f",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "06_literature/L01_Morch2019/article_readable.html",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30315f4d6f726368323031392f61727469636c655f7265616461626c652e68746d6c",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 54980,
+   "crc32": "61288e35",
+   "sha256": "c71e356e59a8641a6613d2b3a9c1246405ed04ad88370dc5333fd46bfc8f7c99",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrCo2Fe16O27/SrCo2Fe16O27_Magnetic.cif",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30315f4d6f726368323031392f737570706f7274696e672f6c74353031387375705f6369662f5372436f32466531364f32372f5372436f32466531364f32375f4d61676e657469632e636966",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 14099,
+   "crc32": "3b75f95e",
+   "sha256": "a09efbed2ecacf698fa5f49b4ee58bf524e1c6e4eba8d3830989c37c1e344889",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrCo2Fe16O27/SrCo2Fe16O27_SINQ_HRPT.cif",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30315f4d6f726368323031392f737570706f7274696e672f6c74353031387375705f6369662f5372436f32466531364f32372f5372436f32466531364f32375f53494e515f485250542e636966",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 31137,
+   "crc32": "7549b8be",
+   "sha256": "41bbfdae4d599fd399213c75997de9b46593f303643ae52906d91474fcc08fef",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrCo2Fe16O27/SrCo2Fe16O27_SINQ_HRPT_StructureFactors.cif",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30315f4d6f726368323031392f737570706f7274696e672f6c74353031387375705f6369662f5372436f32466531364f32372f5372436f32466531364f32375f53494e515f485250545f537472756374757265466163746f72732e636966",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 477880,
+   "crc32": "35ffdd36",
+   "sha256": "7b254145b24eb7dd35579a23da34c14ee3d7f191c16eae027954ff4b4545b6a4",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrCo2Fe16O27/SrCo2Fe16O27_SLS_MS.cif",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30315f4d6f726368323031392f737570706f7274696e672f6c74353031387375705f6369662f5372436f32466531364f32372f5372436f32466531364f32375f534c535f4d532e636966",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 33128,
+   "crc32": "157c4f0f",
+   "sha256": "56ad386a4ef49c9b84e1aecc4914668f367d7211086305061ee855e81748006a",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrCo2Fe16O27/SrCo2Fe16O27_SLS_MS_StructureFactors.cif",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30315f4d6f726368323031392f737570706f7274696e672f6c74353031387375705f6369662f5372436f32466531364f32372f5372436f32466531364f32375f534c535f4d535f537472756374757265466163746f72732e636966",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 4580246,
+   "crc32": "7b2ebaf0",
+   "sha256": "b99842f0797e961c4724887abc22993023221bacec11e67311e4f69814ebbd7e",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrMg2Fe16O27/SrMg2Fe16O27_Magnetic.cif",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30315f4d6f726368323031392f737570706f7274696e672f6c74353031387375705f6369662f53724d6732466531364f32372f53724d6732466531364f32375f4d61676e657469632e636966",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 14115,
+   "crc32": "821ef60e",
+   "sha256": "0c56b513d2a007fe02137a512c5e49718800d760ec3b1bcd58a0f6e62f37b09f",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrMg2Fe16O27/SrMg2Fe16O27_SINQ_HRPT.cif",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30315f4d6f726368323031392f737570706f7274696e672f6c74353031387375705f6369662f53724d6732466531364f32372f53724d6732466531364f32375f53494e515f485250542e636966",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 44771,
+   "crc32": "16fdc595",
+   "sha256": "47401ac504468cd6d08f7b3d85c9c4d110da4ea326a9caa87053282fe4e99436",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrMg2Fe16O27/SrMg2Fe16O27_SINQ_HRPT_StructureFactors.cif",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30315f4d6f726368323031392f737570706f7274696e672f6c74353031387375705f6369662f53724d6732466531364f32372f53724d6732466531364f32375f53494e515f485250545f537472756374757265466163746f72732e636966",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 516199,
+   "crc32": "24bedf36",
+   "sha256": "2b6e303ea10b703f91bd7d860b9a630937eec5eede6e0f4d8a2133afa6592d05",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrMg2Fe16O27/SrMg2Fe16O27_SLS_MS.cif",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30315f4d6f726368323031392f737570706f7274696e672f6c74353031387375705f6369662f53724d6732466531364f32372f53724d6732466531364f32375f534c535f4d532e636966",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 46734,
+   "crc32": "bd2e7fce",
+   "sha256": "6e30dd00479fa1b51d4755d3e1f03e50bea5354b9d2e0dca351c91fdff0eaf4a",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrMg2Fe16O27/SrMg2Fe16O27_SLS_MS_StructureFactors.cif",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30315f4d6f726368323031392f737570706f7274696e672f6c74353031387375705f6369662f53724d6732466531364f32372f53724d6732466531364f32375f534c535f4d535f537472756374757265466163746f72732e636966",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 4850541,
+   "crc32": "391ad078",
+   "sha256": "7824cfa16201a50c67b52e3d9138995b23ffc6f9aaae34dc60e82ddcd0905d77",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrNi2Fe16O27/SrNi2Fe16O27_Magnetic.cif",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30315f4d6f726368323031392f737570706f7274696e672f6c74353031387375705f6369662f53724e6932466531364f32372f53724e6932466531364f32375f4d61676e657469632e636966",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 14113,
+   "crc32": "6a111094",
+   "sha256": "beb8ce6ec97d5f35ffd2306b27caa3e7ff1113c9ea542259631aed48aa94ae91",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrNi2Fe16O27/SrNi2Fe16O27_SINQ_HRPT.cif",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30315f4d6f726368323031392f737570706f7274696e672f6c74353031387375705f6369662f53724e6932466531364f32372f53724e6932466531364f32375f53494e515f485250542e636966",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 32326,
+   "crc32": "e53024ea",
+   "sha256": "fdd30ad5ee8d7ee9f32e33a1149105966a776ca73d2047af341913003df62f5c",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrNi2Fe16O27/SrNi2Fe16O27_SINQ_HRPT_StructureFactors.cif",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30315f4d6f726368323031392f737570706f7274696e672f6c74353031387375705f6369662f53724e6932466531364f32372f53724e6932466531364f32375f53494e515f485250545f537472756374757265466163746f72732e636966",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 481654,
+   "crc32": "5ef34efb",
+   "sha256": "4878a2897beceb57188189b87598f64b0892e056bb916dd7a054a14e30e3fc0f",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrNi2Fe16O27/SrNi2Fe16O27_SLS_MS.cif",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30315f4d6f726368323031392f737570706f7274696e672f6c74353031387375705f6369662f53724e6932466531364f32372f53724e6932466531364f32375f534c535f4d532e636966",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 33835,
+   "crc32": "b4604835",
+   "sha256": "2f147e282aa873e6b466321d703bd86107c9ed7d0eb7cdc3622e623ace4223d0",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrNi2Fe16O27/SrNi2Fe16O27_SLS_MS_StructureFactors.cif",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30315f4d6f726368323031392f737570706f7274696e672f6c74353031387375705f6369662f53724e6932466531364f32372f53724e6932466531364f32375f534c535f4d535f537472756374757265466163746f72732e636966",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 4615801,
+   "crc32": "873b8f4a",
+   "sha256": "f66db36e73badc45d6d37ee7deadf48aaaef26402abfbf93d9f7dcf8d5d2d145",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrZn2Fe16O27/SrZn2Fe16O27_Magnetic.cif",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30315f4d6f726368323031392f737570706f7274696e672f6c74353031387375705f6369662f53725a6e32466531364f32372f53725a6e32466531364f32375f4d61676e657469632e636966",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 14117,
+   "crc32": "8edffb2d",
+   "sha256": "54b0c2ccc939363d05715a986aed40738dfeeb880453d8245bac4e57c5254879",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrZn2Fe16O27/SrZn2Fe16O27_SINQ_HRPT.cif",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30315f4d6f726368323031392f737570706f7274696e672f6c74353031387375705f6369662f53725a6e32466531364f32372f53725a6e32466531364f32375f53494e515f485250542e636966",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 32100,
+   "crc32": "f5efd9d6",
+   "sha256": "aed66afd24797dafcbbbeecec025f1de1e3c2c888cba4a917aba72b74c3977af",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrZn2Fe16O27/SrZn2Fe16O27_SINQ_HRPT_StructureFactors.cif",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30315f4d6f726368323031392f737570706f7274696e672f6c74353031387375705f6369662f53725a6e32466531364f32372f53725a6e32466531364f32375f53494e515f485250545f537472756374757265466163746f72732e636966",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 482506,
+   "crc32": "59e938cd",
+   "sha256": "bed6e480a489ef2941594da841381a1568d0329c83051a5c27662a1039bd58fa",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrZn2Fe16O27/SrZn2Fe16O27_SLS_MS.cif",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30315f4d6f726368323031392f737570706f7274696e672f6c74353031387375705f6369662f53725a6e32466531364f32372f53725a6e32466531364f32375f534c535f4d532e636966",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 32955,
+   "crc32": "10ddbd74",
+   "sha256": "5cc4b0a691f2f5d4eae6035e8d8e77df7256003002abcf6da44bc377a83973de",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrZn2Fe16O27/SrZn2Fe16O27_SLS_MS_StructureFactors.cif",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30315f4d6f726368323031392f737570706f7274696e672f6c74353031387375705f6369662f53725a6e32466531364f32372f53725a6e32466531364f32375f534c535f4d535f537472756374757265466163746f72732e636966",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 4617860,
+   "crc32": "d0753a49",
+   "sha256": "9ffaf0ceb7e514e2a28d20f040618a8512793d13f88c1cfa80421e90e158eda8",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "06_literature/L01_Morch2019/supporting/m-06-00492-efd1.jpg",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30315f4d6f726368323031392f737570706f7274696e672f6d2d30362d30303439322d656664312e6a7067",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 3371,
+   "crc32": "8cfe3d12",
+   "sha256": "857287dc09d86dff062d940f1e4e6832fd00bb3cd04736e0a79d045afedf72ea",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "06_literature/L01_Morch2019/supporting/m-06-00492-efi1.jpg",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30315f4d6f726368323031392f737570706f7274696e672f6d2d30362d30303439322d656669312e6a7067",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 1524,
+   "crc32": "45cf8a1b",
+   "sha256": "1d6a12d930742c855c849a180769755f29047d67f2911b0ff29a9f46a9954858",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "06_literature/L01_Morch2019/supporting/m-06-00492-efi2.jpg",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30315f4d6f726368323031392f737570706f7274696e672f6d2d30362d30303439322d656669322e6a7067",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 398,
+   "crc32": "c52396db",
+   "sha256": "026d313451e8b558e82c28231251ce0b19912157d41f65870f4a67b1fae90c1c",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "06_literature/L01_Morch2019/supporting/m-06-00492-fig1.gif",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30315f4d6f726368323031392f737570706f7274696e672f6d2d30362d30303439322d666967312e676966",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 19389,
+   "crc32": "0c5b71f7",
+   "sha256": "2a5d2a2df3ff9885484a1c5b6f5e3e766429d78ee7a2e6044f2cecb6eb0f3d54",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "06_literature/L01_Morch2019/supporting/m-06-00492-fig1.jpg",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30315f4d6f726368323031392f737570706f7274696e672f6d2d30362d30303439322d666967312e6a7067",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 145773,
+   "crc32": "ed7a73f9",
+   "sha256": "fad7c6783c5bb313d6c4ad88ab34a80118efe9abef271f0c3b6af7e236209028",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "06_literature/L01_Morch2019/supporting/m-06-00492-fig2.gif",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30315f4d6f726368323031392f737570706f7274696e672f6d2d30362d30303439322d666967322e676966",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 11487,
+   "crc32": "4a67ec22",
+   "sha256": "474663c331875e7e15f6c6081680fc1321c0e758924e6750294024a8ab3b0aca",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "06_literature/L01_Morch2019/supporting/m-06-00492-fig2.jpg",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30315f4d6f726368323031392f737570706f7274696e672f6d2d30362d30303439322d666967322e6a7067",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 81301,
+   "crc32": "1d8590af",
+   "sha256": "4759ce91daddebe8576c6220b639876d7f7e71b09666c05a66be286213bb9413",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "06_literature/L01_Morch2019/supporting/m-06-00492-fig3.gif",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30315f4d6f726368323031392f737570706f7274696e672f6d2d30362d30303439322d666967332e676966",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 13538,
+   "crc32": "4a53388d",
+   "sha256": "99f77db74b4d2eeff64c6a6ac3018f1abe1ac6cebfd706ce5c9b6424dc72b570",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "06_literature/L01_Morch2019/supporting/m-06-00492-fig3.jpg",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30315f4d6f726368323031392f737570706f7274696e672f6d2d30362d30303439322d666967332e6a7067",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 71349,
+   "crc32": "50927ffc",
+   "sha256": "4e6a64cd015102640eff70e7cfdba448293f367ba6f218334474dc1e32210616",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "06_literature/L01_Morch2019/supporting/m-06-00492-fig4.gif",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30315f4d6f726368323031392f737570706f7274696e672f6d2d30362d30303439322d666967342e676966",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 15713,
+   "crc32": "009ac983",
+   "sha256": "abbba23dc230f2a418309578df09028b2ee183fb85f4fbe80429cf8aa793b2e8",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "06_literature/L01_Morch2019/supporting/m-06-00492-fig4.jpg",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30315f4d6f726368323031392f737570706f7274696e672f6d2d30362d30303439322d666967342e6a7067",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 106684,
+   "crc32": "07ded632",
+   "sha256": "3be60bb21ec8b692353915ae4ba05245a0461f6a3c68540051f68368c95df67f",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "06_literature/L01_Morch2019/supporting/m-06-00492-fig5.gif",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30315f4d6f726368323031392f737570706f7274696e672f6d2d30362d30303439322d666967352e676966",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 8863,
+   "crc32": "8c0e3079",
+   "sha256": "11ec2b18a5796e686ceb177c138ea8f9d0786df2f63b9b5f7b85b87e4d758c51",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "06_literature/L01_Morch2019/supporting/m-06-00492-fig5.jpg",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30315f4d6f726368323031392f737570706f7274696e672f6d2d30362d30303439322d666967352e6a7067",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 66777,
+   "crc32": "530d48ce",
+   "sha256": "f5a08bcc513973ca453b31be7474aaabbd21b28aa7afe1779ca29d3e252cd790",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "06_literature/L01_Morch2019/supporting/m-06-00492-fig6.gif",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30315f4d6f726368323031392f737570706f7274696e672f6d2d30362d30303439322d666967362e676966",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 10752,
+   "crc32": "1aac7e47",
+   "sha256": "9de334e085f4ce8f792abc86340ed96aae34b8421951b7dce71f815db8cf895a",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "06_literature/L01_Morch2019/supporting/m-06-00492-fig6.jpg",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30315f4d6f726368323031392f737570706f7274696e672f6d2d30362d30303439322d666967362e6a7067",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 62887,
+   "crc32": "a238e7ac",
+   "sha256": "984f1c46b5b1219f39ffcd24757e2657de1276d9a2a7d6a73e1bcd2633220930",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "06_literature/L01_Morch2019/supporting/m-06-00492-fig7.gif",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30315f4d6f726368323031392f737570706f7274696e672f6d2d30362d30303439322d666967372e676966",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 10024,
+   "crc32": "93754710",
+   "sha256": "3a20bdce625ef5f8a7917b89e44a3f6df3f99a1e492bba52608dd606a277a314",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "06_literature/L01_Morch2019/supporting/m-06-00492-fig7.jpg",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30315f4d6f726368323031392f737570706f7274696e672f6d2d30362d30303439322d666967372e6a7067",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 71245,
+   "crc32": "e7ec62aa",
+   "sha256": "847cb7a9326b87763e7f015df66a8b8eb1b1bea54f55c570720f3aab4772145f",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "06_literature/L01_Morch2019/supporting/m-06-00492-sup1.pdf",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30315f4d6f726368323031392f737570706f7274696e672f6d2d30362d30303439322d737570312e706466",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 2689301,
+   "crc32": "b88bf34f",
+   "sha256": "27cb1ea1b0f2eb45271b3e708bdf5bb2bc8408d94052e56b0651fbe6ee94bf7a",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "06_literature/L02_Morch2023/Morch_2023_W_magnetic_structure.pdf",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30325f4d6f726368323032332f4d6f7263685f323032335f575f6d61676e657469635f7374727563747572652e706466",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 690764,
+   "crc32": "82f4521d",
+   "sha256": "659dbddaac5bf3ebb866982f81a38cff91cc4b4c6f1593c7d0591fcafc136452",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "06_literature/L02_Morch2023/Morch_2023_fulltext.xml",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30325f4d6f726368323032332f4d6f7263685f323032335f66756c6c746578742e786d6c",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 71144,
+   "crc32": "9d9fa935",
+   "sha256": "b713a99aae6cfc838710216fe33a6159a6f07b3ecab443cf103ac6c5d891a511",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "06_literature/L02_Morch2023/article_readable.html",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30325f4d6f726368323032332f61727469636c655f7265616461626c652e68746d6c",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 38071,
+   "crc32": "b2c299af",
+   "sha256": "179b79480d51f7708251395cc9db6e55fc0f619a9cd91aa24a165d1c6884a89b",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "06_literature/L02_Morch2023/supporting/CIFs/SrCo2Fe16O27.cif",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30325f4d6f726368323032332f737570706f7274696e672f434946732f5372436f32466531364f32372e636966",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 2435,
+   "crc32": "16015560",
+   "sha256": "be668a6d84605f102d8086053eed4c971a27d1dcc95f659213698db101dcfc88",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "06_literature/L02_Morch2023/supporting/CIFs/SrCo2Fe16O27.mcif",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30325f4d6f726368323032332f737570706f7274696e672f434946732f5372436f32466531364f32372e6d636966",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 3472,
+   "crc32": "bae284f1",
+   "sha256": "a81ebd6feddaa8bc26e1d16cdcd4786fbd2d4fd8e5352c8b145cb3e7f92118c6",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "06_literature/L02_Morch2023/supporting/CIFs/SrCoZnFe16O27.cif",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30325f4d6f726368323032332f737570706f7274696e672f434946732f5372436f5a6e466531364f32372e636966",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 2888,
+   "crc32": "444a72a9",
+   "sha256": "c008446f50ca6576041b8398edca0234befef4f9476a2c2795152fbc394e95c4",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "06_literature/L02_Morch2023/supporting/CIFs/SrCoZnFe16O27.mcif",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30325f4d6f726368323032332f737570706f7274696e672f434946732f5372436f5a6e466531364f32372e6d636966",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 3913,
+   "crc32": "edf9f63a",
+   "sha256": "0e951df91d65f3a64c2db0c3d9dcfaf37442d81efdbb15ae626d486e9d944417",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "06_literature/L02_Morch2023/supporting/CIFs/SrZn2Fe16O27.cif",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30325f4d6f726368323032332f737570706f7274696e672f434946732f53725a6e32466531364f32372e636966",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 2187,
+   "crc32": "17b1e419",
+   "sha256": "a5d8455cd6855e98b03fafc4d2d7dd1c2f6d372b40455c08e994a89532069fb0",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "06_literature/L02_Morch2023/supporting/CIFs/SrZn2Fe16O27.mcif",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30325f4d6f726368323032332f737570706f7274696e672f434946732f53725a6e32466531364f32372e6d636966",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 2976,
+   "crc32": "8394963f",
+   "sha256": "7e1745faebe686a4e9908632ac3d3bc15bfc52dda1852290d7073e5b9a43d9c8",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "06_literature/L02_Morch2023/supporting/CIFs/pdCIF_SrCo2Fe16O27.cif",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30325f4d6f726368323032332f737570706f7274696e672f434946732f70644349465f5372436f32466531364f32372e636966",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 21392085,
+   "crc32": "20ab1e2a",
+   "sha256": "46eec053ed090d0e855186a2f53ff842359686305829b7f42a3004a9058cf1ea",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    4
+   ]
+  },
+  {
+   "archive_path": "06_literature/L02_Morch2023/supporting/CIFs/pdCIF_SrCoZnFe16O27.cif",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30325f4d6f726368323032332f737570706f7274696e672f434946732f70644349465f5372436f5a6e466531364f32372e636966",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 25542371,
+   "crc32": "3841112b",
+   "sha256": "602374756c634226b0fb692b31581296083052c7dea9fdbc86c7dba4bd94d822",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    6
+   ]
+  },
+  {
+   "archive_path": "06_literature/L02_Morch2023/supporting/CIFs/pdCIF_SrZn2Fe16O27.cif",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30325f4d6f726368323032332f737570706f7274696e672f434946732f70644349465f53725a6e32466531364f32372e636966",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 23009071,
+   "crc32": "11f48ed5",
+   "sha256": "2de88abca537db15ba498d295d99722ebcc31d5a51b8046e72131c4d2d2a7afa",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    8
+   ]
+  },
+  {
+   "archive_path": "06_literature/L02_Morch2023/supporting/j-56-00597-efi1.jpg",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30325f4d6f726368323032332f737570706f7274696e672f6a2d35362d30303539372d656669312e6a7067",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 1364,
+   "crc32": "79c689ea",
+   "sha256": "78718ae873e9eff4df5a818b0f6752e4011118411e4aa790323b63260996c3ca",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    8
+   ]
+  },
+  {
+   "archive_path": "06_literature/L02_Morch2023/supporting/j-56-00597-efi2.jpg",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30325f4d6f726368323032332f737570706f7274696e672f6a2d35362d30303539372d656669322e6a7067",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 267,
+   "crc32": "ec35025e",
+   "sha256": "19fbe77c3ef4d475e43183951cc0a9161f0ab913b64de5f58420bb7e6c7e37f4",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    8
+   ]
+  },
+  {
+   "archive_path": "06_literature/L02_Morch2023/supporting/j-56-00597-efi3.jpg",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30325f4d6f726368323032332f737570706f7274696e672f6a2d35362d30303539372d656669332e6a7067",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 366,
+   "crc32": "317901a7",
+   "sha256": "b7eed0b766e0c7a2b525a5fe295e796a6071022e0aaf8ff8a8202dd541065faa",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    8
+   ]
+  },
+  {
+   "archive_path": "06_literature/L02_Morch2023/supporting/j-56-00597-fig1.gif",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30325f4d6f726368323032332f737570706f7274696e672f6a2d35362d30303539372d666967312e676966",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 5213,
+   "crc32": "0087ce62",
+   "sha256": "2dd599161d28f651a4148edc149e9ab14dbb9c44e058b0e1d1925913d785ab70",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    8
+   ]
+  },
+  {
+   "archive_path": "06_literature/L02_Morch2023/supporting/j-56-00597-fig1.jpg",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30325f4d6f726368323032332f737570706f7274696e672f6a2d35362d30303539372d666967312e6a7067",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 81540,
+   "crc32": "8be2bea8",
+   "sha256": "dee104741d0a84a99de291d7580996b5362f98c4ccc35f8aa8b34f0e28463ad1",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    8
+   ]
+  },
+  {
+   "archive_path": "06_literature/L02_Morch2023/supporting/j-56-00597-fig2.gif",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30325f4d6f726368323032332f737570706f7274696e672f6a2d35362d30303539372d666967322e676966",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 14589,
+   "crc32": "01a72183",
+   "sha256": "4e69200bad6871cf941f2bf1f227db51b89aa3131e211edaa5b234f0b2262586",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    8
+   ]
+  },
+  {
+   "archive_path": "06_literature/L02_Morch2023/supporting/j-56-00597-fig2.jpg",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30325f4d6f726368323032332f737570706f7274696e672f6a2d35362d30303539372d666967322e6a7067",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 110959,
+   "crc32": "1022e6f3",
+   "sha256": "72ba5f138212676534d29b86f8227c60e949ec9d7ffa1cfee2368d2013e7f31a",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    8
+   ]
+  },
+  {
+   "archive_path": "06_literature/L02_Morch2023/supporting/j-56-00597-fig3.gif",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30325f4d6f726368323032332f737570706f7274696e672f6a2d35362d30303539372d666967332e676966",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 13430,
+   "crc32": "46fecab0",
+   "sha256": "a6357e6a2195d8dbf327fa7b063851fae728c6ee70e2d169a99a293a63552887",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    8
+   ]
+  },
+  {
+   "archive_path": "06_literature/L02_Morch2023/supporting/j-56-00597-fig3.jpg",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30325f4d6f726368323032332f737570706f7274696e672f6a2d35362d30303539372d666967332e6a7067",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 111567,
+   "crc32": "eb7c9a0d",
+   "sha256": "3949826b2e5e172cf7062aac36f1f316057995cdf45b7074658a1c665a55ded6",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    8
+   ]
+  },
+  {
+   "archive_path": "06_literature/L02_Morch2023/supporting/j-56-00597-fig4.gif",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30325f4d6f726368323032332f737570706f7274696e672f6a2d35362d30303539372d666967342e676966",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 12955,
+   "crc32": "efc543d8",
+   "sha256": "b8cd207d1ac29379903334fb389b7f9c44b37aabbec82286dba38db99e3ac7e7",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    8
+   ]
+  },
+  {
+   "archive_path": "06_literature/L02_Morch2023/supporting/j-56-00597-fig4.jpg",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30325f4d6f726368323032332f737570706f7274696e672f6a2d35362d30303539372d666967342e6a7067",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 154538,
+   "crc32": "118fbe84",
+   "sha256": "2927d6b18c389e5832069776039f01d9f6a394dbe3c54e0117dfa9deb95ee652",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    8
+   ]
+  },
+  {
+   "archive_path": "06_literature/L02_Morch2023/supporting/j-56-00597-fig5.gif",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30325f4d6f726368323032332f737570706f7274696e672f6a2d35362d30303539372d666967352e676966",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 11074,
+   "crc32": "0daf1de1",
+   "sha256": "68db19f0a8e1a14700282408f2006bf1e846bd41a98ddbe91c73e3491296dbb8",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    8
+   ]
+  },
+  {
+   "archive_path": "06_literature/L02_Morch2023/supporting/j-56-00597-fig5.jpg",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30325f4d6f726368323032332f737570706f7274696e672f6a2d35362d30303539372d666967352e6a7067",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 71031,
+   "crc32": "eeda50f2",
+   "sha256": "71313284892146f70a016416d708f1145dd78a8a1e87a4e3d10d75e97f3557cb",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    8
+   ]
+  },
+  {
+   "archive_path": "06_literature/L02_Morch2023/supporting/j-56-00597-sup1.pdf",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30325f4d6f726368323032332f737570706f7274696e672f6a2d35362d30303539372d737570312e706466",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 815563,
+   "crc32": "3aebf695",
+   "sha256": "61c090d31da7b511b4e10ab798a2c6f8a9287983d35be3e55197895b7d5e8f28",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    8
+   ]
+  },
+  {
+   "archive_path": "06_literature/L03_Nakai2023/Nakai_2023_W_phase_chemistry.pdf",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30335f4e616b6169323032332f4e616b61695f323032335f575f70686173655f6368656d69737472792e706466",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 3562200,
+   "crc32": "150b77db",
+   "sha256": "9442f3cf4e3d5d3eab6559535af2e4d030fa5007816572401fbc2f1120907dbf",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    8
+   ]
+  },
+  {
+   "archive_path": "06_literature/L05_Islam2025/Islam_2025_W_anisotropy.pdf",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30355f49736c616d323032352f49736c616d5f323032355f575f616e69736f74726f70792e706466",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 4605877,
+   "crc32": "b49d2cea",
+   "sha256": "dacea923e6037d3b507ba363ff7bb4d45e8ef36b5f757bce1b3e947dec0bdcb4",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    8
+   ]
+  },
+  {
+   "archive_path": "06_literature/L09_Spirit2019/Muller_2019_Spirit_author_preprint.pdf",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c30395f537069726974323031392f4d756c6c65725f323031395f5370697269745f617574686f725f7072657072696e742e706466",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 4068674,
+   "crc32": "a8b9768e",
+   "sha256": "3c941ff5b3215ca764ace5bcb588b242ef910b0d9b2c5c0a43f12fb616b2cb0d",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    8
+   ]
+  },
+  {
+   "archive_path": "06_literature/L10_Toby2024/Toby_2024_fulltext.xml",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c31305f546f6279323032342f546f62795f323032345f66756c6c746578742e786d6c",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 51934,
+   "crc32": "1ac13a7a",
+   "sha256": "f82547fcdcbc0c230575f32563355cc38e6f7328c1b6149124162a7cdb4beaa1",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    10
+   ]
+  },
+  {
+   "archive_path": "06_literature/L10_Toby2024/article_readable.html",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c31305f546f6279323032342f61727469636c655f7265616461626c652e68746d6c",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 34906,
+   "crc32": "1b038941",
+   "sha256": "514b5d0968d45665d1b02115b8af9244bd296d06cdaa98de20c9fe1456a46b2a",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    10
+   ]
+  },
+  {
+   "archive_path": "06_literature/L11_He2024/He_2024_W_magnetic_dielectric_Ba.pdf",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c31315f4865323032342f48655f323032345f575f6d61676e657469635f6469656c6563747269635f42612e706466",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 1520020,
+   "crc32": "4e487051",
+   "sha256": "83a792ef72505895e7f0f1e067ed25b0b38413cbbbd7e685b865298d5b40815b",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    10
+   ]
+  },
+  {
+   "archive_path": "06_literature/L12_Zhuravlev2005/Zhuravlev_2005_hexaferrite_permeability.pdf",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c31325f5a68757261766c6576323030352f5a68757261766c65765f323030355f68657861666572726974655f7065726d656162696c6974792e706466",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 121530,
+   "crc32": "f3848310",
+   "sha256": "0ee89fc45d0ec0119ce13c01d963e97ecfef969ab36cc3b33cd7a31d29b6c2ca",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    10
+   ]
+  },
+  {
+   "archive_path": "06_literature/L13_Hoez2023/Hoez_2023_BaM_texture_method_analogue.pdf",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c31335f486f657a323032332f486f657a5f323032335f42614d5f746578747572655f6d6574686f645f616e616c6f6775652e706466",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 8873784,
+   "crc32": "e3309a3d",
+   "sha256": "815a56cdb530fc424045fff00522a3afb4800a0b4a804ee0a087d43bb4971d48",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    10
+   ]
+  },
+  {
+   "archive_path": "06_literature/L14_Newbury2022/Newbury_Ritchie_2022_NIST_SEM_EDS.pdf",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f4c31345f4e657762757279323032322f4e6577627572795f526974636869655f323032325f4e4953545f53454d5f4544532e706466",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 7778797,
+   "crc32": "537874db",
+   "sha256": "a0e717c84705c2c1ad67a4489bdb98122b8be04514ac1c6483ec0eb4483cb357",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    10
+   ]
+  },
+  {
+   "archive_path": "06_literature/T01_Mossbauer_MSU/Mossbauer_MSU_Fabrichny_Pokholok_2012.pdf",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f5430315f4d6f737362617565725f4d53552f4d6f737362617565725f4d53555f466162726963686e795f506f6b686f6c6f6b5f323031322e706466",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 4011434,
+   "crc32": "c63d1e12",
+   "sha256": "4da8193749431970a5156933981ccf8b3ddc3ef753d75c2b72c3a15c271bef20",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    10
+   ]
+  },
+  {
+   "archive_path": "06_literature/T02_Mossbauer_KFU/Mossbauer_KFU_Voronina_Pyataev_2013.pdf",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30365f6c6974657261747572652f5430325f4d6f737362617565725f4b46552f4d6f737362617565725f4b46555f566f726f6e696e615f507961746165765f323031332e706466",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 3658920,
+   "crc32": "674d98a4",
+   "sha256": "5fdcb6c3196c321b0ffeb01f5fd67de50c82d06634f50ae857fadccfb3af3346",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    10
+   ]
+  },
+  {
+   "archive_path": "07_software_documentation/GSASII_scriptable.html",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30375f736f6674776172655f646f63756d656e746174696f6e2f4753415349495f73637269707461626c652e68746d6c",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 790711,
+   "crc32": "acc64cf1",
+   "sha256": "3a3fe785345b4f50d4cc7625a051246112932ff025d45952516301853c768979",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    10
+   ]
+  },
+  {
+   "archive_path": "07_software_documentation/Quantum_ESPRESSO_pw_input.html",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "30375f736f6674776172655f646f63756d656e746174696f6e2f5175616e74756d5f455350524553534f5f70775f696e7075742e68746d6c",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 454859,
+   "crc32": "2bc45783",
+   "sha256": "6778f93ea5bd088cd3f07ef0e686767f4cbb669f7394595ff7116e083d8c9d41",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    10
+   ]
+  },
+  {
+   "archive_path": "ALL_FILES_MANIFEST.csv",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "414c4c5f46494c45535f4d414e49464553542e637376",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 25791,
+   "crc32": "72713fca",
+   "sha256": "b62dd5e146227df914941bfec70b0f8705f88f7268814df163034837ce005801",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    10
+   ]
+  },
+  {
+   "archive_path": "LITERATURE_INDEX.md",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "4c4954455241545552455f494e4445582e6d64",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 10921,
+   "crc32": "69b3654e",
+   "sha256": "4ce3f9874b13b41b78921acd2293e146cb7e52c3f15818f4624d55f83ee8d198",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    10
+   ]
+  },
+  {
+   "archive_path": "LITERATURE_REGISTRY.csv",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "4c4954455241545552455f52454749535452592e637376",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 6028,
+   "crc32": "acc41a40",
+   "sha256": "65c2dee37a793f9e5d14b2893d65657ad3a94ac1279755259d6b3fe316118527",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    10
+   ]
+  },
+  {
+   "archive_path": "LITERATURE_REGISTRY.json",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "4c4954455241545552455f52454749535452592e6a736f6e",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 47841,
+   "crc32": "220510ef",
+   "sha256": "1a5f03429cfdec28a7ac13a099ece87e13776308e6693d67534eb1b5b0c54ae7",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    10
+   ]
+  },
+  {
+   "archive_path": "START_HERE.txt",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "53544152545f484552452e747874",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 5133,
+   "crc32": "8d826962",
+   "sha256": "86748afef9493f29c325ee842bc1b2be53baa0c64f138f301b6b08df77e25a41",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    10
+   ]
+  },
+  {
+   "archive_path": "W_hexaferrites_prompt_AB_theory_v2.md",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "575f6865786166657272697465735f70726f6d70745f41425f7468656f72795f76322e6d64",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 48532,
+   "crc32": "804ce6ca",
+   "sha256": "3e523f5bd69f120660ae501be260c304813afc6c09053b4886e0a8bf034f2dfe",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    10
+   ]
+  },
+  {
+   "archive_path": "metadata/DATA_MANIFEST.csv",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "6d657461646174612f444154415f4d414e49464553542e637376",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 7432,
+   "crc32": "e1c754bd",
+   "sha256": "230c57b0545a3e144ec6879d8e119b9c8d12c7b7000194e431333b02e2469ef2",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    10
+   ]
+  },
+  {
+   "archive_path": "metadata/DATA_MANIFEST.json",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "6d657461646174612f444154415f4d414e49464553542e6a736f6e",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 15462,
+   "crc32": "36ffdaf1",
+   "sha256": "48a753d61e908c9f140e9b72d24c554998e3c389d40a6b1d6849fc06ef600199",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    10
+   ]
+  },
+  {
+   "archive_path": "metadata/README_DATA_ORIGINAL.txt",
+   "zone": "raw/theory_side",
+   "raw_name_hex": "6d657461646174612f524541444d455f444154415f4f524947494e414c2e747874",
+   "utf8_flag": false,
+   "name_is_ascii": true,
+   "size": 5921,
+   "crc32": "8ce947f6",
+   "sha256": "8831ba78c9af5f20995eadb9f22720921e0b0b4360b1000201f665f9f05f09f7",
+   "date_time": [
+    2026,
+    10,
+    25,
+    17,
+    15,
+    10
+   ]
+  }
+ ]
+}

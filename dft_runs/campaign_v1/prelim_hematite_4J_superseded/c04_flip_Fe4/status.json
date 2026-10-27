@@ -1,0 +1,17 @@
+{
+ "attempts": 1,
+ "config_sha256": "d417facfe7ac85324462194a1bd64a3a3262d5dc234e99576a459073f1fe1c20",
+ "energy_Ry": -1194.84882913,
+ "finished_utc": "2026-10-26T03:45:33+00:00",
+ "heartbeat_utc": "2026-10-26T03:45:07+00:00",
+ "input_sha256": "3d7e6a3f6110881ee63d336fd4b9288e19924d5c96cae0d85a4e8dd1d6c98b0f",
+ "message": "",
+ "n_iterations": 12,
+ "output_sha256": "642e92e27853378fb2f00d59f536eef95f272ca9c38539a06c542948aa07fcbc",
+ "qe_version": "7.6",
+ "rc": 0,
+ "runner_pid": 148344,
+ "started_utc": "2026-10-26T03:44:11+00:00",
+ "state": "done",
+ "wall_s": 81.78
+}

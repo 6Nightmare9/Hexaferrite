@@ -1,0 +1,332 @@
+{
+ "system": "alpha-Fe2O3",
+ "kind": "hematite",
+ "meta": {
+  "geometry": {
+   "space_group": "R-3c",
+   "a_A": 5.038,
+   "c_A": 13.772,
+   "Fe_z": 0.3553,
+   "O_x": 0.3059,
+   "source": "Blake et al., Am. Mineral. 51 (1966) 123, via dft_feasibility/pilots/make_a.py (not re-verified here)"
+  },
+  "order_axis": "trigonal axis, Fe sorted along it",
+  "ground_state": "+--+"
+ },
+ "convention": "H = -sum_{i<j} J_ij S_i.S_j; each pair once; |S| = spin quantum number (Fe3+ 5/2, Fe2+ 2, Mn2+ 5/2, Co2+ 3/2); J>0 ferromagnetic; J in meV; energies per simulation cell",
+ "class_labels": [
+  "shell0_2.90A+shell2_3.36A",
+  "shell1_2.97A",
+  "shell3_3.71A"
+ ],
+ "class_info": [
+  {
+   "label": "shell0_2.90A+shell2_3.36A",
+   "n_bonds": 2,
+   "d_min": 2.900383199999996,
+   "d_max": 2.9003831999999976,
+   "shells": [
+    [
+     2.9003831999999967,
+     2
+    ]
+   ],
+   "n_distinct_shells": 1,
+   "paths": {
+    "face (3 O)": 2
+   },
+   "mean_Fe_O_Fe_angle_corner_deg": null,
+   "spin_products": [
+    6.25
+   ],
+   "combination": "J[shell0_2.90A] + 3*J[shell2_3.36A]",
+   "merged_with": [
+    "shell2_3.36A"
+   ]
+  },
+  {
+   "label": "shell1_2.97A",
+   "n_bonds": 6,
+   "d_min": 2.970953832439454,
+   "d_max": 2.9709538324394553,
+   "shells": [
+    [
+     2.9709538324394544,
+     6
+    ]
+   ],
+   "n_distinct_shells": 1,
+   "paths": {
+    "edge (2 O)": 6
+   },
+   "mean_Fe_O_Fe_angle_corner_deg": null,
+   "spin_products": [
+    6.25
+   ]
+  },
+  {
+   "label": "shell3_3.71A",
+   "n_bonds": 12,
+   "d_min": 3.705271440049221,
+   "d_max": 3.7052714400492253,
+   "shells": [
+    [
+     3.705271440049223,
+     12
+    ]
+   ],
+   "n_distinct_shells": 1,
+   "paths": {
+    "corner (1 O)": 12
+   },
+   "mean_Fe_O_Fe_angle_corner_deg": 131.58206008511056,
+   "spin_products": [
+    6.25
+   ]
+  }
+ ],
+ "group_names": [
+  "Fe1",
+  "Fe2",
+  "Fe3",
+  "Fe4"
+ ],
+ "config_ids": [
+  "c00_ground",
+  "c01_flip_Fe3_Fe4",
+  "c02_flip_Fe2_Fe4",
+  "c03_flip_Fe2_Fe3",
+  "c04_flip_Fe4",
+  "c05_flip_Fe3",
+  "c06_flip_Fe2"
+ ],
+ "roles": [
+  "fit",
+  "fit",
+  "fit",
+  "fit",
+  "fit",
+  "holdout",
+  "holdout"
+ ],
+ "flipped_groups": [
+  [],
+  [
+   "Fe3",
+   "Fe4"
+  ],
+  [
+   "Fe2",
+   "Fe4"
+  ],
+  [
+   "Fe2",
+   "Fe3"
+  ],
+  [
+   "Fe4"
+  ],
+  [
+   "Fe3"
+  ],
+  [
+   "Fe2"
+  ]
+ ],
+ "patterns": [
+  [
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  [
+   1.0,
+   1.0,
+   -1.0,
+   -1.0
+  ],
+  [
+   1.0,
+   -1.0,
+   1.0,
+   -1.0
+  ],
+  [
+   1.0,
+   -1.0,
+   -1.0,
+   1.0
+  ],
+  [
+   1.0,
+   1.0,
+   1.0,
+   -1.0
+  ],
+  [
+   1.0,
+   1.0,
+   -1.0,
+   1.0
+  ],
+  [
+   1.0,
+   -1.0,
+   1.0,
+   1.0
+  ]
+ ],
+ "X": [
+  [
+   12.5,
+   -37.5,
+   75.0
+  ],
+  [
+   12.5,
+   37.5,
+   -75.0
+  ],
+  [
+   -12.5,
+   37.5,
+   75.0
+  ],
+  [
+   -12.5,
+   -37.5,
+   -75.0
+  ],
+  [
+   -0.0,
+   -0.0,
+   -0.0
+  ],
+  [
+   -0.0,
+   -0.0,
+   -0.0
+  ],
+  [
+   -0.0,
+   -0.0,
+   -0.0
+  ]
+ ],
+ "atoms": [
+  {
+   "i": 1,
+   "species": "Fe",
+   "spin_S": 2.5,
+   "group": 3,
+   "base_sign": 1.0,
+   "start_moment_muB": 5.0
+  },
+  {
+   "i": 2,
+   "species": "Fe",
+   "spin_S": 2.5,
+   "group": 1,
+   "base_sign": -1.0,
+   "start_moment_muB": 5.0
+  },
+  {
+   "i": 3,
+   "species": "Fe",
+   "spin_S": 2.5,
+   "group": 0,
+   "base_sign": 1.0,
+   "start_moment_muB": 5.0
+  },
+  {
+   "i": 4,
+   "species": "Fe",
+   "spin_S": 2.5,
+   "group": 2,
+   "base_sign": -1.0,
+   "start_moment_muB": 5.0
+  },
+  {
+   "i": 5,
+   "species": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 6,
+   "species": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 7,
+   "species": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 8,
+   "species": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 9,
+   "species": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 10,
+   "species": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  }
+ ],
+ "r_cut_A": 3.8,
+ "group_by": "shell",
+ "conditioning_fit_set": {
+  "cond_scaled": 1.0000000000000004,
+  "cond_raw": 67.08203932499367,
+  "singular_values_scaled": [
+   1.0000000000000002,
+   1.0,
+   1.0,
+   0.9999999999999998
+  ],
+  "singular_values_raw": [
+   149.99999999999997,
+   74.99999999999999,
+   24.999999999999996,
+   2.23606797749979
+  ],
+  "rank": 4,
+  "n_columns": 4,
+  "n_rows": 5
+ },
+ "config_sha256": "d417facfe7ac85324462194a1bd64a3a3262d5dc234e99576a459073f1fe1c20",
+ "input_sha256": {
+  "c00_ground": "4b37a3de310c15282518f8653617a4d85ad9221a4821a2e5a3fcd33d2d73ebdd",
+  "c01_flip_Fe3_Fe4": "6aa2a374e3d5c90a25c7ff376405735be1074d5f77e2773f764de3daf783ee23",
+  "c02_flip_Fe2_Fe4": "9900d621e4eb78f18e28abb35331a8935a8a5626467fc9a18581dd5ffa09bc8a",
+  "c03_flip_Fe2_Fe3": "47a992aa5e1adcb9b32070d0e2f300abed63c763c8488159ad2dc3bf91ae56eb",
+  "c04_flip_Fe4": "3d7e6a3f6110881ee63d336fd4b9288e19924d5c96cae0d85a4e8dd1d6c98b0f",
+  "c05_flip_Fe3": "0f4357b06d0dceba7fecf542f3055eaa3ef8c1c02d0daabe7f6e252dca01e386",
+  "c06_flip_Fe2": "406ba0dc225ff1d1c65ba1b673bdb3b421a32ac338add6526c77a9b8f7285892"
+ },
+ "energy_noise_floor_meV": 0.5,
+ "max_condition_number": 1000.0
+}

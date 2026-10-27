@@ -1,0 +1,21 @@
+{
+ "config_id": "c11_flip_W2_W3_W5",
+ "role": "fit",
+ "flipped_groups": [
+  "W2",
+  "W3",
+  "W5"
+ ],
+ "pattern": [
+  1,
+  -1,
+  -1,
+  1,
+  -1,
+  1,
+  1
+ ],
+ "system": "SrFe18O27_uniform_cfg0",
+ "input_sha256": "db52591f6507c3a3b9b701597bf1de4b4213ca30fcaaf08069751fed436a1aee",
+ "config_sha256": "0717c650b6a1ce51a3569b891e7ca20445eb8afb0384df04cbab258d5f3cc1f4"
+}

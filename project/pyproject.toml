@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hexw"
+version = "0.2.0"
+description = "W-type hexaferrite literature model, magnetic response, independent analysis and local interface"
+requires-python = ">=3.13"
+dependencies = ["numpy", "scipy", "matplotlib", "pandas", "pyyaml", "openpyxl", "pymatgen", "ase", "spglib", "pillow"]
+
+[tool.setuptools.package-data]
+"hexw.ui" = ["*.html"]
+
+[tool.setuptools.packages.find]
+include = ["hexw*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

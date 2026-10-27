@@ -1,0 +1,221 @@
+[
+  {
+    "bytecode_disabled": false,
+    "returncode": 0,
+    "first_events": [
+      {
+        "event": "os.mkdir",
+        "args": "('C:\\\\Users\\\\Redmi\\\\AppData\\\\Local\\\\Temp\\\\hexx-cold-import-gnnq_kae\\\\MIPT\\\\working_stuff\\\\Hexx\\\\project', 511, -1)",
+        "stack": [
+          [
+            "<frozen importlib._bootstrap_external>",
+            755,
+            "exec_module"
+          ],
+          [
+            "<frozen importlib._bootstrap_external>",
+            906,
+            "get_code"
+          ],
+          [
+            "<frozen importlib._bootstrap_external>",
+            974,
+            "_cache_bytecode"
+          ],
+          [
+            "<frozen importlib._bootstrap_external>",
+            988,
+            "set_data"
+          ]
+        ]
+      },
+      {
+        "event": "os.mkdir",
+        "args": "('C:\\\\Users\\\\Redmi\\\\AppData\\\\Local\\\\Temp\\\\hexx-cold-import-gnnq_kae\\\\MIPT\\\\working_stuff\\\\Hexx\\\\project\\\\hexw', 511, -1)",
+        "stack": [
+          [
+            "<frozen importlib._bootstrap_external>",
+            755,
+            "exec_module"
+          ],
+          [
+            "<frozen importlib._bootstrap_external>",
+            906,
+            "get_code"
+          ],
+          [
+            "<frozen importlib._bootstrap_external>",
+            974,
+            "_cache_bytecode"
+          ],
+          [
+            "<frozen importlib._bootstrap_external>",
+            988,
+            "set_data"
+          ]
+        ]
+      },
+      {
+        "event": "open",
+        "args": "(3, 'w', 33665)",
+        "stack": [
+          [
+            "<frozen importlib._bootstrap_external>",
+            906,
+            "get_code"
+          ],
+          [
+            "<frozen importlib._bootstrap_external>",
+            974,
+            "_cache_bytecode"
+          ],
+          [
+            "<frozen importlib._bootstrap_external>",
+            999,
+            "set_data"
+          ],
+          [
+            "<frozen importlib._bootstrap_external>",
+            211,
+            "_write_atomic"
+          ]
+        ]
+      },
+      {
+        "event": "os.mkdir",
+        "args": "('C:\\\\Users\\\\Redmi\\\\AppData\\\\Local\\\\Temp\\\\hexx-cold-import-gnnq_kae\\\\MIPT\\\\working_stuff\\\\Hexx\\\\project\\\\hexw\\\\io', 511, -1)",
+        "stack": [
+          [
+            "<frozen importlib._bootstrap_external>",
+            755,
+            "exec_module"
+          ],
+          [
+            "<frozen importlib._bootstrap_external>",
+            906,
+            "get_code"
+          ],
+          [
+            "<frozen importlib._bootstrap_external>",
+            974,
+            "_cache_bytecode"
+          ],
+          [
+            "<frozen importlib._bootstrap_external>",
+            988,
+            "set_data"
+          ]
+        ]
+      },
+      {
+        "event": "open",
+        "args": "(3, 'w', 33665)",
+        "stack": [
+          [
+            "<frozen importlib._bootstrap_external>",
+            906,
+            "get_code"
+          ],
+          [
+            "<frozen importlib._bootstrap_external>",
+            974,
+            "_cache_bytecode"
+          ],
+          [
+            "<frozen importlib._bootstrap_external>",
+            999,
+            "set_data"
+          ],
+          [
+            "<frozen importlib._bootstrap_external>",
+            211,
+            "_write_atomic"
+          ]
+        ]
+      },
+      {
+        "event": "open",
+        "args": "(3, 'w', 33665)",
+        "stack": [
+          [
+            "<frozen importlib._bootstrap_external>",
+            906,
+            "get_code"
+          ],
+          [
+            "<frozen importlib._bootstrap_external>",
+            974,
+            "_cache_bytecode"
+          ],
+          [
+            "<frozen importlib._bootstrap_external>",
+            999,
+            "set_data"
+          ],
+          [
+            "<frozen importlib._bootstrap_external>",
+            211,
+            "_write_atomic"
+          ]
+        ]
+      },
+      {
+        "event": "open",
+        "args": "(3, 'w', 33665)",
+        "stack": [
+          [
+            "<frozen importlib._bootstrap_external>",
+            906,
+            "get_code"
+          ],
+          [
+            "<frozen importlib._bootstrap_external>",
+            974,
+            "_cache_bytecode"
+          ],
+          [
+            "<frozen importlib._bootstrap_external>",
+            999,
+            "set_data"
+          ],
+          [
+            "<frozen importlib._bootstrap_external>",
+            211,
+            "_write_atomic"
+          ]
+        ]
+      },
+      {
+        "event": "open",
+        "args": "(3, 'w', 33665)",
+        "stack": [
+          [
+            "<frozen importlib._bootstrap_external>",
+            906,
+            "get_code"
+          ],
+          [
+            "<frozen importlib._bootstrap_external>",
+            974,
+            "_cache_bytecode"
+          ],
+          [
+            "<frozen importlib._bootstrap_external>",
+            999,
+            "set_data"
+          ],
+          [
+            "<frozen importlib._bootstrap_external>",
+            211,
+            "_write_atomic"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "bytecode_disabled": true,
+    "returncode": 0,
+    "first_events": []
+  }
+]

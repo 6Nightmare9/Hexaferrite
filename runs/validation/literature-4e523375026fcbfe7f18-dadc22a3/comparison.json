@@ -1,0 +1,188 @@
+{
+  "model_version": "mv-b2ba65aebf1703f1daaa",
+  "formula": "SrCo2Fe16O27",
+  "comparisons": [
+    {
+      "record": "L01-071",
+      "observable": "Ms_A_m2_kg",
+      "prediction": {
+        "median": 73.45262274948223,
+        "lo95": 47.29041171136143,
+        "hi95": 88.45134789735471,
+        "n_valid": 48,
+        "n_total": 48
+      },
+      "observed": 59.0,
+      "unit": "A*m^2/kg",
+      "source_doi": "10.1107/S2052252519003130",
+      "source_locator": {
+        "text": "Fig. 4 (table) row Ms,NPD",
+        "page": null,
+        "table": null,
+        "figure": "4",
+        "supplementary": null
+      },
+      "source_group_kind": "same_group_reproducibility",
+      "observed_uncertainty": {
+        "kind": "std",
+        "std": 3.0,
+        "lower": null,
+        "upper": null,
+        "distribution": null,
+        "params": {},
+        "declared_wide": false,
+        "convention": "parenthetical_se"
+      },
+      "interval_covers_observation": true,
+      "result": {
+        "result_id": "lit-dea1201ec6ae9ee78009",
+        "model_version": "mv-b2ba65aebf1703f1daaa",
+        "prediction_id": "4e523375026fcbfe7f18",
+        "targets": [
+          {
+            "id": "L01-071",
+            "sha256": "dadc22a31fed8a235f63889447782dc01cb3c2dabd6f7bb2e44f4d469bf79458",
+            "group": "L01_NPD_XRD_SrCo2Fe16O27",
+            "source_role": "literature_holdout"
+          }
+        ],
+        "metric": {
+          "name": "absolute_relative_error",
+          "value": 0.2449597076183429,
+          "unit": "1",
+          "tolerance": 0.1,
+          "tolerance_kind": "relative"
+        },
+        "conclusion": "fail",
+        "created_utc": "2026-10-26T18:58:10+00:00",
+        "notes": "Reserved publication comparison; prior developer exposure already disclosed. Retrospective, not a fully blind proof. No fitting performed.",
+        "validation_mode": "retrospective",
+        "prior_use_status": "unknown_prior_use"
+      }
+    },
+    {
+      "record": "L01-072",
+      "observable": "Ms_A_m2_kg",
+      "prediction": {
+        "median": 73.45262274948223,
+        "lo95": 47.29041171136143,
+        "hi95": 88.45134789735471,
+        "n_valid": 48,
+        "n_total": 48
+      },
+      "observed": 78.5,
+      "unit": "A*m^2/kg",
+      "source_doi": "10.1107/S2052252519003130",
+      "source_locator": {
+        "text": "Fig. 4 (table) row Ms,VSM; also Table S9/S10 (Supporting information)",
+        "page": null,
+        "table": "S9",
+        "figure": "4",
+        "supplementary": "Fig. 4 (table) row Ms,VSM; also Table S9/S10 (Supporting information)"
+      },
+      "source_group_kind": "same_group_reproducibility",
+      "observed_uncertainty": {
+        "kind": "std",
+        "std": 0.1,
+        "lower": null,
+        "upper": null,
+        "distribution": null,
+        "params": {},
+        "declared_wide": false,
+        "convention": "parenthetical_se"
+      },
+      "interval_covers_observation": true,
+      "result": {
+        "result_id": "lit-23d34dfb4125eeebb5ce",
+        "model_version": "mv-b2ba65aebf1703f1daaa",
+        "prediction_id": "4e523375026fcbfe7f18",
+        "targets": [
+          {
+            "id": "L01-072",
+            "sha256": "dadc22a31fed8a235f63889447782dc01cb3c2dabd6f7bb2e44f4d469bf79458",
+            "group": "L01_NPD_XRD_SrCo2Fe16O27",
+            "source_role": "literature_holdout"
+          }
+        ],
+        "metric": {
+          "name": "absolute_relative_error",
+          "value": 0.06429779936965312,
+          "unit": "1",
+          "tolerance": 0.1,
+          "tolerance_kind": "relative"
+        },
+        "conclusion": "pass",
+        "created_utc": "2026-10-26T18:58:10+00:00",
+        "notes": "Reserved publication comparison; prior developer exposure already disclosed. Retrospective, not a fully blind proof. No fitting performed.",
+        "validation_mode": "retrospective",
+        "prior_use_status": "unknown_prior_use"
+      }
+    },
+    {
+      "record": "L01-073",
+      "observable": "Ms_A_m2_kg",
+      "prediction": {
+        "median": 73.45262274948223,
+        "lo95": 47.29041171136143,
+        "hi95": 88.45134789735471,
+        "n_valid": 48,
+        "n_total": 48
+      },
+      "observed": 78.4,
+      "unit": "A*m^2/kg",
+      "source_doi": "10.1107/S2052252519003130",
+      "source_locator": {
+        "text": "Fig. 4 (table) row 'Wt% Corrected Ms'; Supporting information S8, Table S10",
+        "page": null,
+        "table": "S10",
+        "figure": "4",
+        "supplementary": "Fig. 4 (table) row 'Wt% Corrected Ms'; Supporting information S8, Table S10"
+      },
+      "source_group_kind": "same_group_reproducibility",
+      "observed_uncertainty": {
+        "kind": "std",
+        "std": 0.2,
+        "lower": null,
+        "upper": null,
+        "distribution": null,
+        "params": {},
+        "declared_wide": false,
+        "convention": "parenthetical_se"
+      },
+      "interval_covers_observation": true,
+      "result": {
+        "result_id": "lit-55d45ca1ea00a72188e5",
+        "model_version": "mv-b2ba65aebf1703f1daaa",
+        "prediction_id": "4e523375026fcbfe7f18",
+        "targets": [
+          {
+            "id": "L01-073",
+            "sha256": "dadc22a31fed8a235f63889447782dc01cb3c2dabd6f7bb2e44f4d469bf79458",
+            "group": "L01_NPD_XRD_SrCo2Fe16O27",
+            "source_role": "literature_holdout"
+          }
+        ],
+        "metric": {
+          "name": "absolute_relative_error",
+          "value": 0.06310430166476753,
+          "unit": "1",
+          "tolerance": 0.1,
+          "tolerance_kind": "relative"
+        },
+        "conclusion": "pass",
+        "created_utc": "2026-10-26T18:58:10+00:00",
+        "notes": "Reserved publication comparison; prior developer exposure already disclosed. Retrospective, not a fully blind proof. No fitting performed.",
+        "validation_mode": "retrospective",
+        "prior_use_status": "unknown_prior_use"
+      }
+    }
+  ],
+  "n_compared": 3,
+  "not_tested": [
+    "FMR accuracy without matched reserved FMR measurements",
+    "all unsupported/mismatched definitions"
+  ],
+  "theory_updated": false,
+  "corpus_sha256": "dadc22a31fed8a235f63889447782dc01cb3c2dabd6f7bb2e44f4d469bf79458",
+  "validation_mode": "retrospective: earlier developer exposure disclosed"
+}

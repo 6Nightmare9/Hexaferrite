@@ -1,0 +1,222 @@
+{
+  "date": "2026-10-26",
+  "phase": "final_full_regression",
+  "root": "C:\\MIPT\\working_stuff\\Hexx",
+  "incoming_source": "D:\\Новая папка\\Hexx",
+  "transfer": {
+    "files": 33801,
+    "bytes": 2054794820,
+    "all_sha256_match": true,
+    "manifest": "vault/recovery_audit/2026-10-26/TRANSFER_MANIFEST.json"
+  },
+  "incoming_code_commit": "43b3a60",
+  "constraints": {
+    "laptop_only": true,
+    "internet_available": true,
+    "theory_first": true,
+    "laboratory_data_for_validation": true,
+    "measurement_cell_excluded": true,
+    "variant_C_deferred": true,
+    "accuracy_10_percent_is_unproven": true,
+    "long_dft_runs_authorized": true,
+    "overnight_local_calculations_authorized": true
+  },
+  "confirmed_findings": [
+    "Material model is incomplete; experiment/validate/spin namespaces are placeholders.",
+    "CLI predict/freeze-model/analyze-exp/validate/resume are placeholders.",
+    "Freeze gate only checks nonempty file; no code/parameter/prediction binding yet.",
+    "Original .venv is tied to another user and Python 3.13.",
+    "Local machine: Core 5 220H, 32 GiB class RAM, integrated Intel GPU.",
+    "Original archive and registry/literature checksum lists match.",
+    "One W k-point job was interrupted without final energy.",
+    "Published code describes very wide FMR scenario uncertainty.",
+    "Literature holdout exposure incidents already disclosed; do not claim fully blind validation."
+  ],
+  "first_theory_test_run": {
+    "python": "3.14.6 system",
+    "passed": 130,
+    "failed": 2,
+    "deselected": 3,
+    "failure_cause": "hexw not installed for child Python -I; to repeat after editable install"
+  },
+  "next_steps": [
+    "Execute agreed autonomous stages 1-4; no start command pending"
+  ],
+  "pending_user_answer": null,
+  "full_tests_initial": {
+    "passed": 945,
+    "failed": 5,
+    "skipped": 7,
+    "deselected": 4,
+    "wall_s": 1268.71,
+    "log": "vault/recovery_audit/2026-10-26/pytest.log"
+  },
+  "runtime": "tools/venv/Scripts/python.exe",
+  "repositories": {
+    "project": {
+      "branch": "codex/material-pipeline",
+      "commit": "follows current git HEAD",
+      "clean": true
+    },
+    "registry": {
+      "commit": "0b9bddc",
+      "clean": true
+    },
+    "literature": {
+      "commit": "8b26fc1",
+      "branch": "codex/sr-single-crystal-data",
+      "clean": true
+    }
+  },
+  "rerun": {
+    "previously_failing_checks": 5,
+    "passed": 5,
+    "archive": "vault/recovery_audit/2026-10-26/tests-20261026T153331Z"
+  },
+  "power": "AC connected; last observed charging at 69 percent",
+  "calculation_authorization": {
+    "date": "2026-10-26",
+    "source": "Explicit user permission in this chat: permission for future calculations, answering the pending question about multi-hour and overnight local runs.",
+    "scope": "Local project calculations, including multi-hour and overnight runs; no repeated runtime confirmation needed within this scope.",
+    "resource_policy": "Benchmark first; use measured memory and runtime limits; keep checkpoints and logs; use AC power for long runs.",
+    "full_device_access": "User authorized project-related device control; actual Full access mode is selected manually in the app. Shared-desktop constraints apply."
+  },
+  "development_plan": {
+    "agreed_date": "2026-10-26",
+    "start_condition": "Explicit start command received 2026-10-26; proceed autonomously through stages 1-4.",
+    "specification": "raw/theory_side/W_hexaferrites_prompt_AB_theory_v2.md plus accepted laptop/internet/theory-first clarifications",
+    "sequence": [
+      {
+        "stage": 1,
+        "scope": "Co-Zn end-to-end theoretical calculation",
+        "deliverables": [
+          "composition and measurement conditions -> structural ensemble -> joint material parameters -> magnetic equilibrium -> FMR spectra and field dependence -> susceptibility/permeability",
+          "reproducible inputs and output files, provenance, uncertainty and applicability labels",
+          "versioned freeze of predictions and implementation of the comparison machinery required to distinguish literature fit from validation",
+          "benchmark and perform own DFT only when useful and feasible on the local laptop"
+        ]
+      },
+      {
+        "stage": 2,
+        "scope": "Mn",
+        "deliverables": [
+          "extend the proven pipeline to Mn with explicit valence and site-occupancy hypotheses",
+          "retain broad uncertainty or not-predicted status wherever evidence is insufficient"
+        ]
+      },
+      {
+        "stage": 3,
+        "scope": "Mg and Ni",
+        "deliverables": [
+          "complete the partially developed parameterization using literature and feasible calculations",
+          "enable supported outputs; explicitly mark missing parameters and unsupported predictions"
+        ]
+      },
+      {
+        "stage": 4,
+        "scope": "delivery and handoff",
+        "deliverables": [
+          "summary by composition and observable of implemented, tested and validated capabilities",
+          "simple local interface using the same tested calculation pipeline",
+          "brief usage guide, examples, limitations and reproducibility instructions"
+        ]
+      },
+      {
+        "stage": 5,
+        "scope": "human review and next development decision",
+        "deliverables": [
+          "discuss outputs with the user and colleagues before choosing the next development direction"
+        ]
+      }
+    ],
+    "cross_cutting": [
+      "theory and literature first; laboratory targets are for independent or explicitly retrospective checking after predictions are fixed",
+      "no silent calibration on laboratory answers",
+      "<=10 percent remains an observable/domain-specific validation target, not a delivery guarantee",
+      "checkpoint code, parameters, source provenance, completed jobs and next step after each meaningful milestone",
+      "checkpoint missing prerequisites rather than fabricating physical parameters",
+      "measurement-cell model excluded; variant C deferred",
+      "full A+B experimental-analysis modules remain in scope; retain their requirements while prioritizing the composition pipeline and add validation support as needed"
+    ],
+    "execution_mode": "After the explicit start command, autonomously advance through stages 1-4 with milestone checkpoints and brief updates; stop after stage 4 for user/colleague discussion, or earlier for a genuine unresolved blocker or a usage-limit interruption."
+  },
+  "working_arrangement": {
+    "date": "2026-10-26",
+    "start": "Started on explicit user command; Full access active.",
+    "preferred_ai_model": "gpt-6.1-sol",
+    "preferred_reasoning_effort": "xhigh",
+    "preferred_effort_user_label": "very high",
+    "model_switching": "Notify the user with a specific justification if Astra would materially help. The user will switch models manually. Do not attempt to control the assistant own UI/settings.",
+    "shared_laptop": true,
+    "background_work": "Prefer file/command tools and hidden processes; avoid taking the foreground desktop while the user works.",
+    "gui_work": "Notify and coordinate a dedicated interval before using mouse/keyboard or interacting with desktop windows.",
+    "resource_policy": {
+      "initial_parallel_heavy_jobs": 1,
+      "process_priority": "BelowNormal when supported",
+      "cpu_threads": "Start conservatively, then adjust to measured load and user responsiveness needs.",
+      "memory": "Keep substantial RAM headroom for the user applications; reduce parallelism before consuming it.",
+      "night_runs": "May increase load when the user has finished interactive work; preserve checkpoints and resource monitoring."
+    },
+    "device_access": "User intends to grant full device access for this project. Actual app permissions must be enabled by the user and remain subject to the active tool policy; this message alone does not select Full access."
+  },
+  "active_work": {
+    "stage": "complete regression on final code",
+    "next": "Resolve any reported failures; refresh literature comparisons for final frozen runs; finalize report and restart UI",
+    "test_monitor": "audit/current_test_run.json",
+    "workers": 2,
+    "threads_per_worker": 1,
+    "needs_final_series_reproduction": false
+  },
+  "implementation_checks": {
+    "focused_core_freeze": 55,
+    "experiment_and_pipeline": 18,
+    "coupled_spin_and_EM": 4,
+    "all_passed": true,
+    "latest_focused_checks": {
+      "passed": 35,
+      "failed": 0,
+      "includes": "native MDI trailer, immutable analysis outputs, registry tamper gate"
+    }
+  },
+  "new_primary_source": {
+    "id": "SRSC",
+    "location": "literature/fit/additions/Michioka_single_crystals_figure2.json",
+    "status": "primary Sr single-crystal graph digitized; uncertainties explicit; FIT only, never used as validation"
+  },
+  "interface_check": {
+    "offline_tests": "passed",
+    "javascript_syntax": "passed",
+    "browser_visual": "not performed: automatic origin approval rejected 127.0.0.1:8765; no bypass attempted"
+  },
+  "updated_utc": "2026-10-26T20:26:01+00:00",
+  "completed_material_series": {
+    "path": "runs/material_series_2026-10-26",
+    "compositions": 9,
+    "T_K": 300,
+    "fields_T": [
+      0,
+      0.3,
+      0.8
+    ],
+    "all_cases_min_valid": 48,
+    "n_draws": 48
+  },
+  "native_data_analysis": {
+    "XRD": 8,
+    "Mossbauer": 5,
+    "mossbauer_status": "calibration_required",
+    "errors": []
+  },
+  "last_focused_checks": {
+    "passed": 28,
+    "failures": 0,
+    "archive": "vault/recovery_audit/2026-10-26/tests-20261026T195609Z"
+  },
+  "offline_ui_forms": {
+    "passed": 6,
+    "browser_network_used": false,
+    "note": "Synthetic DOM/requests only; no visual browser check"
+  },
+  "confirmed_findings_scope": "Historical audit of the incoming saved project; current implemented capabilities are recorded separately.",
+  "parameter_invariance_verified": true
+}

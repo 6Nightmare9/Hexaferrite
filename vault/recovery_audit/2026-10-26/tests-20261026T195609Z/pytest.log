@@ -1,0 +1,8 @@
+............................                                             [100%]
+============================= slowest 5 durations =============================
+3.90s call     tests/theory/test_pipeline.py::test_pipeline_resume_and_artifact_tampering
+1.86s call     tests/theory/test_pipeline.py::test_resume_after_interruption_reuses_completed_case
+1.19s call     tests/test_isolation.py::test_experiment_access_requires_freeze_then_works[hexw.experiment]
+1.13s call     tests/test_freeze.py::test_freeze_binds_artifacts_registry_and_seal
+0.95s call     tests/test_isolation.py::test_experiment_access_requires_freeze_then_works[hexw.validate]
+28 passed in 22.90s

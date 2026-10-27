@@ -1,0 +1,6 @@
+{
+ "config_sha256": "e3890a568388ffd62fceaabb391ee38a683c5a0116aa7c7cfe6a0f9b5f5bc2d7",
+ "message": "non-collinear SOC SCF of the 92-atom cell: ~7-10 h and 6-8 GB per direction on Gamma, no k-convergence of the anisotropy energy on a Gamma-only mesh; scalar-relativistic pseudopotentials only",
+ "reference": "dft_feasibility/FEASIBILITY.md (sections 3 and 4)",
+ "state": "not_feasible_on_laptop"
+}

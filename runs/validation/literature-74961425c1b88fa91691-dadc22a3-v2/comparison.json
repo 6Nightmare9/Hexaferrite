@@ -1,0 +1,97 @@
+{
+  "model_version": "mv-0e28fe28f5d22d16fd04",
+  "formula": "SrZn2Fe16O27",
+  "comparisons": [
+    {
+      "record": "L01-081",
+      "observable": "Ms_A_m2_kg",
+      "prediction": {
+        "median": 87.41917866945367,
+        "lo95": 58.58304789962467,
+        "hi95": 104.63866166211993,
+        "n_valid": 48,
+        "n_total": 48
+      },
+      "observed": 80.4,
+      "unit": "A*m^2/kg",
+      "record_name": "Ms_VSM_impurity_corrected",
+      "quantity_definition": "Ms,VSM corrected for impurity phases using refined wt% and LITERATURE Ms of the impurities (MgFe2O4 25, CoFe2O4 80, NiFe2O4 50, ZnFe2O4 1, X-type 63.29 A m2/kg)",
+      "measurement_conditions": {
+        "T": {
+          "K": 300
+        },
+        "field": null,
+        "orientation": null,
+        "form": "powder",
+        "density": null,
+        "texture": "none (powder)"
+      },
+      "source_doi": "10.1107/S2052252519003130",
+      "source_locator": {
+        "text": "Fig. 4 (table) row 'Wt% Corrected Ms'; Supporting information S8, Table S10",
+        "page": null,
+        "table": "S10",
+        "figure": "4",
+        "supplementary": "Fig. 4 (table) row 'Wt% Corrected Ms'; Supporting information S8, Table S10"
+      },
+      "source_group_kind": "same_group_reproducibility",
+      "observed_uncertainty": {
+        "kind": "std",
+        "std": 0.30000000000000004,
+        "lower": null,
+        "upper": null,
+        "distribution": null,
+        "params": {},
+        "declared_wide": false,
+        "convention": "parenthetical_se"
+      },
+      "interval_covers_observation": true,
+      "result": {
+        "result_id": "lit-ea57f11636f0147e7717",
+        "model_version": "mv-0e28fe28f5d22d16fd04",
+        "prediction_id": "74961425c1b88fa91691",
+        "targets": [
+          {
+            "id": "L01-081",
+            "sha256": "dadc22a31fed8a235f63889447782dc01cb3c2dabd6f7bb2e44f4d469bf79458",
+            "group": "L01_NPD_XRD_SrZn2Fe16O27",
+            "source_role": "literature_holdout"
+          }
+        ],
+        "metric": {
+          "name": "absolute_relative_error",
+          "value": 0.087303217281762,
+          "unit": "1",
+          "tolerance": 0.1,
+          "tolerance_kind": "relative"
+        },
+        "conclusion": "pass",
+        "created_utc": "2026-10-26T22:56:37+00:00",
+        "notes": "Reserved publication comparison; prior developer exposure already disclosed. Retrospective, not a fully blind proof. No fitting performed.",
+        "validation_mode": "retrospective",
+        "prior_use_status": "unknown_prior_use"
+      }
+    }
+  ],
+  "n_compared": 1,
+  "protocol": "magnetometry_phasecorrected_v2",
+  "not_evaluated": [
+    {
+      "record": "L01-079",
+      "name": "Ms_from_NPD_moments",
+      "reason": "Different observable definition; not evaluated against intrinsic phase-corrected magnetization."
+    },
+    {
+      "record": "L01-080",
+      "name": "Ms_VSM_raw",
+      "reason": "Different observable definition; not evaluated against intrinsic phase-corrected magnetization."
+    }
+  ],
+  "not_tested": [
+    "FMR accuracy without matched reserved FMR measurements",
+    "all unsupported/mismatched definitions"
+  ],
+  "theory_updated": false,
+  "corpus_sha256": "dadc22a31fed8a235f63889447782dc01cb3c2dabd6f7bb2e44f4d469bf79458",
+  "validation_mode": "retrospective: earlier developer exposure disclosed"
+}

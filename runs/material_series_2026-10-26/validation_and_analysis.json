@@ -1,0 +1,240 @@
+{
+  "started_utc": "2026-10-26T19:07:37+00:00",
+  "literature": {
+    "cozn_co2": {
+      "out": "C:\\MIPT\\working_stuff\\Hexx\\runs\\validation\\literature-ec1f232e28e4ba5929b3-dadc22a3-v2",
+      "n_compared": 1,
+      "comparisons": [
+        {
+          "record": "L01-073",
+          "observable": "Ms_A_m2_kg",
+          "prediction": {
+            "median": 73.45262274948223,
+            "lo95": 47.29041171136143,
+            "hi95": 88.45134789735471,
+            "n_valid": 48,
+            "n_total": 48
+          },
+          "observed": 78.4,
+          "unit": "A*m^2/kg",
+          "record_name": "Ms_VSM_impurity_corrected",
+          "quantity_definition": "Ms,VSM corrected for impurity phases using refined wt% and LITERATURE Ms of the impurities (MgFe2O4 25, CoFe2O4 80, NiFe2O4 50, ZnFe2O4 1, X-type 63.29 A m2/kg)",
+          "measurement_conditions": {
+            "T": {
+              "K": 300
+            },
+            "field": null,
+            "orientation": null,
+            "form": "powder",
+            "density": null,
+            "texture": "none (powder)"
+          },
+          "source_doi": "10.1107/S2052252519003130",
+          "source_locator": {
+            "text": "Fig. 4 (table) row 'Wt% Corrected Ms'; Supporting information S8, Table S10",
+            "page": null,
+            "table": "S10",
+            "figure": "4",
+            "supplementary": "Fig. 4 (table) row 'Wt% Corrected Ms'; Supporting information S8, Table S10"
+          },
+          "source_group_kind": "same_group_reproducibility",
+          "observed_uncertainty": {
+            "kind": "std",
+            "std": 0.2,
+            "lower": null,
+            "upper": null,
+            "distribution": null,
+            "params": {},
+            "declared_wide": false,
+            "convention": "parenthetical_se"
+          },
+          "interval_covers_observation": true,
+          "result": {
+            "result_id": "lit-8b656158c30fd3aa8102",
+            "model_version": "mv-f7cd2dc841091e3ec02d",
+            "prediction_id": "ec1f232e28e4ba5929b3",
+            "targets": [
+              {
+                "id": "L01-073",
+                "sha256": "dadc22a31fed8a235f63889447782dc01cb3c2dabd6f7bb2e44f4d469bf79458",
+                "group": "L01_NPD_XRD_SrCo2Fe16O27",
+                "source_role": "literature_holdout"
+              }
+            ],
+            "metric": {
+              "name": "absolute_relative_error",
+              "value": 0.06310430166476753,
+              "unit": "1",
+              "tolerance": 0.1,
+              "tolerance_kind": "relative"
+            },
+            "conclusion": "pass",
+            "created_utc": "2026-10-26T22:56:09+00:00",
+            "notes": "Reserved publication comparison; prior developer exposure already disclosed. Retrospective, not a fully blind proof. No fitting performed.",
+            "validation_mode": "retrospective",
+            "prior_use_status": "unknown_prior_use"
+          }
+        }
+      ]
+    },
+    "cozn_zn2": {
+      "out": "C:\\MIPT\\working_stuff\\Hexx\\runs\\validation\\literature-74961425c1b88fa91691-dadc22a3-v2",
+      "n_compared": 1,
+      "comparisons": [
+        {
+          "record": "L01-081",
+          "observable": "Ms_A_m2_kg",
+          "prediction": {
+            "median": 87.41917866945367,
+            "lo95": 58.58304789962467,
+            "hi95": 104.63866166211993,
+            "n_valid": 48,
+            "n_total": 48
+          },
+          "observed": 80.4,
+          "unit": "A*m^2/kg",
+          "record_name": "Ms_VSM_impurity_corrected",
+          "quantity_definition": "Ms,VSM corrected for impurity phases using refined wt% and LITERATURE Ms of the impurities (MgFe2O4 25, CoFe2O4 80, NiFe2O4 50, ZnFe2O4 1, X-type 63.29 A m2/kg)",
+          "measurement_conditions": {
+            "T": {
+              "K": 300
+            },
+            "field": null,
+            "orientation": null,
+            "form": "powder",
+            "density": null,
+            "texture": "none (powder)"
+          },
+          "source_doi": "10.1107/S2052252519003130",
+          "source_locator": {
+            "text": "Fig. 4 (table) row 'Wt% Corrected Ms'; Supporting information S8, Table S10",
+            "page": null,
+            "table": "S10",
+            "figure": "4",
+            "supplementary": "Fig. 4 (table) row 'Wt% Corrected Ms'; Supporting information S8, Table S10"
+          },
+          "source_group_kind": "same_group_reproducibility",
+          "observed_uncertainty": {
+            "kind": "std",
+            "std": 0.30000000000000004,
+            "lower": null,
+            "upper": null,
+            "distribution": null,
+            "params": {},
+            "declared_wide": false,
+            "convention": "parenthetical_se"
+          },
+          "interval_covers_observation": true,
+          "result": {
+            "result_id": "lit-ea57f11636f0147e7717",
+            "model_version": "mv-0e28fe28f5d22d16fd04",
+            "prediction_id": "74961425c1b88fa91691",
+            "targets": [
+              {
+                "id": "L01-081",
+                "sha256": "dadc22a31fed8a235f63889447782dc01cb3c2dabd6f7bb2e44f4d469bf79458",
+                "group": "L01_NPD_XRD_SrZn2Fe16O27",
+                "source_role": "literature_holdout"
+              }
+            ],
+            "metric": {
+              "name": "absolute_relative_error",
+              "value": 0.087303217281762,
+              "unit": "1",
+              "tolerance": 0.1,
+              "tolerance_kind": "relative"
+            },
+            "conclusion": "pass",
+            "created_utc": "2026-10-26T22:56:37+00:00",
+            "notes": "Reserved publication comparison; prior developer exposure already disclosed. Retrospective, not a fully blind proof. No fitting performed.",
+            "validation_mode": "retrospective",
+            "prior_use_status": "unknown_prior_use"
+          }
+        }
+      ]
+    }
+  },
+  "experiment": {
+    "OBS-XRD-001": {
+      "out": "C:\\MIPT\\working_stuff\\Hexx\\runs\\analysis\\28a0ddd975ce116192a2",
+      "status": "xrd",
+      "n_peaks": 62,
+      "validation_mode": "retrospective"
+    },
+    "OBS-XRD-002": {
+      "out": "C:\\MIPT\\working_stuff\\Hexx\\runs\\analysis\\ae1c871c2e9190bc7778",
+      "status": "xrd",
+      "n_peaks": 52,
+      "validation_mode": "retrospective"
+    },
+    "OBS-XRD-003": {
+      "out": "C:\\MIPT\\working_stuff\\Hexx\\runs\\analysis\\51c50eb939711e75ff13",
+      "status": "xrd",
+      "n_peaks": 105,
+      "validation_mode": "retrospective"
+    },
+    "OBS-XRD-004": {
+      "out": "C:\\MIPT\\working_stuff\\Hexx\\runs\\analysis\\be8e9f46f5e7193d843d",
+      "status": "xrd",
+      "n_peaks": 42,
+      "validation_mode": "retrospective"
+    },
+    "OBS-XRD-005": {
+      "out": "C:\\MIPT\\working_stuff\\Hexx\\runs\\analysis\\decda371aa976b1391d2",
+      "status": "xrd",
+      "n_peaks": 42,
+      "validation_mode": "retrospective"
+    },
+    "OBS-XRD-006": {
+      "out": "C:\\MIPT\\working_stuff\\Hexx\\runs\\analysis\\4565e11a379aab0c5377",
+      "status": "xrd",
+      "n_peaks": 54,
+      "validation_mode": "retrospective"
+    },
+    "OBS-XRD-007": {
+      "out": "C:\\MIPT\\working_stuff\\Hexx\\runs\\analysis\\401ba60a27c1a0d95796",
+      "status": "xrd",
+      "n_peaks": 39,
+      "validation_mode": "retrospective"
+    },
+    "OBS-XRD-008": {
+      "out": "C:\\MIPT\\working_stuff\\Hexx\\runs\\analysis\\18058a261e80640ce6d2",
+      "status": "xrd",
+      "n_peaks": 43,
+      "validation_mode": "retrospective"
+    },
+    "OBS-MOS-001": {
+      "out": "C:\\MIPT\\working_stuff\\Hexx\\runs\\analysis\\6ce9dcffd65b9c9ebf87",
+      "status": "calibration_required",
+      "n_peaks": null,
+      "validation_mode": "retrospective"
+    },
+    "OBS-MOS-002": {
+      "out": "C:\\MIPT\\working_stuff\\Hexx\\runs\\analysis\\710a7d590d15a5a20a6b",
+      "status": "calibration_required",
+      "n_peaks": null,
+      "validation_mode": "retrospective"
+    },
+    "OBS-MOS-003": {
+      "out": "C:\\MIPT\\working_stuff\\Hexx\\runs\\analysis\\66e1f27064f375575368",
+      "status": "calibration_required",
+      "n_peaks": null,
+      "validation_mode": "retrospective"
+    },
+    "OBS-MOS-004": {
+      "out": "C:\\MIPT\\working_stuff\\Hexx\\runs\\analysis\\d15a61b942217c51f816",
+      "status": "calibration_required",
+      "n_peaks": null,
+      "validation_mode": "retrospective"
+    },
+    "OBS-MOS-005": {
+      "out": "C:\\MIPT\\working_stuff\\Hexx\\runs\\analysis\\1a080d7057330f5706aa",
+      "status": "calibration_required",
+      "n_peaks": null,
+      "validation_mode": "retrospective"
+    }
+  },
+  "theory_refitted": false,
+  "finished_utc": "2026-10-26T19:10:31+00:00",
+  "final_version_refresh_utc": "2026-10-26T22:56:45+00:00"
+}

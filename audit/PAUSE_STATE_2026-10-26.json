@@ -1,0 +1,29 @@
+{
+  "paused_utc": "2026-10-26T20:33:49.5627208Z",
+  "requested_by": "user",
+  "test_status_before_stop": {
+    "status": "complete",
+    "returncode": 0,
+    "totals": {
+      "tests": 995,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 7,
+      "passed": 988
+    },
+    "workers": 2,
+    "wall_s": 900.28,
+    "python": "C:\\MIPT\\working_stuff\\Hexx\\tools\\venv\\Scripts\\python.exe",
+    "selection": [
+      "tests"
+    ],
+    "raw_log": "C:\\Users\\Redmi\\AppData\\Local\\Temp\\hexx-review-tests-jq3743l3\\pytest.log",
+    "raw_xml": "C:\\Users\\Redmi\\AppData\\Local\\Temp\\hexx-review-tests-jq3743l3\\results.xml",
+    "archive": "C:\\MIPT\\working_stuff\\Hexx\\vault\\recovery_audit\\2026-10-26\\tests-20261026T203212Z"
+  },
+  "stopped_processes": [
+    20456,
+    9080
+  ],
+  "partial_archive": "C:\\MIPT\\working_stuff\\Hexx\\vault\\recovery_audit\\2026-10-26\\pause-20261026T203348Z"
+}

@@ -1,0 +1,65 @@
+{
+ "collected_utc": "2026-10-25T14:46:01.498030+00:00",
+ "os": {
+  "Caption": "Њ ©Єа®б®дв Windows 11 Pro",
+  "Version": "10.0.26200",
+  "BuildNumber": "26200"
+ },
+ "platform": "Windows-11-10.0.26200-SP0",
+ "cpu": {
+  "Name": "AMD Ryzen 7 7735H with Radeon Graphics",
+  "NumberOfCores": 8,
+  "NumberOfLogicalProcessors": 16
+ },
+ "logical_threads_os_cpu_count": 16,
+ "ram_bytes": 16368521216,
+ "ram_gib": 15.24,
+ "gpu": {
+  "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "vram_mib": 8188,
+  "driver": "572.83",
+  "compute_capability": "8.9"
+ },
+ "python": {
+  "version": "3.13.15",
+  "executable": "D:\\Work\\Hexx\\.venv\\Scripts\\python.exe"
+ },
+ "packages": {
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "matplotlib": "3.11.2",
+  "pandas": "3.1.0",
+  "pyyaml": "6.0.3",
+  "pytest": "9.1.1",
+  "openpyxl": "3.1.5",
+  "pymatgen": "2026.10.24",
+  "pymatgen-core": "2026.10.16",
+  "ase": "3.29.0",
+  "hexw": "0.1.0"
+ },
+ "executables_found": {
+  "pw.x": null,
+  "vasp_std": null,
+  "vasp_gam": null,
+  "mpiexec": null,
+  "mpirun": null,
+  "orterun": null,
+  "srun": null,
+  "sbatch": null,
+  "git": "D:\\Git\\mingw64\\bin\\git.EXE",
+  "nvcc": null
+ },
+ "dft_and_parallel": {
+  "quantum_espresso_pw_x": false,
+  "vasp": false,
+  "mpi": false,
+  "slurm_cluster": false,
+  "licenses": "none detected (no QE/VASP/MPI binaries on PATH)"
+ },
+ "stated_by_user": {
+  "cpu": "Ryzen 7 7735H, 16 threads",
+  "ram_gib": 15.2,
+  "gpu": "RTX 4060 Laptop",
+  "os": "Windows 11"
+ }
+}

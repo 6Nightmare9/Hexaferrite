@@ -1,0 +1,47 @@
+bringing up nodes...
+bringing up nodes...
+
+........................................................................ [  7%]
+........................................................................ [ 14%]
+........................................................................ [ 21%]
+.......................sssss............................................ [ 28%]
+.....................................ss................................. [ 36%]
+........................................................................ [ 43%]
+........................................................................ [ 50%]
+........................................................................ [ 57%]
+........................................................................ [ 65%]
+........................................................................ [ 72%]
+........................................................................ [ 79%]
+........................................................................ [ 86%]
+........................................................................ [ 94%]
+...........................................................              [100%]
+============================== warnings summary ===============================
+tests/dft/test_dft_review1.py::test_fe2_gets_its_own_species_magnetization_and_starting_ns
+tests/dft/test_dft_magnet.py::test_hematite_system
+tests/dft/test_dft_magnet.py::test_w_system_is_gorter
+tests/dft/test_dft_qe_input.py::test_w_and_mn_inputs_validate_for_all_configurations
+  C:\MIPT\working_stuff\Hexx\tools\venv\Lib\site-packages\spglib\spg.py:437: DeprecationWarning: Set OLD_ERROR_HANDLING to false and catch the errors directly.
+    _set_no_error(_throw)
+
+tests/dft/test_dft_review1.py: 2 warnings
+tests/dft/test_dft_magnet.py: 1 warning
+tests/dft/test_dft_campaign.py: 2 warnings
+tests/dft/test_dft_cli_soc.py: 9 warnings
+tests/dft/test_dft_qe_input.py: 1 warning
+  C:\MIPT\working_stuff\Hexx\tools\venv\Lib\site-packages\spglib\cell.py:106: DeprecationWarning: Set OLD_ERROR_HANDLING to false and catch the errors directly.
+    _set_no_error()
+
+tests/dft/test_dft_magnet.py: 1 warning
+tests/structures/test_configs.py: 14 warnings
+tests/dft/test_dft_qe_input.py: 2 warnings
+  C:\MIPT\working_stuff\Hexx\tools\venv\Lib\site-packages\spglib\spg.py:353: DeprecationWarning: Set OLD_ERROR_HANDLING to false and catch the errors directly.
+    _set_no_error()
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+============================= slowest 5 durations =============================
+237.40s call     tests/test_registry_round1.py::test_audit_default_writes_nothing_and_flag_writes_manifest
+178.34s call     tests/params/test_anisotropy.py::test_both_co_forms_are_returned_and_not_averaged
+140.72s call     tests/params/test_anisotropy.py::test_mn_valence_is_shared_with_ms0
+131.28s setup    tests/params/test_moments.py::test_gorter_scheme_matches_the_fit_moments
+82.42s call     tests/test_cli.py::test_audit_passes_on_real_data
+988 passed, 7 skipped, 36 warnings in 898.58s (0:14:58)

@@ -1,0 +1,1950 @@
+{
+ "system": "SrFe18O27_uniform_cfg0",
+ "kind": "W92",
+ "meta": {
+  "candidate_id": "SrFe18O27|uniform|cfg0",
+  "weight": 1.0,
+  "count_vector": {},
+  "supercell": [
+   1,
+   1,
+   1
+  ]
+ },
+ "convention": "H = -sum_{i<j} J_ij S_i.S_j; each pair once; |S| = spin quantum number (Fe3+ 5/2, Fe2+ 2, Mn2+ 5/2, Co2+ 3/2); J>0 ferromagnetic; J in meV; energies per simulation cell",
+ "class_labels": [
+  "W1-W2",
+  "W1-W3",
+  "W1-W4",
+  "W1-W5",
+  "W2-W3",
+  "W2-W4",
+  "W2-W5",
+  "W2-W6",
+  "W3-W4",
+  "W4-W5",
+  "W5-W6",
+  "W5-W7",
+  "W6-W7"
+ ],
+ "class_info": [
+  {
+   "label": "W1-W2",
+   "n_bonds": 12,
+   "d_min": 3.6261226835969778,
+   "d_max": 3.6261226835969804,
+   "shells": [
+    [
+     3.62612268359698,
+     12
+    ]
+   ],
+   "n_distinct_shells": 1,
+   "paths": {
+    "no shared O": 12
+   },
+   "mean_Fe_O_Fe_angle_corner_deg": null,
+   "spin_products": [
+    5.0,
+    6.25
+   ]
+  },
+  {
+   "label": "W1-W3",
+   "n_bonds": 24,
+   "d_min": 3.4887221012688503,
+   "d_max": 3.488722101268851,
+   "shells": [
+    [
+     3.4887221012688507,
+     24
+    ]
+   ],
+   "n_distinct_shells": 1,
+   "paths": {
+    "corner (1 O)": 24
+   },
+   "mean_Fe_O_Fe_angle_corner_deg": 123.07154029949193,
+   "spin_products": [
+    5.0,
+    6.25
+   ]
+  },
+  {
+   "label": "W1-W4",
+   "n_bonds": 12,
+   "d_min": 3.4655947137258694,
+   "d_max": 3.4655947137258716,
+   "shells": [
+    [
+     3.4655947137258707,
+     12
+    ]
+   ],
+   "n_distinct_shells": 1,
+   "paths": {
+    "corner (1 O)": 12
+   },
+   "mean_Fe_O_Fe_angle_corner_deg": 119.47224704085257,
+   "spin_products": [
+    5.0,
+    6.25
+   ]
+  },
+  {
+   "label": "W1-W5",
+   "n_bonds": 12,
+   "d_min": 3.5348435495035613,
+   "d_max": 3.5348435495035635,
+   "shells": [
+    [
+     3.5348435495035617,
+     12
+    ]
+   ],
+   "n_distinct_shells": 1,
+   "paths": {
+    "corner (1 O)": 12
+   },
+   "mean_Fe_O_Fe_angle_corner_deg": 125.60043322127605,
+   "spin_products": [
+    5.0,
+    6.25
+   ]
+  },
+  {
+   "label": "W2-W3",
+   "n_bonds": 12,
+   "d_min": 3.525660930976783,
+   "d_max": 3.525660930976787,
+   "shells": [
+    [
+     3.5256609309767852,
+     12
+    ]
+   ],
+   "n_distinct_shells": 1,
+   "paths": {
+    "corner (1 O)": 12
+   },
+   "mean_Fe_O_Fe_angle_corner_deg": 123.8941438911116,
+   "spin_products": [
+    6.25
+   ]
+  },
+  {
+   "label": "W2-W4",
+   "n_bonds": 12,
+   "d_min": 3.46675966160067,
+   "d_max": 3.466759661600673,
+   "shells": [
+    [
+     3.4667596616006713,
+     12
+    ]
+   ],
+   "n_distinct_shells": 1,
+   "paths": {
+    "corner (1 O)": 12
+   },
+   "mean_Fe_O_Fe_angle_corner_deg": 127.23899745644792,
+   "spin_products": [
+    6.25
+   ]
+  },
+  {
+   "label": "W2-W5",
+   "n_bonds": 24,
+   "d_min": 3.502986661518611,
+   "d_max": 3.5030364882590623,
+   "shells": [
+    [
+     3.5030115748888364,
+     24
+    ]
+   ],
+   "n_distinct_shells": 1,
+   "paths": {
+    "corner (1 O)": 24
+   },
+   "mean_Fe_O_Fe_angle_corner_deg": 120.29953823493736,
+   "spin_products": [
+    6.25
+   ]
+  },
+  {
+   "label": "W2-W6",
+   "n_bonds": 4,
+   "d_min": 3.76209980512,
+   "d_max": 3.762099805120008,
+   "shells": [
+    [
+     3.7620998051200036,
+     4
+    ]
+   ],
+   "n_distinct_shells": 1,
+   "paths": {
+    "no shared O": 4
+   },
+   "mean_Fe_O_Fe_angle_corner_deg": null,
+   "spin_products": [
+    5.0,
+    6.25
+   ]
+  },
+  {
+   "label": "W3-W4",
+   "n_bonds": 12,
+   "d_min": 2.9995547498247226,
+   "d_max": 2.999554749824728,
+   "shells": [
+    [
+     2.9995547498247244,
+     12
+    ]
+   ],
+   "n_distinct_shells": 1,
+   "paths": {
+    "edge (2 O)": 12
+   },
+   "mean_Fe_O_Fe_angle_corner_deg": null,
+   "spin_products": [
+    6.25
+   ]
+  },
+  {
+   "label": "W4-W5",
+   "n_bonds": 12,
+   "d_min": 3.043466987042483,
+   "d_max": 3.0434669870424864,
+   "shells": [
+    [
+     3.043466987042484,
+     12
+    ]
+   ],
+   "n_distinct_shells": 1,
+   "paths": {
+    "edge (2 O)": 12
+   },
+   "mean_Fe_O_Fe_angle_corner_deg": null,
+   "spin_products": [
+    6.25
+   ]
+  },
+  {
+   "label": "W5-W6",
+   "n_bonds": 24,
+   "d_min": 3.5016464762352952,
+   "d_max": 3.5016963220456665,
+   "shells": [
+    [
+     3.5016713991404806,
+     24
+    ]
+   ],
+   "n_distinct_shells": 1,
+   "paths": {
+    "corner (1 O)": 24
+   },
+   "mean_Fe_O_Fe_angle_corner_deg": 127.77277029591251,
+   "spin_products": [
+    5.0,
+    6.25
+   ]
+  },
+  {
+   "label": "W5-W7",
+   "n_bonds": 12,
+   "d_min": 3.6754897016737975,
+   "d_max": 3.675489701673807,
+   "shells": [
+    [
+     3.675489701673802,
+     12
+    ]
+   ],
+   "n_distinct_shells": 1,
+   "paths": {
+    "corner (1 O)": 12
+   },
+   "mean_Fe_O_Fe_angle_corner_deg": 119.03940545772087,
+   "spin_products": [
+    6.25
+   ]
+  },
+  {
+   "label": "W6-W7",
+   "n_bonds": 12,
+   "d_min": 3.6724639568253328,
+   "d_max": 3.6724639568253377,
+   "shells": [
+    [
+     3.6724639568253346,
+     12
+    ]
+   ],
+   "n_distinct_shells": 1,
+   "paths": {
+    "corner (1 O)": 12
+   },
+   "mean_Fe_O_Fe_angle_corner_deg": 138.7305089783465,
+   "spin_products": [
+    5.0,
+    6.25
+   ]
+  }
+ ],
+ "group_names": [
+  "W1",
+  "W2",
+  "W3",
+  "W4",
+  "W5",
+  "W6",
+  "W7"
+ ],
+ "config_ids": [
+  "c00_ground",
+  "c01_flip_W3_W4_W5_W6_W7",
+  "c02_flip_W2_W5_W6",
+  "c03_flip_W3_W5_W7",
+  "c04_flip_W2_W4_W5_W7",
+  "c05_flip_W4_W5",
+  "c06_flip_W2_W3_W6",
+  "c07_flip_W4_W6",
+  "c08_flip_W2_W4",
+  "c09_flip_W2_W3_W4_W6_W7",
+  "c10_flip_W5_W6",
+  "c11_flip_W2_W3_W5",
+  "c12_flip_W2_W6_W7",
+  "c13_flip_W3_W6_W7",
+  "c14_flip_W3_W7",
+  "c15_flip_W4_W7",
+  "c16_flip_W3_W4"
+ ],
+ "roles": [
+  "fit",
+  "fit",
+  "fit",
+  "fit",
+  "fit",
+  "fit",
+  "fit",
+  "fit",
+  "fit",
+  "fit",
+  "fit",
+  "fit",
+  "fit",
+  "fit",
+  "fit",
+  "holdout",
+  "holdout"
+ ],
+ "flipped_groups": [
+  [],
+  [
+   "W3",
+   "W4",
+   "W5",
+   "W6",
+   "W7"
+  ],
+  [
+   "W2",
+   "W5",
+   "W6"
+  ],
+  [
+   "W3",
+   "W5",
+   "W7"
+  ],
+  [
+   "W2",
+   "W4",
+   "W5",
+   "W7"
+  ],
+  [
+   "W4",
+   "W5"
+  ],
+  [
+   "W2",
+   "W3",
+   "W6"
+  ],
+  [
+   "W4",
+   "W6"
+  ],
+  [
+   "W2",
+   "W4"
+  ],
+  [
+   "W2",
+   "W3",
+   "W4",
+   "W6",
+   "W7"
+  ],
+  [
+   "W5",
+   "W6"
+  ],
+  [
+   "W2",
+   "W3",
+   "W5"
+  ],
+  [
+   "W2",
+   "W6",
+   "W7"
+  ],
+  [
+   "W3",
+   "W6",
+   "W7"
+  ],
+  [
+   "W3",
+   "W7"
+  ],
+  [
+   "W4",
+   "W7"
+  ],
+  [
+   "W3",
+   "W4"
+  ]
+ ],
+ "patterns": [
+  [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  [
+   1.0,
+   1.0,
+   -1.0,
+   -1.0,
+   -1.0,
+   -1.0,
+   -1.0
+  ],
+  [
+   1.0,
+   -1.0,
+   1.0,
+   1.0,
+   -1.0,
+   -1.0,
+   1.0
+  ],
+  [
+   1.0,
+   1.0,
+   -1.0,
+   1.0,
+   -1.0,
+   1.0,
+   -1.0
+  ],
+  [
+   1.0,
+   -1.0,
+   1.0,
+   -1.0,
+   -1.0,
+   1.0,
+   -1.0
+  ],
+  [
+   1.0,
+   1.0,
+   1.0,
+   -1.0,
+   -1.0,
+   1.0,
+   1.0
+  ],
+  [
+   1.0,
+   -1.0,
+   -1.0,
+   1.0,
+   1.0,
+   -1.0,
+   1.0
+  ],
+  [
+   1.0,
+   1.0,
+   1.0,
+   -1.0,
+   1.0,
+   -1.0,
+   1.0
+  ],
+  [
+   1.0,
+   -1.0,
+   1.0,
+   -1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  [
+   1.0,
+   -1.0,
+   -1.0,
+   -1.0,
+   1.0,
+   -1.0,
+   -1.0
+  ],
+  [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   -1.0,
+   -1.0,
+   1.0
+  ],
+  [
+   1.0,
+   -1.0,
+   -1.0,
+   1.0,
+   -1.0,
+   1.0,
+   1.0
+  ],
+  [
+   1.0,
+   -1.0,
+   1.0,
+   1.0,
+   1.0,
+   -1.0,
+   -1.0
+  ],
+  [
+   1.0,
+   1.0,
+   -1.0,
+   1.0,
+   1.0,
+   -1.0,
+   -1.0
+  ],
+  [
+   1.0,
+   1.0,
+   -1.0,
+   1.0,
+   1.0,
+   1.0,
+   -1.0
+  ],
+  [
+   1.0,
+   1.0,
+   1.0,
+   -1.0,
+   1.0,
+   1.0,
+   -1.0
+  ],
+  [
+   1.0,
+   1.0,
+   -1.0,
+   -1.0,
+   1.0,
+   1.0,
+   1.0
+  ]
+ ],
+ "X": [
+  [
+   -67.5,
+   135.0,
+   67.5,
+   67.5,
+   75.0,
+   75.0,
+   150.0,
+   -22.5,
+   -75.0,
+   -75.0,
+   135.0,
+   -75.0,
+   67.5
+  ],
+  [
+   -67.5,
+   -135.0,
+   -67.5,
+   -67.5,
+   -75.0,
+   -75.0,
+   -150.0,
+   22.5,
+   -75.0,
+   -75.0,
+   135.0,
+   -75.0,
+   67.5
+  ],
+  [
+   67.5,
+   135.0,
+   67.5,
+   -67.5,
+   -75.0,
+   -75.0,
+   150.0,
+   -22.5,
+   -75.0,
+   75.0,
+   135.0,
+   75.0,
+   -67.5
+  ],
+  [
+   -67.5,
+   -135.0,
+   67.5,
+   -67.5,
+   -75.0,
+   75.0,
+   -150.0,
+   -22.5,
+   75.0,
+   75.0,
+   -135.0,
+   -75.0,
+   -67.5
+  ],
+  [
+   67.5,
+   135.0,
+   -67.5,
+   -67.5,
+   -75.0,
+   75.0,
+   150.0,
+   22.5,
+   75.0,
+   -75.0,
+   -135.0,
+   -75.0,
+   -67.5
+  ],
+  [
+   -67.5,
+   135.0,
+   -67.5,
+   -67.5,
+   75.0,
+   -75.0,
+   -150.0,
+   -22.5,
+   75.0,
+   -75.0,
+   -135.0,
+   75.0,
+   67.5
+  ],
+  [
+   67.5,
+   -135.0,
+   67.5,
+   67.5,
+   75.0,
+   -75.0,
+   -150.0,
+   -22.5,
+   75.0,
+   -75.0,
+   -135.0,
+   -75.0,
+   -67.5
+  ],
+  [
+   -67.5,
+   135.0,
+   -67.5,
+   67.5,
+   75.0,
+   -75.0,
+   150.0,
+   22.5,
+   75.0,
+   75.0,
+   -135.0,
+   -75.0,
+   -67.5
+  ],
+  [
+   67.5,
+   135.0,
+   -67.5,
+   67.5,
+   -75.0,
+   75.0,
+   -150.0,
+   22.5,
+   75.0,
+   75.0,
+   135.0,
+   -75.0,
+   67.5
+  ],
+  [
+   67.5,
+   -135.0,
+   -67.5,
+   67.5,
+   75.0,
+   75.0,
+   -150.0,
+   -22.5,
+   -75.0,
+   75.0,
+   -135.0,
+   75.0,
+   67.5
+  ],
+  [
+   -67.5,
+   135.0,
+   67.5,
+   -67.5,
+   75.0,
+   75.0,
+   -150.0,
+   22.5,
+   -75.0,
+   75.0,
+   135.0,
+   75.0,
+   -67.5
+  ],
+  [
+   67.5,
+   -135.0,
+   67.5,
+   -67.5,
+   75.0,
+   -75.0,
+   150.0,
+   22.5,
+   75.0,
+   75.0,
+   -135.0,
+   75.0,
+   67.5
+  ],
+  [
+   67.5,
+   135.0,
+   67.5,
+   67.5,
+   -75.0,
+   -75.0,
+   -150.0,
+   -22.5,
+   -75.0,
+   -75.0,
+   -135.0,
+   75.0,
+   67.5
+  ],
+  [
+   -67.5,
+   -135.0,
+   67.5,
+   67.5,
+   -75.0,
+   75.0,
+   150.0,
+   22.5,
+   75.0,
+   -75.0,
+   -135.0,
+   75.0,
+   67.5
+  ],
+  [
+   -67.5,
+   -135.0,
+   67.5,
+   67.5,
+   -75.0,
+   75.0,
+   150.0,
+   -22.5,
+   75.0,
+   -75.0,
+   135.0,
+   75.0,
+   -67.5
+  ],
+  [
+   -67.5,
+   135.0,
+   -67.5,
+   67.5,
+   75.0,
+   -75.0,
+   150.0,
+   -22.5,
+   75.0,
+   75.0,
+   135.0,
+   75.0,
+   -67.5
+  ],
+  [
+   -67.5,
+   -135.0,
+   -67.5,
+   67.5,
+   -75.0,
+   -75.0,
+   150.0,
+   -22.5,
+   -75.0,
+   75.0,
+   135.0,
+   -75.0,
+   67.5
+  ]
+ ],
+ "atoms": [
+  {
+   "i": 1,
+   "species": "Sr",
+   "ion": "Sr",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 2,
+   "species": "Sr",
+   "ion": "Sr",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 3,
+   "species": "O",
+   "ion": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 4,
+   "species": "O",
+   "ion": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 5,
+   "species": "O",
+   "ion": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 6,
+   "species": "O",
+   "ion": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 7,
+   "species": "O",
+   "ion": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 8,
+   "species": "O",
+   "ion": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 9,
+   "species": "O",
+   "ion": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 10,
+   "species": "O",
+   "ion": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 11,
+   "species": "O",
+   "ion": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 12,
+   "species": "O",
+   "ion": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 13,
+   "species": "O",
+   "ion": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 14,
+   "species": "O",
+   "ion": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 15,
+   "species": "O",
+   "ion": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 16,
+   "species": "O",
+   "ion": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 17,
+   "species": "O",
+   "ion": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 18,
+   "species": "O",
+   "ion": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 19,
+   "species": "O",
+   "ion": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 20,
+   "species": "O",
+   "ion": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 21,
+   "species": "O",
+   "ion": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 22,
+   "species": "O",
+   "ion": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 23,
+   "species": "O",
+   "ion": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 24,
+   "species": "O",
+   "ion": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 25,
+   "species": "O",
+   "ion": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 26,
+   "species": "O",
+   "ion": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 27,
+   "species": "O",
+   "ion": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 28,
+   "species": "O",
+   "ion": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 29,
+   "species": "O",
+   "ion": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 30,
+   "species": "O",
+   "ion": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 31,
+   "species": "O",
+   "ion": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 32,
+   "species": "O",
+   "ion": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 33,
+   "species": "O",
+   "ion": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 34,
+   "species": "O",
+   "ion": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 35,
+   "species": "O",
+   "ion": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 36,
+   "species": "O",
+   "ion": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 37,
+   "species": "O",
+   "ion": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 38,
+   "species": "O",
+   "ion": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 39,
+   "species": "O",
+   "ion": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 40,
+   "species": "O",
+   "ion": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 41,
+   "species": "O",
+   "ion": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 42,
+   "species": "O",
+   "ion": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 43,
+   "species": "O",
+   "ion": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 44,
+   "species": "O",
+   "ion": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 45,
+   "species": "O",
+   "ion": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 46,
+   "species": "O",
+   "ion": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 47,
+   "species": "O",
+   "ion": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 48,
+   "species": "O",
+   "ion": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 49,
+   "species": "O",
+   "ion": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 50,
+   "species": "O",
+   "ion": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 51,
+   "species": "O",
+   "ion": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 52,
+   "species": "O",
+   "ion": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 53,
+   "species": "O",
+   "ion": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 54,
+   "species": "O",
+   "ion": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 55,
+   "species": "O",
+   "ion": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 56,
+   "species": "O",
+   "ion": "O",
+   "spin_S": 0.0,
+   "group": -1,
+   "base_sign": 0.0,
+   "start_moment_muB": 0.0
+  },
+  {
+   "i": 57,
+   "species": "Fe",
+   "ion": "Fe2+",
+   "spin_S": 2.0,
+   "group": 0,
+   "base_sign": -1.0,
+   "start_moment_muB": 4.0
+  },
+  {
+   "i": 58,
+   "species": "Fe",
+   "ion": "Fe2+",
+   "spin_S": 2.0,
+   "group": 0,
+   "base_sign": -1.0,
+   "start_moment_muB": 4.0
+  },
+  {
+   "i": 59,
+   "species": "Fe",
+   "ion": "Fe3+",
+   "spin_S": 2.5,
+   "group": 0,
+   "base_sign": -1.0,
+   "start_moment_muB": 5.0
+  },
+  {
+   "i": 60,
+   "species": "Fe",
+   "ion": "Fe3+",
+   "spin_S": 2.5,
+   "group": 0,
+   "base_sign": -1.0,
+   "start_moment_muB": 5.0
+  },
+  {
+   "i": 61,
+   "species": "Fe",
+   "ion": "Fe3+",
+   "spin_S": 2.5,
+   "group": 1,
+   "base_sign": -1.0,
+   "start_moment_muB": 5.0
+  },
+  {
+   "i": 62,
+   "species": "Fe",
+   "ion": "Fe3+",
+   "spin_S": 2.5,
+   "group": 1,
+   "base_sign": -1.0,
+   "start_moment_muB": 5.0
+  },
+  {
+   "i": 63,
+   "species": "Fe",
+   "ion": "Fe3+",
+   "spin_S": 2.5,
+   "group": 1,
+   "base_sign": -1.0,
+   "start_moment_muB": 5.0
+  },
+  {
+   "i": 64,
+   "species": "Fe",
+   "ion": "Fe3+",
+   "spin_S": 2.5,
+   "group": 1,
+   "base_sign": -1.0,
+   "start_moment_muB": 5.0
+  },
+  {
+   "i": 65,
+   "species": "Fe",
+   "ion": "Fe3+",
+   "spin_S": 2.5,
+   "group": 2,
+   "base_sign": 1.0,
+   "start_moment_muB": 5.0
+  },
+  {
+   "i": 66,
+   "species": "Fe",
+   "ion": "Fe3+",
+   "spin_S": 2.5,
+   "group": 2,
+   "base_sign": 1.0,
+   "start_moment_muB": 5.0
+  },
+  {
+   "i": 67,
+   "species": "Fe",
+   "ion": "Fe3+",
+   "spin_S": 2.5,
+   "group": 2,
+   "base_sign": 1.0,
+   "start_moment_muB": 5.0
+  },
+  {
+   "i": 68,
+   "species": "Fe",
+   "ion": "Fe3+",
+   "spin_S": 2.5,
+   "group": 2,
+   "base_sign": 1.0,
+   "start_moment_muB": 5.0
+  },
+  {
+   "i": 69,
+   "species": "Fe",
+   "ion": "Fe3+",
+   "spin_S": 2.5,
+   "group": 2,
+   "base_sign": 1.0,
+   "start_moment_muB": 5.0
+  },
+  {
+   "i": 70,
+   "species": "Fe",
+   "ion": "Fe3+",
+   "spin_S": 2.5,
+   "group": 2,
+   "base_sign": 1.0,
+   "start_moment_muB": 5.0
+  },
+  {
+   "i": 71,
+   "species": "Fe",
+   "ion": "Fe3+",
+   "spin_S": 2.5,
+   "group": 3,
+   "base_sign": 1.0,
+   "start_moment_muB": 5.0
+  },
+  {
+   "i": 72,
+   "species": "Fe",
+   "ion": "Fe3+",
+   "spin_S": 2.5,
+   "group": 3,
+   "base_sign": 1.0,
+   "start_moment_muB": 5.0
+  },
+  {
+   "i": 73,
+   "species": "Fe",
+   "ion": "Fe3+",
+   "spin_S": 2.5,
+   "group": 3,
+   "base_sign": 1.0,
+   "start_moment_muB": 5.0
+  },
+  {
+   "i": 74,
+   "species": "Fe",
+   "ion": "Fe3+",
+   "spin_S": 2.5,
+   "group": 3,
+   "base_sign": 1.0,
+   "start_moment_muB": 5.0
+  },
+  {
+   "i": 75,
+   "species": "Fe",
+   "ion": "Fe3+",
+   "spin_S": 2.5,
+   "group": 4,
+   "base_sign": 1.0,
+   "start_moment_muB": 5.0
+  },
+  {
+   "i": 76,
+   "species": "Fe",
+   "ion": "Fe3+",
+   "spin_S": 2.5,
+   "group": 4,
+   "base_sign": 1.0,
+   "start_moment_muB": 5.0
+  },
+  {
+   "i": 77,
+   "species": "Fe",
+   "ion": "Fe3+",
+   "spin_S": 2.5,
+   "group": 4,
+   "base_sign": 1.0,
+   "start_moment_muB": 5.0
+  },
+  {
+   "i": 78,
+   "species": "Fe",
+   "ion": "Fe3+",
+   "spin_S": 2.5,
+   "group": 4,
+   "base_sign": 1.0,
+   "start_moment_muB": 5.0
+  },
+  {
+   "i": 79,
+   "species": "Fe",
+   "ion": "Fe3+",
+   "spin_S": 2.5,
+   "group": 4,
+   "base_sign": 1.0,
+   "start_moment_muB": 5.0
+  },
+  {
+   "i": 80,
+   "species": "Fe",
+   "ion": "Fe3+",
+   "spin_S": 2.5,
+   "group": 4,
+   "base_sign": 1.0,
+   "start_moment_muB": 5.0
+  },
+  {
+   "i": 81,
+   "species": "Fe",
+   "ion": "Fe3+",
+   "spin_S": 2.5,
+   "group": 4,
+   "base_sign": 1.0,
+   "start_moment_muB": 5.0
+  },
+  {
+   "i": 82,
+   "species": "Fe",
+   "ion": "Fe3+",
+   "spin_S": 2.5,
+   "group": 4,
+   "base_sign": 1.0,
+   "start_moment_muB": 5.0
+  },
+  {
+   "i": 83,
+   "species": "Fe",
+   "ion": "Fe3+",
+   "spin_S": 2.5,
+   "group": 4,
+   "base_sign": 1.0,
+   "start_moment_muB": 5.0
+  },
+  {
+   "i": 84,
+   "species": "Fe",
+   "ion": "Fe3+",
+   "spin_S": 2.5,
+   "group": 4,
+   "base_sign": 1.0,
+   "start_moment_muB": 5.0
+  },
+  {
+   "i": 85,
+   "species": "Fe",
+   "ion": "Fe3+",
+   "spin_S": 2.5,
+   "group": 4,
+   "base_sign": 1.0,
+   "start_moment_muB": 5.0
+  },
+  {
+   "i": 86,
+   "species": "Fe",
+   "ion": "Fe3+",
+   "spin_S": 2.5,
+   "group": 4,
+   "base_sign": 1.0,
+   "start_moment_muB": 5.0
+  },
+  {
+   "i": 87,
+   "species": "Fe",
+   "ion": "Fe3+",
+   "spin_S": 2.5,
+   "group": 5,
+   "base_sign": -1.0,
+   "start_moment_muB": 5.0
+  },
+  {
+   "i": 88,
+   "species": "Fe",
+   "ion": "Fe3+",
+   "spin_S": 2.5,
+   "group": 5,
+   "base_sign": -1.0,
+   "start_moment_muB": 5.0
+  },
+  {
+   "i": 89,
+   "species": "Fe",
+   "ion": "Fe2+",
+   "spin_S": 2.0,
+   "group": 5,
+   "base_sign": -1.0,
+   "start_moment_muB": 4.0
+  },
+  {
+   "i": 90,
+   "species": "Fe",
+   "ion": "Fe2+",
+   "spin_S": 2.0,
+   "group": 5,
+   "base_sign": -1.0,
+   "start_moment_muB": 4.0
+  },
+  {
+   "i": 91,
+   "species": "Fe",
+   "ion": "Fe3+",
+   "spin_S": 2.5,
+   "group": 6,
+   "base_sign": 1.0,
+   "start_moment_muB": 5.0
+  },
+  {
+   "i": 92,
+   "species": "Fe",
+   "ion": "Fe3+",
+   "spin_S": 2.5,
+   "group": 6,
+   "base_sign": 1.0,
+   "start_moment_muB": 5.0
+  }
+ ],
+ "r_cut_A": 3.8,
+ "group_by": "sublattice_pair",
+ "conditioning_fit_set": {
+  "cond_scaled": 2.4456686753361563,
+  "cond_raw": 177.1548896281666,
+  "singular_values_scaled": [
+   1.3494124276633581,
+   1.3210174712897838,
+   1.2944357046234531,
+   1.1886477749528648,
+   1.0327955589886446,
+   1.0327955589886444,
+   1.0327955589886442,
+   1.0327955589886442,
+   1.032795558988644,
+   0.7790463838066058,
+   0.6477638187835101,
+   0.6073326131554662,
+   0.5589449287729659,
+   0.5517560253650801
+  ],
+  "singular_values_raw": [
+   609.719815508717,
+   578.5076895028111,
+   491.6762133952123,
+   350.5294630195035,
+   325.4098446692238,
+   291.8216926230324,
+   290.59289092810354,
+   276.51128348469797,
+   248.53660219796927,
+   199.94134934511814,
+   171.55424428042534,
+   167.7744143744899,
+   69.07110009643668,
+   3.4417329196414976
+  ],
+  "rank": 14,
+  "n_columns": 14,
+  "n_rows": 15
+ },
+ "config_sha256": "0717c650b6a1ce51a3569b891e7ca20445eb8afb0384df04cbab258d5f3cc1f4",
+ "input_sha256": {
+  "c00_ground": "17dd2f3f666a3f37d12b301e0ef5e3c9e8aca903598a2bbc4a5238d330e8c55e",
+  "c01_flip_W3_W4_W5_W6_W7": "75c32adbb89220e7bdd1e3e8b8fdf743bad4de0bdf80982c39d264f247510040",
+  "c02_flip_W2_W5_W6": "c3f3ccac10c305fae6247a2e175bb25a1b312df54defb6a95330b80705b8da96",
+  "c03_flip_W3_W5_W7": "9f89c3ab43c5281a891f2740b8fa53a526b92e4ad9f3563611ebe5e32d1129fc",
+  "c04_flip_W2_W4_W5_W7": "cfe37f9a853c1652adea830a5c07a24c90184c95c02a912c7eedb394f4bcdd53",
+  "c05_flip_W4_W5": "54f91ab36c04ebccf4d45a9b7d3ca9477f04bbcdb86c5ac71a662db5399c4636",
+  "c06_flip_W2_W3_W6": "ea1f3def4c1c655ffa3990382f41e532ea994d4cce538e26a3998a94d0539e60",
+  "c07_flip_W4_W6": "2f6dbd7e34dac29ca75cc4dc56116b02063a1cad5c19e52018c6a10daaf3de89",
+  "c08_flip_W2_W4": "164bacc3e4d814e6e6346c73926d13bee105c35eb120740f2b8e17d18009284e",
+  "c09_flip_W2_W3_W4_W6_W7": "d80de9e6078279f642439445d70ac89035c1642b3ab9259c0fda70a3dc38ac5b",
+  "c10_flip_W5_W6": "3974f001e32996e2e271a605e477e8b9ca9f5a77d536649b5fa950e967a2d53f",
+  "c11_flip_W2_W3_W5": "db52591f6507c3a3b9b701597bf1de4b4213ca30fcaaf08069751fed436a1aee",
+  "c12_flip_W2_W6_W7": "1ca7e115809b36a72e7a47dadac7a3c313e737462c117775fa24d8dd35a7ae97",
+  "c13_flip_W3_W6_W7": "ab231e1575c5a6a8e7311715a0f17171287c69c507d1579328bb2673a201529b",
+  "c14_flip_W3_W7": "8f8bda4ea39b8fc69a1159b23069e527c71f4f8208440b06963308c1c52e7a07",
+  "c15_flip_W4_W7": "739b7c3d5fcb144db69801714f78b3fb7d81245a01704963d9128550ae8c8330",
+  "c16_flip_W3_W4": "9ec44591c9d8aaef99abd06d85a1271a4c3f08a7221c3c673959e157ca56580c"
+ },
+ "energy_noise_floor_meV": 10.0,
+ "max_condition_number": 1000.0,
+ "far_labels": [
+  "far:W1-W6",
+  "far:W1-W7",
+  "far:W2-W7",
+  "far:W3-W5",
+  "far:W3-W6",
+  "far:W4-W6",
+  "far:W4-W7"
+ ],
+ "far_info": [
+  {
+   "label": "far:W1-W6",
+   "n_bonds_far": 12,
+   "d_min": 6.04613690074907,
+   "d_max": 6.046136900749074,
+   "sum_SS": 60.0
+  },
+  {
+   "label": "far:W1-W7",
+   "n_bonds_far": 12,
+   "d_min": 7.210327862522283,
+   "d_max": 7.210327862522293,
+   "sum_SS": 67.5
+  },
+  {
+   "label": "far:W2-W7",
+   "n_bonds_far": 12,
+   "d_min": 6.1543865543891,
+   "d_max": 6.154386554389109,
+   "sum_SS": 75.0
+  },
+  {
+   "label": "far:W3-W5",
+   "n_bonds_far": 156,
+   "d_min": 5.257418015864413,
+   "d_max": 7.927804686666115,
+   "sum_SS": 975.0
+  },
+  {
+   "label": "far:W3-W6",
+   "n_bonds_far": 12,
+   "d_min": 7.056961964495457,
+   "d_max": 7.056961964495462,
+   "sum_SS": 67.5
+  },
+  {
+   "label": "far:W4-W6",
+   "n_bonds_far": 24,
+   "d_min": 5.551875974839585,
+   "d_max": 7.87798083667408,
+   "sum_SS": 135.0
+  },
+  {
+   "label": "far:W4-W7",
+   "n_bonds_far": 4,
+   "d_min": 5.740728432639994,
+   "d_max": 5.7407284326400045,
+   "sum_SS": 25.0
+  }
+ ],
+ "X_far": [
+  [
+   -60.0,
+   67.5,
+   75.0,
+   -975.0,
+   67.5,
+   135.0,
+   -25.0
+  ],
+  [
+   60.0,
+   -67.5,
+   -75.0,
+   -975.0,
+   67.5,
+   135.0,
+   -25.0
+  ],
+  [
+   60.0,
+   67.5,
+   -75.0,
+   975.0,
+   -67.5,
+   -135.0,
+   -25.0
+  ],
+  [
+   -60.0,
+   -67.5,
+   -75.0,
+   -975.0,
+   -67.5,
+   135.0,
+   25.0
+  ],
+  [
+   -60.0,
+   -67.5,
+   75.0,
+   975.0,
+   67.5,
+   -135.0,
+   -25.0
+  ],
+  [
+   -60.0,
+   67.5,
+   75.0,
+   975.0,
+   67.5,
+   -135.0,
+   25.0
+  ],
+  [
+   60.0,
+   67.5,
+   -75.0,
+   975.0,
+   67.5,
+   -135.0,
+   -25.0
+  ],
+  [
+   60.0,
+   67.5,
+   75.0,
+   -975.0,
+   -67.5,
+   135.0,
+   25.0
+  ],
+  [
+   -60.0,
+   67.5,
+   -75.0,
+   -975.0,
+   67.5,
+   -135.0,
+   25.0
+  ],
+  [
+   60.0,
+   -67.5,
+   75.0,
+   975.0,
+   67.5,
+   135.0,
+   -25.0
+  ],
+  [
+   60.0,
+   67.5,
+   75.0,
+   975.0,
+   -67.5,
+   -135.0,
+   -25.0
+  ],
+  [
+   -60.0,
+   67.5,
+   -75.0,
+   -975.0,
+   -67.5,
+   135.0,
+   -25.0
+  ],
+  [
+   60.0,
+   -67.5,
+   75.0,
+   -975.0,
+   -67.5,
+   -135.0,
+   25.0
+  ],
+  [
+   60.0,
+   -67.5,
+   -75.0,
+   975.0,
+   67.5,
+   -135.0,
+   25.0
+  ],
+  [
+   -60.0,
+   -67.5,
+   -75.0,
+   975.0,
+   -67.5,
+   135.0,
+   25.0
+  ],
+  [
+   -60.0,
+   -67.5,
+   -75.0,
+   -975.0,
+   67.5,
+   -135.0,
+   -25.0
+  ],
+  [
+   -60.0,
+   67.5,
+   75.0,
+   975.0,
+   -67.5,
+   -135.0,
+   25.0
+  ]
+ ],
+ "far_prior_sigma_meV": 0.1,
+ "holdout_rel_tol": 0.02,
+ "max_promote_to_fit": 2
+}

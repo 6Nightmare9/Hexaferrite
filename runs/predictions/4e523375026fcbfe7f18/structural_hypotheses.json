@@ -1,0 +1,568 @@
+{
+  "template": "raw\\theory_side\\06_literature\\L02_Morch2023\\supporting\\CIFs\\SrZn2Fe16O27.cif",
+  "status": "unrelaxed_partial_occupancy_candidates",
+  "hypotheses": [
+    {
+      "candidate": {
+        "candidate_id": "SrCo2Fe16O27|uniform",
+        "formula": "SrCo2Fe16O27",
+        "sites": [
+          {
+            "site": "W1",
+            "species": {
+              "Co": 0.08689458802697991,
+              "Fe3+": 0.9131054119730201
+            },
+            "multiplicity": 4,
+            "wyckoff": "4e",
+            "site_id": "W1",
+            "space_group": "P6_3/mmc",
+            "split_label": null,
+            "moments": []
+          },
+          {
+            "site": "W2",
+            "species": {
+              "Co": 0.024217772888520502,
+              "Fe3+": 0.9757822271114795
+            },
+            "multiplicity": 4,
+            "wyckoff": "4f",
+            "site_id": "W2",
+            "space_group": "P6_3/mmc",
+            "split_label": null,
+            "moments": []
+          },
+          {
+            "site": "W3",
+            "species": {
+              "Co": 0.5329972681609153,
+              "Fe3+": 0.46700273183908464
+            },
+            "multiplicity": 6,
+            "wyckoff": "6g",
+            "site_id": "W3",
+            "space_group": "P6_3/mmc",
+            "split_label": null,
+            "moments": []
+          },
+          {
+            "site": "W4",
+            "species": {
+              "Co": 0.029637869471968687,
+              "Fe3+": 0.9703621305280313
+            },
+            "multiplicity": 4,
+            "wyckoff": "4f",
+            "site_id": "W4",
+            "space_group": "P6_3/mmc",
+            "split_label": null,
+            "moments": []
+          },
+          {
+            "site": "W5",
+            "species": {
+              "Co": 0.013994877987626511,
+              "Fe3+": 0.9860051220123734
+            },
+            "multiplicity": 12,
+            "wyckoff": "12k",
+            "site_id": "W5",
+            "space_group": "P6_3/mmc",
+            "split_label": null,
+            "moments": []
+          },
+          {
+            "site": "W6",
+            "species": {
+              "Co": 0.012375427060300509,
+              "Fe3+": 0.9876245729396995
+            },
+            "multiplicity": 4,
+            "wyckoff": "4f",
+            "site_id": "W6",
+            "space_group": "P6_3/mmc",
+            "split_label": null,
+            "moments": []
+          },
+          {
+            "site": "W7",
+            "species": {
+              "Co": 0.010787612695955793,
+              "Fe3+": 0.9892123873040443
+            },
+            "multiplicity": 2,
+            "wyckoff": "2d",
+            "site_id": "W7",
+            "space_group": "P6_3/mmc",
+            "split_label": null,
+            "moments": []
+          }
+        ],
+        "oxidation_states": {
+          "Co": 2.0,
+          "Fe2+": 2.0,
+          "Fe3+": 3.0
+        },
+        "magnetic_hypothesis": "collinear Gorter ferrimagnet (W1,W2,W6 down; W3,W4,W5,W7 up)",
+        "source": "hexw.structures.ensemble: site-preference ensemble fitted to fit literature (L02 Co/Zn, L01 Mg/Ni)",
+        "status": "candidate",
+        "partial_occupancy_cif_not_dft_config": true
+      },
+      "weight": 0.1331246836367018,
+      "weight_basis": "weight(Fe2+ scenario)=0.133 [weights from the compatibility of the Gorter moment of SrFe18O27 with the DFT moment of L05 (L05-093, sigma 1 muB/f.u., Gaussian likelihood; an estimate of the literature DFT, not a measurement); the scenarios themselves are ASSUMPTIONS: the fit corpus does not localise Fe2+ (site_notation.md warning 6; L02 refinements keep Fe3+ everywhere)]",
+      "mn_valence": null,
+      "fe2_scenario": "uniform",
+      "counts_per_fu": {
+        "Sr": 1.0,
+        "Co": 2.0,
+        "Fe2+": 0.0,
+        "Fe3+": 16.0,
+        "O": 27.0
+      },
+      "site_counts": {
+        "W1": {
+          "Co": 0.17378917605395983,
+          "Fe3+": 1.8262108239460402
+        },
+        "W2": {
+          "Co": 0.048435545777041004,
+          "Fe3+": 1.951564454222959
+        },
+        "W3": {
+          "Co": 1.598991804482746,
+          "Fe3+": 1.401008195517254
+        },
+        "W4": {
+          "Co": 0.059275738943937374,
+          "Fe3+": 1.9407242610560627
+        },
+        "W5": {
+          "Co": 0.08396926792575907,
+          "Fe3+": 5.9160307320742405
+        },
+        "W6": {
+          "Co": 0.024750854120601018,
+          "Fe3+": 1.975249145879399
+        },
+        "W7": {
+          "Co": 0.010787612695955793,
+          "Fe3+": 0.9892123873040443
+        }
+      },
+      "ranges": {
+        "('W1', 'Co')": [
+          0.04794492027909806,
+          0.127288160366361
+        ],
+        "('W2', 'Co')": [
+          0.000147096909721276,
+          0.05945712582224286
+        ],
+        "('W3', 'Co')": [
+          0.48893576604962224,
+          0.5762725056532969
+        ],
+        "('W4', 'Co')": [
+          0.0008311764735970925,
+          0.07076425631678578
+        ],
+        "('W5', 'Co')": [
+          0.00019721422000163702,
+          0.03589844746850208
+        ],
+        "('W6', 'Co')": [
+          0.0001369105273798959,
+          0.03555666293421412
+        ],
+        "('W7', 'Co')": [
+          0.00013843610039933717,
+          0.0383204563198751
+        ]
+      },
+      "ambiguity": [
+        "A distribution comes from a near-saturated fit: 26 fitted logits, 6 identified relative energies, chi2/dof = 6.5/14 (bootstrap ensemble of 300 fits)",
+        "Co: sites W1, W2, W4, W5, W6, W7 not identified (fraction consistent with 0): only upper limits",
+        "Co on W3 (6g): the only source is L02; there is no cross-check in the fit",
+        "refined A content in the fit samples is below nominal (Co 1.71, Zn 1.80, Mg 1.69 per f.u.); the prediction uses the nominal content x",
+        "Fe2+ placement (uniform): Fe2+ statistically on all Fe positions (proportional to the Fe content of the site); weights from the compatibility of the Gorter moment of SrFe18O27 with the DFT moment of L05 (L05-093, sigma 1 muB/f.u., Gaussian likelihood; an estimate of the literature DFT, not a measurement); the scenarios themselves are ASSUMPTIONS: the fit corpus does not localise Fe2+ (site_notation.md warning 6; L02 refinements keep Fe3+ everywhere)"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "SrCo2Fe16O27|oct_S_up",
+        "formula": "SrCo2Fe16O27",
+        "sites": [
+          {
+            "site": "W1",
+            "species": {
+              "Co": 0.08689458802697991,
+              "Fe3+": 0.9131054119730201
+            },
+            "multiplicity": 4,
+            "wyckoff": "4e",
+            "site_id": "W1",
+            "space_group": "P6_3/mmc",
+            "split_label": null,
+            "moments": []
+          },
+          {
+            "site": "W2",
+            "species": {
+              "Co": 0.024217772888520502,
+              "Fe3+": 0.9757822271114795
+            },
+            "multiplicity": 4,
+            "wyckoff": "4f",
+            "site_id": "W2",
+            "space_group": "P6_3/mmc",
+            "split_label": null,
+            "moments": []
+          },
+          {
+            "site": "W3",
+            "species": {
+              "Co": 0.5329972681609153,
+              "Fe3+": 0.46700273183908464
+            },
+            "multiplicity": 6,
+            "wyckoff": "6g",
+            "site_id": "W3",
+            "space_group": "P6_3/mmc",
+            "split_label": null,
+            "moments": []
+          },
+          {
+            "site": "W4",
+            "species": {
+              "Co": 0.029637869471968687,
+              "Fe3+": 0.9703621305280313
+            },
+            "multiplicity": 4,
+            "wyckoff": "4f",
+            "site_id": "W4",
+            "space_group": "P6_3/mmc",
+            "split_label": null,
+            "moments": []
+          },
+          {
+            "site": "W5",
+            "species": {
+              "Co": 0.013994877987626511,
+              "Fe3+": 0.9860051220123734
+            },
+            "multiplicity": 12,
+            "wyckoff": "12k",
+            "site_id": "W5",
+            "space_group": "P6_3/mmc",
+            "split_label": null,
+            "moments": []
+          },
+          {
+            "site": "W6",
+            "species": {
+              "Co": 0.012375427060300509,
+              "Fe3+": 0.9876245729396995
+            },
+            "multiplicity": 4,
+            "wyckoff": "4f",
+            "site_id": "W6",
+            "space_group": "P6_3/mmc",
+            "split_label": null,
+            "moments": []
+          },
+          {
+            "site": "W7",
+            "species": {
+              "Co": 0.010787612695955793,
+              "Fe3+": 0.9892123873040443
+            },
+            "multiplicity": 2,
+            "wyckoff": "2d",
+            "site_id": "W7",
+            "space_group": "P6_3/mmc",
+            "split_label": null,
+            "moments": []
+          }
+        ],
+        "oxidation_states": {
+          "Co": 2.0,
+          "Fe2+": 2.0,
+          "Fe3+": 3.0
+        },
+        "magnetic_hypothesis": "collinear Gorter ferrimagnet (W1,W2,W6 down; W3,W4,W5,W7 up)",
+        "source": "hexw.structures.ensemble: site-preference ensemble fitted to fit literature (L02 Co/Zn, L01 Mg/Ni)",
+        "status": "candidate",
+        "partial_occupancy_cif_not_dft_config": true
+      },
+      "weight": 0.6345028098412853,
+      "weight_basis": "weight(Fe2+ scenario)=0.635 [weights from the compatibility of the Gorter moment of SrFe18O27 with the DFT moment of L05 (L05-093, sigma 1 muB/f.u., Gaussian likelihood; an estimate of the literature DFT, not a measurement); the scenarios themselves are ASSUMPTIONS: the fit corpus does not localise Fe2+ (site_notation.md warning 6; L02 refinements keep Fe3+ everywhere)]",
+      "mn_valence": null,
+      "fe2_scenario": "oct_S_up",
+      "counts_per_fu": {
+        "Sr": 1.0,
+        "Co": 2.0,
+        "Fe2+": 0.0,
+        "Fe3+": 16.0,
+        "O": 27.0
+      },
+      "site_counts": {
+        "W1": {
+          "Co": 0.17378917605395983,
+          "Fe3+": 1.8262108239460402
+        },
+        "W2": {
+          "Co": 0.048435545777041004,
+          "Fe3+": 1.951564454222959
+        },
+        "W3": {
+          "Co": 1.598991804482746,
+          "Fe3+": 1.401008195517254
+        },
+        "W4": {
+          "Co": 0.059275738943937374,
+          "Fe3+": 1.9407242610560627
+        },
+        "W5": {
+          "Co": 0.08396926792575907,
+          "Fe3+": 5.9160307320742405
+        },
+        "W6": {
+          "Co": 0.024750854120601018,
+          "Fe3+": 1.975249145879399
+        },
+        "W7": {
+          "Co": 0.010787612695955793,
+          "Fe3+": 0.9892123873040443
+        }
+      },
+      "ranges": {
+        "('W1', 'Co')": [
+          0.04794492027909806,
+          0.127288160366361
+        ],
+        "('W2', 'Co')": [
+          0.000147096909721276,
+          0.05945712582224286
+        ],
+        "('W3', 'Co')": [
+          0.48893576604962224,
+          0.5762725056532969
+        ],
+        "('W4', 'Co')": [
+          0.0008311764735970925,
+          0.07076425631678578
+        ],
+        "('W5', 'Co')": [
+          0.00019721422000163702,
+          0.03589844746850208
+        ],
+        "('W6', 'Co')": [
+          0.0001369105273798959,
+          0.03555666293421412
+        ],
+        "('W7', 'Co')": [
+          0.00013843610039933717,
+          0.0383204563198751
+        ]
+      },
+      "ambiguity": [
+        "A distribution comes from a near-saturated fit: 26 fitted logits, 6 identified relative energies, chi2/dof = 6.5/14 (bootstrap ensemble of 300 fits)",
+        "Co: sites W1, W2, W4, W5, W6, W7 not identified (fraction consistent with 0): only upper limits",
+        "Co on W3 (6g): the only source is L02; there is no cross-check in the fit",
+        "refined A content in the fit samples is below nominal (Co 1.71, Zn 1.80, Mg 1.69 per f.u.); the prediction uses the nominal content x",
+        "Fe2+ placement (oct_S_up): Fe2+ on W3 (6g) and W4 (4f_VI, S block, spin up): the placement mentioned by Nakai (L03/C004: 6g and/or '4f3' = W4 if the Fig. 1 labelling inferred in site_notation.md is right); weights from the compatibility of the Gorter moment of SrFe18O27 with the DFT moment of L05 (L05-093, sigma 1 muB/f.u., Gaussian likelihood; an estimate of the literature DFT, not a measurement); the scenarios themselves are ASSUMPTIONS: the fit corpus does not localise Fe2+ (site_notation.md warning 6; L02 refinements keep Fe3+ everywhere)"
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "SrCo2Fe16O27|oct_R",
+        "formula": "SrCo2Fe16O27",
+        "sites": [
+          {
+            "site": "W1",
+            "species": {
+              "Co": 0.08689458802697991,
+              "Fe3+": 0.9131054119730201
+            },
+            "multiplicity": 4,
+            "wyckoff": "4e",
+            "site_id": "W1",
+            "space_group": "P6_3/mmc",
+            "split_label": null,
+            "moments": []
+          },
+          {
+            "site": "W2",
+            "species": {
+              "Co": 0.024217772888520502,
+              "Fe3+": 0.9757822271114795
+            },
+            "multiplicity": 4,
+            "wyckoff": "4f",
+            "site_id": "W2",
+            "space_group": "P6_3/mmc",
+            "split_label": null,
+            "moments": []
+          },
+          {
+            "site": "W3",
+            "species": {
+              "Co": 0.5329972681609153,
+              "Fe3+": 0.46700273183908464
+            },
+            "multiplicity": 6,
+            "wyckoff": "6g",
+            "site_id": "W3",
+            "space_group": "P6_3/mmc",
+            "split_label": null,
+            "moments": []
+          },
+          {
+            "site": "W4",
+            "species": {
+              "Co": 0.029637869471968687,
+              "Fe3+": 0.9703621305280313
+            },
+            "multiplicity": 4,
+            "wyckoff": "4f",
+            "site_id": "W4",
+            "space_group": "P6_3/mmc",
+            "split_label": null,
+            "moments": []
+          },
+          {
+            "site": "W5",
+            "species": {
+              "Co": 0.013994877987626511,
+              "Fe3+": 0.9860051220123734
+            },
+            "multiplicity": 12,
+            "wyckoff": "12k",
+            "site_id": "W5",
+            "space_group": "P6_3/mmc",
+            "split_label": null,
+            "moments": []
+          },
+          {
+            "site": "W6",
+            "species": {
+              "Co": 0.012375427060300509,
+              "Fe3+": 0.9876245729396995
+            },
+            "multiplicity": 4,
+            "wyckoff": "4f",
+            "site_id": "W6",
+            "space_group": "P6_3/mmc",
+            "split_label": null,
+            "moments": []
+          },
+          {
+            "site": "W7",
+            "species": {
+              "Co": 0.010787612695955793,
+              "Fe3+": 0.9892123873040443
+            },
+            "multiplicity": 2,
+            "wyckoff": "2d",
+            "site_id": "W7",
+            "space_group": "P6_3/mmc",
+            "split_label": null,
+            "moments": []
+          }
+        ],
+        "oxidation_states": {
+          "Co": 2.0,
+          "Fe2+": 2.0,
+          "Fe3+": 3.0
+        },
+        "magnetic_hypothesis": "collinear Gorter ferrimagnet (W1,W2,W6 down; W3,W4,W5,W7 up)",
+        "source": "hexw.structures.ensemble: site-preference ensemble fitted to fit literature (L02 Co/Zn, L01 Mg/Ni)",
+        "status": "candidate",
+        "partial_occupancy_cif_not_dft_config": true
+      },
+      "weight": 0.232372506522013,
+      "weight_basis": "weight(Fe2+ scenario)=0.232 [weights from the compatibility of the Gorter moment of SrFe18O27 with the DFT moment of L05 (L05-093, sigma 1 muB/f.u., Gaussian likelihood; an estimate of the literature DFT, not a measurement); the scenarios themselves are ASSUMPTIONS: the fit corpus does not localise Fe2+ (site_notation.md warning 6; L02 refinements keep Fe3+ everywhere)]",
+      "mn_valence": null,
+      "fe2_scenario": "oct_R",
+      "counts_per_fu": {
+        "Sr": 1.0,
+        "Co": 2.0,
+        "Fe2+": 0.0,
+        "Fe3+": 16.0,
+        "O": 27.0
+      },
+      "site_counts": {
+        "W1": {
+          "Co": 0.17378917605395983,
+          "Fe3+": 1.8262108239460402
+        },
+        "W2": {
+          "Co": 0.048435545777041004,
+          "Fe3+": 1.951564454222959
+        },
+        "W3": {
+          "Co": 1.598991804482746,
+          "Fe3+": 1.401008195517254
+        },
+        "W4": {
+          "Co": 0.059275738943937374,
+          "Fe3+": 1.9407242610560627
+        },
+        "W5": {
+          "Co": 0.08396926792575907,
+          "Fe3+": 5.9160307320742405
+        },
+        "W6": {
+          "Co": 0.024750854120601018,
+          "Fe3+": 1.975249145879399
+        },
+        "W7": {
+          "Co": 0.010787612695955793,
+          "Fe3+": 0.9892123873040443
+        }
+      },
+      "ranges": {
+        "('W1', 'Co')": [
+          0.04794492027909806,
+          0.127288160366361
+        ],
+        "('W2', 'Co')": [
+          0.000147096909721276,
+          0.05945712582224286
+        ],
+        "('W3', 'Co')": [
+          0.48893576604962224,
+          0.5762725056532969
+        ],
+        "('W4', 'Co')": [
+          0.0008311764735970925,
+          0.07076425631678578
+        ],
+        "('W5', 'Co')": [
+          0.00019721422000163702,
+          0.03589844746850208
+        ],
+        "('W6', 'Co')": [
+          0.0001369105273798959,
+          0.03555666293421412
+        ],
+        "('W7', 'Co')": [
+          0.00013843610039933717,
+          0.0383204563198751
+        ]
+      },
+      "ambiguity": [
+        "A distribution comes from a near-saturated fit: 26 fitted logits, 6 identified relative energies, chi2/dof = 6.5/14 (bootstrap ensemble of 300 fits)",
+        "Co: sites W1, W2, W4, W5, W6, W7 not identified (fraction consistent with 0): only upper limits",
+        "Co on W3 (6g): the only source is L02; there is no cross-check in the fit",
+        "refined A content in the fit samples is below nominal (Co 1.71, Zn 1.80, Mg 1.69 per f.u.); the prediction uses the nominal content x",
+        "Fe2+ placement (oct_R): Fe2+ on the octahedra of the R block / R-S boundary, W5 (12k) and W6 (4f_VI*); weights from the compatibility of the Gorter moment of SrFe18O27 with the DFT moment of L05 (L05-093, sigma 1 muB/f.u., Gaussian likelihood; an estimate of the literature DFT, not a measurement); the scenarios themselves are ASSUMPTIONS: the fit corpus does not localise Fe2+ (site_notation.md warning 6; L02 refinements keep Fe3+ everywhere)"
+      ]
+    }
+  ],
+  "notes": [
+    "weights describe the distribution FROZEN at synthesis/quench (T_f), not at the measuring temperature",
+    "fractions refer to the site; W7 = the 2d bipyramid (the CIF has a half-occupied split 4f)"
+  ]
+}

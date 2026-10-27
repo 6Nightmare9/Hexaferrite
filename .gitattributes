@@ -1,0 +1,15 @@
+* -text
+*.pdf filter=lfs diff=lfs merge=lfs -text
+*.zip filter=lfs diff=lfs merge=lfs -text
+*.npz filter=lfs diff=lfs merge=lfs -text
+*.npy filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text
+*.jpg filter=lfs diff=lfs merge=lfs -text
+*.jpeg filter=lfs diff=lfs merge=lfs -text
+*.tif filter=lfs diff=lfs merge=lfs -text
+*.tiff filter=lfs diff=lfs merge=lfs -text
+*.bundle filter=lfs diff=lfs merge=lfs -text
+*.tar.gz filter=lfs diff=lfs merge=lfs -text
+"raw/theory_side/06_literature/L02_Morch2023/supporting/CIFs/pdCIF_SrCo2Fe16O27.cif" filter=lfs diff=lfs merge=lfs -text
+"raw/theory_side/06_literature/L02_Morch2023/supporting/CIFs/pdCIF_SrCoZnFe16O27.cif" filter=lfs diff=lfs merge=lfs -text
+"raw/theory_side/06_literature/L02_Morch2023/supporting/CIFs/pdCIF_SrZn2Fe16O27.cif" filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,70 @@
+{
+  "updated_utc": "2026-10-26T23:24:59+00:00",
+  "project_commit": "775ba8d1dec4139cd0781dd0799333890958a495",
+  "scope": "UI/guide only; numerical theory and original nine sealed forecasts unchanged",
+  "python_ui_tests": {
+    "tests": 13,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "offline_client_tests": "passed: six analysis forms, Co-Zn preset and submission, invalid ranges/JSON, result table and error display",
+  "network_or_browser_used_in_client_tests": false,
+  "core_fingerprint_unchanged": true,
+  "first_example": {
+    "run": "C:\\MIPT\\working_stuff\\Hexx\\runs\\predictions\\18c50a7ba827c171543f",
+    "model_version": "mv-ead425269326e5153201",
+    "execution": "local forecast CLI, not browser interaction",
+    "field_sweep": [
+      {
+        "T_K": 300.0,
+        "mu0H_T": 0.0,
+        "status": "computed_unvalidated",
+        "n_valid": 48,
+        "n_total": 48,
+        "f_low_median_GHz": 7.375023471306978,
+        "f_low_lo95_GHz": 0.7316166532822956,
+        "f_low_hi95_GHz": 40.895914066344304
+      },
+      {
+        "T_K": 300.0,
+        "mu0H_T": 0.4,
+        "status": "computed_unvalidated",
+        "n_valid": 48,
+        "n_total": 48,
+        "f_low_median_GHz": 13.285184141762286,
+        "f_low_lo95_GHz": 0.24475475718650738,
+        "f_low_hi95_GHz": 52.89881645328511
+      },
+      {
+        "T_K": 300.0,
+        "mu0H_T": 0.8,
+        "status": "computed_unvalidated",
+        "n_valid": 48,
+        "n_total": 48,
+        "f_low_median_GHz": 21.323924827767257,
+        "f_low_lo95_GHz": 4.1990628625715605,
+        "f_low_hi95_GHz": 62.26918858830849
+      }
+    ]
+  },
+  "interface": {
+    "status": "listening",
+    "url": "http://127.0.0.1:8765",
+    "launcher_pid": 14092,
+    "stdout": "C:\\MIPT\\working_stuff\\Hexx\\audit\\ui-reviewed-20261027.stdout.log",
+    "stderr": "C:\\MIPT\\working_stuff\\Hexx\\audit\\ui-reviewed-20261027.stderr.log",
+    "pid": 15980,
+    "browser_visual_test": "blocked by browser tool origin approval; not completed"
+  },
+  "browser": {
+    "visual_test_completed": false,
+    "inventory_connected": true,
+    "local_plugin_enabled": true,
+    "reason_reported": "A saved user permission setting blocks this action; origin approval gate did not grant access for http://127.0.0.1:8765",
+    "exact_saved_rule_located": false,
+    "native_settings_capture_showed_requested_settings": false,
+    "next": "Inspect user-provided browser Agent permissions settings or retry after a confirmed policy change; never bypass via another browser/screenshot surface."
+  },
+  "guide": "GUIDE/USER_GUIDE_HEXW_RU.md"
+}

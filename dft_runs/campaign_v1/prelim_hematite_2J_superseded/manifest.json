@@ -1,0 +1,79 @@
+{
+ "checksums": {
+  "fe_pbe_v1.5.uspp.F.UPF": "6c132e6e7ac1c42df5cb6a13d0c99bb7af5bf3d6e2349f5658f0c22abfe3911a",
+  "o_pbe_v1.2.uspp.F.UPF": "0640f61fa934269f2500e1cb91f01e48c1d0c3c4ce924f62c2ab35567cfdea41"
+ },
+ "command": "dft generate",
+ "finished_utc": "2026-10-26T03:54:55.751540+00:00",
+ "git_head": {},
+ "model_version": null,
+ "notes": "checksums = sha256 of the pseudopotential files; stage: generate only, no pw.x was run",
+ "package_versions": {
+  "PyYAML": "6.0.3",
+  "numpy": "2.5.4",
+  "pymatgen": "2026.10.24",
+  "python": "3.13.15",
+  "scipy": "1.18.1"
+ },
+ "resources": {
+  "max_parallel": 3
+ },
+ "run_id": "dft-campaign_v1-hematite_alpha-Fe2O3-20261026T035455Z",
+ "settings": {
+  "campaign": "campaign_v1",
+  "composition": "hematite_alpha-Fe2O3",
+  "config_sha256": "52a4609ee2c9ecf3c6b78e3358c18885dd06361fe0120f65e33020e181c71959",
+  "convention": "H = -sum_{i<j} J_ij S_i.S_j; each pair once; |S| = spin quantum number (Fe3+ 5/2, Fe2+ 2, Mn2+ 5/2, Co2+ 3/2); J>0 ferromagnetic; J in meV; energies per simulation cell",
+  "cutoff_status": "pilot",
+  "ecutrho_Ry": 240.0,
+  "ecutwfc_Ry": 40.0,
+  "hubbard": {
+   "U_eff_eV": {
+    "Co": 3.0,
+    "Fe": 3.0,
+    "Mn": 3.0,
+    "Zn": null
+   },
+   "U_eff_status": {
+    "Co": "assumption",
+    "Fe": "literature",
+    "Mn": "assumption",
+    "Zn": "not_applied"
+   },
+   "U_sensitivity_scenarios_eV": {
+    "Co": [
+     2.0,
+     3.0,
+     4.0,
+     5.0
+    ],
+    "Fe": [
+     2.0,
+     3.0,
+     4.0,
+     5.0
+    ],
+    "Mn": [
+     2.0,
+     3.0,
+     4.0,
+     5.0
+    ]
+   },
+   "kind": "Dudarev",
+   "projector": "ortho-atomic"
+  },
+  "input_sha256": {
+   "c00_ground": "ada1f5726ebdeb0087a152dd7a0a13a0f5087279101ba89478d3690385847fb4",
+   "c01_flip_Fe3_Fe4": "db328597909c3002b09f2e2f90dfc90a5f2d8893654dcd0dc1c09e6a597cee59",
+   "c02_flip_Fe2_Fe3": "f2636d631ac5c9a9e4552d5dbb37b33e729389b8bf0a15cd0e4a8e1b6bcd1c45",
+   "c03_flip_Fe2_Fe4": "78fb98fd02d217f2d9dd93aadab63a63ad9bc73d298e718ad3c6d595b1f030fc",
+   "c04_flip_Fe4": "da99b236205c908b6d7fc9ba65d4ea4160d0f5f1c255d5446f106b2763ab08fd"
+  },
+  "kind": "hematite",
+  "pseudo_profile": "gbrv_pilot",
+  "qe_version_expected": "7.6"
+ },
+ "started_utc": "2026-10-26T03:54:55.751540+00:00",
+ "state": "completed"
+}

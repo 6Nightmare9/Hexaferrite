@@ -1,0 +1,191 @@
+{
+ "composition_dir": "D:\\Work\\Hexx\\dft_runs\\campaign_v1\\hematite_alpha-Fe2O3",
+ "convention": "H = -sum_{i<j} J_ij S_i.S_j; each pair once; |S| = spin quantum number (Fe3+ 5/2, Fe2+ 2, Mn2+ 5/2, Co2+ 3/2); J>0 ferromagnetic; J in meV; energies per simulation cell",
+ "class_labels": [
+  "shell0_2.90A+shell2_3.36A",
+  "shell1_2.97A",
+  "shell3_3.71A"
+ ],
+ "excluded_configurations": {},
+ "config_sha256": "e3890a568388ffd62fceaabb391ee38a683c5a0116aa7c7cfe6a0f9b5f5bc2d7",
+ "status": "ok_with_notes",
+ "notes": [
+  "dof = 0: exactly determined fit, uncertainties come from the assumed noise floor only",
+  "hold-out disagrees (max |z| = 13.0, rms error 7.27 meV): the spin model is incomplete for these classes; model error added to the J uncertainties"
+ ],
+ "E0_meV_relative_to_mean_fit_energy": -1.3969838619232178e-09,
+ "E_ref_meV": -16256739.227649495,
+ "J_meV": [
+  -25.82024222005159,
+  -1.0543341855580608,
+  -5.234329649601132
+ ],
+ "sigma_J_stat_meV": [
+  0.02,
+  0.006666666666666667,
+  0.0033333333333333335
+ ],
+ "sigma_J_meV": [
+  0.2914814386663002,
+  0.09716047955543342,
+  0.04858023977771671
+ ],
+ "holdout_consistent": false,
+ "sigma_model_meV": 7.269861978013068,
+ "sigma_basis": "noise_floor",
+ "sigma_used_meV": 0.5,
+ "dof": 0,
+ "rms_residual_meV": 4.0194366942304644e-14,
+ "s_resid_meV": null,
+ "residuals_meV": {
+  "c00_ground": 0.0,
+  "c01_flip_Fe3_Fe4": 5.684341886080802e-14,
+  "c02_flip_Fe2_Fe4": -5.684341886080802e-14,
+  "c03_flip_Fe2_Fe3": 0.0
+ },
+ "loo_error_meV": {
+  "c00_ground": null,
+  "c01_flip_Fe3_Fe4": null,
+  "c02_flip_Fe2_Fe4": null,
+  "c03_flip_Fe2_Fe3": null
+ },
+ "holdout": {
+  "error_meV": [
+   -7.269861978013068
+  ],
+  "predicted_meV": [
+   -1.3969838619232178e-09
+  ],
+  "sigma_pred_meV": [
+   0.5590169943749475
+  ],
+  "z": [
+   -13.004724455902641
+  ],
+  "rms_meV": 7.269861978013068,
+  "max_abs_meV": 7.269861978013068,
+  "config_ids": [
+   "c04_flip_Fe4"
+  ]
+ },
+ "max_condition_number": 1000.0,
+ "conditioning": {
+  "cond_scaled": 1.0000000000000002,
+  "cond_raw": 75.0,
+  "singular_values_scaled": [
+   1.0,
+   0.9999999999999999,
+   0.9999999999999999,
+   0.9999999999999998
+  ],
+  "singular_values_raw": [
+   150.0,
+   75.0,
+   24.999999999999996,
+   2.0
+  ],
+  "rank": 4,
+  "n_columns": 4,
+  "n_rows": 4
+ },
+ "fit_configurations": [
+  "c00_ground",
+  "c01_flip_Fe3_Fe4",
+  "c02_flip_Fe2_Fe4",
+  "c03_flip_Fe2_Fe3"
+ ],
+ "holdout_configurations": [
+  "c04_flip_Fe4"
+ ],
+ "energy_range_meV": 1430.6555029414594,
+ "J_in_kelvin": [
+  -299.63146875044913,
+  -12.23504016268439,
+  -60.741873273986556
+ ],
+ "class_info": [
+  {
+   "label": "shell0_2.90A+shell2_3.36A",
+   "n_bonds": 2,
+   "d_min": 2.900383199999996,
+   "d_max": 2.9003831999999976,
+   "shells": [
+    [
+     2.9003831999999967,
+     2
+    ]
+   ],
+   "n_distinct_shells": 1,
+   "paths": {
+    "face (3 O)": 2
+   },
+   "mean_Fe_O_Fe_angle_corner_deg": null,
+   "spin_products": [
+    6.25
+   ],
+   "combination": "J[shell0_2.90A] + 3*J[shell2_3.36A]",
+   "merged_with": [
+    "shell2_3.36A"
+   ]
+  },
+  {
+   "label": "shell1_2.97A",
+   "n_bonds": 6,
+   "d_min": 2.970953832439454,
+   "d_max": 2.9709538324394553,
+   "shells": [
+    [
+     2.9709538324394544,
+     6
+    ]
+   ],
+   "n_distinct_shells": 1,
+   "paths": {
+    "edge (2 O)": 6
+   },
+   "mean_Fe_O_Fe_angle_corner_deg": null,
+   "spin_products": [
+    6.25
+   ]
+  },
+  {
+   "label": "shell3_3.71A",
+   "n_bonds": 12,
+   "d_min": 3.705271440049221,
+   "d_max": 3.7052714400492253,
+   "shells": [
+    [
+     3.705271440049223,
+     12
+    ]
+   ],
+   "n_distinct_shells": 1,
+   "paths": {
+    "corner (1 O)": 12
+   },
+   "mean_Fe_O_Fe_angle_corner_deg": 131.58206008511056,
+   "spin_products": [
+    6.25
+   ]
+  }
+ ],
+ "inputs_sha256": {
+  "c00_ground": "619ecdd390c3c26fc1e1152960441ffd3af04f68103b6fd43aa6bd5f63f29ea5",
+  "c01_flip_Fe3_Fe4": "c06b3ba711f1e062398cd44a73869f8cc136cd9ca5a2eeb255a8b53fce55009a",
+  "c02_flip_Fe2_Fe4": "a710ac46503b11a93c79e0697cf87f1684ae8c2691c0bce6e085c2f664447ab5",
+  "c03_flip_Fe2_Fe3": "96347864115a7e5ff7116b085f4fd40ec0f33b782d01c58fae3ab9bd2aa85865",
+  "c04_flip_Fe4": "a0f35f70d24110c26b8f62ff461e60329934615e8d5acf3e2bb16a68fdd24c7e"
+ },
+ "outputs_sha256": {
+  "c00_ground": "6aed3f0e70ab92af9b6772e065e5e25b35ec8f6736e32772856f134c456328e9",
+  "c01_flip_Fe3_Fe4": "c58b7c22646178fbe9405ac6efaa9744e23074e7817a2409192cd45f16456c07",
+  "c02_flip_Fe2_Fe4": "0a1408f34c3e0dce065e84dd6c6b7b0b70cf2eb0d384d92d6ec1b9ae09c67467",
+  "c03_flip_Fe2_Fe3": "31c314d1eded0da530723773980c382fbdc2beaa2702ef1c8bae18a5b4984d86",
+  "c04_flip_Fe4": "323db76b7302ac6234fb403a4622982accec605e0022de7723640d489014800d"
+ },
+ "provenance_sha256": "d675c9124860a45372a9ca7ea61e519405725b4113129f40518864a3cf93579a",
+ "qe_versions": [
+  "7.6"
+ ],
+ "n_estimates": 3
+}

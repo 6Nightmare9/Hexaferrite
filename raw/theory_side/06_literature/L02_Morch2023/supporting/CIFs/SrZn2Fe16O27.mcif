@@ -1,0 +1,84 @@
+data_SrZn2Fe16O27_Magnetic
+
+_space_group_magn.number_BNS 194.270
+_cell_length_a  5.908361(7)
+_cell_length_b  5.908361(7)
+_cell_length_c  32.83268(4)
+_cell_angle_alpha 90
+_cell_angle_beta  90
+_cell_angle_gamma 120
+
+loop_
+_space_group_symop_magn_operation.id
+_magnetic_space_group_symop_operation_xyz
+_magnetic_space_group_symop_operation_mxmymz
+_magnetic_space_group_symop_operation_timereversal
+	  1 -x,-x+y,-z  mx,mx-my,mz -1
+	  2 -x,-x+y,z+1/2  -mx,-mx+my,mz -1
+	  3 -x,-y,-z  mx,my,mz +1
+	  4 -x,-y,z+1/2  -mx,-my,mz +1
+	  5 -x+y,-x,-z+1/2  mx-my,mx,mz +1
+	  6 -x+y,-x,z  -mx+my,-mx,mz +1
+	  7 -x+y,y,-z+1/2  mx-my,-my,mz -1
+	  8 -x+y,y,z  -mx+my,my,mz -1
+	  9 -y,-x,-z+1/2  my,mx,mz -1
+	 10 -y,-x,z  -my,-mx,mz -1
+	 11 -y,x-y,-z+1/2  my,-mx+my,mz +1
+	 12 -y,x-y,z  -my,mx-my,mz +1
+	 13 y,-x+y,-z  -my,mx-my,mz +1
+	 14 y,-x+y,z+1/2  my,-mx+my,mz +1
+	 15 y,x,-z  -my,-mx,mz -1
+	 16 y,x,z+1/2  my,mx,mz -1
+	 17 x-y,-y,-z  -mx+my,my,mz -1
+	 18 x-y,-y,z+1/2  mx-my,-my,mz -1
+	 19 x-y,x,-z  -mx+my,-mx,mz +1
+	 20 x-y,x,z+1/2  mx-my,mx,mz +1
+	 21 x,y,-z+1/2  -mx,-my,mz +1
+	 22 x,y,z  mx,my,mz +1
+	 23 x,x-y,-z+1/2  -mx,-mx+my,mz -1
+	 24 x,x-y,z  mx,mx-my,mz -1
+
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_symmetry_multiplicity
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_B_iso_or_equiv
+Sr1 Sr+2   2 0 0 0.25 1 0.788(14)
+Fe1 Fe+3   4 0 0 0.056523(18) 0.421(2) 0.224(9)
+Zn1 Zn+2   4 0 0 0.056523(18) 0.579(2) 0.224(9)
+Fe2 Fe+3   4 0.3333333 0.6666667 0.593981(15) 0.855(3) 0.228(9)
+Zn2 Zn+2   4 0.3333333 0.6666667 0.593981(15) 0.145(3) 0.228(9)
+Fe3 Fe+3   6 0.5 0 0 0.903(2) 0.346(7)
+Zn3 Zn+2   6 0.5 0 0 0.097(2) 0.346(7)
+Fe4 Fe+3   4 0.3333333 0.6666667 0.424848(14) 1.000(3) 0.260(7)
+Zn4 Zn+2   4 0.3333333 0.6666667 0.424848(14) 0.000(3) 0.260(7)
+Fe5 Fe+3  12 0.16380(3) 0.32759(6) 0.151311(6) 1.000(2) 0.221(5)
+Zn5 Zn+2  12 0.16380(3) 0.32759(6) 0.151311(6) 0.000(2) 0.221(5)
+Fe6 Fe+3   4 0.3333333 0.6666667 0.708565(14) 0.964(3) 0.212(9)
+Zn6 Zn+2   4 0.3333333 0.6666667 0.708565(14) 0.036(3) 0.212(9)
+Fe7 Fe+3   4 0.3333333 0.6666667 0.24503(3) 0.500(2) 0.000(14)
+Zn7 Zn+2   4 0.3333333 0.6666667 0.24503(3) 0.000(2) 0.000(14)
+O1 O-2  12 0.17828(6) 0.35655(12) 0.035228(14) 1 0.415(9)
+O2 O-2   4 0.3333333 0.6666667 0.53490(3) 1 0.366(17)
+O3 O-2  12 0.48905(7) -0.02190(14) 0.110547(14) 1 0.390(9)
+O4 O-2   4 0 0 0.11476(3) 1 0.400(17)
+O5 O-2  12 0.83714(6) 0.67429(13) 0.180507(12) 1 0.374(9)
+O6 O-2   4 0.3333333 0.6666667 0.31935(3) 1 0.462(19)
+O7 O-2   6 0.51518(9) 0.03037(19) 0.25 1 0.567(14)
+
+loop_
+_magnetic_atom_site_moment_label
+_magnetic_atom_site_moment_crystalaxis_mx
+_magnetic_atom_site_moment_crystalaxis_my
+_magnetic_atom_site_moment_crystalaxis_mz
+Fe1 0 0 0.1229(14)
+Fe2 0 0 0.1377(6)
+Fe3 0.0265(17) 0.053(3) -0.0914(6)
+Fe4 0 0 -0.1089(5)
+Fe5 -0.0270(13) -0.054(3) -0.0940(3)
+Fe6 0 0 0.1329(5)
+Fe7 0 0 -0.1159(7)

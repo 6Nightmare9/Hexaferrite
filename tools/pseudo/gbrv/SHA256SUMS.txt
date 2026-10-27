@@ -1,0 +1,3 @@
+6c132e6e7ac1c42df5cb6a13d0c99bb7af5bf3d6e2349f5658f0c22abfe3911a *fe_pbe_v1.5.uspp.F.UPF
+0640f61fa934269f2500e1cb91f01e48c1d0c3c4ce924f62c2ab35567cfdea41 *o_pbe_v1.2.uspp.F.UPF
+292f7f1da5cae4b18da817ab2e82943ad90e74f267a06a6172db8dbcb6edf0ce *sr_pbe_v1.uspp.F.UPF

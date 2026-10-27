@@ -1,0 +1,41 @@
+C004 10.2109/jcersj2.25033 не скачано: err:IncompleteRead(31534 bytes read):https://www.jstage.jst.go.jp/article/jcersj2/133/6
+C007 10.1080/27660400.2024.2442903 не скачано: err:HTTP Error 403: Forbidden:https://www.tandfonline.com/doi/pdf/10.1080/276604
+C013 10.1039/d2dt02091b не скачано: err:HTTP Error 403: Forbidden:https://pubs.rsc.org/en/content/articlepdf/2023/dt
+C014 10.3390/magnetochemistry8080075 не скачано: err:HTTP Error 403: Forbidden:https://www.mdpi.com/2312-7481/8/8/75/pdf?version=
+C015 10.1063/5.0087172 PDF проверен: title word overlap 1.00
+C023 10.48550/arxiv.1407.3605 PDF проверен: title word overlap 1.00
+C029 10.3390/cryst16080511 не скачано: err:HTTP Error 403: Forbidden:https://www.mdpi.com/2073-4352/16/8/511/pdf?versio
+C031 10.3390/mi17050534 не скачано: err:HTTP Error 403: Forbidden:https://doi.org/10.3390/mi17050534
+C033 10.3390/app142210631 не скачано: err:HTTP Error 403: Forbidden:https://www.mdpi.com/2076-3417/14/22/10631/pdf?ver
+C036 10.3390/ma16175897 не скачано: err:HTTP Error 403: Forbidden:https://www.mdpi.com/1996-1944/16/17/5897/pdf?vers
+C038 10.59628/jast.v1i1.100 PDF проверен: title word overlap 1.00
+C040 10.18090/samriddhi.v13spli02.32 PDF проверен: title word overlap 1.00
+C041 10.13005/msri/180305 PDF проверен: title word overlap 1.00
+C042 10.1088/1742-6596/1943/1/012011 не скачано: err:<urlopen error [SSL: UNEXPECTED_EOF_WHIL:https://iopscience.iop.org/article/10.1088/
+C043 10.1088/1757-899x/1198/1/012005 не скачано: err:<urlopen error [SSL: UNEXPECTED_EOF_WHIL:https://iopscience.iop.org/article/10.1088/
+C044 10.47011/13.1.1 PDF проверен: title word overlap 1.00
+C045 10.52700/jn.v1i2.15 PDF проверен: title word overlap 0.86
+C046 10.1088/1757-899x/782/2/022038 не скачано: err:<urlopen error [SSL: UNEXPECTED_EOF_WHIL:https://iopscience.iop.org/article/10.1088/
+C047 10.13005/msri/170106 не скачано: html-stub:https://doi.org/10.13005/msri/170106
+C052 10.3379/msjmag.1506r003 PDF проверен: title word overlap 1.00
+C053 10.29369/ijrbat.2015.03.ii.0024 PDF проверен: title word overlap 1.00
+C054 10.1088/1757-899x/81/1/012003 не скачано: err:<urlopen error [SSL: UNEXPECTED_EOF_WHIL:https://iopscience.iop.org/article/10.1088/
+C055 None не скачано: html-stub(pdf-meta not pdf):https://european-science.com/eojnss/article/view/923/pdf
+C056 10.4236/msce.2013.14002 PDF проверен: title word overlap 1.00
+C057 10.1063/1.3670062 PDF проверен: title word overlap 1.00
+C060 10.1088/1742-6596/303/1/012045 PDF проверен: title word overlap 0.90
+C064 10.2320/matertrans1989.41.567 не скачано: pdf-title-mismatch(title word overlap 0.00):https://www.jstage.jst.go.jp/article/matertr
+C066 10.2497/jjspm.43.995 PDF проверен: title word overlap 1.00
+C069 10.1541/ieejfms1990.114.4_320 не скачано: pdf-title-mismatch(title word overlap 0.00):https://www.jstage.jst.go.jp/article/ieejfms
+C070 10.1541/ieejfms1990.113.4_306 не скачано: pdf-title-mismatch(title word overlap 0.00):https://www.jstage.jst.go.jp/article/ieejfms
+C106 10.1021/acs.chemmater.4c02205 PDF проверен: title word overlap 0.91
+C107 10.3390/magnetism5020014 не скачано: err:HTTP Error 403: Forbidden:https://www.mdpi.com/2673-8724/5/2/14/pdf?version=
+C108 10.1103/physrevb.110.014432 PDF проверен: title word overlap 1.00
+C109 10.1103/physrevapplied.20.024016 PDF проверен: title word overlap 1.00
+C110 2306.11952 PDF проверен: title word overlap 1.00
+C111 10.1103/physrevmaterials.5.094415 PDF проверен: title word overlap 0.89
+C113 10.1063/1.5084762 PDF проверен: title word overlap 1.00
+C116 10.1063/1.4922867 PDF проверен: title word overlap 1.00
+C118 1510.00513 PDF проверен: title word overlap 0.62
+C121 10.1016/j.jmmm.2013.08.006 PDF проверен: title word overlap 1.00
+done

@@ -1,0 +1,221 @@
+{
+  "status": "computed_unvalidated",
+  "n_valid": 48,
+  "n_total": 48,
+  "valid_fraction": 1.0,
+  "lowest_ground_mode_Hz": {
+    "median": 44934663071.725586,
+    "lo95": 30913550582.233757,
+    "hi95": 60266703350.9208,
+    "n_valid": 48,
+    "n_total": 48
+  },
+  "mode_definition": "lowest undamped eigenfrequency among degenerate ground states per draw",
+  "all_ground_modes_Hz_by_draw": [
+    [
+      32740720500.64685
+    ],
+    [
+      57545753619.14631
+    ],
+    [
+      60463487031.876045
+    ],
+    [
+      43031873756.00176
+    ],
+    [
+      38017840873.024796
+    ],
+    [
+      55126582469.21343
+    ],
+    [
+      41507209087.80897
+    ],
+    [
+      33204427683.03992
+    ],
+    [
+      52719415333.106636
+    ],
+    [
+      48415399111.95376
+    ],
+    [
+      46305159849.07878
+    ],
+    [
+      45519220515.966324
+    ],
+    [
+      39035027392.73158
+    ],
+    [
+      39178021233.63741
+    ],
+    [
+      45470888740.0859
+    ],
+    [
+      33036213909.91939
+    ],
+    [
+      49308344968.39171
+    ],
+    [
+      55195651882.662636
+    ],
+    [
+      58080622617.49193
+    ],
+    [
+      44398437403.365265
+    ],
+    [
+      28334034717.41513
+    ],
+    [
+      37560648213.04806
+    ],
+    [
+      40248400839.30343
+    ],
+    [
+      39172553002.114334
+    ],
+    [
+      37163226798.39239
+    ],
+    [
+      39411652582.54729
+    ],
+    [
+      57743262942.08947
+    ],
+    [
+      56872894382.489204
+    ],
+    [
+      30525969084.388554
+    ],
+    [
+      49689471147.71548
+    ],
+    [
+      59339008854.98895
+    ],
+    [
+      43593233051.98838
+    ],
+    [
+      49249059567.24687
+    ],
+    [
+      48172989175.50753
+    ],
+    [
+      49324396706.560265
+    ],
+    [
+      52756951970.013466
+    ],
+    [
+      37843508512.14266
+    ],
+    [
+      51785596752.18486
+    ],
+    [
+      48784738379.75766
+    ],
+    [
+      54023222283.49124
+    ],
+    [
+      81544532371.38937
+    ],
+    [
+      42682227490.78214
+    ],
+    [
+      40621478093.535515
+    ],
+    [
+      43410170785.17772
+    ],
+    [
+      38075046302.00221
+    ],
+    [
+      41057675587.94748
+    ],
+    [
+      52172388470.063484
+    ],
+    [
+      33253435655.761322
+    ]
+  ],
+  "ground_state_counts": {
+    "axial": 48
+  },
+  "failures": {},
+  "external_passivity_min": -3.350513137256916e-63,
+  "linewidth_of_mean_external_chi_xx": {
+    "status": "multipeak",
+    "peak_x": 53968410065.89227,
+    "peak_y": 1.1873026720741109,
+    "half_level": 0.5936513360370554,
+    "x_left": 47450668726.086006,
+    "x_right": 58263667010.72562,
+    "width": null,
+    "width_estimate": null,
+    "center_half_max": 52857167868.40581,
+    "mode_x": 44934663071.725586,
+    "n_points_in_fwhm": 0,
+    "censored_sides": [],
+    "peaks": [
+      33059581854.39327,
+      39162064992.28361,
+      43291512259.598976,
+      49092097071.64253,
+      53968410065.89227
+    ],
+    "n_expansions": 0,
+    "x_range": [
+      100000000.0,
+      100000000000.0
+    ],
+    "notes": [
+      "4 other significant maxima at/above half level"
+    ],
+    "noise_sigma": 0.0007009442137317758,
+    "smoothed_window": 0,
+    "asymmetric_possible_doublet": false
+  },
+  "sampled_absorption_peak_Hz": {
+    "median": 45055000000.0,
+    "lo95": 31085650000.000004,
+    "hi95": 60472899999.99999,
+    "n_valid": 48,
+    "n_total": 48
+  },
+  "sampled_fwhm_Hz": {
+    "median": 3317392836.0728607,
+    "lo95": 3317392836.0728607,
+    "hi95": 3317392836.0728607,
+    "n_valid": 1,
+    "n_total": 48
+  },
+  "fwhm_status_counts": {
+    "insufficient_resolution": 47,
+    "valid": 1
+  },
+  "linewidth_note": "ensemble spectrum with specified alpha; not an inferred intrinsic damping or total sample linewidth",
+  "statistics": "conditional on valid ferrimagnetic draws; invalid/above-Tc draws not filled with zero",
+  "domain_population": "equal weights of all degenerate ground states; equilibrium, no magnetic-history fit",
+  "T_K": 300.0,
+  "mu0H_T": 0.3,
+  "wall_s": 1.548
+}

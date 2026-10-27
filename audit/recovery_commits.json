@@ -1,0 +1,16 @@
+{
+  "registry": {
+    "before": "197090d4aa2651bb42eaf266508e85cd16aa06dc",
+    "after": "a3ff4c8926a74f2c0653d69f522c4f8dd1b78802",
+    "branch": "codex/recovery-2026-10-26",
+    "dirty": "",
+    "purpose": "recovery snapshot; existing file bytes preserved"
+  },
+  "literature": {
+    "before": "00ad6af197b7df7264d4c6b378d87f90d1c747f4",
+    "after": "5de47ebb27771f6a18604c15e6a0807a296cd7d6",
+    "branch": "codex/recovery-2026-10-26",
+    "dirty": "",
+    "purpose": "recovery snapshot; existing file bytes preserved"
+  }
+}

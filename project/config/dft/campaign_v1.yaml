@@ -1,0 +1,128 @@
+# DFT campaign v1 (hexw.dft). The settings are FIXED BEFORE any laboratory comparison and are chosen from the fit
+# literature and from physics only (TZ section 8: "our verification values must not determine the DFT settings").
+# The sha256 of the canonical JSON form of this file goes into the RunManifest, every status/result/provenance record.
+schema: 1
+campaign: campaign_v1
+runs_root: dft_runs                     # relative to HEXW_ROOT (outside project/); <runs_root>/<campaign>/<composition>/<config_id>/
+
+engine:
+  name: quantum_espresso
+  version_expected: "7.6"              # MSYS2 UCRT64 build, serial + OpenMP, no MPI (dft_feasibility/install_log.md)
+  bin_dir: tools/qe_ucrt64/ucrt64/bin  # relative to HEXW_ROOT
+  executable: pw_big.exe               # pw.exe overflows the stack even on a 10-atom cell (found in the smoke run)
+  omp_threads: 1                       # OpenMP only slows this build down (FEASIBILITY section 1): 1 thread per process
+  memory_budget_GB: 10.0               # of 15.2 GB (FEASIBILITY section 2); max_parallel x ram_GB must fit
+  max_parallel: 3                      # memory bound for the 92-atom cell: 3.3 GB per process, 15.2 GB machine
+
+# ---- literature basis: values fixed from the fit record L05 (Islam 2025, SrFe18O27 DFT) ---------------------------
+literature_basis:
+  U_eff_Fe_eV: {rec_id: L05-001, value: 3.0}      # checked against hexw.params.literature at load time
+  plane_wave_cutoff_paper: {rec_id: L05-002, value: 600.0, unit: eV, note: "VASP PAW; not transferable to GBRV/SSSP"}
+  scf_threshold_paper: {rec_id: L05-003, value: 1.0e-6, unit: eV, note: "total energy, VASP"}
+  functional: "PBE (GGA), Dudarev DFT+U, collinear Gorter ferrimagnet - as in L05"
+  deviations_from_L05:
+    - "Gamma-only k mesh instead of Gamma-centred 5x5x1 (laptop budget, FEASIBILITY section 4); needs a 2x2x1 check on 2-3 configurations"
+    - "Quantum ESPRESSO ultrasoft/PAW pseudopotentials instead of VASP PAW; ortho-atomic Hubbard projectors instead of the VASP sphere projection"
+    - "U on Co and Mn is NOT from L05 (Fe only)"
+
+dft:
+  functional: PBE
+  nspin: 2
+  hubbard:
+    kind: Dudarev                      # U_eff = U - J
+    # ortho-atomic: Loewdin-orthogonalised atomic projectors. Chosen because the projectors are orthonormal, so the d occupation
+    # is bounded and U does not depend on the overlap of neighbouring atomic wfc in the dense Fe-O network; implemented with
+    # forces/stress in QE >= 7.1. The non-orthogonal 'atomic' projectors were NOT chosen. Checked to run with the GBRV
+    # ultrasoft Fe (smoke run, hematite).
+    projector: ortho-atomic
+    U_eff_eV:
+      Fe: 3.0                          # L05-001 (literature)
+      Co: 3.0                          # ASSUMPTION: the L05 Fe value is carried over to Co2+ (no source in the fit corpus)
+      Mn: 3.0                          # ASSUMPTION: same; Mn2+/Mn3+ hypotheses; sensitivity analysis later (TZ 8.5)
+      Zn: null                         # no U (3d10)
+    U_eff_status: {Fe: literature, Co: assumption, Mn: assumption, Zn: not_applied}
+    U_sensitivity_scenarios_eV: {Fe: [2.0, 3.0, 4.0, 5.0], Co: [2.0, 3.0, 4.0, 5.0], Mn: [2.0, 3.0, 4.0, 5.0]}   # NOT run in v1
+  occupations:
+    kind: smearing                     # insulator, but a flip may change the occupations; fixed tot_magnetization
+    smearing: gaussian                 # would bias the configuration, so it is NOT fixed (moments are checked after the run)
+    degauss_Ry: 0.005
+    tot_magnetization: null
+  scf:
+    conv_thr_per_atom_Ry: 1.0e-8       # conv_thr = value * nat  (92 atoms: 9.2e-7 Ry = 0.0125 meV)
+    mixing_beta: 0.3
+    mixing_mode: local-TF              # inhomogeneous cell (layered: spinel and R blocks)
+    electron_maxstep: 200
+    diagonalization: david
+  starting_magnetization:              # fraction of the valence electrons, sign from the Gorter pattern
+    Fe: 0.4
+    Co: 0.3
+    Mn: 0.4
+  verbosity: high                      # prints the moments per site and the Hubbard occupations
+  disk_io: low
+  keep_scratch: false                  # tmp/ (wfc, charge density) is deleted after a successful run
+  atomic_masses: {Sr: 87.62, Fe: 55.845, Co: 58.933, Zn: 65.38, Mn: 54.938, O: 15.999}
+
+pseudo_profile: gbrv_pilot             # active profile
+pseudo_profiles:
+  gbrv_pilot:
+    dir: tools/pseudo/use              # relative to HEXW_ROOT
+    files: {Fe: fe_pbe_v1.5.uspp.F.UPF, O: o_pbe_v1.2.uspp.F.UPF, Sr: sr_pbe_v1.uspp.F.UPF,
+            Zn: Zn_pbe_v1.uspp.F.UPF, Co: Co_pbe_v1.2.uspp.F.UPF, Mn: mn_pbe_v1.5.uspp.F.UPF}
+    ecutwfc_Ry: 40.0
+    ecutrho_Ry: 240.0
+    cutoff_status: pilot               # PILOT cutoffs (as in the dft_feasibility pilots); not converged by us (TZ 8.4 still open)
+    note: "GBRV ultrasoft set (Fe 1.5, O 1.2, Sr 1, Zn 1, Co 1.2, Mn 1.5); Sr, Zn, Co, Mn are the same files as in the SSSP 1.3 efficiency set"
+  sssp_efficiency:
+    dir: tools/pseudo/sssp_eff
+    files: {Fe: Fe.pbe-spn-kjpaw_psl.0.2.1.UPF, O: O.pbe-n-kjpaw_psl.0.1.UPF, Sr: Sr_pbe_v1.uspp.F.UPF,
+            Zn: Zn_pbe_v1.uspp.F.UPF, Co: Co_pbe_v1.2.uspp.F.UPF, Mn: mn_pbe_v1.5.uspp.F.UPF}
+    metadata: tools/pseudo/sssp_1.3.0_pbe_eff_dl/SSSP_1.3.0_PBE_efficiency.json
+    cutoffs: from_sssp_metadata        # max over the elements present (Fe PAW: 90/1080 Ry)
+    cutoff_status: sssp_recommended_not_feasible_on_laptop
+    note: "SSSP 1.3.0 PBE efficiency recommendation; the density grid for 92 atoms is ~9x larger than at 40/240 (rough, not measured)"
+
+systems:
+  W92:
+    description: "SrFe(18-x)A(x)O27, hexagonal cell, 92 atoms, Gamma only (FEASIBILITY pilot c: 290 s/iteration, 3.3 GB)"
+    kpoints: [1, 1, 1]
+    seconds_per_scf_iteration: 290.0   # MEASURED in the pilot (the geometry of that pilot is holdout-derived; only the number is used)
+    scf_iterations: 40                 # FEASIBILITY section 3: 40-60 from scratch for AFM-like configurations; 40 taken
+    ram_GB: 3.3
+    atoms_ref: 92
+  hematite:
+    description: "alpha-Fe2O3, R-3c, rhombohedral cell, 10 atoms (smoke test of the chain)"
+    kpoints: [2, 2, 2]
+    seconds_per_scf_iteration: 5.0     # measured in the smoke run of this stage (ortho-atomic, 14 iterations, 70 s)
+    scf_iterations: 14
+    ram_GB: 0.25
+    atoms_ref: 10
+    exchange:                          # overrides of the global 'exchange' block for this system
+      r_cut_A: 3.8                     # shells 2.90 (face), 2.97 (edge), 3.36 and 3.71 A (corner). 2.90 and 3.36 A join the same Fe pairs of
+      group_by: shell                  # the 4-Fe cell (proportional columns, merged automatically): 3 J + E0 = 4 parameters, 5 distinct design rows
+      n_extra_fit: 0                   # 4 fit rows determine the 4 parameters exactly (uncertainty = assumed noise floor); the 5th distinct row
+      n_holdout: 1                     # is the hold-out. (A 2-J model without the 3.71 A shell misses the data by ~400 meV: tried and dropped)
+
+exchange:
+  r_cut_A: 3.8                         # Fe-Fe pair cut-off (face/edge/corner-sharing shells, 2.7-3.8 A in the W cell)
+  group_by: sublattice_pair            # W: one J per pair of different W-sublattices (intra-sublattice J invisible to sublattice flips)
+  max_pairs: null                      # null = all pairs found below r_cut_A; integer = keep the leading (shortest distance) ones
+  n_extra_fit: 1                       # n_fit = n_J + 1 (E0) + n_extra_fit -> dof = n_extra_fit
+  n_holdout: 2                         # configurations never used in the fit (TZ 8.8)
+  max_condition_number: 1.0e3          # design warning threshold (scaled matrix [1, X])
+  energy_noise_floor_meV: 0.5          # ASSUMPTION: lower bound of the energy error per cell (SCF/Gamma/pilot cutoffs); sigma floor
+
+moments_check:
+  min_fraction_of_start: 0.5           # |m_sphere| >= 0.5 * spin-only ionic moment (sphere moment is ~0.8 of the ionic one)
+  require_sign: true
+
+runtime:
+  timeout_hours: {W92: 12.0, hematite: 0.25}
+  confirm_above_cpu_hours: 0.25        # the run needs --i-accept-runtime above this estimate
+  heartbeat_s: 30
+  stale_after_s: 180                   # a 'running' status without a heartbeat for this long is treated as dead
+  parallel_slowdown_factor: 1.2        # ASSUMPTION: from pilot a (4 processes: 128 s vs 102 s -> 1.25), interpolated for 3
+
+soc:
+  allow_run: false                     # not feasible on the laptop (FEASIBILITY section 3: 7-10 h per direction, k-convergence missing)
+  reference: dft_feasibility/FEASIBILITY.md
+  n_directions: 6

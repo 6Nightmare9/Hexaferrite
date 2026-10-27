@@ -1,0 +1,25 @@
+{
+  "schema": "hexw.github_publication.v1",
+  "status": "prepared",
+  "prepared_utc": "2026-10-27T07:24:20.632986+00:00",
+  "repository": "https://github.com/6Nightmare9/Hexaferrite",
+  "private": true,
+  "source_bytes_unchanged": true,
+  "source_files_verified": 2357,
+  "frozen_reference_verified": "mv-e7b797c56002909b7ea8",
+  "ui_tests": {
+    "passed": 23,
+    "failed": 0,
+    "report": "audit/github_export_ui_tests.xml"
+  },
+  "offline_form_tests": "passed",
+  "fresh_install_on_colleague_computer": "not_yet_tested",
+  "agent_handoff": "GUIDE/ОТЧЁТ_ДЛЯ_ИИ_АГЕНТА.md",
+  "source_root": "C:/MIPT/working_stuff/Hexx",
+  "publication_checkout": "C:\\MIPT\\working_stuff\\Hexx\\github_export",
+  "notes": [
+    "Original source checkout unchanged",
+    "Local startup and calculations remain per computer",
+    "No invitations or branch protection changes: account has push but not admin permission"
+  ]
+}

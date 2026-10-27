@@ -1,0 +1,148 @@
+meta:
+  decision: literature/SPLIT_DECISION.md
+  date: '2026-10-25'
+  author: руководитель разработки
+  schema: hexw.registry.schemas.LiteratureClaim (load with hexw.params.literature)
+  split: excluded (from holdout publications)
+  n_claims: 3
+claims:
+- rec_id: C044-018
+  lit_id: C044
+  name: literature_Ms_SrCo2W_cited
+  role: excluded_secondary
+  source:
+    locator:
+      text: Section 3.3.1, last paragraph (their ref [55])
+      page: null
+      table: null
+      figure: null
+      supplementary: null
+    data_status: measured
+    tier: 1
+    doi: 10.47011/13.1.1
+    sample_id_in_source: SrCo2Fe16O27 (cited)
+    formula_in_source: SrCo2Fe16O27
+    synthesis: null
+    measurement_conditions:
+      T: null
+      field: null
+      orientation: null
+      form: null
+      density: null
+      texture: null
+    method: null
+    quantity_definition: Ms of SrCo2W quoted from another paper (primary not in corpus)
+    verbatim_source: in good agreement with the previously reported value of 71.18 emu/g for BaCo2Fe16O27 [41], and 74.31
+      emu/g for SrCo2Fe16O27 [55]
+    transformation: null
+    measurement_group: C044_cited
+    figure_only: false
+    axes: null
+    split_cluster: SECONDARY
+    transfer: null
+    holdout_kind: null
+  estimate: null
+  pending:
+    name: literature_Ms_SrCo2W_cited
+    value: 74.31
+    unit: A*m^2/kg
+    proposed_quantity_kind: specific_magnetization
+    reason: 'split=excluded_secondary_citation: kept as claim, not a parameter estimate'
+    uncertainty_std: null
+  qualitative: null
+  value_original: null
+  unit_original: A*m^2/kg
+  uncertainty_note: null
+  notes: secondary citation; compare L01 78.5 and L02 (no Ms)
+  split: excluded
+- rec_id: C023-003
+  lit_id: C023
+  name: cone_angle_BaCo2W_300K_cited
+  role: excluded_secondary
+  source:
+    locator:
+      text: Section III.B
+      page: null
+      table: null
+      figure: null
+      supplementary: null
+    data_status: measured
+    tier: 3
+    doi: 10.48550/arxiv.1407.3605
+    sample_id_in_source: BaCo2W (cited)
+    formula_in_source: BaCo2Fe16O27
+    synthesis: null
+    measurement_conditions:
+      T: null
+      field: null
+      orientation: null
+      form: null
+      density: null
+      texture: null
+    method: null
+    quantity_definition: cone half-angle of BaCo2W from refs 5,25,26 (secondary, Ba)
+    verbatim_source: Cone 1 (~70 deg, 2-453 K; 68.5-70 deg, 300 K)
+    transformation: null
+    measurement_group: C023_cited
+    figure_only: false
+    axes: null
+    split_cluster: SECONDARY
+    transfer: null
+    holdout_kind: null
+  estimate: null
+  pending:
+    name: cone_angle_BaCo2W_300K_cited
+    value: 70.0
+    unit: deg
+    proposed_quantity_kind: angle
+    reason: 'split=excluded_secondary_citation: kept as claim, not a parameter estimate'
+    uncertainty_std: null
+  qualitative: null
+  value_original: null
+  unit_original: deg
+  uncertainty_note: null
+  notes: L01 found planar (90 deg) for SrCo2W; cone angle for Sr unknown
+  split: excluded
+- rec_id: C015-004
+  lit_id: C015
+  name: cited_TC_and_cone_SrCo2W
+  role: excluded_secondary
+  source:
+    locator:
+      text: Section I, para 7
+      page: null
+      table: null
+      figure: null
+      supplementary: null
+    data_status: assumed_by_authors
+    tier: 1
+    doi: 10.1063/5.0087172
+    sample_id_in_source: SrCo2Fe16O27 (cited)
+    formula_in_source: SrCo2Fe16O27
+    synthesis: null
+    measurement_conditions:
+      T: null
+      field: null
+      orientation: null
+      form: null
+      density: null
+      texture: null
+    method: null
+    quantity_definition: quoted from ref [14], not measured here
+    verbatim_source: It exhibits ferromagnetic order below TC ~ 850 K and below T ~ 550 K, conical magnetic structure sets
+      in.
+    transformation: null
+    measurement_group: C015_cited
+    figure_only: false
+    axes: null
+    split_cluster: SECONDARY
+    transfer: null
+    holdout_kind: null
+  estimate: null
+  pending: null
+  qualitative: TC ~ 850 K; conical magnetic structure below ~550 K for SrCo2Fe16O27 (their ref 14)
+  value_original: null
+  unit_original: null
+  uncertainty_note: null
+  notes: conflicts with L02 (TC 790 K; planar) - flagged in CONFLICTS
+  split: excluded

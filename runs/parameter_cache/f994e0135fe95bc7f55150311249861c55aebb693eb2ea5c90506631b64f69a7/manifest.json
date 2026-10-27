@@ -1,0 +1,22 @@
+{
+  "key": "f994e0135fe95bc7f55150311249861c55aebb693eb2ea5c90506631b64f69a7",
+  "settings": {
+    "composition": {
+      "Mn": 2.0
+    },
+    "temperatures_K": [
+      300.0
+    ],
+    "n_draws": 48,
+    "n_prior": 60000,
+    "seed": 20261026,
+    "host": "dft",
+    "co_form": "ion_mf",
+    "l11_constraint": "none",
+    "anisotropy_model": "auto"
+  },
+  "files": {
+    "parameters.npz": "f57fd6ac1c8f5b96d6418f359de21becea1584996b9bbd738aa82162fd15e8b1",
+    "material.json": "d530a6b4cb7d5d16fd6955940d28d4996dada5c218427907e006186d46ca6d08"
+  }
+}

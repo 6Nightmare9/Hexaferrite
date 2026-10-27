@@ -1,0 +1,21 @@
+{"composition": "hematite_alpha-Fe2O3", "config_sha256": "e3890a568388ffd62fceaabb391ee38a683c5a0116aa7c7cfe6a0f9b5f5bc2d7", "event": "generate", "kept": [], "t": "2026-10-26T03:59:55+00:00", "written": ["c00_ground", "c01_flip_Fe3_Fe4", "c02_flip_Fe2_Fe4", "c03_flip_Fe2_Fe3", "c04_flip_Fe4"]}
+{"event": "queue", "n_parallel": 3, "skipped": {}, "t": "2026-10-26T03:59:55+00:00", "to_run": ["c00_ground", "c01_flip_Fe3_Fe4", "c02_flip_Fe2_Fe4", "c03_flip_Fe2_Fe3", "c04_flip_Fe4"]}
+{"attempt": 1, "event": "start", "job": "c00_ground", "t": "2026-10-26T03:59:55+00:00"}
+{"attempt": 1, "event": "start", "job": "c01_flip_Fe3_Fe4", "t": "2026-10-26T03:59:55+00:00"}
+{"attempt": 1, "event": "start", "job": "c02_flip_Fe2_Fe4", "t": "2026-10-26T03:59:55+00:00"}
+{"event": "finish", "job": "c01_flip_Fe3_Fe4", "message": "", "state": "done", "t": "2026-10-26T04:01:00+00:00", "wall_s": 65.4}
+{"attempt": 1, "event": "start", "job": "c03_flip_Fe2_Fe3", "t": "2026-10-26T04:01:01+00:00"}
+{"event": "finish", "job": "c02_flip_Fe2_Fe4", "message": "", "state": "done", "t": "2026-10-26T04:01:01+00:00", "wall_s": 65.7}
+{"attempt": 1, "event": "start", "job": "c04_flip_Fe4", "t": "2026-10-26T04:01:01+00:00"}
+{"event": "finish", "job": "c00_ground", "message": "", "state": "done", "t": "2026-10-26T04:01:16+00:00", "wall_s": 80.5}
+{"event": "finish", "job": "c03_flip_Fe2_Fe3", "message": "", "state": "done", "t": "2026-10-26T04:01:55+00:00", "wall_s": 54.0}
+{"event": "finish", "job": "c04_flip_Fe4", "message": "", "state": "done", "t": "2026-10-26T04:02:14+00:00", "wall_s": 73.1}
+{"event": "collect", "n_config_not_preserved": 0, "n_ok": 5, "t": "2026-10-26T04:02:14+00:00"}
+{"event": "collect", "n_config_not_preserved": 0, "n_ok": 5, "t": "2026-10-26T04:02:14+00:00"}
+{"composition": "hematite_alpha-Fe2O3", "config_sha256": "e3890a568388ffd62fceaabb391ee38a683c5a0116aa7c7cfe6a0f9b5f5bc2d7", "event": "generate", "kept": ["c00_ground", "c01_flip_Fe3_Fe4", "c02_flip_Fe2_Fe4", "c03_flip_Fe2_Fe3", "c04_flip_Fe4"], "t": "2026-10-26T04:03:45+00:00", "written": []}
+{"event": "queue", "n_parallel": 3, "skipped": {"c00_ground": "skip:done", "c01_flip_Fe3_Fe4": "skip:done", "c02_flip_Fe2_Fe4": "skip:done", "c03_flip_Fe2_Fe3": "skip:done", "c04_flip_Fe4": "skip:done"}, "t": "2026-10-26T04:03:45+00:00", "to_run": []}
+{"event": "collect", "n_config_not_preserved": 0, "n_ok": 5, "t": "2026-10-26T04:03:49+00:00"}
+{"composition": "hematite_alpha-Fe2O3", "config_sha256": "e3890a568388ffd62fceaabb391ee38a683c5a0116aa7c7cfe6a0f9b5f5bc2d7", "event": "generate", "kept": ["c00_ground", "c01_flip_Fe3_Fe4", "c02_flip_Fe2_Fe4", "c03_flip_Fe2_Fe3", "c04_flip_Fe4"], "t": "2026-10-26T04:04:08+00:00", "written": []}
+{"event": "queue", "n_parallel": 3, "skipped": {"c00_ground": "skip:done", "c01_flip_Fe3_Fe4": "skip:done", "c02_flip_Fe2_Fe4": "skip:done", "c03_flip_Fe2_Fe3": "skip:done", "c04_flip_Fe4": "skip:done"}, "t": "2026-10-26T04:04:08+00:00", "to_run": []}
+{"event": "collect", "n_config_not_preserved": 0, "n_ok": 5, "t": "2026-10-26T04:04:08+00:00"}
+{"event": "collect", "n_config_not_preserved": 0, "n_ok": 5, "t": "2026-10-26T04:04:08+00:00"}

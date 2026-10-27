@@ -1,0 +1,946 @@
+{
+  "date": "2026-10-25",
+  "scope": "Starter corpus; not an exhaustive global literature dataset",
+  "stats": {
+    "data_sources_preserved": 33,
+    "scientific_fulltexts": 10,
+    "teaching_guides": 2,
+    "link_only_publications": 4,
+    "structural_cif_mcif_files": 29,
+    "supporting_pdf_files": 2,
+    "software_documentation_snapshots": 2
+  },
+  "sources": [
+    {
+      "id": "L01_Morch2019",
+      "title": "Structure and magnetic properties of W-type hexaferrites",
+      "authors": "Mathias I. Mørch et al.",
+      "year": 2019,
+      "doi": "10.1107/S2052252519003130",
+      "landing_url": "https://doi.org/10.1107/S2052252519003130",
+      "role": "core_W_structure",
+      "applicability": "SrMe2Fe16O27, Me=Mg/Co/Ni/Zn; not a universal occupancy model.",
+      "files": [
+        {
+          "path": "06_literature/L01_Morch2019/Morch_2019_fulltext.xml",
+          "format": "xml",
+          "version": "publisher_JATS_via_EuropePMC",
+          "download_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6503931/fullTextXML",
+          "sha256": "b1f232334101a51132e762488273a9c3948ae44cf54804b65bc85aba2d77d46f",
+          "bytes": 98522,
+          "xml_article_dois": [
+            "10.1107/S2052252519003130"
+          ]
+        }
+      ],
+      "status": "fulltext_included",
+      "retrieved_date": "2026-10-25",
+      "supplementary_package_sha256": "083f24e9100463850be4666f070a861e6b233e8e55ddfa18ffa284eb3b70b25d",
+      "supplementary_package_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6503931/supplementaryFiles",
+      "supporting_files": [
+        "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrCo2Fe16O27/SrCo2Fe16O27_Magnetic.cif",
+        "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrCo2Fe16O27/SrCo2Fe16O27_SINQ_HRPT.cif",
+        "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrCo2Fe16O27/SrCo2Fe16O27_SINQ_HRPT_StructureFactors.cif",
+        "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrCo2Fe16O27/SrCo2Fe16O27_SLS_MS.cif",
+        "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrCo2Fe16O27/SrCo2Fe16O27_SLS_MS_StructureFactors.cif",
+        "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrMg2Fe16O27/SrMg2Fe16O27_Magnetic.cif",
+        "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrMg2Fe16O27/SrMg2Fe16O27_SINQ_HRPT.cif",
+        "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrMg2Fe16O27/SrMg2Fe16O27_SINQ_HRPT_StructureFactors.cif",
+        "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrMg2Fe16O27/SrMg2Fe16O27_SLS_MS.cif",
+        "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrMg2Fe16O27/SrMg2Fe16O27_SLS_MS_StructureFactors.cif",
+        "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrNi2Fe16O27/SrNi2Fe16O27_Magnetic.cif",
+        "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrNi2Fe16O27/SrNi2Fe16O27_SINQ_HRPT.cif",
+        "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrNi2Fe16O27/SrNi2Fe16O27_SINQ_HRPT_StructureFactors.cif",
+        "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrNi2Fe16O27/SrNi2Fe16O27_SLS_MS.cif",
+        "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrNi2Fe16O27/SrNi2Fe16O27_SLS_MS_StructureFactors.cif",
+        "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrZn2Fe16O27/SrZn2Fe16O27_Magnetic.cif",
+        "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrZn2Fe16O27/SrZn2Fe16O27_SINQ_HRPT.cif",
+        "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrZn2Fe16O27/SrZn2Fe16O27_SINQ_HRPT_StructureFactors.cif",
+        "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrZn2Fe16O27/SrZn2Fe16O27_SLS_MS.cif",
+        "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrZn2Fe16O27/SrZn2Fe16O27_SLS_MS_StructureFactors.cif",
+        "06_literature/L01_Morch2019/supporting/m-06-00492-efd1.jpg",
+        "06_literature/L01_Morch2019/supporting/m-06-00492-efi1.jpg",
+        "06_literature/L01_Morch2019/supporting/m-06-00492-efi2.jpg",
+        "06_literature/L01_Morch2019/supporting/m-06-00492-fig1.gif",
+        "06_literature/L01_Morch2019/supporting/m-06-00492-fig1.jpg",
+        "06_literature/L01_Morch2019/supporting/m-06-00492-fig2.gif",
+        "06_literature/L01_Morch2019/supporting/m-06-00492-fig2.jpg",
+        "06_literature/L01_Morch2019/supporting/m-06-00492-fig3.gif",
+        "06_literature/L01_Morch2019/supporting/m-06-00492-fig3.jpg",
+        "06_literature/L01_Morch2019/supporting/m-06-00492-fig4.gif",
+        "06_literature/L01_Morch2019/supporting/m-06-00492-fig4.jpg",
+        "06_literature/L01_Morch2019/supporting/m-06-00492-fig5.gif",
+        "06_literature/L01_Morch2019/supporting/m-06-00492-fig5.jpg",
+        "06_literature/L01_Morch2019/supporting/m-06-00492-fig6.gif",
+        "06_literature/L01_Morch2019/supporting/m-06-00492-fig6.jpg",
+        "06_literature/L01_Morch2019/supporting/m-06-00492-fig7.gif",
+        "06_literature/L01_Morch2019/supporting/m-06-00492-fig7.jpg",
+        "06_literature/L01_Morch2019/supporting/m-06-00492-sup1.pdf"
+      ],
+      "reading_copy": "06_literature/L01_Morch2019/article_readable.html"
+    },
+    {
+      "id": "L02_Morch2023",
+      "title": "Controlling the magnetic structure in W-type hexaferrites",
+      "authors": "Mathias I. Mørch and Mogens Christensen",
+      "year": 2023,
+      "doi": "10.1107/S1600576723002133",
+      "landing_url": "https://doi.org/10.1107/S1600576723002133",
+      "role": "core_W_magnetic_structure",
+      "applicability": "SrCo2−xZnxFe16O27; distinguish this series from Fe2+ replacement.",
+      "files": [
+        {
+          "path": "06_literature/L02_Morch2023/Morch_2023_W_magnetic_structure.pdf",
+          "format": "pdf",
+          "version": "publisher_version",
+          "download_url": "https://pure.au.dk/ws/files/417794401/in5078.pdf",
+          "sha256": "659dbddaac5bf3ebb866982f81a38cff91cc4b4c6f1593c7d0591fcafc136452",
+          "bytes": 690764,
+          "pages": 6,
+          "first_page": "research papers J. Appl. Cryst. (2023). 56, 597–602 https://doi.org/10.1107/S1600576723002133 597 Received 11 October 2022 Accepted 6 March 2023 Edited by G. J. McIntyre, Australian Nuclear Science and Technology Organisation, Lucas Heights, Australia Keywords: hexaferrites; magnetic ordering; neutron diffraction; multiferroics. Supporting information : this article has supporting information at journals.iucr.org/j Controlling the magnetic structure in W-type hexaferrites Mathias I. Mørch and Mo"
+        },
+        {
+          "path": "06_literature/L02_Morch2023/Morch_2023_fulltext.xml",
+          "format": "xml",
+          "version": "publisher_JATS_via_EuropePMC",
+          "download_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10241064/fullTextXML",
+          "sha256": "b713a99aae6cfc838710216fe33a6159a6f07b3ecab443cf103ac6c5d891a511",
+          "bytes": 71144,
+          "xml_article_dois": [
+            "10.1107/S1600576723002133"
+          ]
+        }
+      ],
+      "status": "fulltext_included",
+      "retrieved_date": "2026-10-25",
+      "supplementary_package_sha256": "3f46e4cafb00d9c1273d6c073418e3ff01ec8a47f8a52e93cbb08ce0b268d73a",
+      "supplementary_package_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10241064/supplementaryFiles",
+      "supporting_files": [
+        "06_literature/L02_Morch2023/supporting/CIFs/SrCo2Fe16O27.cif",
+        "06_literature/L02_Morch2023/supporting/CIFs/SrCo2Fe16O27.mcif",
+        "06_literature/L02_Morch2023/supporting/CIFs/SrCoZnFe16O27.cif",
+        "06_literature/L02_Morch2023/supporting/CIFs/SrCoZnFe16O27.mcif",
+        "06_literature/L02_Morch2023/supporting/CIFs/SrZn2Fe16O27.cif",
+        "06_literature/L02_Morch2023/supporting/CIFs/SrZn2Fe16O27.mcif",
+        "06_literature/L02_Morch2023/supporting/CIFs/pdCIF_SrCo2Fe16O27.cif",
+        "06_literature/L02_Morch2023/supporting/CIFs/pdCIF_SrCoZnFe16O27.cif",
+        "06_literature/L02_Morch2023/supporting/CIFs/pdCIF_SrZn2Fe16O27.cif",
+        "06_literature/L02_Morch2023/supporting/j-56-00597-efi1.jpg",
+        "06_literature/L02_Morch2023/supporting/j-56-00597-efi2.jpg",
+        "06_literature/L02_Morch2023/supporting/j-56-00597-efi3.jpg",
+        "06_literature/L02_Morch2023/supporting/j-56-00597-fig1.gif",
+        "06_literature/L02_Morch2023/supporting/j-56-00597-fig1.jpg",
+        "06_literature/L02_Morch2023/supporting/j-56-00597-fig2.gif",
+        "06_literature/L02_Morch2023/supporting/j-56-00597-fig2.jpg",
+        "06_literature/L02_Morch2023/supporting/j-56-00597-fig3.gif",
+        "06_literature/L02_Morch2023/supporting/j-56-00597-fig3.jpg",
+        "06_literature/L02_Morch2023/supporting/j-56-00597-fig4.gif",
+        "06_literature/L02_Morch2023/supporting/j-56-00597-fig4.jpg",
+        "06_literature/L02_Morch2023/supporting/j-56-00597-fig5.gif",
+        "06_literature/L02_Morch2023/supporting/j-56-00597-fig5.jpg",
+        "06_literature/L02_Morch2023/supporting/j-56-00597-sup1.pdf"
+      ],
+      "reading_copy": "06_literature/L02_Morch2023/article_readable.html"
+    },
+    {
+      "id": "L03_Nakai2023",
+      "title": "Study on Factors Hindering the Single-Phase Formation of Divalent-Ion-Stabilized W-Type Ferrites",
+      "authors": "Shinji Nakai et al.",
+      "year": 2023,
+      "doi": "10.2320/matertrans.MT-Y2022010",
+      "landing_url": "https://doi.org/10.2320/matertrans.MT-Y2022010",
+      "role": "core_W_chemistry",
+      "applicability": "Nominal vs actual composition; oxygen pressure and phases.",
+      "files": [
+        {
+          "path": "06_literature/L03_Nakai2023/Nakai_2023_W_phase_chemistry.pdf",
+          "format": "pdf",
+          "version": "publisher_version",
+          "download_url": "https://www.jstage.jst.go.jp/article/matertrans/64/5/64_MT-Y2022010/_pdf/-char/en",
+          "sha256": "9442f3cf4e3d5d3eab6559535af2e4d030fa5007816572401fbc2f1120907dbf",
+          "bytes": 3562200,
+          "pages": 6,
+          "first_page": "Study on Factors Hindering the Single-Phase Formation of Divalent-Ion-Stabilized W-Type Ferrites+1 Shinji Nakai 1,+2,+3, Takeshi Waki 1, Yoshikazu Tabata 1, Masaki Kato 2, Hiroto Ohta 2 and Hiroyuki Nakamura 1 1Department of Materials Science and Engineering, Kyoto University, Kyoto 606-8501, Japan 2Department of Molecular Chemistry and Biochemistry, Faculty of Science and Engineering, Doshisha University, Kyotanabe 610-0321, Japan Me-substituted W-type ferrites ( AMe2Fe16O27 with A = Sr, Ba, + "
+        }
+      ],
+      "status": "fulltext_included",
+      "retrieved_date": "2026-10-25"
+    },
+    {
+      "id": "L04_Islam2024",
+      "title": "Exploring the magnetic properties of W-type SrFe18O27 hexaferrite: Insights from a first-principles study",
+      "authors": "Riyajul Islam, S. P. Madsen, Mogens Christensen",
+      "year": 2024,
+      "doi": "10.1103/PhysRevB.109.024414",
+      "landing_url": "https://doi.org/10.1103/PhysRevB.109.024414",
+      "role": "core_W_DFT",
+      "applicability": "Full text not obtained; do not infer detailed settings from abstract.",
+      "files": [],
+      "status": "link_only_fulltext_unavailable",
+      "retrieved_date": "2026-10-25",
+      "access_note": "Publisher returned access restriction; university records provide citation/abstract only."
+    },
+    {
+      "id": "L05_Islam2025",
+      "title": "Enhancing magnetocrystalline anisotropy in W-type SrFe18O27 hexaferrite via tailored substitutions",
+      "authors": "Riyajul Islam, S. P. Madsen, Mogens Christensen",
+      "year": 2025,
+      "doi": "10.1016/j.actamat.2025.120828",
+      "landing_url": "https://doi.org/10.1016/j.actamat.2025.120828",
+      "role": "core_W_DFT",
+      "applicability": "Sr-site K/Ca/Ba/La substitutions; not direct parameters for all Co/Zn/Mn concentrations.",
+      "files": [
+        {
+          "path": "06_literature/L05_Islam2025/Islam_2025_W_anisotropy.pdf",
+          "format": "pdf",
+          "version": "publisher_version",
+          "download_url": "https://pure.au.dk/ws/files/469057816/1-s2.0-S135964542500120X-main.pdf",
+          "sha256": "dacea923e6037d3b507ba363ff7bb4d45e8ef36b5f757bce1b3e947dec0bdcb4",
+          "bytes": 4605877,
+          "pages": 11,
+          "first_page": "Acta Materialia 288 (2025) 120828 Available online 14 February 2025 1359-6454/© 2025 The Author(s). Published by Elsevier Inc. on behalf of Acta Materialia Inc. This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/). Enhancing magnetocrystalline anisotropy in W-type SrFe 18 O 27 hexaferrite via tailored substitutions Riyajul Islam a , * , S.P. Madsen a , * , Mogens Christensen b , * a Department of Mechanical and Production Engineering, Aarhus Univer"
+        }
+      ],
+      "status": "fulltext_included",
+      "retrieved_date": "2026-10-25",
+      "license": "CC BY (stated in publisher PDF)"
+    },
+    {
+      "id": "L06_W_FMR1995",
+      "title": "Investigations on Zn2−xCoxW-type hexaferrite powders at low temperatures by ferromagnetic resonance",
+      "authors": "",
+      "year": 1995,
+      "doi": "10.1016/0304-8853(95)00406-8",
+      "landing_url": "https://doi.org/10.1016/0304-8853(95)00406-8",
+      "role": "core_W_FMR",
+      "applicability": "Ba-W powder; transfer to Sr requires justification.",
+      "files": [],
+      "status": "link_only_fulltext_unavailable",
+      "retrieved_date": "2026-10-25"
+    },
+    {
+      "id": "L07_Rancourt1989",
+      "title": "Accurate site populations from Mössbauer spectroscopy",
+      "authors": "D. G. Rancourt",
+      "year": 1989,
+      "doi": "10.1016/0168-583X(89)90428-X",
+      "landing_url": "https://doi.org/10.1016/0168-583X(89)90428-X",
+      "role": "method_Mossbauer",
+      "applicability": "Full text not obtained; citation retained.",
+      "files": [],
+      "status": "link_only_fulltext_unavailable",
+      "retrieved_date": "2026-10-25"
+    },
+    {
+      "id": "L08_Newbury2013",
+      "title": "Is Scanning Electron Microscopy/Energy Dispersive X-ray Spectrometry (SEM/EDS) Quantitative?",
+      "authors": "Dale E. Newbury, Nicholas W. M. Ritchie",
+      "year": 2013,
+      "doi": "10.1002/sca.21041",
+      "landing_url": "https://doi.org/10.1002/sca.21041",
+      "role": "method_SEM_EDS",
+      "applicability": "Full text not obtained. L14 is a different complementary paper, not a replacement of this citation.",
+      "files": [],
+      "status": "link_only_fulltext_unavailable",
+      "retrieved_date": "2026-10-25"
+    },
+    {
+      "id": "L09_Spirit2019",
+      "title": "Spirit: Multifunctional Framework for Atomistic Spin Simulations",
+      "authors": "Gideon P. Müller et al.",
+      "year": 2019,
+      "doi": "10.1103/PhysRevB.99.224414",
+      "landing_url": "https://doi.org/10.1103/PhysRevB.99.224414",
+      "role": "method_spin_dynamics",
+      "applicability": "Method/framework; not pretrained W-material parameters.",
+      "files": [
+        {
+          "path": "06_literature/L09_Spirit2019/Muller_2019_Spirit_author_preprint.pdf",
+          "format": "pdf",
+          "version": "author_preprint_arXiv_1901.11350",
+          "download_url": "https://arxiv.org/pdf/1901.11350",
+          "sha256": "3c941ff5b3215ca764ace5bcb588b242ef910b0d9b2c5c0a43f12fb616b2cb0d",
+          "bytes": 4068674,
+          "pages": 17,
+          "first_page": "Spirit: Multifunctional Framework for Atomistic Spin Simulations Gideon P. Müller,1,2,3, ∗ Markus Hoﬀmann,1 Constantin Dißelkamp,1,3 Daniel Schürhoﬀ,1,3 Stefanos Mavros,1,3 Moritz Sallermann,1 Nikolai S. Kiselev,1 Hannes Jónsson,2 and Stefan Blügel1 1Peter Grünberg Institut and Institute for Advanced Simulation, Forschungszentrum Jülich and JARA, 52425 Jülich, Germany 2Science Institute and Faculty of Physical Sciences, University of Iceland, VR-III, 107 Reykjavík, Iceland 3Department of Physics"
+        }
+      ],
+      "status": "fulltext_included",
+      "retrieved_date": "2026-10-25"
+    },
+    {
+      "id": "L10_Toby2024",
+      "title": "A simple solution to the Rietveld refinement recipe problem",
+      "authors": "B. H. Toby",
+      "year": 2024,
+      "doi": "10.1107/S1600576723011032",
+      "landing_url": "https://doi.org/10.1107/S1600576723011032",
+      "role": "method_XRD",
+      "applicability": "Parameter introduction and diagnostics; no proof of unique structural solution.",
+      "files": [
+        {
+          "path": "06_literature/L10_Toby2024/Toby_2024_fulltext.xml",
+          "format": "xml",
+          "version": "publisher_JATS_via_EuropePMC",
+          "download_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10840306/fullTextXML",
+          "sha256": "f82547fcdcbc0c230575f32563355cc38e6f7328c1b6149124162a7cdb4beaa1",
+          "bytes": 51934,
+          "xml_article_dois": [
+            "10.1107/S1600576723011032"
+          ]
+        }
+      ],
+      "status": "fulltext_included",
+      "retrieved_date": "2026-10-25",
+      "access_note": "Original JATS full text included; separate image download timed out. Figure references and captions remain in the XML; inspect original online figures when needed.",
+      "reading_copy": "06_literature/L10_Toby2024/article_readable.html"
+    },
+    {
+      "id": "L11_He2024",
+      "title": "Influences of divalent ion substitution on the magnetic and dielectric properties of W-type barium ferrite",
+      "authors": "Shiyue He et al.",
+      "year": 2024,
+      "doi": "10.1088/1674-1056/ad39d5",
+      "landing_url": "https://doi.org/10.1088/1674-1056/ad39d5",
+      "role": "W_magnetic_dielectric_analogue",
+      "applicability": "BaMe2Fe16O27; transferability to Sr must be evaluated.",
+      "files": [
+        {
+          "path": "06_literature/L11_He2024/He_2024_W_magnetic_dielectric_Ba.pdf",
+          "format": "pdf",
+          "version": "publisher_version",
+          "download_url": "https://cpb.iphy.ac.cn/en/article/pdf/preview/10.1088/1674-1056/ad39d5.pdf",
+          "sha256": "83a792ef72505895e7f0f1e067ed25b0b38413cbbbd7e685b865298d5b40815b",
+          "bytes": 1520020,
+          "pages": 8,
+          "first_page": "Influences of divalent ion substitution on the magnetic and dielectric properties of W-type barium ferrite Shiyue He( 何诗悦), Ruoshui Liu( 刘若水), Xujie Liu( 刘煦婕), Xianping Ye( 叶先平), Lichen Wang( 王利晨), and Baogen Shen(沈保根) Citation:Chin. Phys. B, 2024, 33 (6): 066801. DOI: 10.1088/1674-1056/ad39d5 Journal homepage: http://cpb.iphy.ac.cn; http://iopscience.iop.org/cpb What follows is a list of articles you may be interested in Polarization Raman spectra of graphene nanoribbons Wangwei Xu(许望伟), Shijie"
+        }
+      ],
+      "status": "fulltext_included",
+      "retrieved_date": "2026-10-25"
+    },
+    {
+      "id": "L12_Zhuravlev2005",
+      "title": "Magnetic Permeability Spectra of Hexaferrites in the Microwave Range",
+      "authors": "V. A. Zhuravlev",
+      "year": 2005,
+      "doi": "",
+      "landing_url": "",
+      "role": "theory_permeability",
+      "applicability": "The Physics of Metals and Metallography 100 Suppl.1 S79–S81; independent-grain/domain approximation has limits.",
+      "files": [
+        {
+          "path": "06_literature/L12_Zhuravlev2005/Zhuravlev_2005_hexaferrite_permeability.pdf",
+          "format": "pdf",
+          "version": "user_provided_copy",
+          "sha256": "0ee89fc45d0ec0119ce13c01d963e97ecfef969ab36cc3b33cd7a31d29b6c2ca",
+          "bytes": 121530,
+          "pages": 3,
+          "first_page": "S79 The Physics of Metals and Metallography, Vol. 100, Suppl. 1, 2005, pp. S79–S81. Original English Text Copyright © 2005 by Zhuravlev. 1 1. INTRODUCTION For the development of various devices based on ferrite materials and operating in the microwave fre- quency range, the detailed knowledge of their material parameters is necessary, in particular, of their spectra of magnetic permeability µ ( ω ) = µ '( ω ) – i µ ''( ω ) and per- mittivity ε ( ω ) = ε '( ω ) – i ε ''( ω ). The permittivity of "
+        }
+      ],
+      "status": "fulltext_included",
+      "retrieved_date": "2026-10-25"
+    },
+    {
+      "id": "L13_Hoez2023",
+      "title": "New Manufacturing Process for Granular Texture Management in Polycrystalline BaM Hexaferrites through the Goethite Crystallite Laths Aspect Ratio, and a Specialized Law of Approach to the Magnetic Saturation for Partly Polarized Uniaxial Materials",
+      "authors": "Antoine Hoëz, Jean-Luc Mattei, Alexis Chevalier",
+      "year": 2023,
+      "doi": "10.3390/magnetochemistry9010030",
+      "landing_url": "https://doi.org/10.3390/magnetochemistry9010030",
+      "role": "method_microstructure_analogue",
+      "applicability": "BaM is M-type, not W-type. Measurement-cell implementation remains excluded.",
+      "files": [
+        {
+          "path": "06_literature/L13_Hoez2023/Hoez_2023_BaM_texture_method_analogue.pdf",
+          "format": "pdf",
+          "version": "user_provided_copy",
+          "sha256": "815a56cdb530fc424045fff00522a3afb4800a0b4a804ee0a087d43bb4971d48",
+          "bytes": 8873784,
+          "pages": 19,
+          "first_page": "Citation: Hoëz, A.; Mattei, J.-L.; Chevalier, A. New Manufacturing Process for Granular Texture Management in Polycrystalline BaM Hexaferrites through the Goethite Crystallite Laths Aspect Ratio, and a Specialized Law of Approach to the Magnetic Saturation for Partly Polarized Uniaxial Materials. Magnetochemistry 2023, 9, 30. https://doi.org/10.3390/ magnetochemistry9010030 Academic Editor: Carlos J. Gómez García Received: 16 November 2022 Revised: 23 December 2022 Accepted: 30 December 2022 Pub"
+        }
+      ],
+      "status": "fulltext_included",
+      "retrieved_date": "2026-10-25"
+    },
+    {
+      "id": "T01_Mossbauer_MSU",
+      "title": "Мессбауэровская спектроскопия и ее применение для химической диагностики неорганических материалов",
+      "authors": "П. Б. Фабричный, К. В. Похолок",
+      "year": 2012,
+      "doi": "",
+      "landing_url": "",
+      "role": "teaching_reference",
+      "applicability": "Lecture notes, not primary W-specific data.",
+      "files": [
+        {
+          "path": "06_literature/T01_Mossbauer_MSU/Mossbauer_MSU_Fabrichny_Pokholok_2012.pdf",
+          "format": "pdf",
+          "version": "user_provided_copy",
+          "sha256": "4da8193749431970a5156933981ccf8b3ddc3ef753d75c2b72c3a15c271bef20",
+          "bytes": 4011434,
+          "pages": 142,
+          "first_page": "1 П.Б. Фабричный, К.В. Похолок МЕССБАУЭРОВСКАЯ СПЕКТРОСКОПИЯ И ЕЕ ПРИМЕНЕНИЕ ДЛЯ ХИМИЧЕСКОЙ ДИАГНОСТИКИ НЕОРГАНИЧЕСКИХ МАТЕРИАЛОВ Конспект курса лекций для студентов старших курсов и аспирантов химического факультета МГУ 2012"
+        }
+      ],
+      "status": "fulltext_included",
+      "retrieved_date": "2026-10-25"
+    },
+    {
+      "id": "T02_Mossbauer_KFU",
+      "title": "Мёссбауэровская спектроскопия",
+      "authors": "Е. В. Воронина, А. В. Пятаев",
+      "year": 2013,
+      "doi": "",
+      "landing_url": "",
+      "role": "teaching_reference",
+      "applicability": "Methodological guide, not primary W-specific data.",
+      "files": [
+        {
+          "path": "06_literature/T02_Mossbauer_KFU/Mossbauer_KFU_Voronina_Pyataev_2013.pdf",
+          "format": "pdf",
+          "version": "user_provided_copy",
+          "sha256": "5fdcb6c3196c321b0ffeb01f5fd67de50c82d06634f50ae857fadccfb3af3346",
+          "bytes": 3658920,
+          "pages": 35,
+          "first_page": "КАЗАНСКИЙ ФЕДЕРАЛЬНЫЙ УНИВЕРСИТЕТ ИНСТИТУТ ФИЗИКИ КАФЕДРА ФИЗИКИ ТВЕРДОГО ТЕЛА Мëссбауэровская спектроскопия Е.В. Воронина, А.В. Пятаев Методическое пособие Казань 2013"
+        }
+      ],
+      "status": "fulltext_included",
+      "retrieved_date": "2026-10-25"
+    },
+    {
+      "id": "L14_Newbury2022",
+      "title": "Energy-Dispersive X-Ray Spectrum Simulation with NIST DTSA-II: Comparing Simulated and Measured Electron-Excited Spectra",
+      "authors": "Dale E. Newbury, Nicholas W. M. Ritchie",
+      "year": 2022,
+      "doi": "10.1017/S1431927622012272",
+      "landing_url": "https://doi.org/10.1017/S1431927622012272",
+      "role": "method_SEM_EDS_simulation",
+      "applicability": "Complementary method paper; its spectrum-simulation error does not guarantee <=10% composition error.",
+      "files": [
+        {
+          "path": "06_literature/L14_Newbury2022/Newbury_Ritchie_2022_NIST_SEM_EDS.pdf",
+          "format": "pdf",
+          "version": "publisher_version",
+          "download_url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=933946",
+          "sha256": "a0e717c84705c2c1ad67a4489bdb98122b8be04514ac1c6483ec0eb4483cb357",
+          "bytes": 7778797,
+          "pages": 12,
+          "first_page": "Original Article Energy-Dispersive X-Ray Spectrum Simulation with NIST DTSA-II: Comparing Simulated and Measured Electron-Excited Spectra Dale E. Newbury* and Nicholas W. M. Ritchie National Institute of Standards and Technology, Gaithersburg, MD 20899, USA Abstract Electron-excited X-ray microanalysis with energy-dispersive spectrometry (EDS) proceeds through the application of the software that extracts characteristic X-ray intensities and performs corrections for the physics of electron and X"
+        }
+      ],
+      "status": "fulltext_included",
+      "retrieved_date": "2026-10-25"
+    }
+  ],
+  "supporting_files": [
+    {
+      "source_id": "L01_Morch2019",
+      "path": "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrCo2Fe16O27/SrCo2Fe16O27_Magnetic.cif",
+      "publisher_member": "m-06-00492-sup2.zip!/lt5018sup_cif/SrCo2Fe16O27/SrCo2Fe16O27_Magnetic.cif",
+      "bytes": 14099,
+      "sha256": "a09efbed2ecacf698fa5f49b4ee58bf524e1c6e4eba8d3830989c37c1e344889"
+    },
+    {
+      "source_id": "L01_Morch2019",
+      "path": "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrCo2Fe16O27/SrCo2Fe16O27_SINQ_HRPT.cif",
+      "publisher_member": "m-06-00492-sup2.zip!/lt5018sup_cif/SrCo2Fe16O27/SrCo2Fe16O27_SINQ_HRPT.cif",
+      "bytes": 31137,
+      "sha256": "41bbfdae4d599fd399213c75997de9b46593f303643ae52906d91474fcc08fef"
+    },
+    {
+      "source_id": "L01_Morch2019",
+      "path": "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrCo2Fe16O27/SrCo2Fe16O27_SINQ_HRPT_StructureFactors.cif",
+      "publisher_member": "m-06-00492-sup2.zip!/lt5018sup_cif/SrCo2Fe16O27/SrCo2Fe16O27_SINQ_HRPT_StructureFactors.cif",
+      "bytes": 477880,
+      "sha256": "7b254145b24eb7dd35579a23da34c14ee3d7f191c16eae027954ff4b4545b6a4"
+    },
+    {
+      "source_id": "L01_Morch2019",
+      "path": "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrCo2Fe16O27/SrCo2Fe16O27_SLS_MS.cif",
+      "publisher_member": "m-06-00492-sup2.zip!/lt5018sup_cif/SrCo2Fe16O27/SrCo2Fe16O27_SLS_MS.cif",
+      "bytes": 33128,
+      "sha256": "56ad386a4ef49c9b84e1aecc4914668f367d7211086305061ee855e81748006a"
+    },
+    {
+      "source_id": "L01_Morch2019",
+      "path": "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrCo2Fe16O27/SrCo2Fe16O27_SLS_MS_StructureFactors.cif",
+      "publisher_member": "m-06-00492-sup2.zip!/lt5018sup_cif/SrCo2Fe16O27/SrCo2Fe16O27_SLS_MS_StructureFactors.cif",
+      "bytes": 4580246,
+      "sha256": "b99842f0797e961c4724887abc22993023221bacec11e67311e4f69814ebbd7e"
+    },
+    {
+      "source_id": "L01_Morch2019",
+      "path": "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrMg2Fe16O27/SrMg2Fe16O27_Magnetic.cif",
+      "publisher_member": "m-06-00492-sup2.zip!/lt5018sup_cif/SrMg2Fe16O27/SrMg2Fe16O27_Magnetic.cif",
+      "bytes": 14115,
+      "sha256": "0c56b513d2a007fe02137a512c5e49718800d760ec3b1bcd58a0f6e62f37b09f"
+    },
+    {
+      "source_id": "L01_Morch2019",
+      "path": "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrMg2Fe16O27/SrMg2Fe16O27_SINQ_HRPT.cif",
+      "publisher_member": "m-06-00492-sup2.zip!/lt5018sup_cif/SrMg2Fe16O27/SrMg2Fe16O27_SINQ_HRPT.cif",
+      "bytes": 44771,
+      "sha256": "47401ac504468cd6d08f7b3d85c9c4d110da4ea326a9caa87053282fe4e99436"
+    },
+    {
+      "source_id": "L01_Morch2019",
+      "path": "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrMg2Fe16O27/SrMg2Fe16O27_SINQ_HRPT_StructureFactors.cif",
+      "publisher_member": "m-06-00492-sup2.zip!/lt5018sup_cif/SrMg2Fe16O27/SrMg2Fe16O27_SINQ_HRPT_StructureFactors.cif",
+      "bytes": 516199,
+      "sha256": "2b6e303ea10b703f91bd7d860b9a630937eec5eede6e0f4d8a2133afa6592d05"
+    },
+    {
+      "source_id": "L01_Morch2019",
+      "path": "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrMg2Fe16O27/SrMg2Fe16O27_SLS_MS.cif",
+      "publisher_member": "m-06-00492-sup2.zip!/lt5018sup_cif/SrMg2Fe16O27/SrMg2Fe16O27_SLS_MS.cif",
+      "bytes": 46734,
+      "sha256": "6e30dd00479fa1b51d4755d3e1f03e50bea5354b9d2e0dca351c91fdff0eaf4a"
+    },
+    {
+      "source_id": "L01_Morch2019",
+      "path": "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrMg2Fe16O27/SrMg2Fe16O27_SLS_MS_StructureFactors.cif",
+      "publisher_member": "m-06-00492-sup2.zip!/lt5018sup_cif/SrMg2Fe16O27/SrMg2Fe16O27_SLS_MS_StructureFactors.cif",
+      "bytes": 4850541,
+      "sha256": "7824cfa16201a50c67b52e3d9138995b23ffc6f9aaae34dc60e82ddcd0905d77"
+    },
+    {
+      "source_id": "L01_Morch2019",
+      "path": "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrNi2Fe16O27/SrNi2Fe16O27_Magnetic.cif",
+      "publisher_member": "m-06-00492-sup2.zip!/lt5018sup_cif/SrNi2Fe16O27/SrNi2Fe16O27_Magnetic.cif",
+      "bytes": 14113,
+      "sha256": "beb8ce6ec97d5f35ffd2306b27caa3e7ff1113c9ea542259631aed48aa94ae91"
+    },
+    {
+      "source_id": "L01_Morch2019",
+      "path": "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrNi2Fe16O27/SrNi2Fe16O27_SINQ_HRPT.cif",
+      "publisher_member": "m-06-00492-sup2.zip!/lt5018sup_cif/SrNi2Fe16O27/SrNi2Fe16O27_SINQ_HRPT.cif",
+      "bytes": 32326,
+      "sha256": "fdd30ad5ee8d7ee9f32e33a1149105966a776ca73d2047af341913003df62f5c"
+    },
+    {
+      "source_id": "L01_Morch2019",
+      "path": "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrNi2Fe16O27/SrNi2Fe16O27_SINQ_HRPT_StructureFactors.cif",
+      "publisher_member": "m-06-00492-sup2.zip!/lt5018sup_cif/SrNi2Fe16O27/SrNi2Fe16O27_SINQ_HRPT_StructureFactors.cif",
+      "bytes": 481654,
+      "sha256": "4878a2897beceb57188189b87598f64b0892e056bb916dd7a054a14e30e3fc0f"
+    },
+    {
+      "source_id": "L01_Morch2019",
+      "path": "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrNi2Fe16O27/SrNi2Fe16O27_SLS_MS.cif",
+      "publisher_member": "m-06-00492-sup2.zip!/lt5018sup_cif/SrNi2Fe16O27/SrNi2Fe16O27_SLS_MS.cif",
+      "bytes": 33835,
+      "sha256": "2f147e282aa873e6b466321d703bd86107c9ed7d0eb7cdc3622e623ace4223d0"
+    },
+    {
+      "source_id": "L01_Morch2019",
+      "path": "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrNi2Fe16O27/SrNi2Fe16O27_SLS_MS_StructureFactors.cif",
+      "publisher_member": "m-06-00492-sup2.zip!/lt5018sup_cif/SrNi2Fe16O27/SrNi2Fe16O27_SLS_MS_StructureFactors.cif",
+      "bytes": 4615801,
+      "sha256": "f66db36e73badc45d6d37ee7deadf48aaaef26402abfbf93d9f7dcf8d5d2d145"
+    },
+    {
+      "source_id": "L01_Morch2019",
+      "path": "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrZn2Fe16O27/SrZn2Fe16O27_Magnetic.cif",
+      "publisher_member": "m-06-00492-sup2.zip!/lt5018sup_cif/SrZn2Fe16O27/SrZn2Fe16O27_Magnetic.cif",
+      "bytes": 14117,
+      "sha256": "54b0c2ccc939363d05715a986aed40738dfeeb880453d8245bac4e57c5254879"
+    },
+    {
+      "source_id": "L01_Morch2019",
+      "path": "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrZn2Fe16O27/SrZn2Fe16O27_SINQ_HRPT.cif",
+      "publisher_member": "m-06-00492-sup2.zip!/lt5018sup_cif/SrZn2Fe16O27/SrZn2Fe16O27_SINQ_HRPT.cif",
+      "bytes": 32100,
+      "sha256": "aed66afd24797dafcbbbeecec025f1de1e3c2c888cba4a917aba72b74c3977af"
+    },
+    {
+      "source_id": "L01_Morch2019",
+      "path": "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrZn2Fe16O27/SrZn2Fe16O27_SINQ_HRPT_StructureFactors.cif",
+      "publisher_member": "m-06-00492-sup2.zip!/lt5018sup_cif/SrZn2Fe16O27/SrZn2Fe16O27_SINQ_HRPT_StructureFactors.cif",
+      "bytes": 482506,
+      "sha256": "bed6e480a489ef2941594da841381a1568d0329c83051a5c27662a1039bd58fa"
+    },
+    {
+      "source_id": "L01_Morch2019",
+      "path": "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrZn2Fe16O27/SrZn2Fe16O27_SLS_MS.cif",
+      "publisher_member": "m-06-00492-sup2.zip!/lt5018sup_cif/SrZn2Fe16O27/SrZn2Fe16O27_SLS_MS.cif",
+      "bytes": 32955,
+      "sha256": "5cc4b0a691f2f5d4eae6035e8d8e77df7256003002abcf6da44bc377a83973de"
+    },
+    {
+      "source_id": "L01_Morch2019",
+      "path": "06_literature/L01_Morch2019/supporting/lt5018sup_cif/SrZn2Fe16O27/SrZn2Fe16O27_SLS_MS_StructureFactors.cif",
+      "publisher_member": "m-06-00492-sup2.zip!/lt5018sup_cif/SrZn2Fe16O27/SrZn2Fe16O27_SLS_MS_StructureFactors.cif",
+      "bytes": 4617860,
+      "sha256": "9ffaf0ceb7e514e2a28d20f040618a8512793d13f88c1cfa80421e90e158eda8"
+    },
+    {
+      "source_id": "L01_Morch2019",
+      "path": "06_literature/L01_Morch2019/supporting/m-06-00492-efd1.jpg",
+      "publisher_member": "m-06-00492-efd1.jpg",
+      "bytes": 3371,
+      "sha256": "857287dc09d86dff062d940f1e4e6832fd00bb3cd04736e0a79d045afedf72ea"
+    },
+    {
+      "source_id": "L01_Morch2019",
+      "path": "06_literature/L01_Morch2019/supporting/m-06-00492-efi1.jpg",
+      "publisher_member": "m-06-00492-efi1.jpg",
+      "bytes": 1524,
+      "sha256": "1d6a12d930742c855c849a180769755f29047d67f2911b0ff29a9f46a9954858"
+    },
+    {
+      "source_id": "L01_Morch2019",
+      "path": "06_literature/L01_Morch2019/supporting/m-06-00492-efi2.jpg",
+      "publisher_member": "m-06-00492-efi2.jpg",
+      "bytes": 398,
+      "sha256": "026d313451e8b558e82c28231251ce0b19912157d41f65870f4a67b1fae90c1c"
+    },
+    {
+      "source_id": "L01_Morch2019",
+      "path": "06_literature/L01_Morch2019/supporting/m-06-00492-fig1.gif",
+      "publisher_member": "m-06-00492-fig1.gif",
+      "bytes": 19389,
+      "sha256": "2a5d2a2df3ff9885484a1c5b6f5e3e766429d78ee7a2e6044f2cecb6eb0f3d54"
+    },
+    {
+      "source_id": "L01_Morch2019",
+      "path": "06_literature/L01_Morch2019/supporting/m-06-00492-fig1.jpg",
+      "publisher_member": "m-06-00492-fig1.jpg",
+      "bytes": 145773,
+      "sha256": "fad7c6783c5bb313d6c4ad88ab34a80118efe9abef271f0c3b6af7e236209028"
+    },
+    {
+      "source_id": "L01_Morch2019",
+      "path": "06_literature/L01_Morch2019/supporting/m-06-00492-fig2.gif",
+      "publisher_member": "m-06-00492-fig2.gif",
+      "bytes": 11487,
+      "sha256": "474663c331875e7e15f6c6081680fc1321c0e758924e6750294024a8ab3b0aca"
+    },
+    {
+      "source_id": "L01_Morch2019",
+      "path": "06_literature/L01_Morch2019/supporting/m-06-00492-fig2.jpg",
+      "publisher_member": "m-06-00492-fig2.jpg",
+      "bytes": 81301,
+      "sha256": "4759ce91daddebe8576c6220b639876d7f7e71b09666c05a66be286213bb9413"
+    },
+    {
+      "source_id": "L01_Morch2019",
+      "path": "06_literature/L01_Morch2019/supporting/m-06-00492-fig3.gif",
+      "publisher_member": "m-06-00492-fig3.gif",
+      "bytes": 13538,
+      "sha256": "99f77db74b4d2eeff64c6a6ac3018f1abe1ac6cebfd706ce5c9b6424dc72b570"
+    },
+    {
+      "source_id": "L01_Morch2019",
+      "path": "06_literature/L01_Morch2019/supporting/m-06-00492-fig3.jpg",
+      "publisher_member": "m-06-00492-fig3.jpg",
+      "bytes": 71349,
+      "sha256": "4e6a64cd015102640eff70e7cfdba448293f367ba6f218334474dc1e32210616"
+    },
+    {
+      "source_id": "L01_Morch2019",
+      "path": "06_literature/L01_Morch2019/supporting/m-06-00492-fig4.gif",
+      "publisher_member": "m-06-00492-fig4.gif",
+      "bytes": 15713,
+      "sha256": "abbba23dc230f2a418309578df09028b2ee183fb85f4fbe80429cf8aa793b2e8"
+    },
+    {
+      "source_id": "L01_Morch2019",
+      "path": "06_literature/L01_Morch2019/supporting/m-06-00492-fig4.jpg",
+      "publisher_member": "m-06-00492-fig4.jpg",
+      "bytes": 106684,
+      "sha256": "3be60bb21ec8b692353915ae4ba05245a0461f6a3c68540051f68368c95df67f"
+    },
+    {
+      "source_id": "L01_Morch2019",
+      "path": "06_literature/L01_Morch2019/supporting/m-06-00492-fig5.gif",
+      "publisher_member": "m-06-00492-fig5.gif",
+      "bytes": 8863,
+      "sha256": "11ec2b18a5796e686ceb177c138ea8f9d0786df2f63b9b5f7b85b87e4d758c51"
+    },
+    {
+      "source_id": "L01_Morch2019",
+      "path": "06_literature/L01_Morch2019/supporting/m-06-00492-fig5.jpg",
+      "publisher_member": "m-06-00492-fig5.jpg",
+      "bytes": 66777,
+      "sha256": "f5a08bcc513973ca453b31be7474aaabbd21b28aa7afe1779ca29d3e252cd790"
+    },
+    {
+      "source_id": "L01_Morch2019",
+      "path": "06_literature/L01_Morch2019/supporting/m-06-00492-fig6.gif",
+      "publisher_member": "m-06-00492-fig6.gif",
+      "bytes": 10752,
+      "sha256": "9de334e085f4ce8f792abc86340ed96aae34b8421951b7dce71f815db8cf895a"
+    },
+    {
+      "source_id": "L01_Morch2019",
+      "path": "06_literature/L01_Morch2019/supporting/m-06-00492-fig6.jpg",
+      "publisher_member": "m-06-00492-fig6.jpg",
+      "bytes": 62887,
+      "sha256": "984f1c46b5b1219f39ffcd24757e2657de1276d9a2a7d6a73e1bcd2633220930"
+    },
+    {
+      "source_id": "L01_Morch2019",
+      "path": "06_literature/L01_Morch2019/supporting/m-06-00492-fig7.gif",
+      "publisher_member": "m-06-00492-fig7.gif",
+      "bytes": 10024,
+      "sha256": "3a20bdce625ef5f8a7917b89e44a3f6df3f99a1e492bba52608dd606a277a314"
+    },
+    {
+      "source_id": "L01_Morch2019",
+      "path": "06_literature/L01_Morch2019/supporting/m-06-00492-fig7.jpg",
+      "publisher_member": "m-06-00492-fig7.jpg",
+      "bytes": 71245,
+      "sha256": "847cb7a9326b87763e7f015df66a8b8eb1b1bea54f55c570720f3aab4772145f"
+    },
+    {
+      "source_id": "L01_Morch2019",
+      "path": "06_literature/L01_Morch2019/supporting/m-06-00492-sup1.pdf",
+      "publisher_member": "m-06-00492-sup1.pdf",
+      "bytes": 2689301,
+      "sha256": "27cb1ea1b0f2eb45271b3e708bdf5bb2bc8408d94052e56b0651fbe6ee94bf7a"
+    },
+    {
+      "source_id": "L02_Morch2023",
+      "path": "06_literature/L02_Morch2023/supporting/CIFs/SrCo2Fe16O27.cif",
+      "publisher_member": "j-56-00597-sup2.zip!/CIFs/SrCo2Fe16O27.cif",
+      "bytes": 2435,
+      "sha256": "be668a6d84605f102d8086053eed4c971a27d1dcc95f659213698db101dcfc88"
+    },
+    {
+      "source_id": "L02_Morch2023",
+      "path": "06_literature/L02_Morch2023/supporting/CIFs/SrCo2Fe16O27.mcif",
+      "publisher_member": "j-56-00597-sup2.zip!/CIFs/SrCo2Fe16O27.mcif",
+      "bytes": 3472,
+      "sha256": "a81ebd6feddaa8bc26e1d16cdcd4786fbd2d4fd8e5352c8b145cb3e7f92118c6"
+    },
+    {
+      "source_id": "L02_Morch2023",
+      "path": "06_literature/L02_Morch2023/supporting/CIFs/SrCoZnFe16O27.cif",
+      "publisher_member": "j-56-00597-sup2.zip!/CIFs/SrCoZnFe16O27.cif",
+      "bytes": 2888,
+      "sha256": "c008446f50ca6576041b8398edca0234befef4f9476a2c2795152fbc394e95c4"
+    },
+    {
+      "source_id": "L02_Morch2023",
+      "path": "06_literature/L02_Morch2023/supporting/CIFs/SrCoZnFe16O27.mcif",
+      "publisher_member": "j-56-00597-sup2.zip!/CIFs/SrCoZnFe16O27.mcif",
+      "bytes": 3913,
+      "sha256": "0e951df91d65f3a64c2db0c3d9dcfaf37442d81efdbb15ae626d486e9d944417"
+    },
+    {
+      "source_id": "L02_Morch2023",
+      "path": "06_literature/L02_Morch2023/supporting/CIFs/SrZn2Fe16O27.cif",
+      "publisher_member": "j-56-00597-sup2.zip!/CIFs/SrZn2Fe16O27.cif",
+      "bytes": 2187,
+      "sha256": "a5d8455cd6855e98b03fafc4d2d7dd1c2f6d372b40455c08e994a89532069fb0"
+    },
+    {
+      "source_id": "L02_Morch2023",
+      "path": "06_literature/L02_Morch2023/supporting/CIFs/SrZn2Fe16O27.mcif",
+      "publisher_member": "j-56-00597-sup2.zip!/CIFs/SrZn2Fe16O27.mcif",
+      "bytes": 2976,
+      "sha256": "7e1745faebe686a4e9908632ac3d3bc15bfc52dda1852290d7073e5b9a43d9c8"
+    },
+    {
+      "source_id": "L02_Morch2023",
+      "path": "06_literature/L02_Morch2023/supporting/CIFs/pdCIF_SrCo2Fe16O27.cif",
+      "publisher_member": "j-56-00597-sup2.zip!/CIFs/pdCIF_SrCo2Fe16O27.cif",
+      "bytes": 21392085,
+      "sha256": "46eec053ed090d0e855186a2f53ff842359686305829b7f42a3004a9058cf1ea"
+    },
+    {
+      "source_id": "L02_Morch2023",
+      "path": "06_literature/L02_Morch2023/supporting/CIFs/pdCIF_SrCoZnFe16O27.cif",
+      "publisher_member": "j-56-00597-sup2.zip!/CIFs/pdCIF_SrCoZnFe16O27.cif",
+      "bytes": 25542371,
+      "sha256": "602374756c634226b0fb692b31581296083052c7dea9fdbc86c7dba4bd94d822"
+    },
+    {
+      "source_id": "L02_Morch2023",
+      "path": "06_literature/L02_Morch2023/supporting/CIFs/pdCIF_SrZn2Fe16O27.cif",
+      "publisher_member": "j-56-00597-sup2.zip!/CIFs/pdCIF_SrZn2Fe16O27.cif",
+      "bytes": 23009071,
+      "sha256": "2de88abca537db15ba498d295d99722ebcc31d5a51b8046e72131c4d2d2a7afa"
+    },
+    {
+      "source_id": "L02_Morch2023",
+      "path": "06_literature/L02_Morch2023/supporting/j-56-00597-efi1.jpg",
+      "publisher_member": "j-56-00597-efi1.jpg",
+      "bytes": 1364,
+      "sha256": "78718ae873e9eff4df5a818b0f6752e4011118411e4aa790323b63260996c3ca"
+    },
+    {
+      "source_id": "L02_Morch2023",
+      "path": "06_literature/L02_Morch2023/supporting/j-56-00597-efi2.jpg",
+      "publisher_member": "j-56-00597-efi2.jpg",
+      "bytes": 267,
+      "sha256": "19fbe77c3ef4d475e43183951cc0a9161f0ab913b64de5f58420bb7e6c7e37f4"
+    },
+    {
+      "source_id": "L02_Morch2023",
+      "path": "06_literature/L02_Morch2023/supporting/j-56-00597-efi3.jpg",
+      "publisher_member": "j-56-00597-efi3.jpg",
+      "bytes": 366,
+      "sha256": "b7eed0b766e0c7a2b525a5fe295e796a6071022e0aaf8ff8a8202dd541065faa"
+    },
+    {
+      "source_id": "L02_Morch2023",
+      "path": "06_literature/L02_Morch2023/supporting/j-56-00597-fig1.gif",
+      "publisher_member": "j-56-00597-fig1.gif",
+      "bytes": 5213,
+      "sha256": "2dd599161d28f651a4148edc149e9ab14dbb9c44e058b0e1d1925913d785ab70"
+    },
+    {
+      "source_id": "L02_Morch2023",
+      "path": "06_literature/L02_Morch2023/supporting/j-56-00597-fig1.jpg",
+      "publisher_member": "j-56-00597-fig1.jpg",
+      "bytes": 81540,
+      "sha256": "dee104741d0a84a99de291d7580996b5362f98c4ccc35f8aa8b34f0e28463ad1"
+    },
+    {
+      "source_id": "L02_Morch2023",
+      "path": "06_literature/L02_Morch2023/supporting/j-56-00597-fig2.gif",
+      "publisher_member": "j-56-00597-fig2.gif",
+      "bytes": 14589,
+      "sha256": "4e69200bad6871cf941f2bf1f227db51b89aa3131e211edaa5b234f0b2262586"
+    },
+    {
+      "source_id": "L02_Morch2023",
+      "path": "06_literature/L02_Morch2023/supporting/j-56-00597-fig2.jpg",
+      "publisher_member": "j-56-00597-fig2.jpg",
+      "bytes": 110959,
+      "sha256": "72ba5f138212676534d29b86f8227c60e949ec9d7ffa1cfee2368d2013e7f31a"
+    },
+    {
+      "source_id": "L02_Morch2023",
+      "path": "06_literature/L02_Morch2023/supporting/j-56-00597-fig3.gif",
+      "publisher_member": "j-56-00597-fig3.gif",
+      "bytes": 13430,
+      "sha256": "a6357e6a2195d8dbf327fa7b063851fae728c6ee70e2d169a99a293a63552887"
+    },
+    {
+      "source_id": "L02_Morch2023",
+      "path": "06_literature/L02_Morch2023/supporting/j-56-00597-fig3.jpg",
+      "publisher_member": "j-56-00597-fig3.jpg",
+      "bytes": 111567,
+      "sha256": "3949826b2e5e172cf7062aac36f1f316057995cdf45b7074658a1c665a55ded6"
+    },
+    {
+      "source_id": "L02_Morch2023",
+      "path": "06_literature/L02_Morch2023/supporting/j-56-00597-fig4.gif",
+      "publisher_member": "j-56-00597-fig4.gif",
+      "bytes": 12955,
+      "sha256": "b8cd207d1ac29379903334fb389b7f9c44b37aabbec82286dba38db99e3ac7e7"
+    },
+    {
+      "source_id": "L02_Morch2023",
+      "path": "06_literature/L02_Morch2023/supporting/j-56-00597-fig4.jpg",
+      "publisher_member": "j-56-00597-fig4.jpg",
+      "bytes": 154538,
+      "sha256": "2927d6b18c389e5832069776039f01d9f6a394dbe3c54e0117dfa9deb95ee652"
+    },
+    {
+      "source_id": "L02_Morch2023",
+      "path": "06_literature/L02_Morch2023/supporting/j-56-00597-fig5.gif",
+      "publisher_member": "j-56-00597-fig5.gif",
+      "bytes": 11074,
+      "sha256": "68db19f0a8e1a14700282408f2006bf1e846bd41a98ddbe91c73e3491296dbb8"
+    },
+    {
+      "source_id": "L02_Morch2023",
+      "path": "06_literature/L02_Morch2023/supporting/j-56-00597-fig5.jpg",
+      "publisher_member": "j-56-00597-fig5.jpg",
+      "bytes": 71031,
+      "sha256": "71313284892146f70a016416d708f1145dd78a8a1e87a4e3d10d75e97f3557cb"
+    },
+    {
+      "source_id": "L02_Morch2023",
+      "path": "06_literature/L02_Morch2023/supporting/j-56-00597-sup1.pdf",
+      "publisher_member": "j-56-00597-sup1.pdf",
+      "bytes": 815563,
+      "sha256": "61c090d31da7b511b4e10ab798a2c6f8a9287983d35be3e55197895b7d5e8f28"
+    }
+  ],
+  "supplement_aliases": [
+    {
+      "source_id": "L01_Morch2019",
+      "alias": "m-06-00492-sup13.cif",
+      "sha256": "41bbfdae4d599fd399213c75997de9b46593f303643ae52906d91474fcc08fef"
+    },
+    {
+      "source_id": "L01_Morch2019",
+      "alias": "m-06-00492-sup14.cif",
+      "sha256": "a09efbed2ecacf698fa5f49b4ee58bf524e1c6e4eba8d3830989c37c1e344889"
+    },
+    {
+      "source_id": "L01_Morch2019",
+      "alias": "m-06-00492-sup12.cif",
+      "sha256": "56ad386a4ef49c9b84e1aecc4914668f367d7211086305061ee855e81748006a"
+    },
+    {
+      "source_id": "L01_Morch2019",
+      "alias": "m-06-00492-sup6.cif",
+      "sha256": "2f147e282aa873e6b466321d703bd86107c9ed7d0eb7cdc3622e623ace4223d0"
+    },
+    {
+      "source_id": "L01_Morch2019",
+      "alias": "m-06-00492-sup7.cif",
+      "sha256": "fdd30ad5ee8d7ee9f32e33a1149105966a776ca73d2047af341913003df62f5c"
+    },
+    {
+      "source_id": "L01_Morch2019",
+      "alias": "m-06-00492-sup8.cif",
+      "sha256": "beb8ce6ec97d5f35ffd2306b27caa3e7ff1113c9ea542259631aed48aa94ae91"
+    },
+    {
+      "source_id": "L01_Morch2019",
+      "alias": "m-06-00492-sup5.cif",
+      "sha256": "54b0c2ccc939363d05715a986aed40738dfeeb880453d8245bac4e57c5254879"
+    },
+    {
+      "source_id": "L01_Morch2019",
+      "alias": "m-06-00492-sup3.cif",
+      "sha256": "5cc4b0a691f2f5d4eae6035e8d8e77df7256003002abcf6da44bc377a83973de"
+    },
+    {
+      "source_id": "L01_Morch2019",
+      "alias": "m-06-00492-sup11.cif",
+      "sha256": "0c56b513d2a007fe02137a512c5e49718800d760ec3b1bcd58a0f6e62f37b09f"
+    },
+    {
+      "source_id": "L01_Morch2019",
+      "alias": "m-06-00492-sup10.cif",
+      "sha256": "47401ac504468cd6d08f7b3d85c9c4d110da4ea326a9caa87053282fe4e99436"
+    },
+    {
+      "source_id": "L01_Morch2019",
+      "alias": "m-06-00492-sup9.cif",
+      "sha256": "6e30dd00479fa1b51d4755d3e1f03e50bea5354b9d2e0dca351c91fdff0eaf4a"
+    },
+    {
+      "source_id": "L01_Morch2019",
+      "alias": "m-06-00492-sup4.cif",
+      "sha256": "aed66afd24797dafcbbbeecec025f1de1e3c2c888cba4a917aba72b74c3977af"
+    }
+  ],
+  "software_documentation": [
+    {
+      "id": "GSASII",
+      "path": "07_software_documentation/GSASII_scriptable.html",
+      "url": "https://gsas-ii-scripting.readthedocs.io/en/latest/GSASIIscriptable.html",
+      "kind": "HTML_snapshot_not_full_site",
+      "sha256": "3a3fe785345b4f50d4cc7625a051246112932ff025d45952516301853c768979"
+    },
+    {
+      "id": "Quantum_ESPRESSO",
+      "path": "07_software_documentation/Quantum_ESPRESSO_pw_input.html",
+      "url": "https://www.quantum-espresso.org/Doc/INPUT_PW.html",
+      "kind": "HTML_snapshot_not_full_site",
+      "sha256": "6778f93ea5bd088cd3f07ef0e686767f4cbb669f7394595ff7116e083d8c9d41"
+    }
+  ]
+}

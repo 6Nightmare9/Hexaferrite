@@ -1,0 +1,22 @@
+{
+  "key": "77d5f4b504a3b1914f9b7910f17148ce84e1b3c076ea0dd5d52e7e0fe4c4c92a",
+  "settings": {
+    "composition": {
+      "Ni": 1.0
+    },
+    "temperatures_K": [
+      300.0
+    ],
+    "n_draws": 48,
+    "n_prior": 60000,
+    "seed": 20261026,
+    "host": "dft",
+    "co_form": "ion_mf",
+    "l11_constraint": "none",
+    "anisotropy_model": "auto"
+  },
+  "files": {
+    "parameters.npz": "2b156f5abd8576411a1f0e06c9ae73cf35edffae702fb16a16d324c6dd580756",
+    "material.json": "65f849ed232d7f9e64355fd8f752b3b6bab16f8d72050cea379e7d1f2998f77b"
+  }
+}

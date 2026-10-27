@@ -1,0 +1,10 @@
+﻿source_role,case,status,f0_median_GHz,lo95_GHz,hi95_GHz,minimum_valid_draws,n_draws,run
+theory_prediction_NOT_measurement,cozn_co2,series_interpolation,25.090778103280492,2.159303094630876,143.541421072628,48,48,C:\MIPT\working_stuff\Hexx\runs\predictions\ec1f232e28e4ba5929b3
+theory_prediction_NOT_measurement,cozn_mix,series_interpolation,7.375023471306978,0.7316166532822956,40.895914066344304,48,48,C:\MIPT\working_stuff\Hexx\runs\predictions\2fb8d861e571130ff1b9
+theory_prediction_NOT_measurement,cozn_zn2,series_interpolation,11.767441871784309,2.6733554142761395,45.173932094524055,48,48,C:\MIPT\working_stuff\Hexx\runs\predictions\74961425c1b88fa91691
+theory_prediction_NOT_measurement,mn1,sr_graph_interpolation,37.13696726124367,22.887251635473476,52.71978323530839,48,48,C:\MIPT\working_stuff\Hexx\runs\predictions\f1ae25e45782e53f802a
+theory_prediction_NOT_measurement,mn2,sr_graph_interpolation,36.53691612149144,22.51580363199961,51.86895640068666,48,48,C:\MIPT\working_stuff\Hexx\runs\predictions\b5f5307af271a12d5980
+theory_prediction_NOT_measurement,mg1,sr_graph_interpolation,47.79084441976615,29.759039699739933,68.46007967581032,48,48,C:\MIPT\working_stuff\Hexx\runs\predictions\d5aaa5264afdd1041856
+theory_prediction_NOT_measurement,mg2,sr_graph_extrapolation,43.17295031578215,15.129536123254347,102.25562924731356,48,48,C:\MIPT\working_stuff\Hexx\runs\predictions\9c45d2a71a16521a51e0
+theory_prediction_NOT_measurement,ni1,sr_graph_interpolation,39.72845089439778,24.558767651105857,56.54850399110615,48,48,C:\MIPT\working_stuff\Hexx\runs\predictions\1c32f4f97fd926d5b4bc
+theory_prediction_NOT_measurement,ni2,sr_graph_extrapolation,36.546700272993384,9.346705962483057,112.92406790554251,48,48,C:\MIPT\working_stuff\Hexx\runs\predictions\cd2f0759c1eb6c6a912c

@@ -1,0 +1,41 @@
+! hexw.dft  campaign=campaign_v1  config=c02_flip_Fe2_Fe4  config_sha256=e3890a568388ffd62fceaabb391ee38a683c5a0116aa7c7cfe6a0f9b5f5bc2d7
+! system=alpha-Fe2O3 kind=hematite pseudo_profile=gbrv_pilot cutoff_status=pilot
+&CONTROL
+  calculation='scf', prefix='p02', outdir='./tmp', pseudo_dir='D:/Work/Hexx/tools/pseudo/use',
+  verbosity='high', tprnfor=.false., tstress=.false., disk_io='low'
+/
+&SYSTEM
+  ibrav=0, nat=10, ntyp=3, ecutwfc=40, ecutrho=240,
+  nspin=2, occupations='smearing', smearing='gaussian', degauss=0.005,
+  starting_magnetization(1)=0.4,
+  starting_magnetization(2)=-0.4,
+  starting_magnetization(3)=0
+/
+&ELECTRONS
+  electron_maxstep=200, conv_thr=1.000e-07, mixing_beta=0.3,
+  mixing_mode='local-TF', diagonalization='david'
+/
+ATOMIC_SPECIES
+Fe1 55.845 fe_pbe_v1.5.uspp.F.UPF
+Fe2 55.845 fe_pbe_v1.5.uspp.F.UPF
+O 15.999 o_pbe_v1.2.uspp.F.UPF
+CELL_PARAMETERS angstrom
+  4.8155312041 -2.5190000000 0.0000000000
+  4.8155312041 2.5190000000 0.0000000000
+  3.4978445916 0.0000000000 4.1593010219
+ATOMIC_POSITIONS crystal
+Fe2 0.8553000000 0.8553000000 0.8553000000
+Fe1 0.3553000000 0.3553000000 0.3553000000
+Fe1 0.1447000000 0.1447000000 0.1447000000
+Fe2 0.6447000000 0.6447000000 0.6447000000
+O 0.4441000000 0.0559000000 0.7500000000
+O 0.0559000000 0.7500000000 0.4441000000
+O 0.5559000000 0.9441000000 0.2500000000
+O 0.2500000000 0.5559000000 0.9441000000
+O 0.9441000000 0.2500000000 0.5559000000
+O 0.7500000000 0.4441000000 0.0559000000
+K_POINTS automatic
+2 2 2 0 0 0
+HUBBARD {ortho-atomic}
+U Fe1-3d 3
+U Fe2-3d 3

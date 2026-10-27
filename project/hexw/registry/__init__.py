@@ -1,0 +1,1 @@
+"""Registry schemas and persistence."""

@@ -1,0 +1,20 @@
+{
+ "config_id": "c14_flip_W3_W7",
+ "role": "fit",
+ "flipped_groups": [
+  "W3",
+  "W7"
+ ],
+ "pattern": [
+  1,
+  1,
+  -1,
+  1,
+  1,
+  1,
+  -1
+ ],
+ "system": "SrFe18O27_uniform_cfg0",
+ "input_sha256": "68b06c1d9a9377a707058b9b2cfc5ba1565c544b0cd58c59a7cfefe2e948e739",
+ "config_sha256": "1f72d82f46ab3fe96d83c92513beb68be46880be8c33143d799c97d157da7dcd"
+}

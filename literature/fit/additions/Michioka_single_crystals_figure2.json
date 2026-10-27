@@ -1,0 +1,80 @@
+{
+  "source_id": "SRSC",
+  "title": "Magnetic Anisotropy of W-type Ferrite Studied by Using Single Crystals",
+  "author": "Chishiro Michioka",
+  "source_url": "https://www.toyotariken.jp/_/media/page/about/research-report/pdf/archive/71_2023_research-report.pdf",
+  "date_note": "Report shows received 6 March 2018; archive URL contains 2023. Publication year not inferred from URL.",
+  "source_path": "literature/fit/additions/Michioka_primary_report.pdf",
+  "source_sha256": "3797c17c7874b617601814fb52d7a47dab81324c6e38fb3b375641ec4a17a611",
+  "role": "literature_fit",
+  "split_decision": "Added 2026-10-26 before any laboratory FMR validation. Primary Sr single-crystal graph; all extracted points assigned FIT. No independent validation claim from these points.",
+  "locator": {
+    "printed_page": 183,
+    "pdf_page_1based": 177,
+    "figure": 2
+  },
+  "measurement_conditions": {
+    "temperature": "room temperature, taken as 300 K",
+    "specimen": "single crystal",
+    "composition": "nominal SrFe18-xMxO27",
+    "field_definition": "anisotropy field inferred from magnetization along/perpendicular c; plotted in T"
+  },
+  "host_Ha_T": 1.76,
+  "digitization_std_T": 0.04,
+  "series": {
+    "Mn": [
+      [
+        0.5,
+        1.41
+      ],
+      [
+        1.0,
+        1.28
+      ],
+      [
+        1.5,
+        1.25
+      ],
+      [
+        2.0,
+        1.26
+      ]
+    ],
+    "Ni": [
+      [
+        0.2,
+        1.6
+      ],
+      [
+        0.5,
+        1.46
+      ],
+      [
+        1.0,
+        1.37
+      ]
+    ],
+    "Mg": [
+      [
+        0.2,
+        1.66
+      ],
+      [
+        1.0,
+        1.65
+      ],
+      [
+        1.7,
+        1.5
+      ]
+    ]
+  },
+  "extraction": "Manual graph digitization from a rendered primary PDF figure; rounded to 0.01 T. Ambiguous overlapping points omitted. 0.04 T is a conservative digitization standard deviation, not an author error bar.",
+  "limitations": [
+    "No damping or dielectric constants extracted",
+    "No Mn valence measurement supplied by graph",
+    "No numeric table available",
+    "No extraction from Fig.3 because the unit/normalization requires further verification",
+    "No universal <=10 percent claim"
+  ]
+}

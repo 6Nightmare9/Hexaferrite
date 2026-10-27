@@ -1,0 +1,48 @@
+{
+ "config_id": "c02_flip_Fe2_Fe4",
+ "role": "fit",
+ "job_state": "done",
+ "status": "ok",
+ "energy_Ry": -1194.85633256,
+ "energy_meV": -16256848.586877424,
+ "n_iterations": 12,
+ "total_magnetization": 0.0,
+ "absolute_magnetization": 17.44,
+ "site_moments": [
+  -3.8169,
+  3.8169,
+  3.8169,
+  -3.8169,
+  0.0885,
+  0.0885,
+  -0.0885,
+  -0.0885,
+  -0.0885,
+  0.0885
+ ],
+ "hubbard_d_moments": {
+  "1": -4.1551,
+  "2": 4.15511,
+  "3": 4.15511,
+  "4": -4.1551
+ },
+ "smearing_contrib_Ry": -0.0,
+ "wall_s": 65.6,
+ "cpu_s": 62.98,
+ "ram_estimate_MB": 232.53,
+ "qe_version": "7.6",
+ "config_check": {
+  "ok": true,
+  "reason": "preserved",
+  "flipped": [],
+  "collapsed": [],
+  "min_abs_moment": 3.8169,
+  "mean_abs_moment": 3.8169,
+  "total_target_spin_moment": 0.0
+ },
+ "input_sha256": "a710ac46503b11a93c79e0697cf87f1684ae8c2691c0bce6e085c2f664447ab5",
+ "output_sha256": "0a1408f34c3e0dce065e84dd6c6b7b0b70cf2eb0d384d92d6ec1b9ae09c67467",
+ "config_sha256": "e3890a568388ffd62fceaabb391ee38a683c5a0116aa7c7cfe6a0f9b5f5bc2d7",
+ "fermi_eV": 11.3917,
+ "estimated_scf_accuracy_Ry": 1e-08
+}

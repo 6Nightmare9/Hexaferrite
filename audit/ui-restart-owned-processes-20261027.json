@@ -1,0 +1,32 @@
+[
+  {
+    "ProcessId": 15412,
+    "ParentProcessId": 19308,
+    "CommandLine": "\"C:\\MIPT\\working_stuff\\Hexx\\tools\\venv\\Scripts\\python.exe\" -B -m hexw serve --port 8765"
+  },
+  {
+    "ProcessId": 17164,
+    "ParentProcessId": 15412,
+    "CommandLine": "\"C:\\MIPT\\working_stuff\\Hexx\\tools\\venv\\Scripts\\python.exe\" -B -m hexw serve --port 8765"
+  },
+  {
+    "ProcessId": 12628,
+    "ParentProcessId": 5576,
+    "CommandLine": "\"C:\\MIPT\\working_stuff\\Hexx\\tools\\venv\\Scripts\\python.exe\" -B C:\\Users\\Redmi\\AppData\\Local\\Temp\\hexw-handoff-20261027\\run_hexw_ui.py"
+  },
+  {
+    "ProcessId": 8916,
+    "ParentProcessId": 12628,
+    "CommandLine": "\"C:\\MIPT\\working_stuff\\Hexx\\tools\\venv\\Scripts\\python.exe\" -B C:\\Users\\Redmi\\AppData\\Local\\Temp\\hexw-handoff-20261027\\run_hexw_ui.py"
+  },
+  {
+    "ProcessId": 21608,
+    "ParentProcessId": 8916,
+    "CommandLine": "C:\\MIPT\\working_stuff\\Hexx\\tools\\venv\\Scripts\\python.exe -B -m hexw serve --port 8765"
+  },
+  {
+    "ProcessId": 23320,
+    "ParentProcessId": 21608,
+    "CommandLine": "C:\\MIPT\\working_stuff\\Hexx\\tools\\venv\\Scripts\\python.exe -B -m hexw serve --port 8765"
+  }
+]

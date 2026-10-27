@@ -1,0 +1,20 @@
+{
+  "created_utc": "2026-10-27T06:46:49+00:00",
+  "pdf": "C:\\MIPT\\working_stuff\\Hexx\\GUIDE\\Инструкция_HexW.pdf",
+  "pages": 6,
+  "sha256": "489493187f1d2a62e34204d89b7fc0b910a2d334ddfca9f17317ec95ce361826",
+  "bytes": 310688,
+  "visual_reviewed_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "rendering": "Poppler PNG, 1400-pixel page height",
+  "images": "two verified browser screenshots",
+  "launch_warning_explained": true,
+  "scientific_code_modified": false,
+  "build_source": "audit/pdf_guide_2026-10-27/build_guide.py"
+}

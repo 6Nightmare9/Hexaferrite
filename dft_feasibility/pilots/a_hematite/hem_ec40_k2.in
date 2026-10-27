@@ -1,0 +1,39 @@
+&CONTROL
+  calculation='scf', prefix='hemec40_k2', outdir='./tmp', pseudo_dir='D:/Work/Hexx/tools/pseudo/use',
+  verbosity='low', tprnfor=.false., tstress=.false., disk_io='low'
+/
+&SYSTEM
+  ibrav=0, nat=10, ntyp=3, ecutwfc=40, ecutrho=200,
+  nspin=2, occupations='smearing', smearing='gaussian', degauss=0.01,
+  
+  starting_magnetization(1)=0.4,
+  starting_magnetization(2)=-0.4,
+  starting_magnetization(3)=0.0,
+/
+&ELECTRONS
+  electron_maxstep=8, conv_thr=1e-6, mixing_beta=0.3, diagonalization='david'
+/
+ATOMIC_SPECIES
+Fe1 55.847 fe_pbe_v1.5.uspp.F.UPF
+Fe2 55.847 fe_pbe_v1.5.uspp.F.UPF
+O 15.999 o_pbe_v1.2.uspp.F.UPF
+CELL_PARAMETERS angstrom
+  4.81553120 -2.51900000 0.00000000
+  4.81553120 2.51900000 0.00000000
+  3.49784459 0.00000000 4.15930102
+ATOMIC_POSITIONS crystal
+Fe1 0.85530000 0.85530000 0.85530000
+Fe2 0.35530000 0.35530000 0.35530000
+Fe1 0.14470000 0.14470000 0.14470000
+Fe2 0.64470000 0.64470000 0.64470000
+O 0.44410000 0.05590000 0.75000000
+O 0.05590000 0.75000000 0.44410000
+O 0.55590000 0.94410000 0.25000000
+O 0.25000000 0.55590000 0.94410000
+O 0.94410000 0.25000000 0.55590000
+O 0.75000000 0.44410000 0.05590000
+K_POINTS automatic
+2 2 2 0 0 0
+HUBBARD {atomic}
+U Fe1-3d 4.0
+U Fe2-3d 4.0

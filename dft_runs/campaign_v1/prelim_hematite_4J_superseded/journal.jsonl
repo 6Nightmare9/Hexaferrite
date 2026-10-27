@@ -1,0 +1,18 @@
+{"composition": "hematite_alpha-Fe2O3", "config_sha256": "d417facfe7ac85324462194a1bd64a3a3262d5dc234e99576a459073f1fe1c20", "event": "generate", "kept": [], "t": "2026-10-26T03:42:59+00:00", "written": ["c00_ground", "c01_flip_Fe3_Fe4", "c02_flip_Fe2_Fe4", "c03_flip_Fe2_Fe3", "c04_flip_Fe4", "c05_flip_Fe3", "c06_flip_Fe2"]}
+{"event": "queue", "n_parallel": 3, "skipped": {}, "t": "2026-10-26T03:43:02+00:00", "to_run": ["c00_ground", "c01_flip_Fe3_Fe4", "c02_flip_Fe2_Fe4", "c03_flip_Fe2_Fe3", "c04_flip_Fe4", "c05_flip_Fe3", "c06_flip_Fe2"]}
+{"attempt": 1, "event": "start", "job": "c01_flip_Fe3_Fe4", "t": "2026-10-26T03:43:02+00:00"}
+{"attempt": 1, "event": "start", "job": "c02_flip_Fe2_Fe4", "t": "2026-10-26T03:43:02+00:00"}
+{"attempt": 1, "event": "start", "job": "c00_ground", "t": "2026-10-26T03:43:02+00:00"}
+{"event": "finish", "job": "c01_flip_Fe3_Fe4", "message": "", "state": "done", "t": "2026-10-26T03:44:08+00:00", "wall_s": 66.4}
+{"attempt": 1, "event": "start", "job": "c03_flip_Fe2_Fe3", "t": "2026-10-26T03:44:08+00:00"}
+{"event": "finish", "job": "c02_flip_Fe2_Fe4", "message": "", "state": "done", "t": "2026-10-26T03:44:11+00:00", "wall_s": 69.1}
+{"attempt": 1, "event": "start", "job": "c04_flip_Fe4", "t": "2026-10-26T03:44:11+00:00"}
+{"event": "finish", "job": "c00_ground", "message": "", "state": "done", "t": "2026-10-26T03:44:23+00:00", "wall_s": 81.1}
+{"attempt": 1, "event": "start", "job": "c05_flip_Fe3", "t": "2026-10-26T03:44:23+00:00"}
+{"event": "finish", "job": "c03_flip_Fe2_Fe3", "message": "", "state": "done", "t": "2026-10-26T03:45:07+00:00", "wall_s": 58.4}
+{"attempt": 1, "event": "start", "job": "c06_flip_Fe2", "t": "2026-10-26T03:45:07+00:00"}
+{"event": "finish", "job": "c04_flip_Fe4", "message": "", "state": "done", "t": "2026-10-26T03:45:33+00:00", "wall_s": 81.8}
+{"event": "finish", "job": "c05_flip_Fe3", "message": "", "state": "done", "t": "2026-10-26T03:45:45+00:00", "wall_s": 81.9}
+{"event": "finish", "job": "c06_flip_Fe2", "message": "", "state": "done", "t": "2026-10-26T03:46:16+00:00", "wall_s": 69.3}
+{"event": "collect", "n_config_not_preserved": 0, "n_ok": 7, "t": "2026-10-26T03:46:27+00:00"}
+{"event": "collect", "n_config_not_preserved": 0, "n_ok": 7, "t": "2026-10-26T03:46:30+00:00"}

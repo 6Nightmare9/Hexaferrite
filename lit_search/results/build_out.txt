@@ -1,0 +1,135 @@
+11 screened; 134 Counter({2: 57, 1: 29, 4: 28, 3: 20})
+1 1973 10.1143/jjap.12.945 | Preparation and Characterization of Polycrystalline SrFe18O27 | - False
+1 1988 10.1016/0025-5408(88)90104-3 | Magnetic and mössbauer study of coprecipitated SrNi2Fe16O27 (SrNi2W) and SrCo2Fe16O27 | - False
+1 2011 10.1016/j.jallcom.2011.05.013 | Role of Ce–Mn substitution on structural, electrical and magnetic properties of W-typ | - False
+1 2014 None | Correlation between magnetic and dielectric anomalies in Z- and W-type hexaferrites | A True
+1 2014 10.48550/arxiv.1407.3605 | Magnetic / dielectric anomalies and magnetodielectric / magnetoelectric effects in Z- | A True
+1 2014 10.1063/1.4867370 | Spin reorientation transition and near room-temperature multiferroic properties in a  | A False
+1 2014 10.4028/www.scientific.net/amr.975.268 | Effect of Substituting Sr&lt;sup&gt;2+&lt;/sup&gt; for Gd&lt;sup&gt;3+&lt;/sup&gt; on | A None
+1 2015 10.1016/j.jmmm.2015.01.069 | Magnetic and microwave absorption properties of ZnCo-substituted W-type strontium hex | - None
+1 2016 10.1016/j.jallcom.2016.11.356 | Preparation of strontium W-type hexaferrites in a low oxygen pressure and their magne | - False
+1 2018 10.1016/j.jallcom.2018.05.296 | Improved magnetic properties of Zn-substituted strontium W-type hexaferrites | - False
+1 2018 10.1007/s10948-018-4771-z | Structural Characterization and Magnetic Properties of SrCo2Fe16O27 Hexaferrite Synth | - None
+1 2019 10.1107/s2052252519003130 | Structure and magnetic properties of W-type hexaferrites | A True
+1 2019 10.47176/jame.38.3.15672 | Effect of Annealing Temperature on the Structural, Magnetic and Optical Properties of | - None
+1 2020 10.1016/j.ceramint.2020.11.095 | Enhanced microwave absorption properties of Zn-substituted SrW-type hexaferrite compo | - False
+1 2022 10.1039/d2dt02091b | Texture formation in W-type hexaferrite by cold compaction of non-magnetic interactin | A True
+1 2022 10.3390/magnetochemistry8080075 | Investigation into the Structural, Spectral, Magnetic, and Electrical Properties of C | A True
+1 2022 10.1063/5.0087172 | Electric-field-driven resistive transition in multiferroic SrCo2Fe16O27/Sr3Co2Fe24O41 | A True
+1 2023 10.1107/s1600576723002133 | Controlling the magnetic structure in W-type hexaferrites | A True
+1 2023 10.2320/matertrans.mt-y2022010 | Study on Factors Hindering the Single-Phase Formation of Divalent-Ion-Stabilized W-Ty | A True
+1 2023 10.1016/j.physb.2023.414872 | Quantifying Co–Zn contents for compositional tailoring of strontium W-type hexaferrit | - False
+1 2023 10.1016/j.ceramint.2022.09.205 | Highly c-axis oriented W-type hexaferrites SrNi2ScxFe16-xO27 (x = 0.70, 0.75, 0.80 an | - None
+1 2024 10.1103/physrevb.109.024414 | Exploring the magnetic properties of W -type SrFe18O27 hexaferrite: Insights from a f | A False
+1 2024 10.1080/27660400.2024.2442903 | Development of a compact near-infrared lamp furnace for synchrotron powder diffractio | A True
+1 2024 10.1016/j.ceramint.2024.02.198 | Structural, optical, dielectric and magnetic properties of Cd substituted copper stro | - None
+1 2025 10.1016/j.actamat.2025.120828 | Enhancing magnetocrystalline anisotropy in W-type SrFe18O27 hexaferrite via tailored  | A True
+1 2025 10.2109/jcersj2.25033 | Low oxygen potential synthesis of W-type strontium ferrite SrFe18O27 in a closed atmo | A True
+1 2025 10.1016/j.jallcom.2025.182783 | Thin, broadband microwave absorbers based on Co–Zn co-substituted SrW-type hexaferrit | - False
+1 2026 10.1007/s10854-026-18555-4 | Effect of Mg substitution on the structural, morphological, and dielectric properties | - False
+1 2026 10.1063/9.0000986 | Magnetic properties and cation site occupancy in Zn-substituted W-type hexagonal ferr | A None
+2 1952 10.1038/170708a0 | Crystal Structure of BaFe18O27 | - False
+2 1963 10.1063/1.1729461 | Effect of Fluoride-Compensated Co2+ on the Anisotropy of BaFe12O19 | A False
+2 1966 10.1002/pssb.19660140226 | Electrical Properties of Single Crystals of Hexagonal Ferrites with the W Structure | A False
+2 1979 10.1016/0038-1098(79)90926-8 | Anisotropy of hexagonal ferrites with M, W and Y structure containing Fe3+ and Fe2+ a | - False
+2 1980 10.1063/1.327493 | Permanent-magnet material obtained by sintering the hexagonal ferrite W=BaFe18O27 | A False
+2 1981 10.1063/1.328990 | Zn2W: Improvements of magnetic properties by copper substitution | A None
+2 1985 10.1143/jjap.24.51 | Magnetic Properties of W-Type Hexaferrite Powders | A False
+2 1985 None | THE SUBSTITUTION OF RARE EARTH IONS IN THE HEXAFERRITES | A False
+2 1986 10.1063/1.337575 | Competing anisotropies and first-order magnetization processes in (Zn,Co)W-type hexaf | A False
+2 1986 10.1007/bf02061493 | Mössbauer investigation of W-type hexaferrite of composition BaZn2−xCoxFe16O27 | - False
+2 1987 10.1063/1.338889 | Magnetic investigation of a (Co,Zn)2 W-type hexaferrite (abstract) | A False
+2 1988 10.1063/1.340405 | Magnetic, Mössbauer, and neutron diffraction investigations of W-type hexaferrite BaZ | A False
+2 1989 10.1016/0304-8853(89)90098-x | The rotation of the magnetization in the BaCo2Fe16O27 W-type hexagonal ferrite | - None
+2 1989 10.1109/20.42281 | Magnetic and Mossbauer study of (TiCu)Ni/sub 2/W hexagonal ferrite system | - None
+2 1991 10.1016/0304-8853(91)90703-d | Spin reorientation in Co1.5Ni0.5Sr-W hexagonal ferrite | - None
+2 1993 10.1541/ieejfms1990.113.4_306 | Effect of CaO and SiO2 Addition on Magnetic Properties of Anisotropic Ba-Zn System W- | A True
+2 1994 10.1541/ieejfms1990.114.4_320 | Magnetic Properties of Anisotropic Pb-Zn-Mg System W-Type Hexagonal Ferrite Magnets | A True
+2 1995 10.1016/0304-8853(94)01406-x | 57Fe NMR in BaFe2-W hexagonal ferrite | - None
+2 1995 10.1016/0304-8853(95)00406-8 | Investigations on Zn2−xCoxW-type hexaferrite powders at low temperatures by ferromagn | - False
+2 1996 10.2497/jjspm.43.995 | Crystal Stability and Magnetic Properties of W-type Hexagonal Ferrite Sr1-xBax(ZnLi0. | A True
+2 1997 10.1023/a:1018541314320 | Aligned hexagonal ferrite fibres of Co2W, BaCo2Fe16O27 produced from an aqueous sol–g | - None
+2 2000 10.2320/matertrans1989.41.567 | GHz Range Electromagnetic Wave Absorption Properties of M and W-Type Two Phase Hexafe | A True
+2 2007 10.1016/j.jmmm.2006.12.019 | Effect of Co substitution on the structural and magnetic properties of Zn–W hexaferri | - None
+2 2008 None | α-Fe/W Hexaferrite Composites and Their Electrical and Magnetic Properties at High Fr | A False
+2 2011 10.1016/j.jmmm.2011.11.041 | Anisotropy of the electrical conductivity in W-type hexagonal ferrites BaFe18O27 and  | - False
+2 2011 10.1088/1742-6596/303/1/012045 | Magnetic and structural characterization of nanosized BaCoxZn2−xFe16O27hexaferrite in | A True
+2 2011 10.1063/1.3525607 | Resonancelike dispersion for W-type barium ferrite composites with c-axis anisotropy | A None
+2 2012 10.1063/1.3670062 | Direct calorimetric measurements of isothermal entropy change on single crystal W-typ | A True
+2 2012 10.1016/j.jeurceramsoc.2011.10.047 | Magnetic properties of randomly oriented BaM, SrM, Co2Y, Co2Z and Co2W hexagonal ferr | - None
+2 2013 10.4236/msce.2013.14002 | Microwave Absorbing Properties of W-Type Hexaferrite Ba(MnZn)xCo2(1-x)Fe16O27 | A True
+2 2014 None | A Study on the Effect of Temperature in Synthesis and Magnetic Properties of W-Type H | A True
+2 2015 10.3379/msjmag.1506r003 | Synthesis and magnetic properties of Fe2W and Fe2Y hexaferrites | A True
+2 2015 10.29369/ijrbat.2015.03.ii.0024 | IMPROVEMENT OF THE STRUCTURAL, ELECTRICAL AND MAGNETIC PROPERTIES OF CALCIUM W-TYPE H | A True
+2 2015 10.1088/1757-899x/81/1/012003 | Radiation-thermal synthesis of W-type hexaferrites | A True
+2 2017 10.1007/s10971-017-4533-6 | Investigation of synthesis and magnetic properties of plate-shaped Zn2W ferrites prep | - None
+2 2019 10.1134/s1063774519040060 | On the Crystallographic Polytypes SrAl12O19 (BaFe12O19)–BaFe18O27 | A False
+2 2019 10.1007/s10948-019-05213-6 | Structural and Magnetic Properties of Ba1−xRexCo2ZnxFe16−xO27 W-Type Hexaferrites Pre | - False
+2 2019 10.1016/j.jallcom.2019.07.049 | Effect of heating temperature on magnetic and microstructural properties of Zn2W hexa | - None
+2 2020 10.47011/13.1.1 | Structural and Magnetic Properties of (Mg, Co)2W Hexaferrites | A True
+2 2020 10.52700/jn.v1i2.15 | Synthesis and Characterization of Aluminium and Cobalt substituted W type Hexagonal F | A True
+2 2020 10.1088/1757-899x/782/2/022038 | Microstructure and Magnetic Properties of Textured Barium W-Type Hexaferrite with Rar | A True
+2 2020 10.13005/msri/170106 | Structural and Magnetic Properties of Ba1-xRexCo2ZnxFe16-xO27 W-type Hexaferrite prep | A True
+2 2021 10.18090/samriddhi.v13spli02.32 | SA Review: Effect of Substitution on Morphological and Magnetic behavior of W-type He | A True
+2 2021 10.13005/msri/180305 | Magnetic and Structural Behaviour of Cobalt & Nickel Substituted Calcium W-Type Nanos | A True
+2 2021 10.1088/1742-6596/1943/1/012011 | Synthesis and magnetic properties of ferromagnetic W-type hexaferrite by mechanical m | A True
+2 2021 10.1088/1757-899x/1198/1/012005 | Electromagnetic characteristics of materials based on ultrafine hexaferrite powders | A True
+2 2022 10.1007/s00339-022-06244-y | Structural, morphological and magnetic properties of hexaferrite BaCo2Fe16O27 nanopar | A None
+2 2023 10.3390/ma16175897 | Absorption Band Tunable La-Sr Co-Doped BaCo2-W Type Hexaferrites | A True
+2 2023 10.1007/s10854-023-11192-1 | Structural, Raman, Photo luminance, morphological, and magnetic properties of Sr-Ba-C | - False
+2 2023 10.59628/jast.v1i1.100 | Structural,Spectral and Electrical Properties of BaNi2-xZnxFe16O27 Nanoparticles Ferr | A True
+2 2024 10.3390/app142210631 | Enhanced Electromagnetic Wave Absorption in W-Type Ba-Hexaferrites: Role of Compositi | A True
+2 2024 10.1063/5.0239994 | Electric polarization induced by low magnetic field in the W-type hexaferrite BaCoFe1 | A False
+2 2024 10.1007/s10854-024-12024-6 | Synthesis and characterization of BaZn2−xMgxFe16O27 (x = 0.0, 0.5, 1.0, 1.5 and 2.0)  | - False
+2 2025 10.1007/s10854-024-14103-0 | Refining magnetic characteristics of BaCo2Fe16O27 W-type hexaferrites through Gd3+ su | - None
+2 2026 10.3390/cryst16080511 | W-Type Hexaferrites Made in Seconds—An In Situ Powder Diffraction Study | A True
+2 2026 10.1016/j.ceramint.2026.02.270 | Tuning magnetic properties of W-type hexaferrites through Gd3+-Mg2+ Co-substitution a | - False
+2 2026 10.3390/mi17050534 | W-Type Hexaferrite Film-Enabled Magnetic Resonance Engineering for Tailored Upper Sto | A True
+3 1952 10.1038/170707a0 | A New Method of Melting Ferromagnetic Semiconductors. BaFe18O27, a New Kind of Ferrom | - False
+3 1971 10.2497/jjspm.17.193 | Phase Diagram of The SrO-Fe2O3 System in It's Fe2O3-Rich Region and The Growth of SrO | A True
+3 1998 10.3379/jmsjmag.22.s1_197 | Magneto-Optical Properties of the Epitaxial Barium Hexaferrite Films Prepared by Puls | A True
+3 2000 10.21608/ejs.2000.151483 | Dielectric Behaviour of MgZn W-type Hexaferrite | A True
+3 2011 10.7498/aps.60.107102 | First-principles study of the electronic structure and electric conductivity in W-typ | A True
+3 2012 10.4028/www.scientific.net/amr.424-425.137 | Effect of Replacement of Fe2+ by Co2+ in W-Type Hexagonal Ferrite BaFe18O27 to its El | A True
+3 2012 10.7498/aps.61.207102 | Electronic structures and dielectric properties of BaCoxZn2-xFe16O27 from first princ | A True
+3 2012 10.22401/jnus.15.2.14 | Dielectric Behavior of Nickel-Zinc Dopped Hexagonal W-type Barium Ferrite | - None
+3 2014 10.13005/msri/110102 | Structural and Magnetic Properties of Mo-Zn Substituted (BaFe12-4xMoxZn3xO19) M-type  | A True
+3 2014 10.1109/crmico.2014.6959633 | Effective permeability of nanoscale particle of W-type hexaferrite | - None
+3 2017 10.1016/j.matpr.2017.06.182 | Fabrication, Structural and Dielectric Properties of Aluminum doped W-type Barium Zin | - None
+3 2018 10.1016/j.ceramint.2018.06.018 | The role of Pb and annealing temperature on the structural, magnetic, optical and die | - False
+3 2019 10.1016/j.ceramint.2019.08.129 | Evaluations of structural, magnetic and various dielectric parameters of Ni-substitut | - None
+3 2022 10.33263/briac132.168 | Investigations on Optical and Electrical Conductivity of Ba/Ni/Zn/Fe16O27 Ferrite Nan | A True
+3 2023 10.21741/9781644902318-1 | An Overview of Hard Ferrites: Types and Structures | A True
+3 2024 10.1088/1674-1056/ad39d5 | Influences of divalent ion substitution on the magnetic and dielectric properties of  | A True
+3 2025 10.1016/j.ceramint.2025.07.366 | Impact of rare-earth elemental doping on the structural, magnetic, and dielectric pro | - True
+3 2025 10.1016/j.mssp.2025.110202 | Tuned gyromagnetic properties of W-type hexaferrites via ion substitution and magneti | - True
+3 2025 10.1016/j.jeurceramsoc.2025.117215 | Microstructure and gyromagnetic properties of oriented polycrystalline W-type hexafer | - False
+3 2025 10.1186/s11671-024-04180-9 | Studies on the electrical and optical conductivity of barium-nickel ferrite nanoparti | A True
+4 1960 10.1103/physrev.119.1523 | Anisotropic Ferromagnetic Resonance Linewidth in Ferrites | - None
+4 1963 10.1109/tmtt.1963.1125695 | Ferromagnetic Line Width of Nonoriented Polycrystalline Hexagonal Ferrites with Large | - None
+4 1988 10.1063/1.340778 | A contribution to the ferromagnetic resonance linewidth of <i>M</i>-phase barium ferr | A None
+4 1994 10.1063/1.358366 | Transverse susceptibility and magnetic anisotropy of CoTi-doped barium hexaferrite si | A None
+4 1996 10.1063/1.362313 | Two magnon ferromagnetic resonance linewidths in uniaxial and planar single crystal h | A None
+4 1997 10.1063/1.365288 | Angle dependence of the ferromagnetic resonance linewidth in easy-axis and easy-plane | A None
+4 2000 10.1023/a:1009444406700 | Ferromagnetic Resonance Spectra in Single-Crystal Hexagonal Ferrites | - None
+4 2002 10.1007/s003390201556 | Neutron powder diffraction study of (Co, Ti)-substituted fine-particle Ba-hexaferrite | - None
+4 2002 10.1016/s0304-8853(01)00962-3 | Sublattice occupation in Sr1−xLaxFe12−xCoxO19 hexagonal ferrite analyzed by Mössbauer | - None
+4 2005 10.1103/physrevb.71.184433 | Exchange interactions in barium hexaferrite | - None
+4 2007 10.1016/j.jmmm.2006.10.1068 | Ferromagnetic resonance equation of hexagonal ferrite in c-plane | - None
+4 2009 10.1103/physrevb.79.094427 | Ferromagnetic resonance linewidth mechanisms in polycrystalline ferrites: Role of gra | - None
+4 2012 10.1063/1.3671793 | Ferromagnetic resonance of micro- and nano-sized hexagonal ferrite powders at millime | A None
+4 2012 10.1016/j.jmmm.2013.08.006 | Theory of magnetic enhancement in strontium hexaferrite through Zn-Sn pair substituti | A True
+4 2013 10.1063/1.4795821 | Ab initio study on magnetic anisotropy change of SrCoxTixFe12−2xO19 | A None
+4 2015 10.1063/1.4922867 | Site occupancy and magnetic properties of Al-substituted M-type strontium hexaferrite | A True
+4 2015 10.1063/1.4936368 | Site preference and magnetic properties of Ga/In-substituted strontium hexaferrite: A | A None
+4 2015 1510.00513 | Electronic structure and magnetic properties of FeTe, BiFeO$_3$, SrFe$_{12}$O$_{19}$  | A True
+4 2016 10.1038/srep36200 | Calculation of exchange integrals and Curie temperature for La-substituted barium hex | A True
+4 2017 10.1016/j.ceramint.2017.05.264 | Mössbauer study of zinc-substituted strontium cobalt Z-type hexaferrite | - None
+4 2018 10.1063/1.5084762 | Site preference and magnetic properties of Zn-Sn-substituted strontium hexaferrite | A True
+4 2021 10.1103/physrevmaterials.5.094415 | Enhanced magnetic anisotropy in lanthanum M-type hexaferrites by quantum-confined cha | A True
+4 2021 10.1038/s41598-021-81028-7 | An ab initio study of the magnetic properties of strontium hexaferrite. | A True
+4 2023 10.1103/physrevapplied.20.024016 | Giant Magnetic and Optical Anisotropy in Cerium-Substituted M-Type Strontium Hexaferr | A True
+4 2023 2306.11952 | First-principles prediction of structural, magnetic properties of Cr-substituted stro | A True
+4 2024 10.1103/physrevb.110.014432 | Magnetic properties of diluted hexaferrites | A True
+4 2025 10.1021/acs.chemmater.4c02205 | Synthesis, Crystal Structure, Site Occupancy, and Magnetic Properties of Aluminum-Sub | A True
+4 2025 10.3390/magnetism5020014 | Ab Initio Investigation on the Magnetic Moments, Magnetocrystalline Anisotropy and Cu | A True

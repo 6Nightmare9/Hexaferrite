@@ -1,0 +1,459 @@
+meta:
+  decision: literature/SPLIT_DECISION.md
+  date: '2026-10-25'
+  author: руководитель разработки
+  schema: hexw.registry.schemas.LiteratureClaim (load with hexw.params.literature)
+  split: excluded+methodology_only
+  n_claims: 9
+  note: Never usable in a parametrization (SourceRole.NON_PARAMETRIC_ROLES).
+claims:
+- rec_id: C004-011
+  lit_id: C004
+  name: SrW_stable_pO2_window_at_1473K
+  role: excluded_secondary
+  source:
+    locator:
+      text: Section 1, Fig. 2
+      page: null
+      table: null
+      figure: '2'
+      supplementary: null
+    data_status: assumed_by_authors
+    tier: 2
+    doi: 10.2109/jcersj2.25033
+    sample_id_in_source: SrFe18O27
+    formula_in_source: SrFe18O27
+    synthesis: 'solid-state in sealed evacuated quartz tube (pO2 ~1e-8 atm at RT): SrFe12O19 + (8/3) alpha-Fe2O3 + (2/3) Fe
+      (Fe reduced in H2) -> SrFe18O27, pellets, 1373-1523 K 12 h, cooled to ~500 K at 200 K/h then furnace cooled'
+    measurement_conditions:
+      T:
+        K: 300
+        note: RT
+      field: null
+      orientation: null
+      form: polycrystalline pellet / powder (~100 um multidomain particles for VSM)
+      density: null
+      texture: unfixed particles freely rotating in field (random)
+    method: XRD (X'Pert PRO, Cu Ka1; HighScore Plus phase ratios) + RT VSM (VSM-5SC-10HF, TOEI), high-field part up to 6.4
+      MA/m extrapolated to 1/H^2=0
+    quantity_definition: from reported PO2-T diagram (secondary)
+    verbatim_source: SrW is stable between PO2 = 10-4.7 and 10-2.7 atm at 1473 K
+    transformation: null
+    measurement_group: C004_intro
+    figure_only: false
+    axes: null
+    split_cluster: SECONDARY
+    transfer: null
+    holdout_kind: null
+  estimate: null
+  pending: null
+  qualitative: SrW stable between pO2 = 10^-4.7 and 10^-2.7 atm at 1473 K (literature phase diagram, ref 25)
+  value_original: null
+  unit_original: null
+  uncertainty_note: null
+  notes: null
+  split: excluded
+- rec_id: C004-012
+  lit_id: C004
+  name: literature_Ms_RT_SrW
+  role: excluded_secondary
+  source:
+    locator:
+      text: Section 1
+      page: null
+      table: null
+      figure: null
+      supplementary: null
+    data_status: measured
+    tier: 2
+    doi: 10.2109/jcersj2.25033
+    sample_id_in_source: SrFe18O27 (review of refs 5-7)
+    formula_in_source: SrFe18O27
+    synthesis: 'solid-state in sealed evacuated quartz tube (pO2 ~1e-8 atm at RT): SrFe12O19 + (8/3) alpha-Fe2O3 + (2/3) Fe
+      (Fe reduced in H2) -> SrFe18O27, pellets, 1373-1523 K 12 h, cooled to ~500 K at 200 K/h then furnace cooled'
+    measurement_conditions:
+      T:
+        K: 300
+        note: RT
+      field: null
+      orientation: null
+      form: polycrystalline pellet / powder (~100 um multidomain particles for VSM)
+      density: null
+      texture: unfixed particles freely rotating in field (random)
+    method: XRD (X'Pert PRO, Cu Ka1; HighScore Plus phase ratios) + RT VSM (VSM-5SC-10HF, TOEI), high-field part up to 6.4
+      MA/m extrapolated to 1/H^2=0
+    quantity_definition: lower end of a quoted literature range 77-81 (primary sources not in corpus)
+    verbatim_source: The value of magnetization of SrW at room temperature (RT) (77-81 A m2/kg 5-7)) is 10 % higher than that
+      of M-type strontium ferrite
+    transformation: null
+    measurement_group: C004_intro
+    figure_only: false
+    axes: null
+    split_cluster: SECONDARY
+    transfer: null
+    holdout_kind: null
+  estimate: null
+  pending:
+    name: literature_Ms_RT_SrW
+    value: 77.0
+    unit: A*m^2/kg
+    proposed_quantity_kind: specific_magnetization
+    reason: 'split=excluded_secondary_citation: kept as claim, not a parameter estimate'
+    uncertainty_std: null
+  qualitative: null
+  value_original: null
+  unit_original: A*m^2/kg
+  uncertainty_note: null
+  notes: 'secondary citation: do not use as an independent datum'
+  split: excluded
+- rec_id: C004-013
+  lit_id: C004
+  name: literature_magnetic_anisotropy_RT_SrW_low
+  role: excluded_secondary
+  source:
+    locator:
+      text: Section 1
+      page: null
+      table: null
+      figure: null
+      supplementary: null
+    data_status: measured
+    tier: 2
+    doi: 10.2109/jcersj2.25033
+    sample_id_in_source: SrFe18O27 (review of refs 5-7)
+    formula_in_source: SrFe18O27
+    synthesis: 'solid-state in sealed evacuated quartz tube (pO2 ~1e-8 atm at RT): SrFe12O19 + (8/3) alpha-Fe2O3 + (2/3) Fe
+      (Fe reduced in H2) -> SrFe18O27, pellets, 1373-1523 K 12 h, cooled to ~500 K at 200 K/h then furnace cooled'
+    measurement_conditions:
+      T:
+        K: 300
+        note: RT
+      field: null
+      orientation: null
+      form: polycrystalline pellet / powder (~100 um multidomain particles for VSM)
+      density: null
+      texture: unfixed particles freely rotating in field (random)
+    method: XRD (X'Pert PRO, Cu Ka1; HighScore Plus phase ratios) + RT VSM (VSM-5SC-10HF, TOEI), high-field part up to 6.4
+      MA/m extrapolated to 1/H^2=0
+    quantity_definition: quantity not defined in the text (units MA/m => presumably anisotropy field H_A); lower end of range
+      1.30-1.55
+    verbatim_source: The magnetic anisotropy of SrW at RT (1.30-1.55 MA/m 5-7)) is large and comparable to that of SrM (1.48
+      MA/m)
+    transformation: null
+    measurement_group: C004_intro
+    figure_only: false
+    axes: null
+    split_cluster: SECONDARY
+    transfer: null
+    holdout_kind: null
+  estimate: null
+  pending:
+    name: literature_magnetic_anisotropy_RT_SrW_low
+    value: 1.3
+    unit: MA/m
+    proposed_quantity_kind: anisotropy_field_or_unspecified
+    reason: 'split=excluded_secondary_citation: kept as claim, not a parameter estimate'
+    uncertainty_std: null
+  qualitative: null
+  value_original: null
+  unit_original: MA/m
+  uncertainty_note: null
+  notes: 'definition ambiguous (HA vs mu0HA vs K); compare L05 DFT mu0Ha = 0.569 T and L11 Ba: 13.7 kOe = 1.09 MA/m'
+  split: excluded
+- rec_id: L05-120
+  lit_id: L05
+  name: Ku_experimental_300K_cited
+  role: excluded_secondary
+  source:
+    locator:
+      text: Section 3.4 and Table 3 footnote a (Ref. [65])
+      page: null
+      table: '3'
+      figure: null
+      supplementary: null
+    data_status: measured
+    tier: 2
+    doi: 10.1016/j.actamat.2025.120828
+    sample_id_in_source: SrW
+    formula_in_source: SrFe18O27
+    synthesis: n/a (DFT)
+    measurement_conditions:
+      T:
+        K: 0
+        note: static DFT, no thermal effects
+      field: null
+      orientation: magnetisation along c (easy axis) and a for MAE
+      form: ideal crystal, 92-atom cell
+      density: n/a
+      texture: n/a
+    method: VASP, PAW, PBE GGA+U (Dudarev, U_eff = 3 eV on Fe 3d, from linear response), 92-atom hexagonal cell P63/mmc (SrW),
+      gamma-centred 5x5x1 k-mesh (SCF), cutoff 600 eV, SCF 1e-6 eV, forces <0.01 eV/A; SOC noncollinear for MAE with 12x12x2
+      k-mesh and Bloechl tetrahedra; collinear Gorter ferrimagnet 4e,4f1,4f3 antiparallel to 6g,4f2,12k,2d; K/Ca/Ba/La replace
+      half of the Sr atoms at 2b (symmetry P-6m2)
+    quantity_definition: experimental Ku of SrFe18O27 at 300 K quoted from Ueda et al. [65]; primary source not in corpus
+      (anisotropy field decreases below ~100 K there)
+    verbatim_source: which is roughly half of the experimental value of 0.344 MJ/m3 obtained at room temperature [65]
+    transformation: null
+    measurement_group: L05_SrW_DFT
+    figure_only: false
+    axes: null
+    split_cluster: SECONDARY
+    transfer: null
+    holdout_kind: null
+  estimate: null
+  pending:
+    name: Ku_experimental_300K_cited
+    value: 0.344
+    unit: MJ/m^3
+    proposed_quantity_kind: energy_density
+    reason: 'split=excluded_secondary_citation: kept as claim, not a parameter estimate'
+    uncertainty_std: null
+  qualitative: null
+  value_original: null
+  unit_original: MJ/m^3
+  uncertainty_note: null
+  notes: secondary citation; locate primary (Ueda) before using as holdout
+  split: excluded
+- rec_id: L05-121
+  lit_id: L05
+  name: m_tot_experimental_cited
+  role: excluded_secondary
+  source:
+    locator:
+      text: Table 2, last row (Expt.), footnote a (Ref. [65])
+      page: null
+      table: '2'
+      figure: null
+      supplementary: null
+    data_status: measured
+    tier: 2
+    doi: 10.1016/j.actamat.2025.120828
+    sample_id_in_source: SrW
+    formula_in_source: SrFe18O27
+    synthesis: n/a (DFT)
+    measurement_conditions:
+      T:
+        K: 0
+        note: static DFT, no thermal effects
+      field: null
+      orientation: magnetisation along c (easy axis) and a for MAE
+      form: ideal crystal, 92-atom cell
+      density: n/a
+      texture: n/a
+    method: VASP, PAW, PBE GGA+U (Dudarev, U_eff = 3 eV on Fe 3d, from linear response), 92-atom hexagonal cell P63/mmc (SrW),
+      gamma-centred 5x5x1 k-mesh (SCF), cutoff 600 eV, SCF 1e-6 eV, forces <0.01 eV/A; SOC noncollinear for MAE with 12x12x2
+      k-mesh and Bloechl tetrahedra; collinear Gorter ferrimagnet 4e,4f1,4f3 antiparallel to 6g,4f2,12k,2d; K/Ca/Ba/La replace
+      half of the Sr atoms at 2b (symmetry P-6m2)
+    quantity_definition: experimental total moment per unit cell from Ueda [65]; temperature not stated here
+    verbatim_source: mtot/u.c. (Expt.) 56.60 [Ref. 65]
+    transformation: null
+    measurement_group: L05_SrW_DFT
+    figure_only: false
+    axes: null
+    split_cluster: SECONDARY
+    transfer: null
+    holdout_kind: null
+  estimate: null
+  pending:
+    name: m_tot_experimental_cited
+    value: 56.6
+    unit: muB
+    proposed_quantity_kind: magnetic_moment
+    reason: 'split=excluded_secondary_citation: kept as claim, not a parameter estimate'
+    uncertainty_std: null
+  qualitative: null
+  value_original: null
+  unit_original: muB
+  uncertainty_note: null
+  notes: secondary citation
+  split: excluded
+- rec_id: C053-001
+  lit_id: C053
+  name: Ms_range_CaSr2_MnZn_W
+  role: excluded_low_quality
+  source:
+    locator:
+      text: Section on VSM / Table-4
+      page: null
+      table: null
+      figure: null
+      supplementary: null
+    data_status: measured
+    tier: 3
+    doi: 10.29369/ijrbat.2015.03.ii.0024
+    sample_id_in_source: CaSr2(MnZn)x/2Fe16-xO27 x=0-1
+    formula_in_source: CaSr2(MnZn)x/2Fe16-xO27
+    synthesis: null
+    measurement_conditions:
+      T: null
+      field: null
+      orientation: null
+      form: null
+      density: null
+      texture: null
+    method: null
+    quantity_definition: formula as printed (Ca/Sr co-occupancy unclear; sintered at 1000 C - far below W-phase formation
+      T of other sources); table text layer scrambled
+    verbatim_source: the saturation magnetization varies in the range of 13.97 emu/g to 40.45 emu/g
+    transformation: null
+    measurement_group: C053
+    figure_only: false
+    axes: null
+    split_cluster: KHOB_C053
+    transfer: null
+    holdout_kind: null
+  estimate: null
+  pending: null
+  qualitative: Ms 13.97-40.45 emu/g across x = 0-1 (CaSr2(MnZn)x/2Fe16-xO27), sintered 1000 C 4 h
+  value_original: null
+  unit_original: null
+  uncertainty_note: null
+  notes: 'EXCLUDED: internally inconsistent formula/synthesis, Ms far below any other W; listed only because it mentions Mn
+    in a Sr-containing W'
+  split: excluded
+- rec_id: C115-001
+  lit_id: C115
+  name: exchange_integrals_from_spin_configurations
+  role: methodology_only
+  source:
+    locator:
+      text: Section 'Calculation of exchange integrals' (Eqs. 5-9 in image; text only here)
+      page: null
+      table: null
+      figure: null
+      supplementary: null
+    data_status: calculated
+    tier: 4
+    doi: 10.1038/srep36200
+    sample_id_in_source: Ba1-xLaxFe12O19 (M-type!) x = 0, 0.5, 1.0
+    formula_in_source: Ba1-xLaxFe12O19
+    synthesis: 'ceramic: BaCO3, La2O3, Fe2O3 + 3 wt % Bi2O3, calc 800 C 2 h, sintered 1050 C 2 h'
+    measurement_conditions:
+      T:
+        K: 0
+      field: null
+      orientation: null
+      form: null
+      density: null
+      texture: null
+    method: null
+    quantity_definition: exchange-sign convention NOT recoverable from text (equation is an image) -> do not import numbers;
+      methodology only
+    verbatim_source: The exchange energy per unit cell in the complex system with N magnetic sublattices could be then written
+      as ... where ni is the number of ith sublattice, zij is the number of neighbouring sites in jth sublattice to ith sublattice,
+      Jij is the exchange integrals, Si and Sj represent the spins in the ith and jth sublattices, and are equal to +-1
+    transformation: null
+    measurement_group: C115
+    figure_only: false
+    axes: null
+    split_cluster: METHOD
+    transfer: null
+    holdout_kind: null
+  estimate: null
+  pending: null
+  qualitative: Heisenberg model; J_ij from total-energy differences between ferrimagnetic spin configurations (S_i = +-1 in
+    the energy sum, n_i sublattice population, z_ij neighbours); neighbours beyond 4 A neglected; MFA gives upper and RPA
+    lower bound of TC
+  value_original: null
+  unit_original: null
+  uncertainty_note: null
+  notes: 'M-type, Ba: numbers not transferable; sign/normalisation to be fixed by our own DFT'
+  split: methodology_only
+- rec_id: C115-002
+  lit_id: C115
+  name: Ueff_reproducing_TC_BaM
+  role: methodology_only
+  source:
+    locator:
+      text: Section 'Calculations of Curie temperature', Table 4, Conclusions
+      page: null
+      table: '4'
+      figure: null
+      supplementary: null
+    data_status: calculated
+    tier: 4
+    doi: 10.1038/srep36200
+    sample_id_in_source: Ba1-xLaxFe12O19 (M-type!) x = 0, 0.5, 1.0
+    formula_in_source: Ba1-xLaxFe12O19
+    synthesis: 'ceramic: BaCO3, La2O3, Fe2O3 + 3 wt % Bi2O3, calc 800 C 2 h, sintered 1050 C 2 h'
+    measurement_conditions:
+      T:
+        K: 0
+      field: null
+      orientation: null
+      form: null
+      density: null
+      texture: null
+    method: null
+    quantity_definition: U_eff that matches exp TC with RPA for La-substituted BaM (GGA+U VASP PBE 500 eV, 11x11x1, forces<0.03
+      eV/A); methodological illustration that J(U) decays strongly with U
+    verbatim_source: the experimental Curie temperature is reproduced by calculations for the effective value Ueff ~ 6.7 eV,
+      and the MFA and RPA estimations provide an upper and lower bound of the Curie temperature
+    transformation: null
+    measurement_group: C115
+    figure_only: false
+    axes: null
+    split_cluster: METHOD
+    transfer: null
+    holdout_kind: null
+  estimate: null
+  pending:
+    name: Ueff_reproducing_TC_BaM
+    value: 6.7
+    unit: eV
+    proposed_quantity_kind: energy
+    reason: 'split=methodology_only: kept as claim, not a parameter estimate'
+    uncertainty_std: null
+  qualitative: null
+  value_original: null
+  unit_original: eV
+  uncertainty_note: null
+  notes: 'tier 4: DO NOT use for W-phase; shows U-sensitivity'
+  split: methodology_only
+- rec_id: C112-001
+  lit_id: C112
+  name: exchange_J_from_22_spin_configurations
+  role: methodology_only
+  source:
+    locator:
+      text: Section 'Exchange couplings' and Figs. 4-7
+      page: null
+      table: null
+      figure: '4'
+      supplementary: null
+    data_status: calculated
+    tier: 4
+    doi: 10.1038/s41598-021-81028-7
+    sample_id_in_source: SrFe12O19 (M-type)
+    formula_in_source: SrFe12O19
+    synthesis: n/a (DFT)
+    measurement_conditions:
+      T:
+        K: 0
+      field: null
+      orientation: null
+      form: null
+      density: null
+      texture: null
+    method: null
+    quantity_definition: method/sensitivity findings only (numbers not transferable to W)
+    verbatim_source: The SFO exchange constants have been obtained from Eq. (2) employing up to 22 different spin configurations
+      and systematically varying the U term in the 2-5 eV interval ... for the largest Js the difference was only ~0.2 %,
+      indicating that SOC may be safely ignored
+    transformation: null
+    measurement_group: C112
+    figure_only: false
+    axes: null
+    split_cluster: METHOD
+    transfer: null
+    holdout_kind: null
+  estimate: null
+  pending: null
+  qualitative: 'SrM DFT+U: J_ij from up to 22 spin configurations, U varied 2-5 eV; J decays strongly with U; SOC changes
+    largest J by ~0.2 %; expanded theoretical cell gives ~10 % smaller J than experimental cell; ES/TS/ED/TD static-vs-dynamic
+    relaxation limits'
+  value_original: null
+  unit_original: null
+  uncertainty_note: null
+  notes: 'supports our plan: J from spin-configuration fits, SOC-free; check cell (exp vs relaxed) and U sensitivity'
+  split: methodology_only

@@ -1,0 +1,17 @@
+composition: {Co: 1.0, Zn: 1.0}
+temperatures_K: [300.0]
+fields_T: [0.0, 0.3, 0.8]
+frequencies_GHz: {start: 0.1, stop: 100.0, count: 151}
+g: 2.0
+alpha: 0.02
+theta_deg: 0.0
+phi_deg: 0.0
+shape: sphere
+n_draws: 48
+n_prior: 60000
+seed: 20261026
+equilibrium_grid: 80
+host: dft
+co_form: ion_mf
+l11_constraint: none
+label: SrCoZnFe16O27, 300 K, ideal sphere, explicit g/alpha scenario

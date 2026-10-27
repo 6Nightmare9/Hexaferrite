@@ -1,0 +1,12 @@
+Verified frozen forecast: cozn_co2
+Verified frozen forecast: cozn_mix
+Verified frozen forecast: cozn_zn2
+Verified frozen forecast: mn1
+Verified frozen forecast: mn2
+Verified frozen forecast: mg1
+Verified frozen forecast: mg2
+Verified frozen forecast: ni1
+Verified frozen forecast: ni2
+Current-version literature comparison: cozn_co2 0.06310430166476753
+Current-version literature comparison: cozn_zn2 0.087303217281762
+{"status": "ready_for_colleague_review", "tests": {"tests": 995, "failures": 0, "errors": 0, "skipped": 7, "passed": 988}, "verified_forecasts": 9, "verified_analyses": 13, "repositories": {"project": {"commit": "4283b8998613c6bb4e9c004f725952b5088cd9af", "branch": "codex/material-pipeline", "clean": true}, "registry": {"commit": "0b9bddc6434ffb2413b2a05987efcde5116ada6a", "branch": "codex/recovery-2026-10-26", "clean": true}, "literature": {"commit": "8b26fc1e02d228bc8199544c041edba1a5fae309", "branch": "codex/sr-single-crystal-data", "clean": true}}}

@@ -1,0 +1,749 @@
+{
+ "system": "SrFe18O27_uniform_cfg0",
+ "kind": "W92",
+ "n_atoms": 92,
+ "formula": "Sr(Fe2O3)9",
+ "convention": "H = -sum_{i<j} J_ij S_i.S_j; each pair once; |S| = spin quantum number (Fe3+ 5/2, Fe2+ 2, Mn2+ 5/2, Co2+ 3/2); J>0 ferromagnetic; J in meV; energies per simulation cell",
+ "n_J": 13,
+ "n_parameters_incl_E0": 14,
+ "n_fit": 15,
+ "n_holdout": 2,
+ "n_configs": 17,
+ "dof": 1,
+ "J_classes": [
+  {
+   "label": "W1-W2",
+   "n_bonds": 12,
+   "d_min": 3.6261226835969778,
+   "d_max": 3.6261226835969804,
+   "shells": [
+    [
+     3.62612268359698,
+     12
+    ]
+   ],
+   "n_distinct_shells": 1,
+   "paths": {
+    "no shared O": 12
+   },
+   "mean_Fe_O_Fe_angle_corner_deg": null,
+   "spin_products": [
+    5.0,
+    6.25
+   ]
+  },
+  {
+   "label": "W1-W3",
+   "n_bonds": 24,
+   "d_min": 3.4887221012688503,
+   "d_max": 3.488722101268851,
+   "shells": [
+    [
+     3.4887221012688507,
+     24
+    ]
+   ],
+   "n_distinct_shells": 1,
+   "paths": {
+    "corner (1 O)": 24
+   },
+   "mean_Fe_O_Fe_angle_corner_deg": 123.07154029949193,
+   "spin_products": [
+    5.0,
+    6.25
+   ]
+  },
+  {
+   "label": "W1-W4",
+   "n_bonds": 12,
+   "d_min": 3.4655947137258694,
+   "d_max": 3.4655947137258716,
+   "shells": [
+    [
+     3.4655947137258707,
+     12
+    ]
+   ],
+   "n_distinct_shells": 1,
+   "paths": {
+    "corner (1 O)": 12
+   },
+   "mean_Fe_O_Fe_angle_corner_deg": 119.47224704085257,
+   "spin_products": [
+    5.0,
+    6.25
+   ]
+  },
+  {
+   "label": "W1-W5",
+   "n_bonds": 12,
+   "d_min": 3.5348435495035613,
+   "d_max": 3.5348435495035635,
+   "shells": [
+    [
+     3.5348435495035617,
+     12
+    ]
+   ],
+   "n_distinct_shells": 1,
+   "paths": {
+    "corner (1 O)": 12
+   },
+   "mean_Fe_O_Fe_angle_corner_deg": 125.60043322127605,
+   "spin_products": [
+    5.0,
+    6.25
+   ]
+  },
+  {
+   "label": "W2-W3",
+   "n_bonds": 12,
+   "d_min": 3.525660930976783,
+   "d_max": 3.525660930976787,
+   "shells": [
+    [
+     3.5256609309767852,
+     12
+    ]
+   ],
+   "n_distinct_shells": 1,
+   "paths": {
+    "corner (1 O)": 12
+   },
+   "mean_Fe_O_Fe_angle_corner_deg": 123.8941438911116,
+   "spin_products": [
+    6.25
+   ]
+  },
+  {
+   "label": "W2-W4",
+   "n_bonds": 12,
+   "d_min": 3.46675966160067,
+   "d_max": 3.466759661600673,
+   "shells": [
+    [
+     3.4667596616006713,
+     12
+    ]
+   ],
+   "n_distinct_shells": 1,
+   "paths": {
+    "corner (1 O)": 12
+   },
+   "mean_Fe_O_Fe_angle_corner_deg": 127.23899745644792,
+   "spin_products": [
+    6.25
+   ]
+  },
+  {
+   "label": "W2-W5",
+   "n_bonds": 24,
+   "d_min": 3.502986661518611,
+   "d_max": 3.5030364882590623,
+   "shells": [
+    [
+     3.5030115748888364,
+     24
+    ]
+   ],
+   "n_distinct_shells": 1,
+   "paths": {
+    "corner (1 O)": 24
+   },
+   "mean_Fe_O_Fe_angle_corner_deg": 120.29953823493736,
+   "spin_products": [
+    6.25
+   ]
+  },
+  {
+   "label": "W2-W6",
+   "n_bonds": 4,
+   "d_min": 3.76209980512,
+   "d_max": 3.762099805120008,
+   "shells": [
+    [
+     3.7620998051200036,
+     4
+    ]
+   ],
+   "n_distinct_shells": 1,
+   "paths": {
+    "no shared O": 4
+   },
+   "mean_Fe_O_Fe_angle_corner_deg": null,
+   "spin_products": [
+    5.0,
+    6.25
+   ]
+  },
+  {
+   "label": "W3-W4",
+   "n_bonds": 12,
+   "d_min": 2.9995547498247226,
+   "d_max": 2.999554749824728,
+   "shells": [
+    [
+     2.9995547498247244,
+     12
+    ]
+   ],
+   "n_distinct_shells": 1,
+   "paths": {
+    "edge (2 O)": 12
+   },
+   "mean_Fe_O_Fe_angle_corner_deg": null,
+   "spin_products": [
+    6.25
+   ]
+  },
+  {
+   "label": "W4-W5",
+   "n_bonds": 12,
+   "d_min": 3.043466987042483,
+   "d_max": 3.0434669870424864,
+   "shells": [
+    [
+     3.043466987042484,
+     12
+    ]
+   ],
+   "n_distinct_shells": 1,
+   "paths": {
+    "edge (2 O)": 12
+   },
+   "mean_Fe_O_Fe_angle_corner_deg": null,
+   "spin_products": [
+    6.25
+   ]
+  },
+  {
+   "label": "W5-W6",
+   "n_bonds": 24,
+   "d_min": 3.5016464762352952,
+   "d_max": 3.5016963220456665,
+   "shells": [
+    [
+     3.5016713991404806,
+     24
+    ]
+   ],
+   "n_distinct_shells": 1,
+   "paths": {
+    "corner (1 O)": 24
+   },
+   "mean_Fe_O_Fe_angle_corner_deg": 127.77277029591251,
+   "spin_products": [
+    5.0,
+    6.25
+   ]
+  },
+  {
+   "label": "W5-W7",
+   "n_bonds": 12,
+   "d_min": 3.6754897016737975,
+   "d_max": 3.675489701673807,
+   "shells": [
+    [
+     3.675489701673802,
+     12
+    ]
+   ],
+   "n_distinct_shells": 1,
+   "paths": {
+    "corner (1 O)": 12
+   },
+   "mean_Fe_O_Fe_angle_corner_deg": 119.03940545772087,
+   "spin_products": [
+    6.25
+   ]
+  },
+  {
+   "label": "W6-W7",
+   "n_bonds": 12,
+   "d_min": 3.6724639568253328,
+   "d_max": 3.6724639568253377,
+   "shells": [
+    [
+     3.6724639568253346,
+     12
+    ]
+   ],
+   "n_distinct_shells": 1,
+   "paths": {
+    "corner (1 O)": 12
+   },
+   "mean_Fe_O_Fe_angle_corner_deg": 138.7305089783465,
+   "spin_products": [
+    5.0,
+    6.25
+   ]
+  }
+ ],
+ "classes_not_in_the_fit": [
+  {
+   "label": "W1-W1",
+   "n_bonds": 2,
+   "d_min": 3.711603143280003,
+   "d_max": 3.711603143280004,
+   "shells": [
+    [
+     3.7116031432800036,
+     2
+    ]
+   ],
+   "n_distinct_shells": 1,
+   "paths": {
+    "no shared O": 2
+   },
+   "mean_Fe_O_Fe_angle_corner_deg": null,
+   "spin_products": [
+    5.0
+   ],
+   "reason": "constant under the flip pool (absorbed into E0)"
+  },
+  {
+   "label": "W3-W3",
+   "n_bonds": 12,
+   "d_min": 2.9541804999999997,
+   "d_max": 2.9541805000000005,
+   "shells": [
+    [
+     2.9541805,
+     12
+    ]
+   ],
+   "n_distinct_shells": 1,
+   "paths": {
+    "edge (2 O)": 12
+   },
+   "mean_Fe_O_Fe_angle_corner_deg": null,
+   "spin_products": [
+    6.25
+   ],
+   "reason": "constant under the flip pool (absorbed into E0)"
+  },
+  {
+   "label": "W5-W5",
+   "n_bonds": 24,
+   "d_min": 2.9032504281800007,
+   "d_max": 3.0051105718199995,
+   "shells": [
+    [
+     2.9032799702104484,
+     12
+    ],
+    [
+     3.00508103023281,
+     12
+    ]
+   ],
+   "n_distinct_shells": 2,
+   "paths": {
+    "edge (2 O)": 24
+   },
+   "mean_Fe_O_Fe_angle_corner_deg": null,
+   "spin_products": [
+    6.25
+   ],
+   "reason": "constant under the flip pool (absorbed into E0)"
+  },
+  {
+   "label": "W6-W6",
+   "n_bonds": 2,
+   "d_min": 2.720844191599994,
+   "d_max": 2.720844191599997,
+   "shells": [
+    [
+     2.7208441915999955,
+     2
+    ]
+   ],
+   "n_distinct_shells": 1,
+   "paths": {
+    "face (3 O)": 2
+   },
+   "mean_Fe_O_Fe_angle_corner_deg": null,
+   "spin_products": [
+    5.0
+   ],
+   "reason": "constant under the flip pool (absorbed into E0)"
+  }
+ ],
+ "model_notes": [
+  "7 nuisance columns for sublattice pairs without a bond < 3.8 A (bonds up to 8 A): far:W1-W6, far:W1-W7, far:W2-W7, far:W3-W5, far:W3-W6, far:W4-W6, far:W4-W7"
+ ],
+ "group_by": "sublattice_pair",
+ "r_cut_A": 3.8,
+ "conditioning_fit_set": {
+  "cond_scaled": 2.4456686753361563,
+  "cond_raw": 177.1548896281666,
+  "singular_values_scaled": [
+   1.3494124276633581,
+   1.3210174712897838,
+   1.2944357046234531,
+   1.1886477749528648,
+   1.0327955589886446,
+   1.0327955589886444,
+   1.0327955589886442,
+   1.0327955589886442,
+   1.032795558988644,
+   0.7790463838066058,
+   0.6477638187835101,
+   0.6073326131554662,
+   0.5589449287729659,
+   0.5517560253650801
+  ],
+  "singular_values_raw": [
+   609.719815508717,
+   578.5076895028111,
+   491.6762133952123,
+   350.5294630195035,
+   325.4098446692238,
+   291.8216926230324,
+   290.59289092810354,
+   276.51128348469797,
+   248.53660219796927,
+   199.94134934511814,
+   171.55424428042534,
+   167.7744143744899,
+   69.07110009643668,
+   3.4417329196414976
+  ],
+  "rank": 14,
+  "n_columns": 14,
+  "n_rows": 15
+ },
+ "conditioning_full_pool": {
+  "cond_scaled": 1.0000000000000004,
+  "cond_raw": 149.99999999999994,
+  "singular_values_scaled": [
+   1.0000000000000002,
+   1.0000000000000002,
+   1.0000000000000002,
+   1.0000000000000002,
+   1.0000000000000002,
+   1.0000000000000002,
+   1.0,
+   0.9999999999999999,
+   0.9999999999999999,
+   0.9999999999999999,
+   0.9999999999999998,
+   0.9999999999999998,
+   0.9999999999999998,
+   0.9999999999999998
+  ],
+  "singular_values_raw": [
+   1199.9999999999998,
+   1080.0,
+   1079.9999999999998,
+   600.0000000000001,
+   599.9999999999999,
+   599.9999999999999,
+   599.9999999999998,
+   599.9999999999995,
+   540.0000000000001,
+   539.9999999999999,
+   539.9999999999998,
+   539.9999999999997,
+   179.99999999999986,
+   8.000000000000002
+  ],
+  "rank": 14,
+  "n_columns": 14,
+  "n_rows": 64
+ },
+ "pool_size": 64,
+ "holdout_leverage": [
+  1.6814123376623384,
+  2.11038961038959
+ ],
+ "nuisance_far_columns": [
+  {
+   "label": "far:W1-W6",
+   "n_bonds_far": 12,
+   "d_min": 6.04613690074907,
+   "d_max": 6.046136900749074,
+   "sum_SS": 60.0
+  },
+  {
+   "label": "far:W1-W7",
+   "n_bonds_far": 12,
+   "d_min": 7.210327862522283,
+   "d_max": 7.210327862522293,
+   "sum_SS": 67.5
+  },
+  {
+   "label": "far:W2-W7",
+   "n_bonds_far": 12,
+   "d_min": 6.1543865543891,
+   "d_max": 6.154386554389109,
+   "sum_SS": 75.0
+  },
+  {
+   "label": "far:W3-W5",
+   "n_bonds_far": 156,
+   "d_min": 5.257418015864413,
+   "d_max": 7.927804686666115,
+   "sum_SS": 975.0
+  },
+  {
+   "label": "far:W3-W6",
+   "n_bonds_far": 12,
+   "d_min": 7.056961964495457,
+   "d_max": 7.056961964495462,
+   "sum_SS": 67.5
+  },
+  {
+   "label": "far:W4-W6",
+   "n_bonds_far": 24,
+   "d_min": 5.551875974839585,
+   "d_max": 7.87798083667408,
+   "sum_SS": 135.0
+  },
+  {
+   "label": "far:W4-W7",
+   "n_bonds_far": 4,
+   "d_min": 5.740728432639994,
+   "d_max": 5.7407284326400045,
+   "sum_SS": 25.0
+  }
+ ],
+ "far_prior_sigma_meV": 0.1,
+ "J_meaning": "effective J of the class = sum over ALL pairs of the two sublattices of J_ij S_i S_j / sum of S_i S_j of the bonds shorter than r_cut (docs/DFT.md section 3)",
+ "configs": [
+  {
+   "config_id": "c00_ground",
+   "role": "fit",
+   "flipped_groups": []
+  },
+  {
+   "config_id": "c01_flip_W3_W4_W5_W6_W7",
+   "role": "fit",
+   "flipped_groups": [
+    "W3",
+    "W4",
+    "W5",
+    "W6",
+    "W7"
+   ]
+  },
+  {
+   "config_id": "c02_flip_W2_W5_W6",
+   "role": "fit",
+   "flipped_groups": [
+    "W2",
+    "W5",
+    "W6"
+   ]
+  },
+  {
+   "config_id": "c03_flip_W3_W5_W7",
+   "role": "fit",
+   "flipped_groups": [
+    "W3",
+    "W5",
+    "W7"
+   ]
+  },
+  {
+   "config_id": "c04_flip_W2_W4_W5_W7",
+   "role": "fit",
+   "flipped_groups": [
+    "W2",
+    "W4",
+    "W5",
+    "W7"
+   ]
+  },
+  {
+   "config_id": "c05_flip_W4_W5",
+   "role": "fit",
+   "flipped_groups": [
+    "W4",
+    "W5"
+   ]
+  },
+  {
+   "config_id": "c06_flip_W2_W3_W6",
+   "role": "fit",
+   "flipped_groups": [
+    "W2",
+    "W3",
+    "W6"
+   ]
+  },
+  {
+   "config_id": "c07_flip_W4_W6",
+   "role": "fit",
+   "flipped_groups": [
+    "W4",
+    "W6"
+   ]
+  },
+  {
+   "config_id": "c08_flip_W2_W4",
+   "role": "fit",
+   "flipped_groups": [
+    "W2",
+    "W4"
+   ]
+  },
+  {
+   "config_id": "c09_flip_W2_W3_W4_W6_W7",
+   "role": "fit",
+   "flipped_groups": [
+    "W2",
+    "W3",
+    "W4",
+    "W6",
+    "W7"
+   ]
+  },
+  {
+   "config_id": "c10_flip_W5_W6",
+   "role": "fit",
+   "flipped_groups": [
+    "W5",
+    "W6"
+   ]
+  },
+  {
+   "config_id": "c11_flip_W2_W3_W5",
+   "role": "fit",
+   "flipped_groups": [
+    "W2",
+    "W3",
+    "W5"
+   ]
+  },
+  {
+   "config_id": "c12_flip_W2_W6_W7",
+   "role": "fit",
+   "flipped_groups": [
+    "W2",
+    "W6",
+    "W7"
+   ]
+  },
+  {
+   "config_id": "c13_flip_W3_W6_W7",
+   "role": "fit",
+   "flipped_groups": [
+    "W3",
+    "W6",
+    "W7"
+   ]
+  },
+  {
+   "config_id": "c14_flip_W3_W7",
+   "role": "fit",
+   "flipped_groups": [
+    "W3",
+    "W7"
+   ]
+  },
+  {
+   "config_id": "c15_flip_W4_W7",
+   "role": "holdout",
+   "flipped_groups": [
+    "W4",
+    "W7"
+   ]
+  },
+  {
+   "config_id": "c16_flip_W3_W4",
+   "role": "holdout",
+   "flipped_groups": [
+    "W3",
+    "W4"
+   ]
+  }
+ ],
+ "runtime": {
+  "system": "W92",
+  "n_jobs": 17,
+  "n_parallel": 3,
+  "cpu_hours_per_job": 3.2222222222222223,
+  "cpu_hours_total": 54.77777777777778,
+  "waves": 6,
+  "slowdown_factor": 1.2,
+  "wall_hours_estimate": 23.200000000000003,
+  "ram_GB_peak_estimate": 9.899999999999999,
+  "memory_budget_GB": 10.0,
+  "memory_ok": true,
+  "basis": "seconds/iteration 290.0 s x 40 iterations (config systems.W92; FEASIBILITY pilots); slowdown factor is an assumption",
+  "timeout_hours": 12.0
+ },
+ "settings": {
+  "config_sha256": "1f72d82f46ab3fe96d83c92513beb68be46880be8c33143d799c97d157da7dcd",
+  "campaign": "ktest_v1",
+  "functional": "PBE",
+  "hubbard": {
+   "projector": "atomic",
+   "U_eff_eV": {
+    "Fe": 3.0,
+    "Co": 3.0,
+    "Mn": 3.0,
+    "Zn": null
+   },
+   "status": {
+    "Fe": "literature",
+    "Co": "assumption",
+    "Mn": "assumption",
+    "Zn": "not_applied"
+   }
+  },
+  "pseudo_profile": "gbrv_ktest",
+  "ecutwfc_Ry": 25.0,
+  "ecutrho_Ry": 150.0,
+  "cutoff_status": "ktest_reduced",
+  "pseudo_files": {
+   "Fe": "fe_pbe_v1.5.uspp.F.UPF",
+   "O": "o_pbe_v1.2.uspp.F.UPF",
+   "Sr": "sr_pbe_v1.uspp.F.UPF",
+   "Zn": "Zn_pbe_v1.uspp.F.UPF",
+   "Co": "Co_pbe_v1.2.uspp.F.UPF",
+   "Mn": "mn_pbe_v1.5.uspp.F.UPF"
+  },
+  "occupations": {
+   "kind": "smearing",
+   "smearing": "gaussian",
+   "degauss_Ry": 0.005,
+   "tot_magnetization": null
+  },
+  "scf": {
+   "conv_thr_per_atom_Ry": 1e-08,
+   "mixing_beta": 0.3,
+   "mixing_mode": "local-TF",
+   "electron_maxstep": 100,
+   "diagonalization": "david"
+  },
+  "starting_magnetization": {
+   "Fe": 0.4,
+   "Co": 0.3,
+   "Mn": 0.4
+  },
+  "fe2_localization": {
+   "mode": "seeded",
+   "starting_magnetization_Fe2": 0.32,
+   "starting_ns_eigenvalue": {
+    "use": true,
+    "value": 1.0,
+    "m_index": 5
+   }
+  },
+  "literature": {},
+  "literature_deviations": [
+   "Gamma-only k mesh instead of Gamma-centred 5x5x1 (laptop budget, FEASIBILITY section 4); decided by the k test (config/dft/ktest_v1.yaml, docs/DFT.md section 12)",
+   "Quantum ESPRESSO ultrasoft/PAW pseudopotentials instead of VASP PAW; non-orthogonal 'atomic' Hubbard projectors instead of the VASP sphere projection (L05 does not name a projector; chosen by the hematite test)",
+   "U on Co and Mn is NOT from L05 (Fe only)"
+  ]
+ },
+ "settings_if_sssp_cutoffs": {
+  "ecutwfc_Ry": 90.0,
+  "ecutrho_Ry": 1080.0,
+  "basis": "SSSP 1.3.0 PBE efficiency metadata: Fe 90/1080; O 50/400; Sr 30/240",
+  "status": "sssp_recommended_not_feasible_on_laptop",
+  "note": "cost grows roughly with the density grid (~(ecutrho ratio)^1.5, not measured): not feasible on the laptop"
+ }
+}

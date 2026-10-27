@@ -1,0 +1,23 @@
+{
+  "updated_utc": "2026-10-26T23:52:15+00:00",
+  "cause_confirmed": true,
+  "origin": "http://127.0.0.1:8765",
+  "scope": "current conversation",
+  "permission_file": "C:\\Users\\Redmi\\.codex\\browser\\sessions\\01a17321-3427-7eb3-8936-7684a503da97.toml",
+  "evidence": "Local browser service checks conversation denial before global approval; produces persisted_user_denied rejection.",
+  "permission_files_modified_by_agent": false,
+  "ui_reset_for_conversation_found": false,
+  "next": "Human resets this single saved denial; then retry normal Browser Use origin approval. No alternate browser/address/CDP bypass.",
+  "additional_ui_fix": {
+    "kind": "handle normal disconnected browser requests",
+    "tests_passed": 21,
+    "not_cause_of_origin_denial": true
+  },
+  "resolved_utc": "2026-10-27T00:13:13+00:00",
+  "current_denied": false,
+  "normal_browser_access_verified": true,
+  "resolution": "User removed the saved per-conversation denial; normal Browser Use request succeeded.",
+  "denied_before_user_reset": true,
+  "status": "resolved_and_browser_verified",
+  "browser_verification": "audit/BROWSER_UI_VERIFIED_2026-10-27.json"
+}

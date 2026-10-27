@@ -1,0 +1,20 @@
+{
+ "config_id": "c16_flip_W3_W4",
+ "role": "holdout",
+ "flipped_groups": [
+  "W3",
+  "W4"
+ ],
+ "pattern": [
+  1,
+  1,
+  -1,
+  -1,
+  1,
+  1,
+  1
+ ],
+ "system": "SrFe18O27_uniform_cfg0",
+ "input_sha256": "7da8c7ad80060dde44ffb8dfc2b7c70ba1ea007792ad36326d452f75cb0f00cf",
+ "config_sha256": "e3890a568388ffd62fceaabb391ee38a683c5a0116aa7c7cfe6a0f9b5f5bc2d7"
+}

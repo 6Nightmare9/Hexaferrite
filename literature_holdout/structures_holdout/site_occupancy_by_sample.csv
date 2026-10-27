@@ -1,0 +1,27 @@
+source,sample,cif,site,site_name,spin_gorter,species,occupancy_fraction_of_site,occupancy_unc_approx,atoms_per_formula_unit
+L01,SrCo2Fe16O27,L01_Morch2019/supporting/lt5018sup_cif/SrCo2Fe16O27/SrCo2Fe16O27_SINQ_HRPT.cif,W1,4e tet(S),down,Fe,0.861,0.014,1.722
+L01,SrCo2Fe16O27,L01_Morch2019/supporting/lt5018sup_cif/SrCo2Fe16O27/SrCo2Fe16O27_SINQ_HRPT.cif,W1,4e tet(S),down,Co,0.14,0.014,0.28
+L01,SrCo2Fe16O27,L01_Morch2019/supporting/lt5018sup_cif/SrCo2Fe16O27/SrCo2Fe16O27_SINQ_HRPT.cif,W2,4f_IV tet(S),down,Fe,0.889,0.016,1.778
+L01,SrCo2Fe16O27,L01_Morch2019/supporting/lt5018sup_cif/SrCo2Fe16O27/SrCo2Fe16O27_SINQ_HRPT.cif,W2,4f_IV tet(S),down,Co,0.111,0.016,0.222
+L01,SrCo2Fe16O27,L01_Morch2019/supporting/lt5018sup_cif/SrCo2Fe16O27/SrCo2Fe16O27_SINQ_HRPT.cif,W3,6g oct(S-S),up,Fe,0.667,0.011,2.001
+L01,SrCo2Fe16O27,L01_Morch2019/supporting/lt5018sup_cif/SrCo2Fe16O27/SrCo2Fe16O27_SINQ_HRPT.cif,W3,6g oct(S-S),up,Co,0.333,0.011,0.999
+L01,SrCo2Fe16O27,L01_Morch2019/supporting/lt5018sup_cif/SrCo2Fe16O27/SrCo2Fe16O27_SINQ_HRPT.cif,W4,4f_VI oct(S),up,Fe,0.922,0.015,1.844
+L01,SrCo2Fe16O27,L01_Morch2019/supporting/lt5018sup_cif/SrCo2Fe16O27/SrCo2Fe16O27_SINQ_HRPT.cif,W4,4f_VI oct(S),up,Co,0.078,0.015,0.156
+L01,SrCo2Fe16O27,L01_Morch2019/supporting/lt5018sup_cif/SrCo2Fe16O27/SrCo2Fe16O27_SINQ_HRPT.cif,W5,12k oct(R-S),up,Fe,0.921,0.01,5.526
+L01,SrCo2Fe16O27,L01_Morch2019/supporting/lt5018sup_cif/SrCo2Fe16O27/SrCo2Fe16O27_SINQ_HRPT.cif,W5,12k oct(R-S),up,Co,0.079,0.01,0.474
+L01,SrCo2Fe16O27,L01_Morch2019/supporting/lt5018sup_cif/SrCo2Fe16O27/SrCo2Fe16O27_SINQ_HRPT.cif,W6,4f_VI* oct(R),down,Fe,0.983,0.015,1.966
+L01,SrCo2Fe16O27,L01_Morch2019/supporting/lt5018sup_cif/SrCo2Fe16O27/SrCo2Fe16O27_SINQ_HRPT.cif,W6,4f_VI* oct(R),down,Co,0.017,0.015,0.034
+L01,SrCo2Fe16O27,L01_Morch2019/supporting/lt5018sup_cif/SrCo2Fe16O27/SrCo2Fe16O27_SINQ_HRPT.cif,W7,2d bipyr(R) [4f half-occ.],up,Fe,0.5,,1.0
+L01,SrZn2Fe16O27,L01_Morch2019/supporting/lt5018sup_cif/SrZn2Fe16O27/SrZn2Fe16O27_SINQ_HRPT.cif,W1,4e tet(S),down,Fe,0.448,0.008,0.896
+L01,SrZn2Fe16O27,L01_Morch2019/supporting/lt5018sup_cif/SrZn2Fe16O27/SrZn2Fe16O27_SINQ_HRPT.cif,W1,4e tet(S),down,Zn,0.553,0.008,1.106
+L01,SrZn2Fe16O27,L01_Morch2019/supporting/lt5018sup_cif/SrZn2Fe16O27/SrZn2Fe16O27_SINQ_HRPT.cif,W2,4f_IV tet(S),down,Fe,0.764,0.009,1.528
+L01,SrZn2Fe16O27,L01_Morch2019/supporting/lt5018sup_cif/SrZn2Fe16O27/SrZn2Fe16O27_SINQ_HRPT.cif,W2,4f_IV tet(S),down,Zn,0.236,0.009,0.472
+L01,SrZn2Fe16O27,L01_Morch2019/supporting/lt5018sup_cif/SrZn2Fe16O27/SrZn2Fe16O27_SINQ_HRPT.cif,W3,6g oct(S-S),up,Fe,1.0,0.008,3.0
+L01,SrZn2Fe16O27,L01_Morch2019/supporting/lt5018sup_cif/SrZn2Fe16O27/SrZn2Fe16O27_SINQ_HRPT.cif,W3,6g oct(S-S),up,Zn,0.0,0.008,0.0
+L01,SrZn2Fe16O27,L01_Morch2019/supporting/lt5018sup_cif/SrZn2Fe16O27/SrZn2Fe16O27_SINQ_HRPT.cif,W4,4f_VI oct(S),up,Fe,0.972,0.008,1.944
+L01,SrZn2Fe16O27,L01_Morch2019/supporting/lt5018sup_cif/SrZn2Fe16O27/SrZn2Fe16O27_SINQ_HRPT.cif,W4,4f_VI oct(S),up,Zn,0.028,0.008,0.056
+L01,SrZn2Fe16O27,L01_Morch2019/supporting/lt5018sup_cif/SrZn2Fe16O27/SrZn2Fe16O27_SINQ_HRPT.cif,W5,12k oct(R-S),up,Fe,0.965,0.006,5.79
+L01,SrZn2Fe16O27,L01_Morch2019/supporting/lt5018sup_cif/SrZn2Fe16O27/SrZn2Fe16O27_SINQ_HRPT.cif,W5,12k oct(R-S),up,Zn,0.035,0.006,0.21
+L01,SrZn2Fe16O27,L01_Morch2019/supporting/lt5018sup_cif/SrZn2Fe16O27/SrZn2Fe16O27_SINQ_HRPT.cif,W6,4f_VI* oct(R),down,Fe,0.968,0.008,1.936
+L01,SrZn2Fe16O27,L01_Morch2019/supporting/lt5018sup_cif/SrZn2Fe16O27/SrZn2Fe16O27_SINQ_HRPT.cif,W6,4f_VI* oct(R),down,Zn,0.032,0.008,0.064
+L01,SrZn2Fe16O27,L01_Morch2019/supporting/lt5018sup_cif/SrZn2Fe16O27/SrZn2Fe16O27_SINQ_HRPT.cif,W7,2d bipyr(R) [4f half-occ.],up,Fe,0.5,,1.0

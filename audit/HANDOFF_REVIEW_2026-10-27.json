@@ -1,0 +1,148 @@
+{
+  "finished_utc": "2026-10-26T22:56:52+00:00",
+  "phase": "ready_for_colleague_review",
+  "version": "0.2.0",
+  "source_fingerprint_unchanged": true,
+  "full_regression": {
+    "returncode": 0,
+    "totals": {
+      "tests": 995,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 7,
+      "passed": 988
+    },
+    "workers": 2,
+    "wall_s": 900.28,
+    "python": "C:\\MIPT\\working_stuff\\Hexx\\tools\\venv\\Scripts\\python.exe",
+    "selection": [
+      "tests"
+    ],
+    "raw_log": "C:\\Users\\Redmi\\AppData\\Local\\Temp\\hexx-review-tests-jq3743l3\\pytest.log",
+    "raw_xml": "C:\\Users\\Redmi\\AppData\\Local\\Temp\\hexx-review-tests-jq3743l3\\results.xml",
+    "archive": "C:\\MIPT\\working_stuff\\Hexx\\vault\\recovery_audit\\2026-10-26\\tests-20261026T203212Z"
+  },
+  "skipped_tests": [
+    {
+      "test": "tests.test_isolation::test_symlink_into_vault_is_restricted[hexw.theory]",
+      "reason": "symlinks need privileges here: [WinError 1314] Клиент не обладает требуемыми правами: 'C:\\\\Users\\\\Redmi\\\\AppData\\\\Local\\\\Temp\\\\hexx-review-tests-jq3743l3\\\\pytest\\\\popen-gw0\\\\test_symlink_into_vault_is_res0\\\\vault\\\\lab_validation\\\\01_XRD\\\\s.txt' -> 'C:\\\\Users\\\\Redmi\\\\AppData\\\\Local\\\\Temp\\\\hexx-review-tests-jq3743l3\\\\pytest\\\\popen-gw0\\\\test_symlink_into_vault_is_res0\\\\sl.txt'"
+    },
+    {
+      "test": "tests.test_isolation::test_symlink_into_vault_is_restricted[hexw.dft]",
+      "reason": "symlinks need privileges here: [WinError 1314] Клиент не обладает требуемыми правами: 'C:\\\\Users\\\\Redmi\\\\AppData\\\\Local\\\\Temp\\\\hexx-review-tests-jq3743l3\\\\pytest\\\\popen-gw0\\\\test_symlink_into_vault_is_res1\\\\vault\\\\lab_validation\\\\01_XRD\\\\s.txt' -> 'C:\\\\Users\\\\Redmi\\\\AppData\\\\Local\\\\Temp\\\\hexx-review-tests-jq3743l3\\\\pytest\\\\popen-gw0\\\\test_symlink_into_vault_is_res1\\\\sl.txt'"
+    },
+    {
+      "test": "tests.test_isolation::test_symlink_into_vault_is_restricted[hexw.structures]",
+      "reason": "symlinks need privileges here: [WinError 1314] Клиент не обладает требуемыми правами: 'C:\\\\Users\\\\Redmi\\\\AppData\\\\Local\\\\Temp\\\\hexx-review-tests-jq3743l3\\\\pytest\\\\popen-gw0\\\\test_symlink_into_vault_is_res2\\\\vault\\\\lab_validation\\\\01_XRD\\\\s.txt' -> 'C:\\\\Users\\\\Redmi\\\\AppData\\\\Local\\\\Temp\\\\hexx-review-tests-jq3743l3\\\\pytest\\\\popen-gw0\\\\test_symlink_into_vault_is_res2\\\\sl.txt'"
+    },
+    {
+      "test": "tests.test_isolation::test_symlink_into_vault_is_restricted[hexw.spin]",
+      "reason": "symlinks need privileges here: [WinError 1314] Клиент не обладает требуемыми правами: 'C:\\\\Users\\\\Redmi\\\\AppData\\\\Local\\\\Temp\\\\hexx-review-tests-jq3743l3\\\\pytest\\\\popen-gw0\\\\test_symlink_into_vault_is_res3\\\\vault\\\\lab_validation\\\\01_XRD\\\\s.txt' -> 'C:\\\\Users\\\\Redmi\\\\AppData\\\\Local\\\\Temp\\\\hexx-review-tests-jq3743l3\\\\pytest\\\\popen-gw0\\\\test_symlink_into_vault_is_res3\\\\sl.txt'"
+    },
+    {
+      "test": "tests.test_isolation::test_symlink_into_vault_is_restricted[hexw.params]",
+      "reason": "symlinks need privileges here: [WinError 1314] Клиент не обладает требуемыми правами: 'C:\\\\Users\\\\Redmi\\\\AppData\\\\Local\\\\Temp\\\\hexx-review-tests-jq3743l3\\\\pytest\\\\popen-gw0\\\\test_symlink_into_vault_is_res4\\\\vault\\\\lab_validation\\\\01_XRD\\\\s.txt' -> 'C:\\\\Users\\\\Redmi\\\\AppData\\\\Local\\\\Temp\\\\hexx-review-tests-jq3743l3\\\\pytest\\\\popen-gw0\\\\test_symlink_into_vault_is_res4\\\\sl.txt'"
+    },
+    {
+      "test": "tests.test_isolation_round2::test_fast_path_revalidates_symlink_in_place_of_file[hexw.theory]",
+      "reason": "symlinks need privileges here: [WinError 1314] Клиент не обладает требуемыми правами: 'C:\\\\Users\\\\Redmi\\\\AppData\\\\Local\\\\Temp\\\\hexx-review-tests-jq3743l3\\\\pytest\\\\popen-gw1\\\\test_fast_path_revalidates_sym0\\\\vault\\\\lab_validation\\\\01_XRD\\\\s.txt' -> 'C:\\\\Users\\\\Redmi\\\\AppData\\\\Local\\\\Temp\\\\hexx-review-tests-jq3743l3\\\\pytest\\\\popen-gw1\\\\test_fast_path_revalidates_sym0\\\\f.txt'"
+    },
+    {
+      "test": "tests.test_isolation_round2::test_fast_path_revalidates_symlink_in_place_of_file[hexw.dft]",
+      "reason": "symlinks need privileges here: [WinError 1314] Клиент не обладает требуемыми правами: 'C:\\\\Users\\\\Redmi\\\\AppData\\\\Local\\\\Temp\\\\hexx-review-tests-jq3743l3\\\\pytest\\\\popen-gw1\\\\test_fast_path_revalidates_sym1\\\\vault\\\\lab_validation\\\\01_XRD\\\\s.txt' -> 'C:\\\\Users\\\\Redmi\\\\AppData\\\\Local\\\\Temp\\\\hexx-review-tests-jq3743l3\\\\pytest\\\\popen-gw1\\\\test_fast_path_revalidates_sym1\\\\f.txt'"
+    }
+  ],
+  "full_regression_code_commit": "cace2537fdb1d1eb549b897037d5343fe8e3288b",
+  "frozen_forecasts_verified": [
+    {
+      "case": "cozn_co2",
+      "run_id": "ec1f232e28e4ba5929b3",
+      "model_version": "mv-f7cd2dc841091e3ec02d"
+    },
+    {
+      "case": "cozn_mix",
+      "run_id": "2fb8d861e571130ff1b9",
+      "model_version": "mv-38abd409c62412df40ca"
+    },
+    {
+      "case": "cozn_zn2",
+      "run_id": "74961425c1b88fa91691",
+      "model_version": "mv-0e28fe28f5d22d16fd04"
+    },
+    {
+      "case": "mn1",
+      "run_id": "f1ae25e45782e53f802a",
+      "model_version": "mv-973c8c8a70d410a791b6"
+    },
+    {
+      "case": "mn2",
+      "run_id": "b5f5307af271a12d5980",
+      "model_version": "mv-577b6f7a92a3f558bcd1"
+    },
+    {
+      "case": "mg1",
+      "run_id": "d5aaa5264afdd1041856",
+      "model_version": "mv-03868c94dbf1bb6ad7c8"
+    },
+    {
+      "case": "mg2",
+      "run_id": "9c45d2a71a16521a51e0",
+      "model_version": "mv-dc299bcba61edcddb8d3"
+    },
+    {
+      "case": "ni1",
+      "run_id": "1c32f4f97fd926d5b4bc",
+      "model_version": "mv-69bda3b701744f44ffe5"
+    },
+    {
+      "case": "ni2",
+      "run_id": "cd2f0759c1eb6c6a912c",
+      "model_version": "mv-1289ef20979ad5e666ea"
+    }
+  ],
+  "analysis_artifacts_verified": [
+    "OBS-XRD-001",
+    "OBS-XRD-002",
+    "OBS-XRD-003",
+    "OBS-XRD-004",
+    "OBS-XRD-005",
+    "OBS-XRD-006",
+    "OBS-XRD-007",
+    "OBS-XRD-008",
+    "OBS-MOS-001",
+    "OBS-MOS-002",
+    "OBS-MOS-003",
+    "OBS-MOS-004",
+    "OBS-MOS-005"
+  ],
+  "validation_chains_verified": true,
+  "laboratory_parameter_refit": false,
+  "active_prediction": {
+    "run": "C:\\MIPT\\working_stuff\\Hexx\\runs\\predictions\\2fb8d861e571130ff1b9",
+    "model_version": "mv-38abd409c62412df40ca",
+    "finished_utc": "2026-10-26T20:05:11+00:00"
+  },
+  "repositories": {
+    "project": {
+      "commit": "4283b8998613c6bb4e9c004f725952b5088cd9af",
+      "branch": "codex/material-pipeline",
+      "clean": true
+    },
+    "registry": {
+      "commit": "0b9bddc6434ffb2413b2a05987efcde5116ada6a",
+      "branch": "codex/recovery-2026-10-26",
+      "clean": true
+    },
+    "literature": {
+      "commit": "8b26fc1e02d228bc8199544c041edba1a5fae309",
+      "branch": "codex/sr-single-crystal-data",
+      "clean": true
+    }
+  },
+  "backup": "C:\\MIPT\\working_stuff\\Hexx\\vault\\recovery_audit\\2026-10-27\\handoff-20261026T225459Z",
+  "scientific_accuracy_10_percent_established": false,
+  "full_spec_AB_complete": false,
+  "browser_visual_test": "not performed; earlier automatic origin approval rejected; no bypass",
+  "ui_offline_forms": 6,
+  "interface": "prepared; listener status to be recorded by launcher"
+}

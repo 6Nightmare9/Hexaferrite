@@ -1,0 +1,60 @@
+ERR https://api.semanticscholar.org/graph/v1/paper/search?query=ab+initio+magnetic+anisotropy+strontium+hexaferrit HTTP Error 429: 
+4 ab initio magnetic anisotropy strontium hexaferrite
+ERR https://api.semanticscholar.org/graph/v1/paper/search?query=SrFe12O19+first+principles+electronic+structure&li HTTP Error 429: 
+4 SrFe12O19 first principles electronic structure
+ERR https://api.semanticscholar.org/graph/v1/paper/search?query=BaFe12O19+DFT%2BU+exchange+interactions&limit=15&f HTTP Error 429: 
+4 BaFe12O19 DFT+U exchange interactions
+4 hexaferrite magnetocrystalline anisotropy density functional theory
+ERR https://api.semanticscholar.org/graph/v1/paper/search?query=M-type+hexaferrite+substitution+first-principles+C HTTP Error 429: 
+4 M-type hexaferrite substitution first-principles Co Zn
+ERR https://api.semanticscholar.org/graph/v1/paper/search?query=W-type+hexaferrite+first-principles&limit=15&field HTTP Error 429: 
+4 W-type hexaferrite first-principles
+ERR https://api.semanticscholar.org/graph/v1/paper/search?query=Heisenberg+exchange+Monte+Carlo+hexaferrite+Curie+ HTTP Error 429: 
+4 Heisenberg exchange Monte Carlo hexaferrite Curie temperature
+ERR https://api.semanticscholar.org/graph/v1/paper/search?query=hexaferrite+spin-orbit+coupling+magnetic+anisotrop HTTP Error 429: 
+4 hexaferrite spin-orbit coupling magnetic anisotropy site-resolved
+ERR https://api.semanticscholar.org/graph/v1/paper/search?query=W-type+hexaferrite+magnetic+structure+neutron&limi HTTP Error 429: 
+3 W-type hexaferrite magnetic structure neutron
+ERR https://api.semanticscholar.org/graph/v1/paper/search?query=Co2W+single+crystal+anisotropy&limit=15&fields=tit HTTP Error 429: 
+3 Co2W single crystal anisotropy
+ERR https://api.semanticscholar.org/graph/v1/paper/search?query=Fe2%2B+site+occupancy+W-type+Mossbauer&limit=15&fi HTTP Error 429: 
+3 Fe2+ site occupancy W-type Mossbauer
+ERR https://api.semanticscholar.org/graph/v1/paper/search?query=W-type+hexaferrite+thin+film+ferromagnetic+resonan HTTP Error 429: 
+3 W-type hexaferrite thin film ferromagnetic resonance
+ERR https://api.semanticscholar.org/graph/v1/paper/search?query=self-biased+circulator+hexaferrite+W-type&limit=15 HTTP Error 429: 
+3 self-biased circulator hexaferrite W-type
+ERR https://api.semanticscholar.org/graph/v1/paper/search?query=BaCo2Fe16O27&limit=15&fields=title%2Cyear%2Cextern HTTP Error 429: 
+3 BaCo2Fe16O27
+ERR https://api.semanticscholar.org/graph/v1/paper/search?query=BaZnCoFe16O27+magnetic+anisotropy&limit=15&fields= HTTP Error 429: 
+3 BaZnCoFe16O27 magnetic anisotropy
+ERR https://api.semanticscholar.org/graph/v1/paper/search?query=strontium+W-type+hexaferrite+Mossbauer&limit=15&fi HTTP Error 429: 
+3 strontium W-type hexaferrite Mossbauer
+ERR https://api.semanticscholar.org/graph/v1/paper/search?query=strontium+W-type+hexaferrite+neutron+diffraction&l HTTP Error 429: 
+3 strontium W-type hexaferrite neutron diffraction
+ERR https://api.semanticscholar.org/graph/v1/paper/search?query=SrCo2Fe16O27+magnetic&limit=15&fields=title%2Cyear HTTP Error 429: 
+3 SrCo2Fe16O27 magnetic
+ERR https://api.semanticscholar.org/graph/v1/paper/search?query=Zn2W+hexaferrite+magnetization+cobalt&limit=15&fie HTTP Error 429: 
+3 Zn2W hexaferrite magnetization cobalt
+ERR https://api.semanticscholar.org/graph/v1/paper/search?query=W-type+ferrite+spin+reorientation+temperature+Co+c HTTP Error 429: 
+3 W-type ferrite spin reorientation temperature Co content
+ERR https://api.semanticscholar.org/graph/v1/paper/search?query=dielectric+relaxation+Fe2%2B+Fe3%2B+hopping+hexafe HTTP Error 429: 
+5 dielectric relaxation Fe2+ Fe3+ hopping hexaferrite
+ERR https://api.semanticscholar.org/graph/v1/paper/search?query=dielectric+W-type+barium+ferrite&limit=15&fields=t HTTP Error 429: 
+5 dielectric W-type barium ferrite
+ERR https://api.semanticscholar.org/graph/v1/paper/search?query=W-type+strontium+hexaferrite+dielectric&limit=15&f HTTP Error 429: 
+5 W-type strontium hexaferrite dielectric
+ERR https://api.semanticscholar.org/graph/v1/paper/search?query=Mossbauer+Debye+temperature+recoil-free+fraction+f HTTP Error 429: 
+6 Mossbauer Debye temperature recoil-free fraction ferrite sites
+ERR https://api.semanticscholar.org/graph/v1/paper/search?query=recoil-free+fraction+Fe+sites+hexaferrite+Mossbaue HTTP Error 429: 
+6 recoil-free fraction Fe sites hexaferrite Mossbauer
+ERR https://api.semanticscholar.org/graph/v1/paper/search?query=Schlomann+porous+ferrite+linewidth&limit=15&fields HTTP Error 429: 
+6 Schlomann porous ferrite linewidth
+ERR https://api.semanticscholar.org/graph/v1/paper/search?query=ferromagnetic+resonance+hexaferrite+Kittel+uniaxia HTTP Error 429: 
+6 ferromagnetic resonance hexaferrite Kittel uniaxial anisotropy
+ERR https://api.semanticscholar.org/graph/v1/paper/search?query=Smit+Beljers+resonance+condition&limit=15&fields=t HTTP Error 429: 
+6 Smit Beljers resonance condition
+ERR https://api.semanticscholar.org/graph/v1/paper/search?query=ferromagnetic+resonance+polycrystalline+hexagonal+ HTTP Error 429: 
+6 ferromagnetic resonance polycrystalline hexagonal ferrite anisotropy field distribution
+ERR https://api.semanticscholar.org/graph/v1/paper/search?query=Mossbauer+spectra+ferrimagnetic+hexagonal+ferrite+ HTTP Error 429: 
+6 Mossbauer spectra ferrimagnetic hexagonal ferrite sublattice assignment
+624

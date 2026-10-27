@@ -1,0 +1,3 @@
+# audit manifests are run artefacts, not registry content
+runs/
+FROZEN_MODEL.json

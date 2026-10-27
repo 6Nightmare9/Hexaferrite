@@ -1,0 +1,92 @@
+{
+ "checksums": {
+  "fe_pbe_v1.5.uspp.F.UPF": "6c132e6e7ac1c42df5cb6a13d0c99bb7af5bf3d6e2349f5658f0c22abfe3911a",
+  "o_pbe_v1.2.uspp.F.UPF": "0640f61fa934269f2500e1cb91f01e48c1d0c3c4ce924f62c2ab35567cfdea41",
+  "sr_pbe_v1.uspp.F.UPF": "292f7f1da5cae4b18da817ab2e82943ad90e74f267a06a6172db8dbcb6edf0ce"
+ },
+ "command": "dft generate",
+ "finished_utc": "2026-10-26T08:37:55.786890+00:00",
+ "git_head": {},
+ "model_version": null,
+ "notes": "checksums = sha256 of the pseudopotential files; stage: generate only, no pw.x was run",
+ "package_versions": {
+  "PyYAML": "6.0.3",
+  "numpy": "2.5.4",
+  "pymatgen": "2026.10.24",
+  "python": "3.13.15",
+  "scipy": "1.18.1"
+ },
+ "resources": {
+  "max_parallel": 3
+ },
+ "run_id": "dft-ktest_v1-SrFe18O27_uniform_cfg0_g-20261026T083755Z",
+ "settings": {
+  "campaign": "ktest_v1",
+  "composition": "SrFe18O27_uniform_cfg0_g",
+  "config_sha256": "447ed387e94207b558f683385ce1e2b0900bd04cdbc3966c52f7d24d2efa940e",
+  "convention": "H = -sum_{i<j} J_ij S_i.S_j; each pair once; |S| = spin quantum number (Fe3+ 5/2, Fe2+ 2, Mn2+ 5/2, Co2+ 3/2); J>0 ferromagnetic; J in meV; energies per simulation cell",
+  "cutoff_status": "ktest_reduced",
+  "ecutrho_Ry": 150.0,
+  "ecutwfc_Ry": 25.0,
+  "hubbard": {
+   "U_eff_eV": {
+    "Co": 3.0,
+    "Fe": 3.0,
+    "Mn": 3.0,
+    "Zn": null
+   },
+   "U_eff_status": {
+    "Co": "assumption",
+    "Fe": "literature",
+    "Mn": "assumption",
+    "Zn": "not_applied"
+   },
+   "U_sensitivity_scenarios_eV": {
+    "Co": [
+     2.0,
+     3.0,
+     4.0,
+     5.0
+    ],
+    "Fe": [
+     2.0,
+     3.0,
+     4.0,
+     5.0
+    ],
+    "Mn": [
+     2.0,
+     3.0,
+     4.0,
+     5.0
+    ]
+   },
+   "kind": "Dudarev",
+   "projector": "atomic"
+  },
+  "input_sha256": {
+   "c00_ground": "f5e05b840e106fb3826070bc7f2b88099cfb0cf7a8c122140dcc8e4d7d58d5dd",
+   "c01_flip_W3_W4_W5_W6_W7": "cbcff323dbecfa0c972334420cf16ecaac33bc8dbf04e9b201be2c3c74b4ba96",
+   "c02_flip_W2_W5_W6": "0dd72b654832ba5b354b1aac9aeaf9c2fc6ac6089716e7972139ec105def98f6",
+   "c03_flip_W3_W5_W7": "b228532744a63d18043eee4755f8904aee5b6771d4c967b2f5c2d9b77406ae26",
+   "c04_flip_W2_W4_W5_W7": "321204df0fd894f78c6abb7e25be30e648a3c9e7e0a72c5a18cee22501ec98a6",
+   "c05_flip_W4_W5": "6bb2e46a2eb6518a764ffc4499e21b89654e2c2c52b07f44d4b9724c570a39bf",
+   "c06_flip_W2_W3_W6": "1cc5ba6775fce79f8529825faf1de85342168d0cd485496333bb468f912e4997",
+   "c07_flip_W4_W6": "e7c0f9d4f7b5d5d7e1c6626be8aa0580d5393491903661551c9b4a0394b9b2e5",
+   "c08_flip_W2_W4": "b3dc1798cfc6a683c45fee92c6c5c6bee702d0d6340e28c4d85700630a088949",
+   "c09_flip_W2_W3_W4_W6_W7": "0946d9cbc421c58dee539f281b0f672d2bf0d3372229f253bddf6375066d24e3",
+   "c10_flip_W5_W6": "c10c8e51846e0dfbed423e8893471e785fefd3106456e7354b9a78523e8db1e9",
+   "c11_flip_W2_W3_W5": "934373c385a1a88c696c93eb0359b9f3f78f589a2f13281b1a6dd45e3f403006",
+   "c12_flip_W2_W6_W7": "1823e0f1cbaa50518548d4f80a435b8eedc781d21b9e6e001cbb5037b9813352",
+   "c13_flip_W3_W6_W7": "db711331a00c45d30f6b053a461d8fa4f2beedd6c2438b783522977b6237df99",
+   "c14_flip_W3_W7": "f77c1c2b90760377db5b18e443cd86c305b1a4ae001b41546492631f4381499a",
+   "c15_flip_W4_W7": "306c179a3765a29c3f612a35cdbc2376061c56a5340d6cbb8f3975d0e553e0d8",
+   "c16_flip_W3_W4": "0b6f1cfee3bc457274a7287553b4eb2d8bc2add4b6f6d89d747e723715b08c24"
+  },
+  "kind": "W92",
+  "pseudo_profile": "gbrv_ktest",
+  "qe_version_expected": "7.6"
+ },
+ "started_utc": "2026-10-26T08:37:55.786890+00:00",
+ "state": "completed"
+}

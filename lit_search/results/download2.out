@@ -1,0 +1,23 @@
+C002 10.1063/9.0000986 не скачано (повтор): 
+C004 10.2109/jcersj2.25033 PDF проверен: title word overlap 1.00
+C007 10.1080/27660400.2024.2442903 не скачано (повтор): err:HTTP Error 403: Forbidden:https://www.tandfonline.com/doi/pdf/10.1080/276604
+C013 10.1039/d2dt02091b не скачано (повтор): err:HTTP Error 403: Forbidden:https://pubs.rsc.org/en/content/articlepdf/2023/dt
+C014 10.3390/magnetochemistry8080075 не скачано (повтор): err:HTTP Error 403: Forbidden:https://www.mdpi.com/2312-7481/8/8/75/pdf?version=
+C029 10.3390/cryst16080511 не скачано (повтор): err:HTTP Error 403: Forbidden:https://www.mdpi.com/2073-4352/16/8/511/pdf?versio
+C031 10.3390/mi17050534 не скачано (повтор): err:HTTP Error 403: Forbidden:https://europepmc.org/backend/ptpmcrender.fcgi?acc; err:HTTP Error 403: Forbidden:https:/
+C033 10.3390/app142210631 не скачано (повтор): err:HTTP Error 403: Forbidden:https://www.mdpi.com/2076-3417/14/22/10631/pdf?ver
+C036 10.3390/ma16175897 не скачано (повтор): err:HTTP Error 403: Forbidden:https://europepmc.org/backend/ptpmcrender.fcgi?acc; err:HTTP Error 403: Forbidden:https:/
+C039 10.1007/s00339-022-06244-y не скачано (повтор): 
+C042 10.1088/1742-6596/1943/1/012011 не скачано (повтор): err:<urlopen error [SSL: UNEXPECTED_EOF_WHIL:https://iopscience.iop.org/article/10.1088/1742-65
+C043 10.1088/1757-899x/1198/1/012005 не скачано (повтор): err:<urlopen error [SSL: UNEXPECTED_EOF_WHIL:https://iopscience.iop.org/article/10.1088/1757-89
+C046 10.1088/1757-899x/782/2/022038 не скачано (повтор): err:<urlopen error [SSL: UNEXPECTED_EOF_WHIL:https://iopscience.iop.org/article/10.1088/1757-89
+C047 10.13005/msri/170106 не скачано (повтор): html-stub:https://doi.org/10.13005/msri/170106
+C054 10.1088/1757-899x/81/1/012003 не скачано (повтор): err:<urlopen error [SSL: UNEXPECTED_EOF_WHIL:https://iopscience.iop.org/article/10.1088/1757-89
+C055  не скачано (повтор): meta-not-pdf:http://european-science.com/eojnss/article/view/92
+C064 10.2320/matertrans1989.41.567 не скачано (повтор): mismatch(title overlap 0.00):https://www.jstage.jst.go.jp/article/matertrans198
+C069 10.1541/ieejfms1990.114.4_320 не скачано (повтор): mismatch(title overlap 0.00):https://www.jstage.jst.go.jp/article/ieejfms1990/1
+C070 10.1541/ieejfms1990.113.4_306 не скачано (повтор): mismatch(title overlap 0.00):https://www.jstage.jst.go.jp/article/ieejfms1990/1
+C107 10.3390/magnetism5020014 не скачано (повтор): err:HTTP Error 403: Forbidden:https://www.mdpi.com/2673-8724/5/2/14/pdf?version=
+C112 10.1038/s41598-021-81028-7 не скачано (повтор): err:HTTP Error 403: Forbidden:https://europepmc.org/backend/ptpmcrender.fcgi?acc
+C115 10.1038/srep36200 не скачано (повтор): err:HTTP Error 403: Forbidden:https://europepmc.org/backend/ptpmcrender.fcgi?acc
+done

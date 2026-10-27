@@ -1,0 +1,3 @@
+OMP_NUM_THREADS=1,OPENBLAS_NUM_THREADS=1 ok 18.1 s; cpu-time stamps ['3.3', '10.5', '18.0']
+OMP_NUM_THREADS=8,OPENBLAS_NUM_THREADS=1 TIMEOUT 240.0 s; cpu-time stamps ['73.3', '236.9']
+OMP_NUM_THREADS=1,OPENBLAS_NUM_THREADS=8 ok 16.7 s; cpu-time stamps ['3.4', '9.9', '16.7']

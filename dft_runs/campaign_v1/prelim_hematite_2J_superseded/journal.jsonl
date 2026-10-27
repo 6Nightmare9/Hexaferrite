@@ -1,0 +1,14 @@
+{"composition": "hematite_alpha-Fe2O3", "config_sha256": "52a4609ee2c9ecf3c6b78e3358c18885dd06361fe0120f65e33020e181c71959", "event": "generate", "kept": [], "t": "2026-10-26T03:54:55+00:00", "written": ["c00_ground", "c01_flip_Fe3_Fe4", "c02_flip_Fe2_Fe3", "c03_flip_Fe2_Fe4", "c04_flip_Fe4"]}
+{"event": "queue", "n_parallel": 3, "skipped": {}, "t": "2026-10-26T03:54:58+00:00", "to_run": ["c00_ground", "c01_flip_Fe3_Fe4", "c02_flip_Fe2_Fe3", "c03_flip_Fe2_Fe4", "c04_flip_Fe4"]}
+{"attempt": 1, "event": "start", "job": "c01_flip_Fe3_Fe4", "t": "2026-10-26T03:54:58+00:00"}
+{"attempt": 1, "event": "start", "job": "c02_flip_Fe2_Fe3", "t": "2026-10-26T03:54:58+00:00"}
+{"attempt": 1, "event": "start", "job": "c00_ground", "t": "2026-10-26T03:54:58+00:00"}
+{"event": "finish", "job": "c02_flip_Fe2_Fe3", "message": "", "state": "done", "t": "2026-10-26T03:55:54+00:00", "wall_s": 55.9}
+{"attempt": 1, "event": "start", "job": "c03_flip_Fe2_Fe4", "t": "2026-10-26T03:55:54+00:00"}
+{"event": "finish", "job": "c01_flip_Fe3_Fe4", "message": "", "state": "done", "t": "2026-10-26T03:56:01+00:00", "wall_s": 62.4}
+{"attempt": 1, "event": "start", "job": "c04_flip_Fe4", "t": "2026-10-26T03:56:01+00:00"}
+{"event": "finish", "job": "c00_ground", "message": "", "state": "done", "t": "2026-10-26T03:56:18+00:00", "wall_s": 79.9}
+{"event": "finish", "job": "c03_flip_Fe2_Fe4", "message": "", "state": "done", "t": "2026-10-26T03:56:58+00:00", "wall_s": 63.5}
+{"event": "finish", "job": "c04_flip_Fe4", "message": "", "state": "done", "t": "2026-10-26T03:57:15+00:00", "wall_s": 74.4}
+{"event": "collect", "n_config_not_preserved": 0, "n_ok": 5, "t": "2026-10-26T03:57:18+00:00"}
+{"event": "collect", "n_config_not_preserved": 0, "n_ok": 5, "t": "2026-10-26T03:57:20+00:00"}
